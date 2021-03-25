@@ -1,5 +1,7 @@
 # Prácticas realizadas en la promoción 2017-2020 .UPCT
 
+* ESTE REPOSITORIO ES PRIVADO, SÓLO PODRÁS VER ESTA PÁGINA CON FINES INFORMATIVOS * 
+
 _A continuación podrás ver todas las prácticas resueltas que se realizaron a lo largo de los 4 años de la carrera_
 
 
