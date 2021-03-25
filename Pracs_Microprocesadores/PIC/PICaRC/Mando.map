@@ -1,0 +1,61 @@
+MPLINK 4.40, Linker
+Linker Map File - Created Fri May 03 10:39:26 2019
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000002
+                   .org_2       code   0x000004    program   0x000002
+                   .org_3       code   0x000005    program   0x0000ee
+     .config_2007_MANDO.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000000      
+                            0x000004    0x00007b      
+                            0x002007    0x002007      
+            122 out of 8454 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                      ISR   0x000027    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                ISR_BOTON   0x00002c    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+            ISR_VELOCIDAD   0x00003b    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                 adelante   0x00005b    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                    atras   0x00006b    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+              envia_token   0x000079    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+          envia_velocidad   0x000076    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                      es1   0x000046    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+             gira_derecha   0x000053    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+           gira_izquierda   0x000063    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                   inicio   0x000005    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                     main   0x000026    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                    parar   0x000073    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   inicio   0x000005    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                     main   0x000026    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                      ISR   0x000027    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                ISR_BOTON   0x00002c    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+            ISR_VELOCIDAD   0x00003b    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                      es1   0x000046    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+             gira_derecha   0x000053    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                 adelante   0x00005b    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+           gira_izquierda   0x000063    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                    atras   0x00006b    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+                    parar   0x000073    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+          envia_velocidad   0x000076    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+              envia_token   0x000079    program     static F:\Universidad\Microprocesadores\PICaRC\Mando.asm
+
+

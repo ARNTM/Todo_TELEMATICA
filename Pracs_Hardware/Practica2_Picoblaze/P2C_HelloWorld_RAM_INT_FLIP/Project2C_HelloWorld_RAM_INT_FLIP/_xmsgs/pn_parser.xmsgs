@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/IO_strobe_logic.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/T_state_and_Reset.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/arithmatic.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/carry_flag_logic.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/crc8.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/crc8.vhd</arg>&quot; Line <arg fmt="%d" index="2">52</arg>. <arg fmt="%s" index="3">Syntax error near &quot;begin&quot;.</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/flip.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/interrupt_capture.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/interrupt_logic.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/logical_bus_processing.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/picoblaze.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/program_counter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/register_and_flag_enable.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/register_bank.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/shift_rotate.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/stack_counter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/stack_ram.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/zero_flag_logic.vhd&quot; into library work</arg>
+</msg>
+
+</messages>
+

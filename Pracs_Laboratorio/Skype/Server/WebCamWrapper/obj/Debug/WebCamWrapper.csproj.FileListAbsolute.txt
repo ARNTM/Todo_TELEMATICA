@@ -1,0 +1,11 @@
+C:\Users\jake\Desktop\source\WebCamWrapper\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jake\Desktop\source\WebCamWrapper\obj\Debug\Camera\Configuration\CameraFrameSourceConfigurationElement.baml
+C:\Users\jake\Desktop\source\WebCamWrapper\obj\Debug\Camera\Configuration\CameraFrameSourceConfigurationElement.g.cs
+C:\Users\jake\Desktop\source\WebCamWrapper\obj\Debug\Touchless.Vision_MarkupCompile.cache
+C:\Users\jake\Desktop\source\WebCamWrapper\obj\Debug\Touchless.Vision.g.resources
+C:\Users\jake\Desktop\source\WebCamWrapper\bin\Debug\Touchless.Vision.dll
+C:\Users\jake\Desktop\source\WebCamWrapper\bin\Debug\Touchless.Vision.pdb
+C:\Users\jake\Desktop\source\WebCamWrapper\bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\jake\Desktop\source\WebCamWrapper\bin\Debug\WebCamLib.dll
+C:\Users\jake\Desktop\source\WebCamWrapper\obj\Debug\Touchless.Vision.dll
+C:\Users\jake\Desktop\source\WebCamWrapper\obj\Debug\Touchless.Vision.pdb

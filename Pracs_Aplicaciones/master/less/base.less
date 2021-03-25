@@ -1,0 +1,493 @@
+// Basic
+a {
+	color: @color-primary;
+	&:hover {
+		color: lighten(@color-primary, 5%);
+	}
+	&:focus {
+		color: lighten(@color-primary, 5%);
+	}
+	&:active {
+		color: darken(@color-primary, 5%);
+	}
+}
+
+// Font Colors
+html {
+	.for(@colors-list); .-each(@value) {
+		@name:  extract(@value, 1);
+		@color:  extract(@value, 2);
+
+		.heading-@{name},
+		.lnk-@{name},
+		.text-color-@{name},
+		.text-@{name} {
+			color: @color !important;
+		}
+
+		.heading.heading-@{name} {
+			h1, h2, h3, h4, h5, h6 {
+				border-color: @color;
+			}
+		}
+	}
+}
+
+// Background Colors
+html {
+	.for(@colors-list); .-each(@value) {
+		@name:  extract(@value, 1);
+		@color:  extract(@value, 2);
+
+		.bg-@{name},
+		.background-color-@{name} {
+			background-color: @color !important;
+		}
+	}
+}
+
+// Sidebar Left
+.sidebar-left {
+	.sidebar-header {
+
+		.sidebar-toggle {
+
+			&:hover {
+				i {
+					color: @color-primary;
+				}
+			}
+		}
+
+	}
+}
+
+// Header Nav Menu
+@media (min-width: 992px) {
+	.header {	
+		&.header-nav-menu {
+			.header-nav-main {
+				nav {
+					> ul {
+						> li {
+							> a {
+								&.dropdown-toggle {
+									&:after {
+									    border-color: @color-primary transparent transparent transparent;
+									}
+								}
+								&:focus {
+									color: @color-primary;
+								}
+							}
+							&.open, 
+							&:hover, 
+							&.active {
+								> a {
+									background: @color-primary;
+									color: #FFF;
+									&.dropdown-toggle {
+										&:after {
+										    border-color: lighten(@color-primary, 100%) transparent transparent transparent;
+										}
+									}
+								}
+							}
+							&.dropdown {
+								.dropdown-menu {
+									border-top: 3px solid @color-primary;
+									li {
+										&.dropdown-submenu {
+											> a {
+												&:after {
+													border-color: transparent transparent transparent @color-primary;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			// Header Nav Stripe
+			&.header-nav-stripe {
+				.header-nav-main {
+					nav {
+						> ul {
+							> li {
+								> a {
+									&.dropdown-toggle {
+										&:after {
+										    border-color: darken(@color-primary, 80%) transparent transparent transparent;
+										}
+									}
+									&:focus {
+										color: darken(@color-primary, 80%);
+									}
+								}
+								&.open, 
+								&:hover, 
+								&.active {
+									> a {
+										color: #FFF;
+										&.dropdown-toggle {
+											&:after {
+											    border-color: lighten(@color-primary, 100%) transparent transparent transparent;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			// Header Nav Top Line
+			&.header-nav-top-line {
+				.header-nav-main {
+					nav {
+						> ul {
+							> li {
+								> a {
+									&.dropdown-toggle {
+										&:after {
+										    border-color: darken(@color-primary, 80%) transparent transparent transparent;
+										}
+									}
+									&:focus {
+										color: darken(@color-primary, 80%);
+									}
+								}
+								&.open, 
+								&:hover, 
+								&.active {
+									> a {
+										color: @color-primary;
+										&:before {
+											background-color: @color-primary;
+										}
+										&.dropdown-toggle {
+											&:after {
+											    border-color: @color-primary transparent transparent transparent;
+											}
+										}
+									}
+								}
+								&.dropdown {
+									.dropdown-menu {
+										border-top: 3px solid @color-primary;
+										li {
+											&.dropdown-submenu {
+												> a {
+													&:after {
+														border-color: transparent transparent transparent @color-primary;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.header {	
+		&.header-nav-menu {
+			.header-nav-main {
+				nav {
+					> ul {
+						&.nav-pills {
+							> li {
+								&.active {
+									> a, 
+									> a:hover,
+									> a:focus {
+										background-color: @color-primary;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.header-btn-collapse-nav {
+		background: @color-primary;
+		color: lighten(@color-primary, 100%);
+	}
+}
+
+// Page Header
+.page-header {
+	h2 {
+		border-bottom-color: @color-primary;
+	}
+	.sidebar-right-toggle {
+		&:hover {
+			color: @color-primary;
+		}
+	}
+}
+
+// Navigation
+ul.nav-main {
+
+	& > li {
+		&.nav-active {
+			> a {
+				box-shadow: 2px 0 0 @color-primary inset;
+			}
+			& > i {
+				color: @color-primary;
+			}
+		}
+	}
+
+	li {
+
+		.nav-children {
+
+			li {
+				&.nav-active {
+					> a {
+						color: @color-primary;
+					}
+
+				}
+
+			}
+		}
+
+	}
+
+}
+
+html.sidebar-light:not(.dark) {
+	ul.nav-main {
+
+		& > li {
+			&.nav-active {
+				> a {
+					color: @color-primary;
+				}
+			}
+		}
+
+	}
+}
+
+// Nav Pills
+.nav-pills-primary > li.active > a {
+	background-color: @color-primary;
+	&:hover, &:active, &:focus {
+		background-color: @color-primary;
+	}
+}
+
+// Nano Scroller Plugin
+html.no-overflowscrolling {
+	.nano {
+		> .nano-pane {
+
+			> .nano-slider {
+				background: @color-primary;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	html.sidebar-left-collapsed {
+
+		// boxed and scroll
+		&.scroll,
+		&.boxed {
+			.sidebar-left {
+
+				.nav-main {
+
+					li {
+						&.nav-active {
+							a:hover {
+								color: @color-primary;
+							}
+						}
+					}
+
+					& > li:hover {
+
+						& > a {
+
+							span.badge {
+								background-color: @color-primary;
+							}
+						}
+
+					}
+
+				}
+
+
+			}
+		}
+	}
+}
+
+// Layout Boxed - small than min-width
+@media only screen and (max-width: 1199px) {
+	html.boxed {
+		.header {
+			border-top-color: @color-primary;
+		}
+	}
+}
+
+// Layout Boxed - larger or equal min width
+@media only screen and (min-width: 1200px) {
+
+	html.boxed {
+		.header {
+			border-top-color: @color-primary;
+		}
+	}
+
+	html.boxed {
+		.sidebar-right {
+			border-top-color: @color-primary;
+			min-height: 0;
+		}
+	}
+}
+
+// Userbox - Open
+.userbox.show {
+	.dropdown-menu {
+		a {
+			&:hover {
+				background: @color-primary;
+			}
+		}
+	}
+}
+
+// Mailbox
+.mailbox {
+	.mailbox-mail-list {
+
+		li {
+
+			&.active {
+				background: @color-primary;
+			}
+		}
+
+	}
+
+	.mailbox-mail {
+
+		.mailbox-close-mail {
+			color: @color-primary;
+
+			&:hover {
+				color: lighten(@color-primary, 5%);
+			}
+		}
+
+		.card {
+			.card-header {
+				.card-actions {
+
+					a {
+						&:hover {
+							color: @color-primary;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+// Media Gallery
+.media-gallery {
+
+	ul.mg-tags {
+
+		& > li {
+
+			a {
+
+				&:hover {
+					background-color: @color-primary;
+				}
+
+			}
+		}
+	}
+
+	.mg-files {
+
+		.thumbnail {
+
+			.thumb-preview {
+
+				.mg-thumb-options {
+
+					.mg-zoom {
+						background-color: @color-primary;
+					}
+
+					.mg-toolbar {
+						background-color: @color-primary;
+					}
+				}
+
+			}
+
+			&.thumbnail-selected {
+				box-shadow: 0 0 8px -1px @color-primary;
+			}
+
+		}
+	}
+
+}
+
+// Sign Screens - Wrappers
+.body-sign {
+
+	.card-sign {
+
+		.card-title-sign {
+			.title {
+				background-color: @color-primary;
+			}
+		}
+
+		.card-body {
+			border-top-color: @color-primary;
+		}
+	}
+}
+
+// Lock Screen
+.body-locked {
+
+	.current-user {
+
+		.user-image {
+			border-color: @color-primary;
+		}
+
+	}
+}

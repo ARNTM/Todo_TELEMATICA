@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/tb_Display7Seg_isim_beh.exe" -prj "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/tb_Display7Seg_beh.prj" "work.tb_Display7Seg" 

@@ -1,0 +1,42 @@
+MPLINK 4.40, Linker
+Linker Map File - Created Sat Apr 27 11:16:56 2019
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000002
+                   .org_2       code   0x000005    program   0x00001e
+        .config_2007_E4.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000000      
+                            0x000005    0x000013      
+                            0x002007    0x002007      
+            17 out of 8454 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   apagar   0x000012    program     static D:\Universidad\2º GIT\Microprocesadores\Practica2\E4.asm
+                    bucle   0x00000d    program     static D:\Universidad\2º GIT\Microprocesadores\Practica2\E4.asm
+                 encender   0x000010    program     static D:\Universidad\2º GIT\Microprocesadores\Practica2\E4.asm
+                   inicio   0x000005    program     static D:\Universidad\2º GIT\Microprocesadores\Practica2\E4.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   inicio   0x000005    program     static D:\Universidad\2º GIT\Microprocesadores\Practica2\E4.asm
+                    bucle   0x00000d    program     static D:\Universidad\2º GIT\Microprocesadores\Practica2\E4.asm
+                 encender   0x000010    program     static D:\Universidad\2º GIT\Microprocesadores\Practica2\E4.asm
+                   apagar   0x000012    program     static D:\Universidad\2º GIT\Microprocesadores\Practica2\E4.asm
+
+

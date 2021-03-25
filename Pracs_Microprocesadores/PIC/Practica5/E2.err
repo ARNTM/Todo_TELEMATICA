@@ -1,0 +1,13 @@
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E2.ASM 22 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E2.ASM 24 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E2.ASM 27 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E2.ASM 29 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E2.ASM 30 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E2.ASM 31 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E2.ASM 47 : Found opcode in column 1. (RETFIE)
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E2.ASM 73 : Found opcode in column 1. (RETFIE)
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E2.ASM 80 : Found opcode in column 1. (RETFIE)
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E2.ASM 87 : Found opcode in column 1. (RETFIE)
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E2.ASM 94 : Found opcode in column 1. (RETFIE)
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E2.ASM 101 : Found opcode in column 1. (RETFIE)
+Warning[205] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E2.ASM 104 : Found directive in column 1. (END)

@@ -1,0 +1,1050 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <TITLE>Andres_Ruz_Nieto_ejpr1</TITLE>
+  <META NAME="generator" CONTENT="wxMaxima">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    displayAlign: "left",
+    context: "MathJax",
+    TeX: {TagSide: "left"}
+  })
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML">
+</script>
+  <link rel="stylesheet" type="text/css" href="Andres_Ruz_Nieto_ejpr1_htmlimg/Andres_Ruz_Nieto_ejpr1.css"/>
+ </HEAD>
+ <BODY>
+
+<!-- ***************************************************** -->
+<!--          Created with wxMaxima version 17.10.1         -->
+<!-- ***************************************************** -->
+<noscript><div class="error message">    Please enable JavaScript in order to get a 2d display of the equations embedded in this web page.</div></noscript>\(      \DeclareMathOperator{\abs}{abs}
+      \newcommand{\ensuremath}[1]{\mbox{$#1$}}
+\)
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+ <span class="code_function">raices</span>(<span class="code_variable">z</span>,<span class="code_variable">n</span>)<span class="code_operator">:</span><span class="code_operator">=</span><span class="code_function">block</span>([<span class="code_variable">r</span>],<BR>
+if (<span class="code_variable">n</span><span class="code_operator">=</span><span class="code_function">round</span>(<span class="code_variable">n</span>) and <span class="code_variable">n</span>&gt;<span class="code_operator">=</span><span class="code_number">1</span>) then (<span class="code_variable">r</span><span class="code_operator">:</span><span class="code_function">cabs</span>(<span class="code_variable">z</span>)<span class="code_operator">^</span>(<span class="code_number">1</span><span class="code_operator">/</span><span class="code_variable">n</span>),<BR>
+<span class="code_function">print</span>(<span class="code_function">makelist</span>(<span class="code_variable">r</span>·<span class="code_function">exp</span>(<span class="code_variable">%i</span>·(<span class="code_function">carg</span>(<span class="code_variable">z</span>)<span class="code_operator">+</span><span class="code_number">2</span>· <span class="code_variable">%pi</span>·<span class="code_variable">k</span>)<span class="code_operator">/</span><span class="code_variable">n</span>),<span class="code_variable">k</span>,<span class="code_number">0</span>,<span class="code_variable">n</span><span class="code_operator">−</span><span class="code_number">1</span>))) else<BR>
+<span class="code_function">print</span>(<span class="code_string">&quot;El exponente de la raiz debe ser un entero positivo!&quot;</span>)<BR>
+)<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_comment">/·</span><span class="code_comment"> </span><span class="code_comment">EJERCICIO</span><span class="code_comment"> </span><span class="code_comment">1</span><span class="code_comment"> </span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">v</span><span class="code_operator">:</span>(<span class="code_number">2</span><span class="code_operator">−</span><span class="code_number">3</span>·<span class="code_variable">%i</span>)<span class="code_operator">/</span>((<span class="code_number">2</span><span class="code_operator">+</span><span class="code_variable">%i</span>)·(<span class="code_number">1</span><span class="code_operator">−</span><span class="code_number">5</span>·<span class="code_variable">%i</span>))<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">pf</span><span class="code_operator">:</span><span class="code_function">polarform</span>(<span class="code_variable">v</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">rf</span><span class="code_operator">:</span><span class="code_function">rectform</span>(<span class="code_variable">v</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">cabs</span>(<span class="code_variable">v</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">carg</span>(<span class="code_variable">v</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">u0</span><span class="code_operator">:</span>(<span class="code_variable">v</span>)<span class="code_operator">^</span>(<span class="code_number">1</span><span class="code_operator">/</span><span class="code_number">6</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">polarform</span>(<span class="code_variable">u0</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">argu0</span><span class="code_operator">:</span><span class="code_function">carg</span>(<span class="code_variable">u0</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">argu1</span><span class="code_operator">:</span><span class="code_variable">argu0</span><span class="code_operator">+</span><span class="code_number">2</span>·<span class="code_number">1</span>·(<span class="code_variable">%pi</span>)<span class="code_endofline">;</span> <span class="code_variable">u1</span><span class="code_operator">:</span><span class="code_function">polarform</span>(<span class="code_variable">u0</span>)·<span class="code_function">exp</span>(<span class="code_variable">argu1</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">argu2</span><span class="code_operator">:</span><span class="code_variable">argu0</span><span class="code_operator">+</span><span class="code_number">2</span>·<span class="code_number">2</span>·(<span class="code_variable">%pi</span>)<span class="code_endofline">;</span> <span class="code_variable">u2</span><span class="code_operator">:</span><span class="code_function">polarform</span>(<span class="code_variable">u0</span>)·<span class="code_function">exp</span>(<span class="code_variable">argu2</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">argu3</span><span class="code_operator">:</span><span class="code_variable">argu0</span><span class="code_operator">+</span><span class="code_number">2</span>·<span class="code_number">3</span>·(<span class="code_variable">%pi</span>)<span class="code_endofline">;</span> <span class="code_variable">u3</span><span class="code_operator">:</span><span class="code_function">polarform</span>(<span class="code_variable">u0</span>)·<span class="code_function">exp</span>(<span class="code_variable">argu3</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">argu4</span><span class="code_operator">:</span><span class="code_variable">argu0</span><span class="code_operator">+</span><span class="code_number">2</span>·<span class="code_number">4</span>·(<span class="code_variable">%pi</span>)<span class="code_endofline">;</span> <span class="code_variable">u4</span><span class="code_operator">:</span><span class="code_function">polarform</span>(<span class="code_variable">u0</span>)·<span class="code_function">exp</span>(<span class="code_variable">argu4</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">argu5</span><span class="code_operator">:</span><span class="code_variable">argu0</span><span class="code_operator">+</span><span class="code_number">2</span>·<span class="code_number">5</span>·(<span class="code_variable">%pi</span>)<span class="code_endofline">;</span> <span class="code_variable">u5</span><span class="code_operator">:</span><span class="code_function">polarform</span>(<span class="code_variable">u0</span>)·<span class="code_function">exp</span>(<span class="code_variable">argu5</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">raices</span>(<span class="code_variable">v</span>,<span class="code_number">6</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">plot2d</span>([<span class="code_variable">discrete</span>,[[<span class="code_function">realpart</span>(<span class="code_variable">v</span>),<span class="code_function">imagpart</span>(<span class="code_variable">v</span>)]]],[<span class="code_variable">style</span>,[<span class="code_variable">points</span>,<span class="code_number">2</span>,<span class="code_number">1</span>,<span class="code_number">1</span>]])<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">p</span><span class="code_operator">:</span>[[<span class="code_function">realpart</span>(<span class="code_variable">u0</span>),<span class="code_function">imagpart</span>(<span class="code_variable">u0</span>)],[<span class="code_function">realpart</span>(<span class="code_variable">u1</span>),<span class="code_function">imagpart</span>(<span class="code_variable">u1</span>)],[<span class="code_function">realpart</span>(<span class="code_variable">u2</span>),<span class="code_function">imagpart</span>(<span class="code_variable">u2</span>)],[<span class="code_function">realpart</span>(<span class="code_variable">u3</span>),<span class="code_function">imagpart</span>(<span class="code_variable">u3</span>)],[<span class="code_function">realpart</span>(<span class="code_variable">u4</span>),<span class="code_function">imagpart</span>(<span class="code_variable">u4</span>)],[<span class="code_function">realpart</span>(<span class="code_variable">u5</span>),<span class="code_function">imagpart</span>(<span class="code_variable">u5</span>)]]<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">p0</span><span class="code_operator">:</span>[<span class="code_function">realpart</span>(<span class="code_variable">v</span>),<span class="code_function">imagpart</span>(<span class="code_variable">v</span>)]<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">plot2d</span>([[<span class="code_variable">discrete</span>,[<span class="code_variable">p0</span>]],[<span class="code_variable">discrete</span>,[<span class="code_variable">p</span>[<span class="code_number">1</span>]]],[<span class="code_variable">discrete</span>,[<span class="code_variable">p</span>[<span class="code_number">2</span>]]],[<span class="code_variable">discrete</span>,[<span class="code_variable">p</span>[<span class="code_number">3</span>]]],[<span class="code_variable">discrete</span>,[<span class="code_variable">p</span>[<span class="code_number">4</span>]]],[<span class="code_variable">discrete</span>,[<span class="code_variable">p</span>[<span class="code_number">5</span>]]],[<span class="code_variable">discrete</span>,[<span class="code_variable">p</span>[<span class="code_number">6</span>]]]],[<span class="code_variable">style</span>,[<span class="code_variable">points</span>,<span class="code_number">2</span>,<span class="code_number">1</span>,<span class="code_number">1</span>]])<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_comment">/·</span><span class="code_comment"> </span><span class="code_comment">EJERCICIO</span><span class="code_comment"> </span><span class="code_comment">2</span><span class="code_comment"> </span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">powerdisp</span><span class="code_operator">:</span>true<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">f</span>(<span class="code_variable">z</span>)<span class="code_operator">:</span><span class="code_operator">=</span> if (<span class="code_function">cabs</span>(<span class="code_variable">z</span>)&gt;<span class="code_number">1</span> and <span class="code_function">cabs</span>(<span class="code_variable">z</span>)&lt;<span class="code_number">2</span>) then (<span class="code_function">imagpart</span>(<span class="code_variable">z</span>)<span class="code_operator">+</span>(<span class="code_function">cabs</span>(<span class="code_variable">z</span>)·<span class="code_function">realpart</span>(<span class="code_variable">z</span>)·<span class="code_variable">%i</span>)) else (if <span class="code_function">cabs</span>(<span class="code_variable">z</span>)&lt;<span class="code_operator">=</span><span class="code_number">1</span> then <span class="code_function">cos</span>(<span class="code_function">conjugate</span>(<span class="code_variable">z</span>)<span class="code_operator">+</span><span class="code_variable">z</span>·<span class="code_variable">%i</span>) else (<span class="code_function">cabs</span>(<span class="code_function">realpart</span>(<span class="code_variable">z</span>)<span class="code_operator">+</span><span class="code_function">imagpart</span>(<span class="code_variable">z</span>))<span class="code_operator">+</span><span class="code_function">cos</span>(<span class="code_function">cabs</span>(<span class="code_variable">z</span>))·<span class="code_function">cabs</span>(<span class="code_function">realpart</span>(<span class="code_variable">z</span>)<span class="code_operator">−</span><span class="code_function">imagpart</span>(<span class="code_variable">z</span>))·<span class="code_variable">%i</span>))<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+\[\tag{%o21} \operatorname{f}(z):=\operatorname{if} \operatorname{cabs}(z)\mbox{&gt;  }1\mathit{ and }\operatorname{cabs}(z)\mbox{&lt;  }2 \operatorname{then} \operatorname{imagpart}(z)+\operatorname{cabs}(z)\, \operatorname{realpart}(z) \% i \operatorname{else} \operatorname{if} \operatorname{cabs}(z)\mbox{&lt;  =}1 \operatorname{then} \cos{\left( \overline{z}+z \% i\right) } \operatorname{else} \operatorname{cabs}\left( \operatorname{realpart}(z)+\operatorname{imagpart}(z)\right) +\cos{\left( \operatorname{cabs}(z)\right) }\, \operatorname{cabs}\left( \operatorname{realpart}(z)-\operatorname{imagpart}(z)\right)  \% i\]
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">puntos2</span><span class="code_operator">:</span><span class="code_function">makelist</span>(<span class="code_function">f</span>(<span class="code_variable">z</span>),<span class="code_variable">z</span>,<span class="code_number">0</span>,<span class="code_number">2</span>·<span class="code_variable">%pi</span>,<span class="code_variable">%pi</span><span class="code_operator">/</span><span class="code_number">20</span>)<span class="code_endofline">$</span><BR>
+<span class="code_variable">puntosri2</span><span class="code_operator">:</span><span class="code_function">makelist</span>([<span class="code_function">realpart</span>(<span class="code_variable">puntos2</span>[<span class="code_variable">j</span>]),<span class="code_function">imagpart</span>(<span class="code_variable">puntos2</span>[<span class="code_variable">j</span>])],<span class="code_variable">j</span>,<span class="code_number">1</span>,<span class="code_function">length</span>(<span class="code_variable">puntos2</span>))<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_comment">/·</span><span class="code_comment"> </span><span class="code_comment">No</span><span class="code_comment"> </span><span class="code_comment">podemos</span><span class="code_comment"> </span><span class="code_comment">representar</span><span class="code_comment"> </span><span class="code_comment">bien</span><span class="code_comment"> </span><span class="code_comment">los</span><span class="code_comment"> </span><span class="code_comment">anillos</span><span class="code_comment"> </span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">plot2d</span>([<span class="code_variable">discrete</span>,<span class="code_variable">puntosri2</span>],[<span class="code_variable">style</span>,[<span class="code_variable">points</span>,<span class="code_number">4</span>,<span class="code_number">2</span>,<span class="code_number">1</span>]],[<span class="code_variable">xlabel</span>,<span class="code_string">&quot;Eje real&quot;</span>],[<span class="code_variable">ylabel</span>,<span class="code_string">&quot;Eje imaginario&quot;</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+\[\tag{%o27} [C:/Users/andre/AppData/Local/Temp/maxout11868.gnuplot]\]
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">diff</span>(<span class="code_function">f</span>(<span class="code_variable">z</span>),<span class="code_variable">z</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">imagpart</span>(<span class="code_function">ev</span>(<span class="code_variable">%</span>,<span class="code_variable">z</span><span class="code_operator">=</span><span class="code_variable">x</span><span class="code_operator">+</span><span class="code_variable">y</span>·<span class="code_variable">%i</span>))<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">diff</span>(<span class="code_function">f</span>(<span class="code_variable">x</span><span class="code_operator">+</span><span class="code_variable">y</span>·<span class="code_variable">%i</span>),<span class="code_variable">x</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">diff</span>(<span class="code_function">f</span>(<span class="code_variable">x</span><span class="code_operator">+</span><span class="code_variable">y</span>·<span class="code_variable">%i</span>),<span class="code_variable">y</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">diff</span>(<span class="code_function">f</span>(<span class="code_variable">x</span><span class="code_operator">+</span><span class="code_variable">y</span>·<span class="code_variable">%i</span>),<span class="code_variable">x</span>,<span class="code_number">1</span>,<span class="code_variable">y</span>,<span class="code_number">1</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">realpart</span>(<span class="code_variable">%</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">diff</span>(<span class="code_function">realpart</span>(<span class="code_function">f</span>(<span class="code_variable">x</span><span class="code_operator">+</span><span class="code_variable">y</span>·<span class="code_variable">%i</span>)),<span class="code_variable">x</span>,<span class="code_number">1</span>,<span class="code_variable">y</span>,<span class="code_number">1</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">diff</span>(<span class="code_function">realpart</span>(<span class="code_function">f</span>(<span class="code_variable">x</span><span class="code_operator">+</span><span class="code_variable">y</span>·<span class="code_variable">%i</span>)),<span class="code_variable">x</span>)<span class="code_operator">−</span><span class="code_function">diff</span>(<span class="code_function">imagpart</span>(<span class="code_function">f</span>(<span class="code_variable">x</span><span class="code_operator">+</span><span class="code_variable">y</span>·<span class="code_variable">%i</span>)),<span class="code_variable">y</span>)<span class="code_endofline">;</span> &nbsp;&nbsp; <span class="code_comment">/·</span><span class="code_comment">1</span><span class="code_comment">º</span><span class="code_comment">Ecuacion</span><span class="code_comment"> </span><span class="code_comment">Cauchy</span><span class="code_comment">−</span><span class="code_comment">Riemann</span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">diff</span>(<span class="code_function">realpart</span>(<span class="code_function">f</span>(<span class="code_variable">x</span><span class="code_operator">+</span><span class="code_variable">y</span>·<span class="code_variable">%i</span>)),<span class="code_variable">y</span>)<span class="code_operator">+</span><span class="code_function">diff</span>(<span class="code_function">imagpart</span>(<span class="code_function">f</span>(<span class="code_variable">x</span><span class="code_operator">+</span><span class="code_variable">y</span>·<span class="code_variable">%i</span>)),<span class="code_variable">x</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">diff</span>((<span class="code_function">realpart</span>(<span class="code_function">f</span>(<span class="code_variable">x</span><span class="code_operator">+</span><span class="code_variable">y</span>·<span class="code_variable">%i</span>)),<span class="code_variable">x</span>)<span class="code_operator">+</span><span class="code_variable">%i</span>·<span class="code_function">imagpart</span>(<span class="code_function">f</span>(<span class="code_variable">x</span><span class="code_operator">+</span><span class="code_variable">y</span>·<span class="code_variable">%i</span>)),<span class="code_variable">x</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">declare</span>(<span class="code_variable">k</span>,<span class="code_variable">integer</span>)<span class="code_endofline">$</span><span class="code_function">ev</span>(<span class="code_variable">%o40</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_variable">%pi</span><span class="code_operator">/</span><span class="code_number">2</span><span class="code_operator">+</span><span class="code_variable">k</span>·<span class="code_variable">%pi</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">declare</span>(<span class="code_variable">z</span>,<span class="code_variable">complex</span>)<span class="code_endofline">$</span><span class="code_function">diff</span>(<span class="code_function">f</span>(<span class="code_variable">z</span>),<span class="code_variable">z</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">kill</span>(<span class="code_variable">k</span>,<span class="code_variable">z</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_comment">/·</span><span class="code_comment"> </span><span class="code_comment">EJERCICIO</span><span class="code_comment"> </span><span class="code_comment">3</span><span class="code_comment"> </span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">puntos</span><span class="code_operator">:</span><span class="code_function">makelist</span>(((<span class="code_number">1</span><span class="code_operator">+</span><span class="code_variable">%i</span>)·<span class="code_variable">%e</span><span class="code_operator">^</span>(<span class="code_variable">%i</span>·<span class="code_variable">t</span>))<span class="code_operator">+</span><span class="code_variable">%i</span>·<span class="code_function">sin</span>(<span class="code_variable">t</span>),<span class="code_variable">t</span>,<span class="code_number">0</span>,<span class="code_number">2</span>·<span class="code_variable">%pi</span>,<span class="code_variable">%pi</span><span class="code_operator">/</span><span class="code_number">20</span>)<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">puntosri</span><span class="code_operator">:</span><span class="code_function">makelist</span>([<span class="code_function">realpart</span>(<span class="code_variable">puntos</span>[<span class="code_variable">j</span>]),<span class="code_function">imagpart</span>(<span class="code_variable">puntos</span>[<span class="code_variable">j</span>])],<span class="code_variable">j</span>,<span class="code_number">1</span>,<span class="code_function">length</span>(<span class="code_variable">puntos</span>))<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">puntoscong</span><span class="code_operator">:</span><span class="code_function">makelist</span>([<span class="code_function">realpart</span>(<span class="code_variable">conjugate</span>[<span class="code_variable">puntos</span>[<span class="code_variable">j</span>]]),<span class="code_function">imagpart</span>(<span class="code_variable">conjugate</span>[<span class="code_variable">puntos</span>[<span class="code_variable">j</span>]])],<span class="code_variable">j</span>,<span class="code_number">1</span>,<span class="code_function">length</span>(<span class="code_variable">puntos</span>))<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">plot2d</span>([<span class="code_variable">discrete</span>,<span class="code_variable">puntosri</span>],[<span class="code_variable">style</span>,[<span class="code_variable">points</span>,<span class="code_number">1</span>,<span class="code_number">1</span>,<span class="code_number">1</span>]],[<span class="code_variable">xlabel</span>,<span class="code_string">&quot;Eje real&quot;</span>],[<span class="code_variable">ylabel</span>,<span class="code_string">&quot;Eje imaginario&quot;</span>],[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">1</span><span class="code_number">.</span><span class="code_number">2</span>,<span class="code_number">1</span><span class="code_number">.</span><span class="code_number">2</span>],[<span class="code_variable">y</span>,<span class="code_number">−</span><span class="code_number">1</span><span class="code_number">.</span><span class="code_number">2</span>,<span class="code_number">1</span><span class="code_number">.</span><span class="code_number">2</span>],[<span class="code_variable">gnuplot_preamble</span>,<span class="code_string">&quot;set size ratio 1&quot;</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">plot2d</span>([<span class="code_variable">discrete</span>,<span class="code_variable">puntoscong</span>],[<span class="code_variable">style</span>,[<span class="code_variable">points</span>,<span class="code_number">1</span>,<span class="code_number">2</span>,<span class="code_number">6</span>]],[<span class="code_variable">xlabel</span>,<span class="code_string">&quot;Eje real&quot;</span>],[<span class="code_variable">ylabel</span>,<span class="code_string">&quot;Eje imaginario&quot;</span>],[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">1</span><span class="code_number">.</span><span class="code_number">2</span>,<span class="code_number">1</span><span class="code_number">.</span><span class="code_number">2</span>],[<span class="code_variable">y</span>,<span class="code_number">−</span><span class="code_number">1</span><span class="code_number">.</span><span class="code_number">2</span>,<span class="code_number">1</span><span class="code_number">.</span><span class="code_number">2</span>],[<span class="code_variable">gnuplot_preamble</span>,<span class="code_string">&quot;set size ratio 1&quot;</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">g</span>(<span class="code_variable">z</span>)<span class="code_operator">:</span><span class="code_operator">=</span><span class="code_function">cos</span>(<span class="code_variable">z</span>)<span class="code_operator">+</span><span class="code_function">log</span>(<span class="code_number">1</span><span class="code_operator">+</span><span class="code_function">abs</span>(<span class="code_variable">z</span>))<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">imagenes</span><span class="code_operator">:</span><span class="code_function">makelist</span>([<span class="code_function">realpart</span>(<span class="code_function">g</span>(<span class="code_variable">puntos</span>[<span class="code_variable">j</span>])),<span class="code_function">imagpart</span>(<span class="code_function">g</span>(<span class="code_variable">puntos</span>[<span class="code_variable">j</span>]))],<span class="code_variable">j</span>,<span class="code_number">1</span>,<span class="code_function">length</span>(<span class="code_variable">puntos</span>))<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">plot2d</span>([<span class="code_variable">discrete</span>,<span class="code_variable">imagenes</span>],[<span class="code_variable">style</span>,[<span class="code_variable">points</span>,<span class="code_number">1</span>,<span class="code_number">3</span>,<span class="code_number">8</span>]],[<span class="code_variable">y</span>,<span class="code_number">−</span><span class="code_number">1</span><span class="code_number">.</span><span class="code_number">2</span>,<span class="code_number">1</span><span class="code_number">.</span><span class="code_number">2</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">fil</span><span class="code_operator">:</span><span class="code_function">makelist</span>(<span class="code_function">makelist</span>([<span class="code_variable">t</span>,<span class="code_variable">s</span>],<span class="code_variable">t</span>,<span class="code_number">0</span>,<span class="code_number">1</span>,<span class="code_number">0</span><span class="code_number">.</span><span class="code_number">1</span>),<span class="code_variable">s</span>,<span class="code_number">0</span>,<span class="code_number">1</span>,<span class="code_number">0</span><span class="code_number">.</span><span class="code_number">1</span>)<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">col</span><span class="code_operator">:</span><span class="code_function">makelist</span>(<span class="code_function">makelist</span>([<span class="code_variable">t</span>,<span class="code_variable">s</span>],<span class="code_variable">s</span>,<span class="code_number">0</span>,<span class="code_number">1</span>,<span class="code_number">0</span><span class="code_number">.</span><span class="code_number">1</span>),<span class="code_variable">t</span>,<span class="code_number">0</span>,<span class="code_number">1</span>,<span class="code_number">0</span><span class="code_number">.</span><span class="code_number">1</span>)<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">malla</span><span class="code_operator">:</span><span class="code_function">append</span>(<span class="code_variable">fil</span>,<span class="code_variable">col</span>)<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">plot2d</span>(<span class="code_function">makelist</span>([<span class="code_variable">discrete</span>,<span class="code_variable">malla</span>[<span class="code_variable">j</span>]],<span class="code_variable">j</span>,<span class="code_number">1</span>,<span class="code_function">length</span>(<span class="code_variable">malla</span>)),[<span class="code_variable">style</span>,[<span class="code_variable">lines</span>,<span class="code_number">2</span>,<span class="code_number">2</span>]],[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">1</span><span class="code_number">.</span><span class="code_number">1</span>,<span class="code_number">1</span><span class="code_number">.</span><span class="code_number">1</span>],[<span class="code_variable">y</span>,<span class="code_number">−</span><span class="code_number">0</span><span class="code_number">.</span><span class="code_number">1</span>,<span class="code_number">1</span><span class="code_number">.</span><span class="code_number">1</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">p</span>(<span class="code_variable">r</span>,<span class="code_variable">t</span>)<span class="code_operator">:</span><span class="code_operator">=</span>(<span class="code_number">1</span><span class="code_operator">+</span><span class="code_variable">%i</span><span class="code_operator">+</span><span class="code_variable">r</span>·<span class="code_function">exp</span>(<span class="code_variable">t</span>·<span class="code_variable">%i</span>))<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">semicirc</span><span class="code_operator">:</span><span class="code_function">makelist</span>(<span class="code_function">makelist</span>([<span class="code_function">realpart</span>(<span class="code_function">p</span>(<span class="code_variable">r</span>,<span class="code_variable">t</span>)),<span class="code_function">imagpart</span>(<span class="code_function">p</span>(<span class="code_variable">r</span>,<span class="code_variable">t</span>))],<span class="code_variable">t</span>,<span class="code_number">0</span>,<span class="code_variable">%pi</span>,<span class="code_variable">%pi</span><span class="code_operator">/</span><span class="code_number">20</span>),<span class="code_variable">r</span>,<span class="code_number">0</span>,<span class="code_number">2</span>,<span class="code_number">0</span><span class="code_number">.</span><span class="code_number">1</span>)<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">semirad</span><span class="code_operator">:</span><span class="code_function">makelist</span>(<span class="code_function">makelist</span>([<span class="code_function">realpart</span>(<span class="code_function">p</span>(<span class="code_variable">r</span>,<span class="code_variable">t</span>)),<span class="code_function">imagpart</span>(<span class="code_function">p</span>(<span class="code_variable">r</span>,<span class="code_variable">t</span>))],<span class="code_variable">r</span>,<span class="code_number">0</span>,<span class="code_number">2</span>,<span class="code_number">0</span><span class="code_number">.</span><span class="code_number">1</span>),<span class="code_variable">t</span>,<span class="code_number">0</span>,<span class="code_variable">%pi</span>,<span class="code_variable">%pi</span><span class="code_operator">/</span><span class="code_number">20</span>)<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">scmalla</span><span class="code_operator">:</span><span class="code_function">append</span>(<span class="code_variable">semicirc</span>,<span class="code_variable">semirad</span>)<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">plot2d</span>(<span class="code_function">makelist</span>([<span class="code_variable">discrete</span>,<span class="code_variable">scmalla</span>[<span class="code_variable">j</span>]],<span class="code_variable">j</span>,<span class="code_number">1</span>,<span class="code_function">length</span>(<span class="code_variable">scmalla</span>)))<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_comment">/·</span><span class="code_comment"> </span><span class="code_comment">EJERCICIO</span><span class="code_comment"> </span><span class="code_comment">4</span><span class="code_comment"> </span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">F</span>(<span class="code_variable">z</span>)<span class="code_operator">:</span><span class="code_operator">=</span>(<span class="code_function">sin</span>(<span class="code_number">1</span><span class="code_operator">/</span><span class="code_variable">z</span>))<span class="code_operator">/</span>(<span class="code_variable">z</span>·(<span class="code_variable">z</span><span class="code_operator">^</span><span class="code_number">2</span><span class="code_operator">+</span><span class="code_number">1</span>))<span class="code_endofline">$</span><BR>
+<span class="code_function">taylor</span>(<span class="code_function">F</span>(<span class="code_variable">z</span>),<span class="code_variable">z</span>,<span class="code_number">1</span><span class="code_operator">+</span><span class="code_variable">%i</span>,<span class="code_number">3</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">taylor</span>(<span class="code_function">F</span>(<span class="code_variable">z</span>),<span class="code_variable">z</span>,<span class="code_variable">%i</span><span class="code_operator">/</span><span class="code_variable">%pi</span>,<span class="code_number">3</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">powerseries</span>(<span class="code_function">sin</span>(<span class="code_number">1</span><span class="code_operator">/</span><span class="code_variable">z</span>),<span class="code_variable">z</span>,<span class="code_number">0</span>)·<span class="code_function">powerseries</span>(<span class="code_number">1</span><span class="code_operator">/</span>(<span class="code_variable">z</span>·(<span class="code_variable">z</span><span class="code_operator">^</span><span class="code_number">2</span><span class="code_operator">+</span><span class="code_number">1</span>)),<span class="code_variable">z</span>,<span class="code_number">0</span>)<span class="code_endofline">;</span> <span class="code_comment">/·</span><span class="code_comment">No</span><span class="code_comment"> </span><span class="code_comment">va</span><span class="code_comment"> </span><span class="code_comment">la</span><span class="code_comment"> </span><span class="code_comment">segunda</span><span class="code_comment"> </span><span class="code_comment">parte</span><span class="code_comment"> </span><span class="code_comment">del</span><span class="code_comment"> </span><span class="code_comment">POWERSERIES</span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">powerseries</span>(<span class="code_function">sin</span>(<span class="code_number">1</span><span class="code_operator">/</span><span class="code_variable">z</span>),<span class="code_variable">z</span>,<span class="code_number">1</span>)·<span class="code_function">powerseries</span>(<span class="code_number">1</span><span class="code_operator">/</span>(<span class="code_variable">z</span>·(<span class="code_variable">z</span><span class="code_operator">^</span><span class="code_number">2</span><span class="code_operator">+</span><span class="code_number">1</span>)),<span class="code_variable">z</span>,<span class="code_number">1</span>)<span class="code_endofline">;</span> <span class="code_comment">/·</span><span class="code_comment">No</span><span class="code_comment"> </span><span class="code_comment">va</span><span class="code_comment"> </span><span class="code_comment">la</span><span class="code_comment"> </span><span class="code_comment">segunda</span><span class="code_comment"> </span><span class="code_comment">parte</span><span class="code_comment"> </span><span class="code_comment">del</span><span class="code_comment"> </span><span class="code_comment">POWERSERIES</span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">powerseries</span>(<span class="code_function">sin</span>(<span class="code_number">1</span><span class="code_operator">/</span><span class="code_variable">z</span>),<span class="code_variable">z</span>,<span class="code_operator">−</span><span class="code_variable">%i</span>)·<span class="code_function">powerseries</span>(<span class="code_number">1</span><span class="code_operator">/</span>(<span class="code_variable">z</span>·(<span class="code_variable">z</span><span class="code_operator">^</span><span class="code_number">2</span><span class="code_operator">+</span><span class="code_number">1</span>)),<span class="code_variable">z</span>,<span class="code_operator">−</span><span class="code_variable">%i</span>)<span class="code_endofline">;</span> <span class="code_comment">/·</span><span class="code_comment">No</span><span class="code_comment"> </span><span class="code_comment">va</span><span class="code_comment"> </span><span class="code_comment">la</span><span class="code_comment"> </span><span class="code_comment">segunda</span><span class="code_comment"> </span><span class="code_comment">parte</span><span class="code_comment"> </span><span class="code_comment">del</span><span class="code_comment"> </span><span class="code_comment">POWERSERIES</span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_comment">/·</span><span class="code_comment"> </span><span class="code_comment">OTRA</span><span class="code_comment">&nbsp;</span><span class="code_comment">OPCION</span><span class="code_comment"> </span><span class="code_comment">PARA</span><span class="code_comment"> </span><span class="code_comment">LA</span><span class="code_comment"> </span><span class="code_comment">SINGULARIDAD</span><span class="code_comment"> </span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">sensin</span><span class="code_operator">:</span> <span class="code_function">niceindices</span>(<span class="code_function">powerseries</span>(<span class="code_function">sin</span>(<span class="code_variable">z</span>),<span class="code_variable">z</span>,<span class="code_number">0</span>))<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">ev</span>(<span class="code_variable">sensin</span>,<span class="code_variable">z</span><span class="code_operator">=</span><span class="code_number">1</span><span class="code_operator">/</span><span class="code_variable">z</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">divsin</span><span class="code_operator">:</span> <span class="code_function">niceindices</span>(<span class="code_function">powerseries</span>(<span class="code_number">1</span><span class="code_operator">/</span>(<span class="code_variable">z</span>·(<span class="code_variable">z</span><span class="code_operator">−</span><span class="code_number">1</span>)),<span class="code_variable">z</span>,<span class="code_number">0</span>))<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">intosum</span>(<span class="code_variable">divsin</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">%</span>·(<span class="code_function">ev</span>(<span class="code_variable">sensin</span>,<span class="code_variable">z</span><span class="code_operator">=</span><span class="code_number">1</span><span class="code_operator">/</span><span class="code_variable">z</span>))<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">indices</span><span class="code_operator">:</span> <span class="code_variable">sumexpand</span><span class="code_operator">:</span>true<span class="code_endofline">$</span><span class="code_variable">cauchysum</span><span class="code_operator">:</span>true<span class="code_endofline">$</span><span class="code_operator">'</span><span class="code_operator">'</span><span class="code_function">intosum</span>(<span class="code_variable">divsin</span>)·<span class="code_function">ev</span>(<span class="code_variable">sensin</span>,<span class="code_variable">z</span><span class="code_operator">=</span><span class="code_number">1</span><span class="code_operator">/</span><span class="code_variable">z</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">niceindicespref</span><span class="code_operator">:</span>[<span class="code_variable">k</span>,<span class="code_variable">n</span>]<span class="code_endofline">$</span><span class="code_function">niceindices</span>(<span class="code_variable">%</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">residue</span>(<span class="code_function">F</span>(<span class="code_variable">z</span>),<span class="code_variable">z</span>,<span class="code_variable">%i</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">residue</span>(<span class="code_function">F</span>(<span class="code_variable">z</span>),<span class="code_variable">z</span>,<span class="code_variable">%</span><span class="code_operator">−</span><span class="code_variable">i</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">diff</span>(<span class="code_function">F</span>(<span class="code_variable">z</span>),<span class="code_variable">z</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">derivada</span><span class="code_operator">:</span> <span class="code_function">ev</span>(<span class="code_variable">%</span>,<span class="code_variable">z</span><span class="code_operator">=</span><span class="code_number">1</span><span class="code_operator">−</span><span class="code_number">2</span>·<span class="code_variable">%i</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">rectform</span>(<span class="code_variable">derivada</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">lista</span><span class="code_operator">:</span><span class="code_function">makelist</span>([<span class="code_function">realpart</span>(<span class="code_function">F</span>(<span class="code_variable">z</span>)),<span class="code_function">imagpart</span>(<span class="code_function">F</span>(<span class="code_variable">z</span>))],<span class="code_variable">z</span>,<span class="code_number">1</span>,<span class="code_number">10</span>)<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">plot2d</span>(<span class="code_function">makelist</span>([<span class="code_variable">discrete</span>,<span class="code_variable">lista</span>[<span class="code_variable">j</span>]],<span class="code_variable">j</span>,<span class="code_number">1</span>,<span class="code_function">length</span>(<span class="code_variable">lista</span>)),[<span class="code_variable">style</span>,[<span class="code_variable">lines</span>,<span class="code_number">2</span>,<span class="code_number">2</span>]],[<span class="code_variable">x</span>,<span class="code_number">0</span>,<span class="code_number">3</span>],[<span class="code_variable">y</span>,<span class="code_number">−</span><span class="code_number">0</span><span class="code_number">.</span><span class="code_number">1</span>,<span class="code_number">1</span><span class="code_number">.</span><span class="code_number">1</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+ <HR>
+ <SMALL> Created with <A HREF="https://andrejv.github.io/wxmaxima/">wxMaxima</A>.</SMALL>
+ </BODY>
+</HTML>

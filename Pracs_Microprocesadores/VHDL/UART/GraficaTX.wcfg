@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GIT/Pracs_Microprocesadores/VHDL/UART/tb_uart_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_uart" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/tb_uart/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/tx_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/btn_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">btn_in</obj_property>
+      <obj_property name="ObjectShortName">btn_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/btn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">btn</obj_property>
+      <obj_property name="ObjectShortName">btn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/tx_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_ready</obj_property>
+      <obj_property name="ObjectShortName">tx_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/tx_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_out</obj_property>
+      <obj_property name="ObjectShortName">tx_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/actual_tx" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">actual_tx</obj_property>
+      <obj_property name="ObjectShortName">actual_tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/tx_start" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">tx_start</obj_property>
+      <obj_property name="ObjectShortName">tx_start</obj_property>
+      <obj_property name="label">tx_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/actual_btn" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">actual_btn</obj_property>
+      <obj_property name="ObjectShortName">actual_btn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/siguiente_btn" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">siguiente_btn</obj_property>
+      <obj_property name="ObjectShortName">siguiente_btn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/tsr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tsr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">tsr[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/reinicia" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reinicia</obj_property>
+      <obj_property name="ObjectShortName">reinicia</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/disable_tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">disable_tx</obj_property>
+      <obj_property name="ObjectShortName">disable_tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/enable_load" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_load</obj_property>
+      <obj_property name="ObjectShortName">enable_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/enable_tx_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_tx_ready</obj_property>
+      <obj_property name="ObjectShortName">enable_tx_ready</obj_property>
+   </wvobject>
+</wave_config>

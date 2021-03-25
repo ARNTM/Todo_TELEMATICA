@@ -1,0 +1,2 @@
+vhdl isim_temp "Display7Seg.vhd"
+vhdl isim_temp "tb_Display7Seg.vhd"

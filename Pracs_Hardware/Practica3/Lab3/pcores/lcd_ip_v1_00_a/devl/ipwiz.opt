@@ -1,0 +1,9 @@
+-batch 
+-create lcd_ip 
+-ver 1.00.a 
+-dir "C:\Xilinx\Practica3_Santos_Jose\CodigoFuente\Lab2_2018" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 1 
+-xps 
+-driver 

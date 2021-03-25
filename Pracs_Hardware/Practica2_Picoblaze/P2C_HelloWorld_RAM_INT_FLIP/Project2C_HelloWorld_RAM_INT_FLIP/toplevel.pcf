@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Dec 19 08:50:50 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rx" LOCATE = SITE "R7" LEVEL 1;
+COMP "LED" LOCATE = SITE "F12" LEVEL 1;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "reset" LOCATE = SITE "K17" LEVEL 1;
+COMP "tx" LOCATE = SITE "M14" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+SCHEMATIC END;
+

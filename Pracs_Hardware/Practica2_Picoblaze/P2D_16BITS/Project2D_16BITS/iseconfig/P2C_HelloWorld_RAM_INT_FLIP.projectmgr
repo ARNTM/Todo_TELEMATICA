@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="P2C_HelloWorld_RAM_INT_FLIP" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/toplevel - behavioral D:|GIT|Universidad|Pracs_Hardware|Practica2_Picoblaze|P2C_HelloWorld_RAM_INT_FLIP|Project2C_HelloWorld_RAM_INT_FLIP|toplevel_helloworld_RAM_Int.vhd/processor - picoblaze - Behavioral/arithmetic_group - arithmetic_process - low_level_definition</ClosedNode>
+         <ClosedNode>/toplevel - behavioral D:|GIT|Universidad|Pracs_Hardware|Practica2_Picoblaze|P2C_HelloWorld_RAM_INT_FLIP|Project2C_HelloWorld_RAM_INT_FLIP|toplevel_helloworld_RAM_Int.vhd/processor - picoblaze - Behavioral/data_registers - register_bank - Behavioral</ClosedNode>
+         <ClosedNode>/toplevel - behavioral D:|GIT|Universidad|Pracs_Hardware|Practica2_Picoblaze|P2C_HelloWorld_RAM_INT_FLIP|Project2C_HelloWorld_RAM_INT_FLIP|toplevel_helloworld_RAM_Int.vhd/processor - picoblaze - Behavioral/stack_memory - stack_ram - low_level_definition</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>data_registers - register_bank - Behavioral (D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/register_bank.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000027e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000027e0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>data_registers - register_bank - Behavioral (D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/register_bank.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ff000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ff0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a3000000040101000100000000000000000000000064ffffffff000000810000000000000004000000be00000001000000000000009d0000000100000000000000660000000100000000000001e20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>arithmatic.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000198000000010000000100000000000000000000000064ffffffff000000810000000000000001000001980000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001bd000000d001000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <CopyAdditionalFiles/>
+</Project>

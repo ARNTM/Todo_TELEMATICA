@@ -1,0 +1,13 @@
+D:\GIT\Universidad\Pracs_Laboratorio\RGB-YUV\bin\Debug\RGB-YUV.exe.config
+D:\GIT\Universidad\Pracs_Laboratorio\RGB-YUV\bin\Debug\RGB-YUV.exe
+D:\GIT\Universidad\Pracs_Laboratorio\RGB-YUV\bin\Debug\RGB-YUV.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\RGB-YUV\obj\Debug\RGB-YUV.csprojAssemblyReference.cache
+D:\GIT\Universidad\Pracs_Laboratorio\RGB-YUV\obj\Debug\RGB_YUV.genYUVMat.resources
+D:\GIT\Universidad\Pracs_Laboratorio\RGB-YUV\obj\Debug\RGB_YUV.Properties.Resources.resources
+D:\GIT\Universidad\Pracs_Laboratorio\RGB-YUV\obj\Debug\RGB-YUV.csproj.GenerateResource.cache
+D:\GIT\Universidad\Pracs_Laboratorio\RGB-YUV\obj\Debug\RGB-YUV.csproj.CoreCompileInputs.cache
+D:\GIT\Universidad\Pracs_Laboratorio\RGB-YUV\obj\Debug\RGB-YUV.exe
+D:\GIT\Universidad\Pracs_Laboratorio\RGB-YUV\obj\Debug\RGB-YUV.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\RGB-YUV\bin\Debug\es\RGB-YUV.resources.dll
+D:\GIT\Universidad\Pracs_Laboratorio\RGB-YUV\obj\Debug\RGB_YUV.genYUVMat.es.resources
+D:\GIT\Universidad\Pracs_Laboratorio\RGB-YUV\obj\Debug\es\RGB-YUV.resources.dll

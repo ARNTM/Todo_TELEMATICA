@@ -1,0 +1,28 @@
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 38 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 39 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 42 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 43 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 44 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 45 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 46 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 50 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 52 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 53 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 55 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 58 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 59 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 60 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 61 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 89 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 109 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 115 : Found opcode in column 1. (RETFIE)
+Warning[207] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 127 : Found label after column 1. (es1)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 146 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 157 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 168 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 179 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 190 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 195 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 200 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 208 : Found opcode in column 1. (RETURN)
+Warning[205] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\MANDO.ASM 210 : Found directive in column 1. (END)

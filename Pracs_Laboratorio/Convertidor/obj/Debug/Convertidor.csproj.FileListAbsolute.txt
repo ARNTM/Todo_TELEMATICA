@@ -1,0 +1,10 @@
+D:\GIT\Universidad\Pracs_Laboratorio\Convertidor\bin\Debug\Convertidor.exe.config
+D:\GIT\Universidad\Pracs_Laboratorio\Convertidor\bin\Debug\Convertidor.exe
+D:\GIT\Universidad\Pracs_Laboratorio\Convertidor\bin\Debug\Convertidor.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\Convertidor\obj\Debug\Convertidor.csprojAssemblyReference.cache
+D:\GIT\Universidad\Pracs_Laboratorio\Convertidor\obj\Debug\Convertidor.Form1.resources
+D:\GIT\Universidad\Pracs_Laboratorio\Convertidor\obj\Debug\Convertidor.Properties.Resources.resources
+D:\GIT\Universidad\Pracs_Laboratorio\Convertidor\obj\Debug\Convertidor.csproj.GenerateResource.cache
+D:\GIT\Universidad\Pracs_Laboratorio\Convertidor\obj\Debug\Convertidor.csproj.CoreCompileInputs.cache
+D:\GIT\Universidad\Pracs_Laboratorio\Convertidor\obj\Debug\Convertidor.exe
+D:\GIT\Universidad\Pracs_Laboratorio\Convertidor\obj\Debug\Convertidor.pdb

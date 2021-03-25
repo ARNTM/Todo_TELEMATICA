@@ -1,0 +1,674 @@
+MPASM  5.42                         MANDO.ASM   5-3-2019  10:39:25         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 ; _____ _____ _____      _____   _____      __  __                 _       
+                      00002 ;|  __ \_   _/ ____|    |  __ \ / ____|    |  \/  |               | |      
+                      00003 ;| |__) || || |     __ _| |__) | |   ______| \  / | __ _ _ __   __| | ___  
+                      00004 ;|  ___/ | || |    / _` |  _  /| |  |______| |\/| |/ _` | '_ \ / _` |/ _ \ 
+                      00005 ;| |    _| || |___| (_| | | \ \| |____     | |  | | (_| | | | | (_| | (_) |
+                      00006 ;|_|   |_____\_____\__,_|_|  \_\\_____|    |_|  |_|\__,_|_| |_|\__,_|\___/
+                      00007 ;-------------------------------------------------------
+                      00008                         LIST p=16F876A
+                      00009                         INCLUDE "p16f876a.inc"
+                      00001         LIST
+                      00002 
+                      00003 ;==========================================================================
+                      00004 ;  MPASM PIC16F876A processor include
+                      00005 ; 
+                      00006 ;  (c) Copyright 1999-2011 Microchip Technology, All rights reserved
+                      00007 ;==========================================================================
+                      00008 
+                      00513         LIST
+2007   3F79           00010                         __CONFIG _XT_OSC & _WDT_OFF & _LVP_OFF
+                      00011 ;-------------------------------------------------------
+  00000020            00012 TOKEN           EQU             0x20
+  00000021            00013 VALORB          EQU             0x21
+  00000022            00014 XOR                     EQU             0x22
+  00000023            00015 M                       EQU             0x23
+  00000024            00016 O                       EQU             0x24
+  00000025            00017 VEL                     EQU             0x25
+  00000026            00018 N                       EQU             0x26
+                      00019 ;-------------------------------------------------------
+0000                  00020                         ORG     0
+0000   2805           00021                         goto    inicio
+                      00022 
+0004                  00023                         ORG     4
+0004   2827           00024                         goto    ISR
+0005                  00025                         ORG     5
+                      00026 ;-------------------------------------------------------
+                      00027 
+0005                  00028 inicio
+0005   30E7           00029                         MOVLW   'ç' ; Siempre mandaremos primero esto para asegurarnos de que no existan
+                             interferencias con otros mandos
+0006   00A0           00030                         MOVWF   TOKEN ; Cargamos ç en TOKEN
+                      00031 
+0007   0806           00032                         MOVF    PORTB,0 
+0008   00A1           00033                         MOVWF   VALORB ; Hacemos copia de PORTB en VALORB, pasando por WREG (PORTB --> W
+                            REG --> VALORB)
+                      00034 
+0009   1683           00035                         BSF     STATUS,RP0 ; Cambiamos al banco 1
+                      00036                         
+000A   30FF           00037                         MOVLW   b'11111111'
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+000B   0086           00038                         MOVWF   TRISB ; Ponemos PORTB como entrada
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+000C   0085           00039                         MOVWF   TRISA ; Ponemos PORTA como entrada
+                      00040 
+MPASM  5.42                         MANDO.ASM   5-3-2019  10:39:25         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00041 ;##### Configuramos las entradas de PORTA como analógicas, ver página 112 para saber los valores de cada
+                             bit. ####      
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+000D   139F           00042                         BCF             ADCON1, ADFM ; Alineamos a la izquierda
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+000E   101F           00043                         BCF             ADCON1, PCFG0
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+000F   109F           00044                         BCF             ADCON1, PCFG1
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0010   111F           00045                         BCF             ADCON1, PCFG2
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0011   119F           00046                         BCF             ADCON1, PCFG3
+                      00047 ;#######################################################################################################
+                            ##########
+                      00048 
+0012   3019           00049                         MOVLW   .25
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0013   0099           00050                         MOVWF   SPBRG ; Asignamos el ratio de baudios para el modo asincrono (VER EN LA 
+                            TABLA DEL MANUAL REDUCIDO, SE PUDE ENCONTRAR EN LA PAGINA 98) 
+                      00051 
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0014   1518           00052                         BSF     TXSTA, BRGH ; Activamos el BIT para que el modo asincrono sea a baja vel
+                            ocidad (también se ve en la tabla)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0015   1698           00053                         BSF             TXSTA, TXEN ; Activamos el BIT que habilita la transmisión
+                      00054 
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0016   1281           00055                         BCF             OPTION_REG, T0CS ; Ponemos el BIT T0CS a 0 para indicar que usam
+                            os el reloj interno
+                      00056 
+                      00057 ;##### Configuramos el preescaler asignado al Timer0 (1:256)####
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0017   1181           00058                         BCF             OPTION_REG, PSA
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0018   1401           00059                         BSF             OPTION_REG, PS0
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0019   1481           00060                         BSF             OPTION_REG, PS1
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+001A   1501           00061                         BSF             OPTION_REG, PS2
+                      00062 ;###############################################################
+                      00063 
+001B   1283           00064                         BCF             STATUS,RP0 ; Cambiamos al banco 0
+                      00065 
+001C   141F           00066                         BSF             ADCON0, ADON ; Habilitamos la conversión A/D
+                      00067 
+001D   1798           00068                         BSF             RCSTA, SPEN ; Activamos el BIT para habilitar el puerto serie
+                      00069 
+001E   178B           00070                         BSF     INTCON, GIE ; Habilitamos el BIT de interrupciones - PAGINA 20 del manua
+                            l resumido
+001F   158B           00071                         BSF             INTCON, RBIE ; Habilitamos el BIT de interrupciones de RB - PAGI
+                            NA 20 del manual resumido
+0020   168B           00072                         BSF             INTCON, T0IE ; Habilitamos el BIT de overflow de TMR0 - PAGINA 2
+                            0 del manual resumido
+MPASM  5.42                         MANDO.ASM   5-3-2019  10:39:25         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0021   170B           00073                         BSF             INTCON, PEIE ; Habilitamos el BIT de interrupciones de periferic
+                            os - PAGINA 20 del manual resumido
+                      00074 
+0022   303D           00075                         MOVLW   .61
+0023   0081           00076                         MOVWF   TMR0 ; Ponemos TMR0 a 61
+                      00077 
+0024   3005           00078                         MOVLW   .5
+0025   00A6           00079                         MOVWF   N
+                      00080 
+0026                  00081 main
+0026   2826           00082         goto main
+                      00083 ;-------------------------------------------------------
+0027                  00084 ISR
+0027   180B           00085                         BTFSC   INTCON,RBIF ; Si RBIF es 0 saltamos la instrucción ISR_BOTON
+0028   282C           00086                         goto    ISR_BOTON
+0029   190B           00087                         BTFSC   INTCON,T0IF ; Si R0IF es 0 saltamos la instrucción ISR_VELOCIDAD
+002A   283B           00088                         goto    ISR_VELOCIDAD
+Warning[203]: Found opcode in column 1. (RETFIE)
+002B   0009           00089 RETFIE
+                      00090 
+002C                  00091 ISR_BOTON
+002C   0806           00092                         MOVF    PORTB,0 ; Movemos el valor del PORTB a WREG
+002D   0621           00093                         XORWF   VALORB,0
+002E   00A2           00094                         MOVWF   XOR
+002F   0806           00095                         MOVF    PORTB,0
+0030   00A1           00096                         MOVWF   VALORB
+                      00097 
+0031   100B           00098                         BCF             INTCON,RBIF ;Ponemos a 0 el FLAG de interrupcion de RBIF
+                      00099 
+0032   1BA2           00100                         BTFSC   XOR,7   ; Si el BIT 7 de XOR es 0 saltamos la instrucción
+0033   2853           00101                         goto gira_derecha
+0034   1B22           00102                         BTFSC   XOR,6   ; Si el BIT 6 de XOR es 0 saltamos la instrucción
+0035   285B           00103                         goto adelante
+0036   1AA2           00104                         BTFSC   XOR,5   ; Si el BIT 5 de XOR es 0 saltamos la instrucción
+0037   2863           00105                         goto gira_izquierda
+0038   1A22           00106                         BTFSC   XOR,4   ; Si el BIT 4 de XOR es 0 saltamos la instrucción
+0039   286B           00107                         goto atras
+                      00108 
+Warning[203]: Found opcode in column 1. (RETFIE)
+003A   0009           00109 RETFIE
+                      00110 
+003B                  00111 ISR_VELOCIDAD
+003B   303D           00112                         MOVLW   .61
+003C   0081           00113                         MOVWF   TMR0 ; Ponemos TMR0 a 61
+003D   0BA6           00114                         DECFSZ  N,1
+Warning[203]: Found opcode in column 1. (RETFIE)
+003E   0009           00115 RETFIE
+003F   3005           00116                         MOVLW   .5
+0040   0081           00117                         MOVWF   TMR0 ; Ponemos TMR0 a 61
+0041   110B           00118                         BCF     INTCON, T0IF ; ;Ponemos a 0 el FLAG de interrupcion de T0IE
+                      00119 
+                      00120 ;----- Seleccionamos el canal 2 ----
+0042   129F           00121                         BCF             ADCON0,CHS2
+MPASM  5.42                         MANDO.ASM   5-3-2019  10:39:25         PAGE  4
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0043   161F           00122                         BSF             ADCON0,CHS1
+0044   119F           00123                         BCF             ADCON0,CHS0
+                      00124 ;-----------------------------------
+0045   151F           00125                         BSF             ADCON0,GO ; Ponemos el BIT GO a 1 para comenzar la conversión
+                      00126 
+Warning[207]: Found label after column 1. (es1)
+0046                  00127                 es1
+0046   191F           00128                         BTFSC   ADCON0,GO  ; Comprobamos si el BIT GO se ha puesto a 0, ya que automatic
+                            amente cambia al finalizar la conversión
+0047   2846           00129                 goto es1
+                      00130 
+0048   081E           00131                         MOVF    ADRESH,0 ; Movemos los 8 bits más significativos de la convesión a WREG
+0049   00A5           00132                         MOVWF   VEL ; Copiamos WREG en VEL
+                      00133 
+                      00134 ;*************** DIVIDIR ENTRE 32 ********************
+004A   1003           00135                         BCF             STATUS,C
+004B   0CA5           00136                         RRF             VEL,1 
+004C   1003           00137                         BCF             STATUS,C
+004D   0CA5           00138                         RRF             VEL,1 
+004E   1003           00139                         BCF             STATUS,C
+004F   0CA5           00140                         RRF             VEL,1 
+0050   1003           00141                         BCF             STATUS,C
+                      00142 ;*****************************************************
+                      00143 
+0051   2076           00144                         CALL    envia_velocidad
+                      00145 
+Warning[203]: Found opcode in column 1. (RETFIE)
+0052   0009           00146 RETFIE
+                      00147 ;################### Movimientos ####################
+0053                  00148 gira_derecha ;Para girar a la derecha mandamos -> D
+0053   1F86           00149                         BTFSS   PORTB,RB7
+0054   2873           00150                         goto    parar
+                      00151 ;                       CALL    envia_token
+0055   3044           00152                         MOVLW   'D'     
+0056   0099           00153                         MOVWF   TXREG
+0057   0000           00154                         NOP
+0058   0000           00155                         NOP
+0059   2076           00156                         CALL    envia_velocidad
+Warning[203]: Found opcode in column 1. (RETFIE)
+005A   0009           00157 RETFIE
+                      00158 
+005B                  00159 adelante ;Para seguir recto mandamos -> W
+005B   1F06           00160                         BTFSS   PORTB,RB6
+005C   2873           00161                         goto    parar
+                      00162 ;                       CALL    envia_token
+005D   3057           00163                         MOVLW   'W'     
+005E   0099           00164                         MOVWF   TXREG
+005F   0000           00165                         NOP
+0060   0000           00166                         NOP
+0061   2076           00167                         CALL    envia_velocidad
+Warning[203]: Found opcode in column 1. (RETFIE)
+0062   0009           00168 RETFIE
+                      00169 
+MPASM  5.42                         MANDO.ASM   5-3-2019  10:39:25         PAGE  5
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0063                  00170 gira_izquierda ;Para girar a la izquierda mandamos -> A
+0063   1E86           00171                         BTFSS   PORTB,RB5
+0064   2873           00172                         goto    parar
+                      00173 ;                       CALL    envia_token
+0065   3041           00174                         MOVLW   'A'     
+0066   0099           00175                         MOVWF   TXREG
+0067   0000           00176                         NOP
+0068   0000           00177                         NOP
+0069   2076           00178                         CALL    envia_velocidad
+Warning[203]: Found opcode in column 1. (RETFIE)
+006A   0009           00179 RETFIE
+                      00180 
+006B                  00181 atras ;Para retroceder mandamos -> S
+006B   1E06           00182                         BTFSS   PORTB,RB4
+006C   2873           00183                         goto    parar
+                      00184 ;                       CALL    envia_token
+006D   3053           00185                         MOVLW   'S'     
+006E   0099           00186                         MOVWF   TXREG
+006F   0000           00187                         NOP
+0070   0000           00188                         NOP
+0071   2076           00189                         CALL    envia_velocidad
+Warning[203]: Found opcode in column 1. (RETFIE)
+0072   0009           00190 RETFIE
+                      00191 
+0073                  00192 parar
+0073   3050           00193                         MOVLW   'P'     
+0074   0099           00194                         MOVWF   TXREG
+Warning[203]: Found opcode in column 1. (RETFIE)
+0075   0009           00195 RETFIE
+                      00196 
+0076                  00197 envia_velocidad
+0076   0825           00198                         MOVF    VEL,0
+0077   0099           00199                         MOVWF   TXREG
+Warning[203]: Found opcode in column 1. (RETFIE)
+0078   0009           00200 RETFIE
+                      00201 
+                      00202 
+                      00203 ;####################################################
+                      00204 
+0079                  00205 envia_token
+0079   0820           00206                         MOVF    TOKEN,0
+007A   0099           00207                         MOVWF   TXREG           
+Warning[203]: Found opcode in column 1. (RETURN)
+007B   0008           00208 RETURN
+                      00209 
+Warning[205]: Found directive in column 1. (END)
+                      00210 END
+MPASM  5.42                         MANDO.ASM   5-3-2019  10:39:25         PAGE  6
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+ACKDT                             00000005
+ACKEN                             00000004
+ACKSTAT                           00000006
+ADCON0                            0000001F
+ADCON1                            0000009F
+ADCS0                             00000006
+ADCS1                             00000007
+ADCS2                             00000006
+ADDEN                             00000003
+ADFM                              00000007
+ADIE                              00000006
+ADIF                              00000006
+ADON                              00000000
+ADRESH                            0000001E
+ADRESL                            0000009E
+BCLIE                             00000003
+BCLIF                             00000003
+BF                                00000000
+BRGH                              00000002
+C                                 00000000
+C1INV                             00000004
+C1OUT                             00000006
+C2INV                             00000005
+C2OUT                             00000007
+CCP1CON                           00000017
+CCP1IE                            00000002
+CCP1IF                            00000002
+CCP1M0                            00000000
+CCP1M1                            00000001
+CCP1M2                            00000002
+CCP1M3                            00000003
+CCP1X                             00000005
+CCP1Y                             00000004
+CCP2CON                           0000001D
+CCP2IE                            00000000
+CCP2IF                            00000000
+CCP2M0                            00000000
+CCP2M1                            00000001
+CCP2M2                            00000002
+CCP2M3                            00000003
+CCP2X                             00000005
+CCP2Y                             00000004
+CCPR1                             00000015
+CCPR1H                            00000016
+CCPR1L                            00000015
+CCPR2                             0000001B
+CCPR2H                            0000001C
+CCPR2L                            0000001B
+CHS0                              00000003
+CHS1                              00000004
+CHS2                              00000005
+CIS                               00000003
+CKE                               00000006
+MPASM  5.42                         MANDO.ASM   5-3-2019  10:39:25         PAGE  7
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+CKP                               00000004
+CM0                               00000000
+CM1                               00000001
+CM2                               00000002
+CMCON                             0000009C
+CMIE                              00000006
+CMIF                              00000006
+CREN                              00000004
+CSRC                              00000007
+CVR0                              00000000
+CVR1                              00000001
+CVR2                              00000002
+CVR3                              00000003
+CVRCON                            0000009D
+CVREN                             00000007
+CVROE                             00000006
+CVRR                              00000005
+D                                 00000005
+DATA_ADDRESS                      00000005
+DC                                00000001
+D_A                               00000005
+D_NOT_A                           00000005
+EEADR                             0000010D
+EEADRH                            0000010F
+EECON1                            0000018C
+EECON2                            0000018D
+EEDATA                            0000010C
+EEDATH                            0000010E
+EEIE                              00000004
+EEIF                              00000004
+EEPGD                             00000007
+F                                 00000001
+FERR                              00000002
+FSR                               00000004
+GCEN                              00000007
+GIE                               00000007
+GO                                00000002
+GO_DONE                           00000002
+GO_NOT_DONE                       00000002
+I2C_DATA                          00000005
+I2C_READ                          00000002
+I2C_START                         00000003
+I2C_STOP                          00000004
+INDF                              00000000
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTF                              00000001
+IRP                               00000007
+ISR                               00000027
+ISR_BOTON                         0000002C
+ISR_VELOCIDAD                     0000003B
+M                                 00000023
+MPASM  5.42                         MANDO.ASM   5-3-2019  10:39:25         PAGE  8
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+N                                 00000026
+NOT_A                             00000005
+NOT_ADDRESS                       00000005
+NOT_BO                            00000000
+NOT_BOR                           00000000
+NOT_DONE                          00000002
+NOT_PD                            00000003
+NOT_POR                           00000001
+NOT_RBPU                          00000007
+NOT_RC8                           00000006
+NOT_T1SYNC                        00000002
+NOT_TO                            00000004
+NOT_TX8                           00000006
+NOT_W                             00000002
+NOT_WRITE                         00000002
+O                                 00000024
+OERR                              00000001
+OPTION_REG                        00000081
+P                                 00000004
+PCFG0                             00000000
+PCFG1                             00000001
+PCFG2                             00000002
+PCFG3                             00000003
+PCL                               00000002
+PCLATH                            0000000A
+PCON                              0000008E
+PEIE                              00000006
+PEN                               00000002
+PIE1                              0000008C
+PIE2                              0000008D
+PIR1                              0000000C
+PIR2                              0000000D
+PORTA                             00000005
+PORTB                             00000006
+PORTC                             00000007
+PR2                               00000092
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+R                                 00000002
+RA0                               00000000
+RA1                               00000001
+RA2                               00000002
+RA3                               00000003
+RA4                               00000004
+RA5                               00000005
+RB0                               00000000
+RB1                               00000001
+RB2                               00000002
+RB3                               00000003
+RB4                               00000004
+RB5                               00000005
+MPASM  5.42                         MANDO.ASM   5-3-2019  10:39:25         PAGE  9
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+RB6                               00000006
+RB7                               00000007
+RBIE                              00000003
+RBIF                              00000000
+RC0                               00000000
+RC1                               00000001
+RC2                               00000002
+RC3                               00000003
+RC4                               00000004
+RC5                               00000005
+RC6                               00000006
+RC7                               00000007
+RC8_9                             00000006
+RC9                               00000006
+RCD8                              00000000
+RCEN                              00000003
+RCIE                              00000005
+RCIF                              00000005
+RCREG                             0000001A
+RCSTA                             00000018
+RD                                00000000
+READ_WRITE                        00000002
+RP0                               00000005
+RP1                               00000006
+RSEN                              00000001
+RX9                               00000006
+RX9D                              00000000
+R_NOT_W                           00000002
+R_W                               00000002
+S                                 00000003
+SEN                               00000000
+SMP                               00000007
+SPBRG                             00000099
+SPEN                              00000007
+SREN                              00000005
+SSPADD                            00000093
+SSPBUF                            00000013
+SSPCON                            00000014
+SSPCON2                           00000091
+SSPEN                             00000005
+SSPIE                             00000003
+SSPIF                             00000003
+SSPM0                             00000000
+SSPM1                             00000001
+SSPM2                             00000002
+SSPM3                             00000003
+SSPOV                             00000006
+SSPSTAT                           00000094
+STATUS                            00000003
+SYNC                              00000004
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+MPASM  5.42                         MANDO.ASM   5-3-2019  10:39:25         PAGE 10
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+T0SE                              00000004
+T1CKPS0                           00000004
+T1CKPS1                           00000005
+T1CON                             00000010
+T1INSYNC                          00000002
+T1OSCEN                           00000003
+T1SYNC                            00000002
+T2CKPS0                           00000000
+T2CKPS1                           00000001
+T2CON                             00000012
+TMR0                              00000001
+TMR0IE                            00000005
+TMR0IF                            00000002
+TMR1CS                            00000001
+TMR1H                             0000000F
+TMR1IE                            00000000
+TMR1IF                            00000000
+TMR1L                             0000000E
+TMR1ON                            00000000
+TMR2                              00000011
+TMR2IE                            00000001
+TMR2IF                            00000001
+TMR2ON                            00000002
+TOKEN                             00000020
+TOUTPS0                           00000003
+TOUTPS1                           00000004
+TOUTPS2                           00000005
+TOUTPS3                           00000006
+TRISA                             00000085
+TRISA0                            00000000
+TRISA1                            00000001
+TRISA2                            00000002
+TRISA3                            00000003
+TRISA4                            00000004
+TRISA5                            00000005
+TRISB                             00000086
+TRISB0                            00000000
+TRISB1                            00000001
+TRISB2                            00000002
+TRISB3                            00000003
+TRISB4                            00000004
+TRISB5                            00000005
+TRISB6                            00000006
+TRISB7                            00000007
+TRISC                             00000087
+TRISC0                            00000000
+TRISC1                            00000001
+TRISC2                            00000002
+TRISC3                            00000003
+TRISC4                            00000004
+TRISC5                            00000005
+TRISC6                            00000006
+TRISC7                            00000007
+MPASM  5.42                         MANDO.ASM   5-3-2019  10:39:25         PAGE 11
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+TRMT                              00000001
+TX8_9                             00000006
+TX9                               00000006
+TX9D                              00000000
+TXD8                              00000000
+TXEN                              00000005
+TXIE                              00000004
+TXIF                              00000004
+TXREG                             00000019
+TXSTA                             00000098
+UA                                00000001
+VALORB                            00000021
+VEL                               00000025
+W                                 00000000
+WCOL                              00000007
+WR                                00000001
+WREN                              00000002
+WRERR                             00000003
+XOR                               00000022
+Z                                 00000002
+_BODEN_OFF                        00003FBF
+_BODEN_ON                         00003FFF
+_CONFIG                           00002007
+_CPD_OFF                          00003FFF
+_CPD_ON                           00003EFF
+_CP_ALL                           00001FFF
+_CP_OFF                           00003FFF
+_DEBUG_OFF                        00003FFF
+_DEBUG_ON                         000037FF
+_DEVID1                           00002006
+_HS_OSC                           00003FFE
+_IDLOC0                           00002000
+_IDLOC1                           00002001
+_IDLOC2                           00002002
+_IDLOC3                           00002003
+_LP_OSC                           00003FFC
+_LVP_OFF                          00003F7F
+_LVP_ON                           00003FFF
+_PWRTE_OFF                        00003FFF
+_PWRTE_ON                         00003FF7
+_RC_OSC                           00003FFF
+_WDT_OFF                          00003FFB
+_WDT_ON                           00003FFF
+_WRT_1FOURTH                      00003BFF
+_WRT_256                          00003DFF
+_WRT_HALF                         000039FF
+_WRT_OFF                          00003FFF
+_XT_OSC                           00003FFD
+__16F876A                         00000001
+adelante                          0000005B
+atras                             0000006B
+envia_token                       00000079
+envia_velocidad                   00000076
+MPASM  5.42                         MANDO.ASM   5-3-2019  10:39:25         PAGE 12
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+es1                               00000046
+gira_derecha                      00000053
+gira_izquierda                    00000063
+inicio                            00000005
+main                              00000026
+parar                             00000073
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : X---XXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0040 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXX----
+2000 : -------X-------- ---------------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:   121
+Program Memory Words Free:  8071
+
+
+Errors   :     0
+Warnings :    13 reported,     0 suppressed
+Messages :    15 reported,     0 suppressed
+
+

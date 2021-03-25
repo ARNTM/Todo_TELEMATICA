@@ -1,0 +1,37 @@
+#########################################
+Esta es la distribución v1.2 de PicoIDE.
+#########################################
+
+Mejoras con respecto a la v1.0:
+- Corregido error en el desensamblado de la instrucciones de E/S cuando el PORT_ID se especifica mediante
+un registro (instrucciones "INPORT sX,sY" y "OUTPORT Sx, Sy").
+
+Mejoras con respecto a la v1.1:
+- Corregido error en el desensamblado de la instrucción "XOR Sx, inmediato". 
+
+Bugs conocidos:
+- Algunas líneas con comentarios en ensamblador (que comienzan por ";") pueden dar error al ensamblar
+el programa si son demasiado largas o incluyen caracteres especiales. Se trata de un error del programa
+ensamblador (asm.exe), no del PicoIDE.
+
+############
+INSTALACIÓN
+############
+No es necesaria instalación alguna. Basta con descomprimir el archivo PicoIDEv1.2.zip en algún directorio del disco duro. Se creará una estructura de directorios con los siguientes componentes:
+
+   - El directorio principal contiene los archivos que componen la aplicación, un PicoIDE.bat para la ejecución automatizada en entornos windows, el programa ensamblador (asm3.exe) y este propio archivo.
+
+   - El directorio Iconos incluye los necesarios para la aplicación. 
+
+   - El directorio Fuentes incluye el código de la aplicación, que se distribuye bajo la LPG GNU. 
+
+   - El directorio ejemplos incluye 4 programas sencillos de aplicación: realización de la operación de multiplicación por software, un decodificador de binario a 7 segmentos que suma dos numeros de 4 bits y convierte el resultado a BCD para excitar dos displays de 7 segmentos, y dos programas para hacer una comunicación serie asíncrona, el primero utiliza una UART externa (no incluida en la distribución), y el segundo realiza la comunicación RS232 por software.
+
+   - El directorio doc incluye un sencillo manual del usuario y otro para modificar PicoIDE cuando en caso de que haya que adaptarlo a versiones modificadas del PicoBlaze. 
+
+   ¡Que lo disfruten!
+
+   Javier Garrigós
+   José Carlos Conesa, zirition@gmail.com
+   Feb-2005.
+

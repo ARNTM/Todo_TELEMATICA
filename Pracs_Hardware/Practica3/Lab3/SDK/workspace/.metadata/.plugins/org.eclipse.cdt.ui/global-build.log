@@ -1,0 +1,385 @@
+19:22:14 **** Build of project TestApp_bsp ****
+make -k all 
+libgen -hw ../Lab3_DIAGARN_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Lab3_DIAGARN_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
+-fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
+-fdata-sections"'.
+"Compiling common"
+"Compiling lldma"
+"Compiling standalone";
+"Compiling mpmc"
+"Compiling gpio"
+"Compiling bram"
+"Compiling uartlite"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project TestApp ****
+
+Nothing to build for project TestApp
+19:23:23 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../TestApp_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"lab3.d" -MT"lab3.d" -o "lab3.o" "../lab3.c"
+../lab3.c: In function 'XromInitInst':
+../lab3.c:33:3: error: 'XPAR_LCD_IP_0_BASEADDR' undeclared (first use in this function)
+../lab3.c:33:3: note: each undeclared identifier is reported only once for each function it appears in
+../lab3.c: In function 'XromWriteInst':
+../lab3.c:48:2: error: 'XPAR_LCD_IP_0_BASEADDR' undeclared (first use in this function)
+../lab3.c: In function 'XromWriteData':
+../lab3.c:74:2: error: 'XPAR_LCD_IP_0_BASEADDR' undeclared (first use in this function)
+../lab3.c: In function 'XromLCDInit':
+../lab3.c:131:2: error: 'XPAR_LCD_IP_0_BASEADDR' undeclared (first use in this function)
+../lab3.c: At top level:
+../lab3.c:260:1: warning: return type defaults to 'int' [-Wreturn-type]
+../lab3.c: In function 'main':
+../lab3.c:284:2: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../lab3.c:284:2: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+make: *** [lab3.o] Error 1
+19:24:36 **** Auto Build of project TestApp_bsp ****
+make -k all 
+'Finished building libraries'
+19:24:37 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../TestApp_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"lab3.d" -MT"lab3.d" -o "lab3.o" "../lab3.c"
+In file included from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749:0,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../../TestApp_bsp/microblaze_0/include/xparameters.h:749,
+                 from ../lab3.c:3:
+../../TestApp_bsp/microblaze_0/include/xparameters.h:749:25: error: #include nested too deeply
+../lab3.c: In function 'XromInitInst':
+../lab3.c:33:3: error: 'XPAR_LCD_IP_0_BASEADDR' undeclared (first use in this function)
+../lab3.c:33:3: note: each undeclared identifier is reported only once for each function it appears in
+../lab3.c: In function 'XromWriteInst':
+../lab3.c:48:2: error: 'XPAR_LCD_IP_0_BASEADDR' undeclared (first use in this function)
+../lab3.c: In function 'XromWriteData':
+../lab3.c:74:2: error: 'XPAR_LCD_IP_0_BASEADDR' undeclared (first use in this function)
+../lab3.c: In function 'XromLCDInit':
+../lab3.c:131:2: error: 'XPAR_LCD_IP_0_BASEADDR' undeclared (first use in this function)
+../lab3.c: At top level:
+../lab3.c:260:1: warning: return type defaults to 'int' [-Wreturn-type]
+../lab3.c: In function 'main':
+../lab3.c:284:2: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../lab3.c:284:2: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+make: *** [lab3.o] Error 1
+19:25:46 **** Auto Build of project TestApp_bsp ****
+make -k all 
+'Finished building libraries'
+19:25:46 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../TestApp_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"lab3.d" -MT"lab3.d" -o "lab3.o" "../lab3.c"
+../lab3.c: In function 'XromInitInst':
+../lab3.c:33:3: error: 'XPAR_LCD_IP_0_BASEADDR' undeclared (first use in this function)
+../lab3.c:33:3: note: each undeclared identifier is reported only once for each function it appears in
+../lab3.c: In function 'XromWriteInst':
+../lab3.c:48:2: error: 'XPAR_LCD_IP_0_BASEADDR' undeclared (first use in this function)
+../lab3.c: In function 'XromWriteData':
+../lab3.c:74:2: error: 'XPAR_LCD_IP_0_BASEADDR' undeclared (first use in this function)
+../lab3.c: In function 'XromLCDInit':
+../lab3.c:131:2: error: 'XPAR_LCD_IP_0_BASEADDR' undeclared (first use in this function)
+../lab3.c: At top level:
+../lab3.c:260:1: warning: return type defaults to 'int' [-Wreturn-type]
+../lab3.c: In function 'main':
+../lab3.c:284:2: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../lab3.c:284:2: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+make: *** [lab3.o] Error 1
+19:26:04 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../TestApp_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"lab3.d" -MT"lab3.d" -o "lab3.o" "../lab3.c"
+../lab3.c:260:1: warning: return type defaults to 'int' [-Wreturn-type]
+../lab3.c: In function 'main':
+../lab3.c:284:2: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../lab3.c:284:2: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+'Finished building: ../lab3.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TestApp_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TestApp.elf"  ./lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6962	    292	   2090	   9344	   2480	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck TestApp.elf -hw ../../Lab3_DIAGARN_hw_platform/system.xml -pe microblaze_0  |tee "TestApp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_DIAGARN_hw_platform/system.xml -pe
+microblaze_0 TestApp.elf 
+
+ELF file	: TestApp.elf
+elfcheck passed.
+'Finished building: TestApp.elf.elfcheck'
+' '
+19:26:50 **** Clean-only build of configuration Debug for project TestApp ****
+make clean 
+rm -rf  ./lab3.o  ./lab3.d  TestApp.elf.size  TestApp.elf.elfcheck  TestApp.elf
+' '
+19:26:50 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../TestApp_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"lab3.d" -MT"lab3.d" -o "lab3.o" "../lab3.c"
+../lab3.c:260:1: warning: return type defaults to 'int' [-Wreturn-type]
+../lab3.c: In function 'main':
+../lab3.c:284:2: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../lab3.c:284:2: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+'Finished building: ../lab3.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TestApp_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TestApp.elf"  ./lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6962	    292	    842	   8096	   1fa0	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck TestApp.elf -hw ../../Lab3_DIAGARN_hw_platform/system.xml -pe microblaze_0  |tee "TestApp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_DIAGARN_hw_platform/system.xml -pe
+microblaze_0 TestApp.elf 
+
+ELF file	: TestApp.elf
+elfcheck passed.
+'Finished building: TestApp.elf.elfcheck'
+' '
+19:27:57 **** Auto Build of project TestApp_bsp ****
+make -k all 
+'Finished building libraries'

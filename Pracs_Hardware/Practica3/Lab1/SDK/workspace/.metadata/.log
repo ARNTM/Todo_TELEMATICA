@@ -1,0 +1,21 @@
+!SESSION 2020-12-10 17:56:28.597 -----------------------------------------------
+eclipse.buildId=Release 14.7 Build SDK_P.20131013
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-12-10 18:01:20.942
+!MESSAGE An internal error occurred during: "Monitoring hardware specifications".
+!STACK 0
+java.lang.IllegalStateException: Workspace is closed.
+	at org.eclipse.core.resources.ResourcesPlugin.getWorkspace(ResourcesPlugin.java:399)
+	at com.xilinx.sdk.hw.HwProject.getHwProjectsInWorkspace(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.doMonitorTask(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.access$0(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor$1.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4687)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.doMonitor(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitorUtils$1.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

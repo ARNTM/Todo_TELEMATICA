@@ -1,0 +1,51 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+A_1	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	11;"	q	line:11
+A_2	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	20;"	q	line:20
+A_3	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	29;"	q	line:29
+B_1	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	12;"	q	line:12
+B_2	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	21;"	q	line:21
+B_3	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	30;"	q	line:30
+CR_1	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	17;"	q	line:17
+CR_2	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	26;"	q	line:26
+CR_3	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	36;"	q	line:36
+E_3	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	33;"	q	line:33
+G_1	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	14;"	q	line:14
+G_2	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	23;"	q	line:23
+G_3	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	32;"	q	line:32
+ISR	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	109;"	l	line:109
+ISR_RCIF	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	114;"	l	line:114
+ISR_TXIF	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	178;"	l	line:178
+LF_1	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	16;"	q	line:16
+LF_2	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	25;"	q	line:25
+LF_3	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	35;"	q	line:35
+L_1	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	10;"	q	line:10
+L_2	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	19;"	q	line:19
+L_3	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	28;"	q	line:28
+NUM1	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	15;"	q	line:15
+NUM2	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	24;"	q	line:24
+NUM5_1	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	13;"	q	line:13
+NUM5_2	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	22;"	q	line:22
+NUM5_3	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	31;"	q	line:31
+R_3	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	34;"	q	line:34
+comparar_dato1	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	133;"	l	line:133
+comparar_dato2_1	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	138;"	l	line:138
+comparar_dato_2	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	153;"	l	line:153
+comparar_datos	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	132;"	l	line:132
+comparar_paso	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	179;"	l	line:179
+dato	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	7;"	q	line:7
+dato1	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	126;"	l	line:126
+dato2	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	118;"	l	line:118
+dato_1	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	8;"	q	line:8
+dato_2	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	9;"	q	line:9
+enviar_LAB5_1	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	143;"	l	line:143
+enviar_LAB5_2	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	158;"	l	line:158
+enviar_LAB5_er	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	168;"	l	line:168
+main	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	106;"	l	line:106
+paso	D:\Universidad\2º GIT\Microprocesadores\Practica5\E3.asm	37;"	q	line:37

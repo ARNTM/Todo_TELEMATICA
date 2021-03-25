@@ -1,0 +1,95 @@
+  1   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  2   0              ;                 Ejemplo 3:
+  3   0              ;Transmision RS-232 por software. 
+  4   0              ;9600bps, 8 data bits, no parity, 1 stop bit, no flow control,
+  5   0              ; (C) Javier Garrigos. Ver. 1.0 - sep,2004
+  6   0              ; Ver. 1.2 - mayo, 2005(utiliza SR0 en lugar de SL0 para mejorar compatibilidad con hyperterminal)
+  7   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  8   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  9   0              ;declaracion de constantes y variables
+ 10   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;                  
+ 11   0              :CONSTANT   RS232        00           ; puerto comunicacion serie es el 00
+ 12   0              ; rx es el bit 0 del puerto 00(entrada)
+ 13   0              ; tx es el bit 7 del puerto 00(salida), esto es porque
+ 14   0              ;el hyperterminal envia primero el LSB, por eso vamos desplazando a la 
+ 15   0              ;izquierda al recibir, y al enviar tambien, con lo que enviamos de nuevo
+ 16   0              ;el LSB primero como corresponde para que lo entienda el hyperterminal
+ 17   0              :NAMEREG    S1           TXREG        ;buffer de transmision
+ 18   0              :NAMEREG    S2           RXREG        ;buffer de recepcion
+ 19   0              :NAMEREG    S3           CONTBIT      ;contador de los 8 bits de datos
+ 20   0              :NAMEREG    S4           CONT1        ;contador de retardo1
+ 21   0              :NAMEREG    S5           CONT2        ;contador de retardo2
+ 22   0              ;
+ 23   0              :ADDRESS    00           ;el programa se cargara a partir de la dir 00
+ 24   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 25   0              ;Inicio del programa
+ 26   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 27   0 START        ;esperamos a recibir un caracter
+ 28   0              :CALL       RECIBE       
+ 29   1              ;copiamos el caracter recibido al buffer de transmision
+ 30   1              :LOAD       TXREG        RXREG        
+ 31   2              ;ADD		txreg, 01
+ 32   2              ;hacemos el eco del caracter recibido
+ 33   2              :CALL       TRANSMITE    
+ 34   3              :JUMP       START        
+ 35   4              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 36   4              ;Rutina de recepcion de caracteres
+ 37   4              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 38   4 RECIBE       ;esperamos a que se reciba un bit de inicio
+ 39   4              :INPUT      RXREG        RS232        
+ 40   5              :AND        RXREG        80           
+ 41   6              :JUMP       NZ           RECIBE       
+ 42   7              :CALL       WAIT_05BIT   
+ 43   8              ;almacenamos los 8 bits de datos
+ 44   8              :LOAD       CONTBIT      09           
+ 45   9 NEXT_RX_BIT  :CALL       WAIT_1BIT    
+ 46   A              :SR0        RXREG        
+ 47   B              :INPUT      S0           RS232        
+ 48   C              :AND        S0           80           
+ 49   D              :OR         RXREG        S0           
+ 50   E              :SUB        CONTBIT      01           
+ 51   F              :JUMP       NZ           NEXT_RX_BIT  
+ 52  10              :RETURN     
+ 53  11              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 54  11              ;Rutina de transmision de caracteres
+ 55  11              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 56  11 TRANSMITE    ;enviamos un bit de inicio
+ 57  11              :LOAD       S0           00           
+ 58  12              :OUTPUT     S0           RS232        
+ 59  13              :CALL       WAIT_1BIT    
+ 60  14              ;enviamos los 8 bits de datos
+ 61  14              :LOAD       CONTBIT      08           
+ 62  15 NEXT_TX_BIT  :OUTPUT     TXREG        RS232        
+ 63  16              :CALL       WAIT_1BIT    
+ 64  17              :SR0        TXREG        
+ 65  18              :SUB        CONTBIT      01           
+ 66  19              :JUMP       NZ           NEXT_TX_BIT  
+ 67  1A              ;enviamos un bit de parada
+ 68  1A              :LOAD       S0           FF           
+ 69  1B              :OUTPUT     S0           RS232        
+ 70  1C              :CALL       WAIT_1BIT    
+ 71  1D              :RETURN     
+ 72  1E              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 73  1E              ;Rutina espera 1 bit (a 9600bps)
+ 74  1E              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 75  1E WAIT_1BIT    :LOAD       CONT1        0A           ;esta rutina ejecuta 1 + (1 + 10*(1 + 128*2 + 2)) + 1 = 2593 instruciones, 
+ 76  1F              ; aproximandose al numero teorico de (104,16us/bit)/(0,04 us/instruc) = 2604,1666 instr/bit necesarias.
+ 77  1F ESPERA2      :LOAD       CONT2        80           
+ 78  20 ESPERA1      :SUB        CONT2        01           
+ 79  21              :JUMP       NZ           ESPERA1      
+ 80  22              :SUB        CONT1        01           
+ 81  23              :JUMP       NZ           ESPERA2      
+ 82  24              :RETURN     
+ 83  25              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 84  25              ;Rutina espera 0,5 bits (bit de inicio, a 9600bps)
+ 85  25              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 86  25 WAIT_05BIT   :LOAD       CONT1        05           ;1 + (1 + 5*(1 + 128*2 + 2)) + 1 = 1298; aprox = 1302
+ 87  26 ESPERA4      :LOAD       CONT2        80           
+ 88  27 ESPERA3      :SUB        CONT2        01           
+ 89  28              :JUMP       NZ           ESPERA3      
+ 90  29              :SUB        CONT1        01           
+ 91  2A              :JUMP       NZ           ESPERA4      
+ 92  2B              :RETURN     
+ 93  2C              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 94  2C              ; FIN
+ 95  2C              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -1,0 +1,527 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:\GIT\Universidad\Pracs_Hardware\Practica3\Lab1\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_clock_generator_0_wrapper_xst.prj"
+Verilog Include Directory          : {"D:\GIT\Universidad\Pracs_Hardware\Practica3\Lab1\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc3s500efg320-4
+Output File Name                   : "../implementation/system_clock_generator_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_clock_generator_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd" in Library clock_generator_v4_03_a.
+Entity <dcm_module> compiled.
+Entity <dcm_module> (Architecture <STRUCT>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/pll_module.vhd" in Library clock_generator_v4_03_a.
+Entity <pll_module> compiled.
+Entity <pll_module> (Architecture <STRUCT>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/mmcm_module.vhd" in Library clock_generator_v4_03_a.
+Entity <mmcm_module> compiled.
+Entity <mmcm_module> (Architecture <STRUCT>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/plle2_module.vhd" in Library clock_generator_v4_03_a.
+Entity <plle2_module> compiled.
+Entity <plle2_module> (Architecture <STRUCT>) compiled.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab1/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" in Library clock_generator_0_v4_03_a.
+Entity <clock_generator> compiled.
+Entity <clock_generator> (Architecture <STRUCTURE>) compiled.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab1/hdl/system_clock_generator_0_wrapper.vhd" in Library work.
+Entity <system_clock_generator_0_wrapper> compiled.
+Entity <system_clock_generator_0_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <system_clock_generator_0_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <clock_generator> in library <clock_generator_0_v4_03_a> (architecture <STRUCTURE>) with generics.
+	C_CLK_GEN = "PASSED"
+	C_DEVICE = "3s500e"
+	C_FAMILY = "spartan3e"
+	C_PACKAGE = "fg320"
+	C_SPEEDGRADE = "-4"
+
+Analyzing hierarchy for entity <dcm_module> in library <clock_generator_v4_03_a> (architecture <STRUCT>) with generics.
+	C_CLK0_BUF = false
+	C_CLK180_BUF = false
+	C_CLK270_BUF = false
+	C_CLK2X180_BUF = false
+	C_CLK2X_BUF = false
+	C_CLK90_BUF = false
+	C_CLKDV_BUF = false
+	C_CLKDV_DIVIDE = 2.000000
+	C_CLKFB_BUF = false
+	C_CLKFX180_BUF = false
+	C_CLKFX_BUF = false
+	C_CLKFX_DIVIDE = 1
+	C_CLKFX_MULTIPLY = 4
+	C_CLKIN_BUF = false
+	C_CLKIN_DIVIDE_BY_2 = false
+	C_CLKIN_PERIOD = 10.000000
+	C_CLKOUT_PHASE_SHIFT = "NONE"
+	C_CLK_FEEDBACK = "1X"
+	C_DESKEW_ADJUST = "SYSTEM_SYNCHRONOUS"
+	C_DFS_FREQUENCY_MODE = "LOW"
+	C_DLL_FREQUENCY_MODE = "LOW"
+	C_DSS_MODE = "NONE"
+	C_DUTY_CYCLE_CORRECTION = true
+	C_EXT_RESET_HIGH = 0
+	C_FAMILY = "spartan3e"
+	C_PHASE_SHIFT = 0
+	C_STARTUP_WAIT = false
+
+Analyzing hierarchy for entity <dcm_module> in library <clock_generator_v4_03_a> (architecture <STRUCT>) with generics.
+	C_CLK0_BUF = false
+	C_CLK180_BUF = false
+	C_CLK270_BUF = false
+	C_CLK2X180_BUF = false
+	C_CLK2X_BUF = false
+	C_CLK90_BUF = false
+	C_CLKDV_BUF = false
+	C_CLKDV_DIVIDE = 2.000000
+	C_CLKFB_BUF = false
+	C_CLKFX180_BUF = false
+	C_CLKFX_BUF = false
+	C_CLKFX_DIVIDE = 1
+	C_CLKFX_MULTIPLY = 4
+	C_CLKIN_BUF = false
+	C_CLKIN_DIVIDE_BY_2 = false
+	C_CLKIN_PERIOD = 20.000000
+	C_CLKOUT_PHASE_SHIFT = "NONE"
+	C_CLK_FEEDBACK = "1X"
+	C_DESKEW_ADJUST = "SYSTEM_SYNCHRONOUS"
+	C_DFS_FREQUENCY_MODE = "LOW"
+	C_DLL_FREQUENCY_MODE = "LOW"
+	C_DSS_MODE = "NONE"
+	C_DUTY_CYCLE_CORRECTION = true
+	C_EXT_RESET_HIGH = 1
+	C_FAMILY = "spartan3e"
+	C_PHASE_SHIFT = 0
+	C_STARTUP_WAIT = false
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <system_clock_generator_0_wrapper> in library <work> (Architecture <STRUCTURE>).
+Entity <system_clock_generator_0_wrapper> analyzed. Unit <system_clock_generator_0_wrapper> generated.
+
+Analyzing generic Entity <clock_generator> in library <clock_generator_0_v4_03_a> (Architecture <STRUCTURE>).
+	C_CLK_GEN = "PASSED"
+	C_DEVICE = "3s500e"
+	C_FAMILY = "spartan3e"
+	C_PACKAGE = "fg320"
+	C_SPEEDGRADE = "-4"
+WARNING:Xst:753 - "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab1/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'CLK180' of component 'dcm_module'.
+WARNING:Xst:753 - "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab1/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'CLK2X180' of component 'dcm_module'.
+WARNING:Xst:753 - "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab1/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'CLKFX180' of component 'dcm_module'.
+WARNING:Xst:753 - "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab1/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 284: Unconnected output port 'STATUS' of component 'dcm_module'.
+WARNING:Xst:753 - "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab1/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'CLK180' of component 'dcm_module'.
+WARNING:Xst:753 - "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab1/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'CLK2X180' of component 'dcm_module'.
+WARNING:Xst:753 - "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab1/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'CLKFX180' of component 'dcm_module'.
+WARNING:Xst:753 - "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab1/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 397: Unconnected output port 'STATUS' of component 'dcm_module'.
+Entity <clock_generator> analyzed. Unit <clock_generator> generated.
+
+Analyzing generic Entity <dcm_module.1> in library <clock_generator_v4_03_a> (Architecture <STRUCT>).
+	C_CLK0_BUF = false
+	C_CLK180_BUF = false
+	C_CLK270_BUF = false
+	C_CLK2X180_BUF = false
+	C_CLK2X_BUF = false
+	C_CLK90_BUF = false
+	C_CLKDV_BUF = false
+	C_CLKDV_DIVIDE = 2.000000
+	C_CLKFB_BUF = false
+	C_CLKFX180_BUF = false
+	C_CLKFX_BUF = false
+	C_CLKFX_DIVIDE = 1
+	C_CLKFX_MULTIPLY = 4
+	C_CLKIN_BUF = false
+	C_CLKIN_DIVIDE_BY_2 = false
+	C_CLKIN_PERIOD = 10.000000
+	C_CLKOUT_PHASE_SHIFT = "NONE"
+	C_CLK_FEEDBACK = "1X"
+	C_DESKEW_ADJUST = "SYSTEM_SYNCHRONOUS"
+	C_DFS_FREQUENCY_MODE = "LOW"
+	C_DLL_FREQUENCY_MODE = "LOW"
+	C_DSS_MODE = "NONE"
+	C_DUTY_CYCLE_CORRECTION = true
+	C_EXT_RESET_HIGH = 0
+	C_FAMILY = "spartan3e"
+	C_PHASE_SHIFT = 0
+	C_STARTUP_WAIT = false
+WARNING:Xst:819 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd" line 259: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reset>
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "CLKIN_PERIOD =  10.0000000000000000" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.1>.
+Entity <dcm_module.1> analyzed. Unit <dcm_module.1> generated.
+
+Analyzing generic Entity <dcm_module.2> in library <clock_generator_v4_03_a> (Architecture <STRUCT>).
+	C_CLK0_BUF = false
+	C_CLK180_BUF = false
+	C_CLK270_BUF = false
+	C_CLK2X180_BUF = false
+	C_CLK2X_BUF = false
+	C_CLK90_BUF = false
+	C_CLKDV_BUF = false
+	C_CLKDV_DIVIDE = 2.000000
+	C_CLKFB_BUF = false
+	C_CLKFX180_BUF = false
+	C_CLKFX_BUF = false
+	C_CLKFX_DIVIDE = 1
+	C_CLKFX_MULTIPLY = 4
+	C_CLKIN_BUF = false
+	C_CLKIN_DIVIDE_BY_2 = false
+	C_CLKIN_PERIOD = 20.000000
+	C_CLKOUT_PHASE_SHIFT = "NONE"
+	C_CLK_FEEDBACK = "1X"
+	C_DESKEW_ADJUST = "SYSTEM_SYNCHRONOUS"
+	C_DFS_FREQUENCY_MODE = "LOW"
+	C_DLL_FREQUENCY_MODE = "LOW"
+	C_DSS_MODE = "NONE"
+	C_DUTY_CYCLE_CORRECTION = true
+	C_EXT_RESET_HIGH = 1
+	C_FAMILY = "spartan3e"
+	C_PHASE_SHIFT = 0
+	C_STARTUP_WAIT = false
+WARNING:Xst:819 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd" line 259: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reset>
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "CLKIN_PERIOD =  20.0000000000000000" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <Using_Virtex.DCM_INST> in unit <dcm_module.2>.
+Entity <dcm_module.2> analyzed. Unit <dcm_module.2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <dcm_module_1>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd".
+    Found 3-bit register for signal <rst_delay>.
+    Found 1-bit register for signal <rsti>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <dcm_module_1> synthesized.
+
+
+Synthesizing Unit <dcm_module_2>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd".
+    Found 3-bit register for signal <rst_delay>.
+    Found 1-bit register for signal <rsti>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <dcm_module_2> synthesized.
+
+
+Synthesizing Unit <clock_generator>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab1/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd".
+WARNING:Xst:1305 - Output <CLKFBOUT> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <PSEN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <PSDONE> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <CLKFBIN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PSCLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PSINCDEC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <net_vdd0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <net_gnd16> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <net_gnd1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <SIG_DCM1_STATUS> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <SIG_DCM1_PSINCDEC> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <SIG_DCM1_PSEN> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <SIG_DCM1_PSDONE> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <SIG_DCM1_PSCLK> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <SIG_DCM1_DSSEN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM1_CLKFX180_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM1_CLKFX180> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM1_CLKDV180_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM1_CLKDV180> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM1_CLK90_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM1_CLK2X180_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM1_CLK2X180> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM1_CLK270_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM1_CLK180_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM1_CLK180> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <SIG_DCM0_STATUS> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <SIG_DCM0_PSINCDEC> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <SIG_DCM0_PSEN> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <SIG_DCM0_PSDONE> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <SIG_DCM0_PSCLK> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <SIG_DCM0_DSSEN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM0_CLKFX180_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM0_CLKFX180> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM0_CLKDV180_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM0_CLKDV180> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM0_CLK2X180_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM0_CLK2X180> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM0_CLK270_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM0_CLK180_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_DCM0_CLK180> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <clock_generator> synthesized.
+
+
+Synthesizing Unit <system_clock_generator_0_wrapper>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab1/hdl/system_clock_generator_0_wrapper.vhd".
+Unit <system_clock_generator_0_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ 1-bit register                                        : 2
+ 3-bit register                                        : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance DCM0_INST/Using_Virtex.DCM_INST in unit clock_generator of type DCM has been replaced by DCM_SP
+INFO:Xst:1901 - Instance DCM1_INST/Using_Virtex.DCM_INST in unit clock_generator of type DCM has been replaced by DCM_SP
+
+Optimizing unit <system_clock_generator_0_wrapper> ...
+
+Optimizing unit <clock_generator> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+Processing Unit <system_clock_generator_0_wrapper> :
+INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <clock_generator_0/DCM1_INST/rsti> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <clock_generator_0/DCM0_INST/rsti> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <system_clock_generator_0_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/system_clock_generator_0_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 25
+
+Cell Usage :
+# BELS                             : 3
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 1
+# FlipFlops/Latches                : 8
+#      FDP                         : 8
+# Clock Buffers                    : 7
+#      BUFG                        : 7
+# DCMs                             : 2
+#      DCM_SP                      : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                        4  out of   4656     0%  
+ Number of Slice Flip Flops:              8  out of   9312     0%  
+ Number of 4 input LUTs:                  2  out of   9312     0%  
+ Number of IOs:                          25
+ Number of bonded IOBs:                   0  out of    232     0%  
+ Number of GCLKs:                         7  out of     24    29%  
+ Number of DCMs:                          2  out of      4    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                  | Load  |
+-----------------------------------+--------------------------------------------------------+-------+
+CLKIN                              | NONE(clock_generator_0/DCM1_INST/rst_delay_2)          | 4     |
+CLKIN                              | clock_generator_0/DCM1_INST/Using_Virtex.DCM_INST:CLK2X| 4     |
+-----------------------------------+--------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------+----------------------------------------------+-------+
+Control Signal                                                               | Buffer(FF name)                              | Load  |
+-----------------------------------------------------------------------------+----------------------------------------------+-------+
+RST                                                                          | NONE                                         | 4     |
+clock_generator_0/DCM0_INST/reset(clock_generator_0/DCM0_INST/reset1_INV_0:O)| NONE(clock_generator_0/DCM0_INST/rst_delay_0)| 4     |
+-----------------------------------------------------------------------------+----------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 2.638ns (Maximum Frequency: 379.075MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLKIN'
+  Clock period: 2.638ns (frequency: 379.075MHz)
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Delay:               1.319ns (Levels of Logic = 0)
+  Source:            clock_generator_0/DCM0_INST/rst_delay_1 (FF)
+  Destination:       clock_generator_0/DCM0_INST/rst_delay_2 (FF)
+  Source Clock:      CLKIN rising 2.0X
+  Destination Clock: CLKIN rising 2.0X
+
+  Data Path: clock_generator_0/DCM0_INST/rst_delay_1 to clock_generator_0/DCM0_INST/rst_delay_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.591   0.420  clock_generator_0/DCM0_INST/rst_delay_1 (clock_generator_0/DCM0_INST/rst_delay_1)
+     FDP:D                     0.308          clock_generator_0/DCM0_INST/rst_delay_2
+    ----------------------------------------
+    Total                      1.319ns (0.899ns logic, 0.420ns route)
+                                       (68.2% logic, 31.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.86 secs
+ 
+--> 
+
+Total memory usage is 4531344 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   50 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

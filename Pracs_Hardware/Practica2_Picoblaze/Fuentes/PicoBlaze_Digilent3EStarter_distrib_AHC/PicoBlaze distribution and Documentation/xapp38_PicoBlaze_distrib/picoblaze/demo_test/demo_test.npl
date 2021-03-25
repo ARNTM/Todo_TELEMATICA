@@ -1,0 +1,56 @@
+JDF F
+// Created by Project Navigator ver 1.0
+PROJECT demo_test
+DESIGN demo_test Normal
+DEVFAM xbr
+DEVFAMTIME 0
+DEVICE xc2c256
+DEVICETIME 1040076562
+DEVPKG TQ144
+DEVPKGTIME 1040076562
+DEVSPEED -5
+DEVSPEEDTIME 0
+FLOW XST VHDL
+FLOWTIME 1040076562
+STIMULUS demo_tb.tbw Normal
+MODULE ..\vhdl\logical_bus_processing.vhd
+MODSTYLE logical_bus_processing Normal
+MODULE ..\vhdl\interrupt_capture.vhd
+MODSTYLE interrupt_capture Normal
+MODULE ..\vhdl\interrupt_logic.vhd
+MODSTYLE interrupt_logic Normal
+MODULE ..\vhdl\register_and_flag_enable.vhd
+MODSTYLE register_and_flag_enable Normal
+MODULE ..\vhdl\stack_counter.vhd
+MODSTYLE stack_counter Normal
+MODULE ..\vhdl\program_counter.vhd
+MODSTYLE program_counter Normal
+MODULE ..\vhdl\carry_flag_logic.vhd
+MODSTYLE carry_flag_logic Normal
+MODULE ..\vhdl\stack_ram.vhd
+MODSTYLE stack_ram Normal
+MODSTYLE ram_x1s Normal
+MODULE ..\vhdl\T_state_and_Reset.vhd
+MODSTYLE t_state_and_reset Normal
+MODULE ..\vhdl\register_bank.vhd
+MODSTYLE ram_nx1 Normal
+MODSTYLE register_bank Normal
+MODULE ..\vhdl\zero_flag_logic.vhd
+MODSTYLE zero_flag_logic Normal
+MODULE ..\vhdl\shift_rotate.vhd
+MODSTYLE shift_rotate Normal
+MODULE ..\c\demo_test.vhd
+MODSTYLE demo_test Normal
+MODULE ..\vhdl\flip.vhd
+MODSTYLE flip Normal
+MODULE ..\vhdl\arithmatic.vhd
+MODSTYLE arithmetic_process Normal
+MODSTYLE addsub8 Normal
+MODULE ..\vhdl\IO_strobe_logic.vhd
+MODSTYLE io_strobe_logic Normal
+MODULE ..\vhdl\picoblaze.vhd
+MODSTYLE picoblaze Normal
+MODULE demo.vhd
+MODSTYLE demo Normal
+[STRATEGY-LIST]
+Normal=True

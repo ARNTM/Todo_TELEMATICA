@@ -1,0 +1,10 @@
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Servidor\bin\Debug\Servidor.exe.config
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Servidor\bin\Debug\Servidor.exe
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Servidor\bin\Debug\Servidor.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Servidor\obj\Debug\Servidor.csprojAssemblyReference.cache
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Servidor\obj\Debug\Servidor.Properties.Resources.resources
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Servidor\obj\Debug\Servidor.csproj.GenerateResource.cache
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Servidor\obj\Debug\Servidor.csproj.CoreCompileInputs.cache
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Servidor\obj\Debug\Servidor.exe
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Servidor\obj\Debug\Servidor.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Servidor\obj\Debug\Servidor.Servidor.resources

@@ -1,0 +1,6 @@
+{"GIT_type":"Position","x":0,"y":0}
+{"GIT_type":"Position","x":0,"y":1}
+{"GIT_type":"Position","x":1,"y":1}
+{"GIT_type":"Position","x":1,"y":2}
+{"GIT_type":"Polyline","name":"I'm a polyline","points":[{"GIT_type":"Position","x":0,"y":0},{"GIT_type":"Position","x":0,"y":1},{"GIT_type":"Position","x":1,"y":1},{"GIT_type":"Position","x":1,"y":2}]}
+{"GIT_type":"Polyline","name":"I'm a polyline","points":[{"GIT_type":"Position","x":1,"y":2},{"GIT_type":"Position","x":1,"y":1},{"GIT_type":"Position","x":0,"y":1},{"GIT_type":"Position","x":0,"y":0}]}

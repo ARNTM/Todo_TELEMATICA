@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+CENTESI	D:\Universidad\2º GIT\Microprocesadores\Practica3\E4.asm	8;"	q	line:8
+CONT1	D:\Universidad\2º GIT\Microprocesadores\Practica3\E4.asm	6;"	q	line:6
+CONT2	D:\Universidad\2º GIT\Microprocesadores\Practica3\E4.asm	7;"	q	line:7
+CONT3	D:\Universidad\2º GIT\Microprocesadores\Practica3\E4.asm	10;"	q	line:10
+ISR	D:\Universidad\2º GIT\Microprocesadores\Practica3\E4.asm	37;"	l	line:37
+RETFIE	D:\Universidad\2º GIT\Microprocesadores\Practica3\E4.asm	43;"	l	line:43
+RETURN	D:\Universidad\2º GIT\Microprocesadores\Practica3\E4.asm	67;"	l	line:67
+SEGUNDOS	D:\Universidad\2º GIT\Microprocesadores\Practica3\E4.asm	9;"	q	line:9
+bucle_retardo	D:\Universidad\2º GIT\Microprocesadores\Practica3\E4.asm	48;"	l	line:48
+centesi	D:\Universidad\2º GIT\Microprocesadores\Practica3\E4.asm	52;"	l	line:52
+inicio	D:\Universidad\2º GIT\Microprocesadores\Practica3\E4.asm	20;"	l	line:20
+main	D:\Universidad\2º GIT\Microprocesadores\Practica3\E4.asm	34;"	l	line:34
+retardo	D:\Universidad\2º GIT\Microprocesadores\Practica3\E4.asm	56;"	l	line:56

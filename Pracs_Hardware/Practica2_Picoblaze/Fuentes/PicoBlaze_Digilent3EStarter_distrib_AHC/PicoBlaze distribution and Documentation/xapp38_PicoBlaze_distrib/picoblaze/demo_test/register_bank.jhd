@@ -1,0 +1,3 @@
+MODULE register_bank
+   SUBMODULE ram_nx1
+MODULE ram_nx1

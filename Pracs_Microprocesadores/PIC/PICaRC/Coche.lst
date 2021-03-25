@@ -1,0 +1,649 @@
+MPASM  5.42                         COCHE.ASM   5-3-2019  10:51:27         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 ; _____ _____ _____      _____   _____       _____           _          
+                      00002 ;|  __ \_   _/ ____|    |  __ \ / ____|     / ____|         | |         
+                      00003 ;| |__) || || |     __ _| |__) | |   ______| |     ___   ___| |__   ___ 
+                      00004 ;|  ___/ | || |    / _` |  _  /| |  |______| |    / _ \ / __| '_ \ / _ \
+                      00005 ;| |    _| || |___| (_| | | \ \| |____     | |___| (_) | (__| | | |  __/
+                      00006 ;|_|   |_____\_____\__,_|_|  \_\\_____|     \_____\___/ \___|_| |_|\___|
+                      00007 ;-------------------------------------------------------
+                      00008                         LIST p=16F876A
+                      00009                         INCLUDE "p16f876a.inc"
+                      00001         LIST
+                      00002 
+                      00003 ;==========================================================================
+                      00004 ;  MPASM PIC16F876A processor include
+                      00005 ; 
+                      00006 ;  (c) Copyright 1999-2011 Microchip Technology, All rights reserved
+                      00007 ;==========================================================================
+                      00008 
+                      00513         LIST
+2007   3F79           00010                         __CONFIG _XT_OSC & _WDT_OFF & _LVP_OFF
+                      00011 ;-------------------------------------------------------
+  00000020            00012 TOKEN           EQU             0x20
+  00000021            00013 ADE             EQU             0x21
+  00000022            00014 IZQ             EQU             0x22
+  00000023            00015 ATR             EQU             0x23
+  00000024            00016 DER             EQU             0x24
+  00000025            00017 STOP            EQU             0x25
+  00000026            00018 VEL             EQU             0x26
+  00000027            00019 CONTROL         EQU             0x27
+  00000028            00020 N               EQU             0x28
+  00000029            00021 N_AUX           EQU             0x29
+  00000030            00022 ESTADO          EQU             0x30    
+                      00023 ;-------------------------------------------------------
+0000                  00024                         ORG     0
+0000   2805           00025                         goto    inicio
+                      00026 
+0004                  00027                         ORG     4
+0004   282E           00028                         goto    ISR
+0005                  00029                         ORG     5
+                      00030 ;-------------------------------------------------------
+                      00031 
+0005                  00032 inicio
+0005   30E7           00033                         MOVLW   'ç'
+0006   00A0           00034                         MOVWF   TOKEN
+                      00035                         
+0007   300B           00036                         MOVLW   b'00001011'
+0008   00A1           00037                         MOVWF   ADE
+0009   3009           00038                         MOVLW   b'00001001'
+000A   00A2           00039                         MOVWF   IZQ
+000B   3007           00040                         MOVLW   b'00000111'
+000C   00A3           00041                         MOVWF   ATR
+000D   300E           00042                         MOVLW   b'00001110'
+000E   00A4           00043                         MOVWF   DER
+000F   3000           00044                         MOVLW   b'00000000'
+MPASM  5.42                         COCHE.ASM   5-3-2019  10:51:27         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0010   00A5           00045                         MOVWF   STOP
+0011   3020           00046                         MOVLW   .32
+0012   00A8           00047                         MOVWF   N
+                      00048 
+0013   1683           00049                         BSF     STATUS,RP0 ; Cambiamos al banco 1
+0014   3080           00050                         MOVLW   b'10000000'
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0015   0087           00051                         MOVWF   TRISC ; Ponemos PORTC como salida
+0016   30FF           00052                         MOVLW   .255
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0017   0085           00053                         MOVWF   TRISA
+                      00054 
+0018   3019           00055                         MOVLW   .25
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0019   0099           00056                         MOVWF   SPBRG ; Asignamos el ratio de baudios para el modo asincrono (VER EN LA 
+                            TABLA DEL MANUAL REDUCIDO QUE SE PUDE ENCONTRAR EN LA PAGINA 98) 
+                      00057 
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+001A   1518           00058                         BSF     TXSTA, BRGH ; Activamos el BIT para que el modo asincrono sea a baja vel
+                            ocidad (también se ve en la tabla)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+001B   1698           00059                         BSF     TXSTA, TXEN ; Activamos el BIT que habilita la transmisión
+                      00060 
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+001C   168C           00061                         BSF     PIE1, RCIE ; Habilitamos el BIT de interrupcion de recepciones
+                      00062 
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+001D   1281           00063                         BCF     OPTION_REG, T0CS ; Ponemos el BIT T0CS a 0 para indicar que usamos el re
+                            loj interno
+                      00064 
+                      00065 ;##### Configuramos el preescaler asignado al Timer0 (1:256)####
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+001E   1581           00066                         BSF     OPTION_REG, PSA
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+001F   1401           00067                         BSF     OPTION_REG, PS0
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0020   1081           00068                         BCF     OPTION_REG, PS1
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0021   1101           00069                         BCF     OPTION_REG, PS2
+                      00070 ;###############################################################
+                      00071 
+0022   1283           00072                         BCF     STATUS,RP0 ; Cambiamos al banco 0
+                      00073 
+0023   1798           00074                         BSF     RCSTA, SPEN ; Activamos el BIT para habilitar el puerto serie
+0024   1618           00075                         BSF     RCSTA, CREN ; Habilitamos la recepción continua
+                      00076 
+0025   178B           00077                         BSF     INTCON, GIE ; Habilitamos el BIT de interrupciones - PAGINA 20 del manua
+                            l resumido
+0026   170B           00078                         BSF     INTCON,PEIE ; Habilitamos el BIT de interrupciones de perifericos - PAGI
+                            NA 20 del manual resumido
+0027   168B           00079                         BSF     INTCON, T0IE ; Habilitamos el BIT de overflow de TMR0 - PAGINA 20 del ma
+                            nual resumido
+                      00080                 
+MPASM  5.42                         COCHE.ASM   5-3-2019  10:51:27         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0028   3004           00081                         MOVLW   .4  ; 
+0029   0081           00082                         MOVWF   TMR0 ; Copiamos 4 en TMR0
+                      00083 
+002A   1027           00084                         BCF     CONTROL,0
+002B   0187           00085                         CLRF    PORTC
+002C   01B0           00086                         CLRF    ESTADO
+                      00087 
+002D                  00088 main
+002D   282D           00089         goto main
+                      00090 ;-------------------------------------------------------
+                      00091 
+002E                  00092 ISR
+                      00093 ;################### TOKEN ###################
+                      00094                 ;       MOVF    RCREG,0
+                      00095                 ;       SUBWF   TOKEN,0
+                      00096                 ;       BTFSC   STATUS,Z
+                      00097 ;RETFIE
+                      00098 ;#############################################
+                      00099 
+002E   1A8C           00100                         BTFSC   PIR1, RCIF ; RCIF = 1?  
+002F   2833           00101                         goto isr_mover
+0030   190B           00102                         BTFSC   INTCON,T0IF ; T0IF = 1?
+0031   284A           00103                         goto isr_velocidad
+Warning[203]: Found opcode in column 1. (RETFIE)
+0032   0009           00104 RETFIE
+                      00105 ;-------------------------------------------------------
+0033                  00106 isr_mover
+0033   081A           00107                         MOVF    RCREG,0 ; Mueve RCREG a WREG
+0034   3C57           00108                         SUBLW   'W' ; Restamos W - WREG
+0035   1903           00109                         BTFSC   STATUS,Z ; Si el resultado es 0, Z -> 1, si Z = 0, salta.
+0036   2863           00110                         goto adelante   
+0037   081A           00111                         MOVF    RCREG,0 ; Mueve RCREG a WREG
+0038   3C41           00112                         SUBLW   'A' ; Restamos A - WREG
+0039   1903           00113                         BTFSC   STATUS,Z ; Si el resultado es 0, Z -> 1, si Z = 0, salta.
+003A   2866           00114                         goto gira_izquierda
+003B   081A           00115                         MOVF    RCREG,0 ; Mueve RCREG a WREG
+003C   3C53           00116                         SUBLW   'S' ; Restamos S - WREG
+003D   1903           00117                         BTFSC   STATUS,Z ; Si el resultado es 0, Z -> 1, si Z = 0, salta.
+003E   2869           00118                         goto atras
+003F   081A           00119                         MOVF    RCREG,0 ; Mueve RCREG a WREG
+0040   3C44           00120                         SUBLW   'D' ; Restamos D - WREG
+0041   1903           00121                         BTFSC   STATUS,Z ; Si el resultado es 0, Z -> 1, si Z = 0, salta.
+0042   286C           00122                         goto gira_derecha
+0043   081A           00123                         MOVF    RCREG,0 ; Mueve RCREG a WREG
+0044   3C50           00124                         SUBLW   'P' ; Restamos P - WREG
+0045   1903           00125                         BTFSC   STATUS,Z ; Si el resultado es 0, Z -> 1, si Z = 0, salta.
+0046   2860           00126                         goto parar
+0047   081A           00127                         MOVF    RCREG,0 ; Mueve RCREG a WREG
+0048   00A6           00128                         MOVWF   VEL             ; Copiamos WREG en VEL
+Warning[203]: Found opcode in column 1. (RETFIE)
+0049   0009           00129 RETFIE
+                      00130 
+004A                  00131 isr_velocidad
+MPASM  5.42                         COCHE.ASM   5-3-2019  10:51:27         PAGE  4
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+004A   110B           00132                         BCF     INTCON, T0IF ;Ponemos a 0 el FLAG de interrupcion de T0IE
+004B   1827           00133                         BTFSC   CONTROL,0 ; CONTROL = 1?
+004C   2853           00134                         goto segundo_paso
+004D   0826           00135                         MOVF    VEL,0
+004E   00A9           00136                         MOVWF   N_AUX
+004F   0BA9           00137                         DECFSZ  N_AUX,1
+0050   285A           00138                         goto    t_on
+0051   1427           00139                         BSF     CONTROL,0 ; Ponemos BIT 0 de control a 1 para comprobar si es la primera
+                             vez que entramos en isr_velocidad o la segunda                 
+Warning[203]: Found opcode in column 1. (RETFIE)
+0052   0009           00140 RETFIE
+                      00141 
+0053                  00142 segundo_paso
+0053   0828           00143                         MOVF    N,0
+0054   3C26           00144                         SUBLW   VEL
+0055   00A9           00145                         MOVWF   N_AUX
+0056   0BA9           00146                         DECFSZ  N_AUX,1
+0057   285D           00147                         goto    t_off
+0058   1027           00148                         BCF     CONTROL,0 ; Ponemos BIT 0 de control a 0 para comprobar si es la primera
+                             vez que entramos en isr_velocidad o la segunda
+Warning[203]: Found opcode in column 1. (RETFIE)
+0059   0009           00149 RETFIE
+                      00150 
+                      00151 ;-------------------------------------------------------
+005A                  00152 t_on
+005A   0830           00153                         MOVF    ESTADO,0
+005B   0087           00154                         MOVWF   PORTC   
+Warning[203]: Found opcode in column 1. (RETFIE)
+005C   0009           00155 RETFIE
+                      00156 ;--------
+005D                  00157 t_off
+                      00158                 ;       MOVF    STOP,0
+005D   01B0           00159                         CLRF    ESTADO
+005E   0187           00160                         CLRF    PORTC ; Copiamos STOP en PORTC
+Warning[203]: Found opcode in column 1. (RETFIE)
+005F   0009           00161 RETFIE
+                      00162 ;--------
+0060                  00163 parar
+                      00164                 ;       MOVF    STOP,0
+0060   01B0           00165                         CLRF    ESTADO
+0061   0187           00166                         CLRF    PORTC ; Copiamos STOP en PORTC
+Warning[203]: Found opcode in column 1. (RETFIE)
+0062   0009           00167 RETFIE
+                      00168 ;--------
+0063                  00169 adelante
+0063   0821           00170                         MOVF    ADE,0
+0064   00B0           00171                         MOVWF   ESTADO ; Copiamos ADE en ESTADO 
+Warning[203]: Found opcode in column 1. (RETFIE)
+0065   0009           00172 RETFIE
+                      00173 ;--------
+0066                  00174 gira_izquierda
+0066   0822           00175                         MOVF    IZQ,0
+0067   00B0           00176                         MOVWF   ESTADO ; Copiamos IZQ en ESTADO
+MPASM  5.42                         COCHE.ASM   5-3-2019  10:51:27         PAGE  5
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[203]: Found opcode in column 1. (RETFIE)
+0068   0009           00177 RETFIE
+                      00178 ;--------
+0069                  00179 atras
+0069   0823           00180                         MOVF    ATR,0
+006A   00B0           00181                         MOVWF   ESTADO ; Copiamos ATR en ESTADO
+Warning[203]: Found opcode in column 1. (RETFIE)
+006B   0009           00182 RETFIE
+                      00183 ;--------
+006C                  00184 gira_derecha
+006C   0824           00185                         MOVF    DER,0
+006D   00B0           00186                         MOVWF   ESTADO ; Copiamos DER en ESTADO
+Warning[203]: Found opcode in column 1. (RETFIE)
+006E   0009           00187 RETFIE
+                      00188 ;-------------------------------------------------------
+                      00189 
+Warning[205]: Found directive in column 1. (END)
+                      00190 END
+MPASM  5.42                         COCHE.ASM   5-3-2019  10:51:27         PAGE  6
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+ACKDT                             00000005
+ACKEN                             00000004
+ACKSTAT                           00000006
+ADCON0                            0000001F
+ADCON1                            0000009F
+ADCS0                             00000006
+ADCS1                             00000007
+ADCS2                             00000006
+ADDEN                             00000003
+ADE                               00000021
+ADFM                              00000007
+ADIE                              00000006
+ADIF                              00000006
+ADON                              00000000
+ADRESH                            0000001E
+ADRESL                            0000009E
+ATR                               00000023
+BCLIE                             00000003
+BCLIF                             00000003
+BF                                00000000
+BRGH                              00000002
+C                                 00000000
+C1INV                             00000004
+C1OUT                             00000006
+C2INV                             00000005
+C2OUT                             00000007
+CCP1CON                           00000017
+CCP1IE                            00000002
+CCP1IF                            00000002
+CCP1M0                            00000000
+CCP1M1                            00000001
+CCP1M2                            00000002
+CCP1M3                            00000003
+CCP1X                             00000005
+CCP1Y                             00000004
+CCP2CON                           0000001D
+CCP2IE                            00000000
+CCP2IF                            00000000
+CCP2M0                            00000000
+CCP2M1                            00000001
+CCP2M2                            00000002
+CCP2M3                            00000003
+CCP2X                             00000005
+CCP2Y                             00000004
+CCPR1                             00000015
+CCPR1H                            00000016
+CCPR1L                            00000015
+CCPR2                             0000001B
+CCPR2H                            0000001C
+CCPR2L                            0000001B
+CHS0                              00000003
+CHS1                              00000004
+CHS2                              00000005
+MPASM  5.42                         COCHE.ASM   5-3-2019  10:51:27         PAGE  7
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+CIS                               00000003
+CKE                               00000006
+CKP                               00000004
+CM0                               00000000
+CM1                               00000001
+CM2                               00000002
+CMCON                             0000009C
+CMIE                              00000006
+CMIF                              00000006
+CONTROL                           00000027
+CREN                              00000004
+CSRC                              00000007
+CVR0                              00000000
+CVR1                              00000001
+CVR2                              00000002
+CVR3                              00000003
+CVRCON                            0000009D
+CVREN                             00000007
+CVROE                             00000006
+CVRR                              00000005
+D                                 00000005
+DATA_ADDRESS                      00000005
+DC                                00000001
+DER                               00000024
+D_A                               00000005
+D_NOT_A                           00000005
+EEADR                             0000010D
+EEADRH                            0000010F
+EECON1                            0000018C
+EECON2                            0000018D
+EEDATA                            0000010C
+EEDATH                            0000010E
+EEIE                              00000004
+EEIF                              00000004
+EEPGD                             00000007
+ESTADO                            00000030
+F                                 00000001
+FERR                              00000002
+FSR                               00000004
+GCEN                              00000007
+GIE                               00000007
+GO                                00000002
+GO_DONE                           00000002
+GO_NOT_DONE                       00000002
+I2C_DATA                          00000005
+I2C_READ                          00000002
+I2C_START                         00000003
+I2C_STOP                          00000004
+INDF                              00000000
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTF                              00000001
+MPASM  5.42                         COCHE.ASM   5-3-2019  10:51:27         PAGE  8
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+IRP                               00000007
+ISR                               0000002E
+IZQ                               00000022
+N                                 00000028
+NOT_A                             00000005
+NOT_ADDRESS                       00000005
+NOT_BO                            00000000
+NOT_BOR                           00000000
+NOT_DONE                          00000002
+NOT_PD                            00000003
+NOT_POR                           00000001
+NOT_RBPU                          00000007
+NOT_RC8                           00000006
+NOT_T1SYNC                        00000002
+NOT_TO                            00000004
+NOT_TX8                           00000006
+NOT_W                             00000002
+NOT_WRITE                         00000002
+N_AUX                             00000029
+OERR                              00000001
+OPTION_REG                        00000081
+P                                 00000004
+PCFG0                             00000000
+PCFG1                             00000001
+PCFG2                             00000002
+PCFG3                             00000003
+PCL                               00000002
+PCLATH                            0000000A
+PCON                              0000008E
+PEIE                              00000006
+PEN                               00000002
+PIE1                              0000008C
+PIE2                              0000008D
+PIR1                              0000000C
+PIR2                              0000000D
+PORTA                             00000005
+PORTB                             00000006
+PORTC                             00000007
+PR2                               00000092
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+R                                 00000002
+RA0                               00000000
+RA1                               00000001
+RA2                               00000002
+RA3                               00000003
+RA4                               00000004
+RA5                               00000005
+RB0                               00000000
+RB1                               00000001
+RB2                               00000002
+MPASM  5.42                         COCHE.ASM   5-3-2019  10:51:27         PAGE  9
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+RB3                               00000003
+RB4                               00000004
+RB5                               00000005
+RB6                               00000006
+RB7                               00000007
+RBIE                              00000003
+RBIF                              00000000
+RC0                               00000000
+RC1                               00000001
+RC2                               00000002
+RC3                               00000003
+RC4                               00000004
+RC5                               00000005
+RC6                               00000006
+RC7                               00000007
+RC8_9                             00000006
+RC9                               00000006
+RCD8                              00000000
+RCEN                              00000003
+RCIE                              00000005
+RCIF                              00000005
+RCREG                             0000001A
+RCSTA                             00000018
+RD                                00000000
+READ_WRITE                        00000002
+RP0                               00000005
+RP1                               00000006
+RSEN                              00000001
+RX9                               00000006
+RX9D                              00000000
+R_NOT_W                           00000002
+R_W                               00000002
+S                                 00000003
+SEN                               00000000
+SMP                               00000007
+SPBRG                             00000099
+SPEN                              00000007
+SREN                              00000005
+SSPADD                            00000093
+SSPBUF                            00000013
+SSPCON                            00000014
+SSPCON2                           00000091
+SSPEN                             00000005
+SSPIE                             00000003
+SSPIF                             00000003
+SSPM0                             00000000
+SSPM1                             00000001
+SSPM2                             00000002
+SSPM3                             00000003
+SSPOV                             00000006
+SSPSTAT                           00000094
+STATUS                            00000003
+STOP                              00000025
+MPASM  5.42                         COCHE.ASM   5-3-2019  10:51:27         PAGE 10
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+SYNC                              00000004
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0SE                              00000004
+T1CKPS0                           00000004
+T1CKPS1                           00000005
+T1CON                             00000010
+T1INSYNC                          00000002
+T1OSCEN                           00000003
+T1SYNC                            00000002
+T2CKPS0                           00000000
+T2CKPS1                           00000001
+T2CON                             00000012
+TMR0                              00000001
+TMR0IE                            00000005
+TMR0IF                            00000002
+TMR1CS                            00000001
+TMR1H                             0000000F
+TMR1IE                            00000000
+TMR1IF                            00000000
+TMR1L                             0000000E
+TMR1ON                            00000000
+TMR2                              00000011
+TMR2IE                            00000001
+TMR2IF                            00000001
+TMR2ON                            00000002
+TOKEN                             00000020
+TOUTPS0                           00000003
+TOUTPS1                           00000004
+TOUTPS2                           00000005
+TOUTPS3                           00000006
+TRISA                             00000085
+TRISA0                            00000000
+TRISA1                            00000001
+TRISA2                            00000002
+TRISA3                            00000003
+TRISA4                            00000004
+TRISA5                            00000005
+TRISB                             00000086
+TRISB0                            00000000
+TRISB1                            00000001
+TRISB2                            00000002
+TRISB3                            00000003
+TRISB4                            00000004
+TRISB5                            00000005
+TRISB6                            00000006
+TRISB7                            00000007
+TRISC                             00000087
+TRISC0                            00000000
+TRISC1                            00000001
+TRISC2                            00000002
+TRISC3                            00000003
+MPASM  5.42                         COCHE.ASM   5-3-2019  10:51:27         PAGE 11
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+TRISC4                            00000004
+TRISC5                            00000005
+TRISC6                            00000006
+TRISC7                            00000007
+TRMT                              00000001
+TX8_9                             00000006
+TX9                               00000006
+TX9D                              00000000
+TXD8                              00000000
+TXEN                              00000005
+TXIE                              00000004
+TXIF                              00000004
+TXREG                             00000019
+TXSTA                             00000098
+UA                                00000001
+VEL                               00000026
+W                                 00000000
+WCOL                              00000007
+WR                                00000001
+WREN                              00000002
+WRERR                             00000003
+Z                                 00000002
+_BODEN_OFF                        00003FBF
+_BODEN_ON                         00003FFF
+_CONFIG                           00002007
+_CPD_OFF                          00003FFF
+_CPD_ON                           00003EFF
+_CP_ALL                           00001FFF
+_CP_OFF                           00003FFF
+_DEBUG_OFF                        00003FFF
+_DEBUG_ON                         000037FF
+_DEVID1                           00002006
+_HS_OSC                           00003FFE
+_IDLOC0                           00002000
+_IDLOC1                           00002001
+_IDLOC2                           00002002
+_IDLOC3                           00002003
+_LP_OSC                           00003FFC
+_LVP_OFF                          00003F7F
+_LVP_ON                           00003FFF
+_PWRTE_OFF                        00003FFF
+_PWRTE_ON                         00003FF7
+_RC_OSC                           00003FFF
+_WDT_OFF                          00003FFB
+_WDT_ON                           00003FFF
+_WRT_1FOURTH                      00003BFF
+_WRT_256                          00003DFF
+_WRT_HALF                         000039FF
+_WRT_OFF                          00003FFF
+_XT_OSC                           00003FFD
+__16F876A                         00000001
+adelante                          00000063
+atras                             00000069
+MPASM  5.42                         COCHE.ASM   5-3-2019  10:51:27         PAGE 12
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+gira_derecha                      0000006C
+gira_izquierda                    00000066
+inicio                            00000005
+isr_mover                         00000033
+isr_velocidad                     0000004A
+main                              0000002D
+parar                             00000060
+segundo_paso                      00000053
+t_off                             0000005D
+t_on                              0000005A
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : X---XXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0040 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXX- ----------------
+2000 : -------X-------- ---------------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:   108
+Program Memory Words Free:  8084
+
+
+Errors   :     0
+Warnings :    12 reported,     0 suppressed
+Messages :    11 reported,     0 suppressed
+
+

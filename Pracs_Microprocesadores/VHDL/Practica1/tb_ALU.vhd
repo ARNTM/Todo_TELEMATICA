@@ -1,0 +1,153 @@
+--------------------------------------------------------------------------------
+-- Company: 
+-- Engineer:
+--
+-- Create Date:   09:43:01 05/16/2019
+-- Design Name:   
+-- Module Name:   D:/GIT/Pracs_Microprocesadores/VHDL/Practica1/tb_ALU.vhd
+-- Project Name:  Practica1
+-- Target Device:  
+-- Tool versions:  
+-- Description:   
+-- 
+-- VHDL Test Bench Created by ISE for module: ALU
+-- 
+-- Dependencies:
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+--
+-- Notes: 
+-- This testbench has been automatically generated using types std_logic and
+-- std_logic_vector for the ports of the unit under test.  Xilinx recommends
+-- that these types always be used for the top-level I/O of a design in order
+-- to guarantee that the testbench will bind correctly to the post-implementation 
+-- simulation model.
+--------------------------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+ 
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--USE ieee.numeric_std.ALL;
+ 
+ENTITY tb_ALU IS
+END tb_ALU;
+ 
+ARCHITECTURE behavior OF tb_ALU IS 
+ 
+    -- Component Declaration for the Unit Under Test (UUT)
+ 
+    COMPONENT ALU
+    PORT(
+         clk : IN  std_logic;
+         reset : IN  std_logic;
+         A_in : IN  std_logic_vector(7 downto 0);
+         B_in : IN  std_logic_vector(7 downto 0);
+         OP_in : IN  std_logic_vector(4 downto 0);
+         A_out : OUT  std_logic_vector(7 downto 0);
+         B_out : OUT  std_logic_vector(7 downto 0);
+         LEDs : OUT  std_logic_vector(7 downto 0);
+         TipoOP_out : OUT  std_logic_vector(1 downto 0)
+        );
+    END COMPONENT;
+    
+
+   --Inputs
+   signal clk : std_logic := '0';
+   signal reset : std_logic := '0';
+   signal A_in : std_logic_vector(7 downto 0) := (others => '0');
+   signal B_in : std_logic_vector(7 downto 0) := (others => '0');
+   signal OP_in : std_logic_vector(4 downto 0) := (others => '0');
+
+ 	--Outputs
+   signal A_out : std_logic_vector(7 downto 0);
+   signal B_out : std_logic_vector(7 downto 0);
+   signal LEDs : std_logic_vector(7 downto 0);
+   signal TipoOP_out : std_logic_vector(1 downto 0);
+
+   -- Clock period definitions
+   constant clk_period : time := 20 ns;
+ 
+BEGIN
+ 
+	-- Instantiate the Unit Under Test (UUT)
+   uut: ALU PORT MAP (
+          clk => clk,
+          reset => reset,
+          A_in => A_in,
+          B_in => B_in,
+          OP_in => OP_in,
+          A_out => A_out,
+          B_out => B_out,
+          LEDs => LEDs,
+          TipoOP_out => TipoOP_out
+        );
+
+   -- Clock process definitions
+   clk_process :process
+   begin
+		clk <= '0';
+		wait for clk_period/2;
+		clk <= '1';
+		wait for clk_period/2;
+   end process;
+ 
+
+   -- Stimulus process
+   stim_proc: process
+   begin		
+		-- A AND B
+		A_in <= "01110001";
+		B_in <= "11010100";
+		OP_in <= "00010";
+		
+      -- hold reset state for 100 ns.
+		reset <= '1';
+      wait for 85 ns;	
+		reset <= '0';
+      -- insert stimulus here 
+		
+		wait for 115 ns;	
+		
+		-- A OR B
+		A_in <= "01110001";
+		B_in <= "11010100";
+		OP_in <= "00001";
+		wait for 100 ns;
+		
+		-- A XOR B		
+		A_in <= "01110001";
+		B_in <= "11010100";
+		OP_in <= "00011";
+		wait for 100 ns;
+		
+		-- A NAND B
+		A_in <= "01110001";
+		B_in <= "11010100";
+		OP_in <= "00100";
+		wait for 100 ns;
+		
+		-- NOT A
+		A_in <= "01110001";
+		B_in <= "11010100";
+		OP_in <= "00101";
+		wait for 100 ns;
+		
+		-- RR A
+		A_in <= "01110001";
+		B_in <= "11010100";
+		OP_in <= "00110";
+		wait for 100 ns;
+						
+		-- RL A
+		A_in <= "01110001";
+		B_in <= "11010100";
+		OP_in <= "00111";
+		wait for 100 ns;
+		
+      wait;
+   end process;
+
+END;

@@ -1,0 +1,6 @@
+19:27:57 **** Auto Build of project TestApp_bsp ****
+make -k all 
+'Finished building libraries'
+
+19:27:57 Build Finished (took 134ms)
+

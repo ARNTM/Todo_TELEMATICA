@@ -1,0 +1,6 @@
+{"mode":0,"lifes":1,"GIT_type":"Blossom","position":{"GIT_type":"Position","x":2,"y":3},"value":5}
+{"mode":0,"lifes":1,"GIT_type":"Blossom","position":{"GIT_type":"Position","x":9,"y":9},"value":5}
+{"mode":0,"lifes":1,"GIT_type":"Blossom","position":{"GIT_type":"Position","x":3,"y":3},"value":5}
+{"mode":0,"lifes":1,"GIT_type":"Blossom","position":{"GIT_type":"Position","x":4,"y":4},"value":5}
+{"mode":0,"lifes":1,"GIT_type":"Blossom","position":{"GIT_type":"Position","x":5,"y":5},"value":5}
+{"mode":0,"lifes":1,"GIT_type":"Blossom","position":{"GIT_type":"Position","x":6,"y":6},"value":5}

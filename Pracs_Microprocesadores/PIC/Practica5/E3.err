@@ -1,0 +1,19 @@
+Message[301] C:\PROGRAM FILES (X86)\MICROCHIP\MPASM SUITE\P16F876.INC 33 : MESSAGE: (Processor-header file mismatch.  Verify selected processor.)
+Warning[207] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 48 : Found label after column 1. (inicio)
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 89 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 91 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 94 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 96 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 97 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 99 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 149 : Found opcode in column 1. (RETFIE)
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 158 : Found opcode in column 1. (RETFIE)
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 160 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 162 : Found opcode in column 1. (RETFIE)
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 169 : Found opcode in column 1. (RETFIE)
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 178 : Found opcode in column 1. (RETFIE)
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 187 : Found opcode in column 1. (RETFIE)
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 198 : Found opcode in column 1. (RETFIE)
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 202 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 205 : Found opcode in column 1. (RETURN)
+Warning[205] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA5\E3.ASM 207 : Found directive in column 1. (END)

@@ -1,0 +1,449 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : xc3s50-4-tq144
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GIT/Pracs_Microprocesadores/VHDL/Practica2/ALU.vhd" in Library work.
+Entity <alu> compiled.
+Entity <alu> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:/GIT/Pracs_Microprocesadores/VHDL/Practica2/ALU.vhd".
+    Found 32x2-bit ROM for signal <TipoOP>.
+    Found 8-bit register for signal <LEDs>.
+    Found 9-bit register for signal <RESULTADO>.
+    Found 1-bit register for signal <CERO>.
+    Found 1-bit register for signal <SIGNO>.
+    Found 2-bit register for signal <TipoOP_out>.
+    Found 9-bit register for signal <DatoA>.
+    Found 9-bit register for signal <DatoB>.
+    Found 5-bit register for signal <OP>.
+    Found 9-bit comparator equal for signal <SALIDA_ALU$cmp_eq0021> created at line 208.
+    Found 9-bit comparator greater for signal <SALIDA_ALU$cmp_gt0000> created at line 187.
+    Found 9-bit comparator less for signal <SALIDA_ALU$cmp_lt0000> created at line 181.
+    Found 9-bit addsub for signal <SALIDA_ALU$share0000> created at line 151.
+    Found 9-bit xor2 for signal <SALIDA_ALU$xor0000> created at line 157.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  44 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <ALU> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x2-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 9-bit addsub                                          : 1
+# Registers                                            : 8
+ 1-bit register                                        : 2
+ 2-bit register                                        : 1
+ 5-bit register                                        : 1
+ 8-bit register                                        : 1
+ 9-bit register                                        : 3
+# Comparators                                          : 3
+ 9-bit comparator equal                                : 1
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
+# Xors                                                 : 1
+ 9-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x2-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 9-bit addsub                                          : 1
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+# Comparators                                          : 3
+ 9-bit comparator equal                                : 1
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
+# Xors                                                 : 1
+ 9-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <DatoB_7> in Unit <ALU> is equivalent to the following FF/Latch, which will be removed : <DatoB_8> 
+INFO:Xst:2261 - The FF/Latch <DatoA_7> in Unit <ALU> is equivalent to the following FF/Latch, which will be removed : <DatoA_8> 
+
+Optimizing unit <ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU, actual ratio is 11.
+FlipFlop DatoA_7 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop DatoA_7 connected to a primary input has been replicated
+FlipFlop OP_0 has been replicated 2 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop OP_0 connected to a primary input has been replicated
+FlipFlop OP_1 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop OP_1 connected to a primary input has been replicated
+FlipFlop OP_2 has been replicated 2 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop OP_2 connected to a primary input has been replicated
+FlipFlop OP_3 has been replicated 2 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop OP_3 connected to a primary input has been replicated
+FlipFlop OP_4 has been replicated 2 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop OP_4 connected to a primary input has been replicated
+FlipFlop DatoB_7 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop DatoB_6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop DatoB_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop DatoB_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop DatoB_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop DatoB_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop DatoB_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop DatoB_0 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop DatoA_7 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop DatoA_6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop DatoA_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop DatoA_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop DatoA_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop DatoA_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop DatoA_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop DatoA_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALU.ngr
+Top Level Output File Name         : ALU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 62
+
+Cell Usage :
+# BELS                             : 200
+#      LUT2                        : 22
+#      LUT2_D                      : 2
+#      LUT2_L                      : 3
+#      LUT3                        : 21
+#      LUT3_D                      : 8
+#      LUT3_L                      : 2
+#      LUT4                        : 74
+#      LUT4_D                      : 5
+#      LUT4_L                      : 26
+#      MUXCY                       : 26
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 9
+# FlipFlops/Latches                : 70
+#      FD                          : 2
+#      FDC                         : 49
+#      FDR                         : 19
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 61
+#      IBUF                        : 22
+#      OBUF                        : 39
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50tq144-4 
+
+ Number of Slices:                       91  out of    768    11%  
+ Number of Slice Flip Flops:             52  out of   1536     3%  
+ Number of 4 input LUTs:                163  out of   1536    10%  
+ Number of IOs:                          62
+ Number of bonded IOBs:                  62  out of     97    63%  
+    IOB Flip Flops:                      18
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 70    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 49    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 14.954ns (Maximum Frequency: 66.872MHz)
+   Minimum input arrival time before clock: 1.941ns
+   Maximum output required time after clock: 7.165ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 14.954ns (frequency: 66.872MHz)
+  Total number of paths / destination ports: 8809 / 38
+-------------------------------------------------------------------------
+Delay:               14.954ns (Levels of Logic = 16)
+  Source:            DatoB_0 (FF)
+  Destination:       CERO (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: DatoB_0 to CERO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.720   1.405  DatoB_0 (DatoB_0)
+     LUT2:I0->O            1   0.551   0.000  Mcompar_SALIDA_ALU_cmp_lt0000_lut<0> (Mcompar_SALIDA_ALU_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_SALIDA_ALU_cmp_lt0000_cy<0> (Mcompar_SALIDA_ALU_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_SALIDA_ALU_cmp_lt0000_cy<1> (Mcompar_SALIDA_ALU_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_SALIDA_ALU_cmp_lt0000_cy<2> (Mcompar_SALIDA_ALU_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_SALIDA_ALU_cmp_lt0000_cy<3> (Mcompar_SALIDA_ALU_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_SALIDA_ALU_cmp_lt0000_cy<4> (Mcompar_SALIDA_ALU_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_SALIDA_ALU_cmp_lt0000_cy<5> (Mcompar_SALIDA_ALU_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_SALIDA_ALU_cmp_lt0000_cy<6> (Mcompar_SALIDA_ALU_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_SALIDA_ALU_cmp_lt0000_cy<7> (Mcompar_SALIDA_ALU_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           3   0.303   0.975  Mcompar_SALIDA_ALU_cmp_lt0000_cy<8> (Mcompar_SALIDA_ALU_cmp_lt0000_cy<8>)
+     LUT3:I2->O            1   0.551   0.827  SALIDA_ALU<0>8117 (SALIDA_ALU<0>8117)
+     LUT4:I3->O            9   0.551   1.150  SALIDA_ALU<0>8128 (N32)
+     LUT4:I3->O            1   0.551   0.869  SALIDA_ALU<4>49 (SALIDA_ALU<4>49)
+     LUT4:I2->O            3   0.551   1.246  SALIDA_ALU<4>84 (SALIDA_ALU<4>)
+     LUT4:I0->O            1   0.551   0.827  CERO_not000115_SW0 (N8)
+     LUT4:I3->O            1   0.551   0.801  CERO_not000115 (CERO_not0001)
+     FDR:R                     1.026          CERO
+    ----------------------------------------
+    Total                     14.954ns (6.854ns logic, 8.100ns route)
+                                       (45.8% logic, 54.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 49 / 49
+-------------------------------------------------------------------------
+Offset:              1.941ns (Levels of Logic = 1)
+  Source:            A_in<7> (PAD)
+  Destination:       DatoA_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: A_in<7> to DatoA_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.821   0.917  A_in_7_IBUF (A_in_7_IBUF)
+     FDC:D                     0.203          DatoA_7
+    ----------------------------------------
+    Total                      1.941ns (1.024ns logic, 0.917ns route)
+                                       (52.8% logic, 47.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 39 / 39
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            SIGNO (FF)
+  Destination:       SIGNO (PAD)
+  Source Clock:      clk rising
+
+  Data Path: SIGNO to SIGNO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.720   0.801  SIGNO (SIGNO_OBUF)
+     OBUF:I->O                 5.644          SIGNO_OBUF (SIGNO)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.52 secs
+ 
+--> 
+
+Total memory usage is 4550428 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

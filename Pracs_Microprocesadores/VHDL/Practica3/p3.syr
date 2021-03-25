@@ -1,0 +1,284 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: p3.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "p3.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "p3"
+Output Format                      : NGC
+Target Device                      : xc3s50-4-tq144
+
+---- Source Options
+Top Module Name                    : p3
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" in Library work.
+Entity <Display7Seg> compiled.
+ERROR:HDLParsers:3010 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 40. Entity p3 does not exist.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 44. Undefined symbol 'std_logic'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 44. std_logic: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 45. Undefined symbol 'unsigned'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 45. unsigned: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 46. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 46. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 49. Undefined symbol 'STD_LOGIC_VECTOR'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 49. STD_LOGIC_VECTOR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 60. Undefined symbol 'STD_LOGIC'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 60. STD_LOGIC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 66. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 66. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 66. Undefined symbol 'reset'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 66. reset: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 68. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 70. = can not have such operands in this context.
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 66. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 78. Undefined symbol 'reinicia'.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 79. Undefined symbol 'enable_carga_paso1'.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 80. Undefined symbol 'enable_desplaza_paso2'.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 81. Undefined symbol 'enable_contador_iteraciones'.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 82. Undefined symbol 'enable_actualiza_salida'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 85. enable_carga_paso1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 86. reinicia: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 87. enable_desplaza_paso2: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 88. enable_contador_iteraciones: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 89. enable_actualiza_salida: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 107. Undefined symbol 'dato'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 107. dato: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 115. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 127. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 127. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 129. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 130. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 131. Undefined symbol 'BINARIO'.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 131. Undefined symbol 'dato'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 131. dato: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 132. = can not have such operands in this context.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 133. BINARIO: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 127. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 139. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 139. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 141. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 142. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 143. Undefined symbol 'DIGITO1'.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 144. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 145. >= can not have such operands in this context.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 146. DIGITO1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 148. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 149. Undefined symbol 'BINARIO'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 149. BINARIO: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 139. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 155. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 155. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 157. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 158. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 159. Undefined symbol 'DIGITO2'.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 160. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 161. >= can not have such operands in this context.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 162. DIGITO2: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 164. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 165. Undefined symbol 'DIGITO1'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 165. DIGITO1: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 155. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 171. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 171. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 173. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 174. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 175. Undefined symbol 'DIGITO3'.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 176. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 177. >= can not have such operands in this context.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 178. DIGITO3: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 180. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 181. Undefined symbol 'DIGITO2'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 181. DIGITO2: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 171. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 187. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 187. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 189. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 190. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 191. Undefined symbol 'iteracion'.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 192. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 193. = can not have such operands in this context.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 194. iteracion: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 187. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 203. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 203. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 203. Undefined symbol 'reset'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 203. reset: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 205. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 206. Undefined symbol 'UNIDADES'.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 207. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 208. = can not have such operands in this context.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 209. UNIDADES: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 209. Undefined symbol 'DIGITO1'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 209. DIGITO1: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 203. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 215. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 215. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 215. Undefined symbol 'reset'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 215. reset: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 217. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 218. Undefined symbol 'DECENAS'.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 219. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 220. = can not have such operands in this context.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 221. DECENAS: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 221. Undefined symbol 'DIGITO2'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 221. DIGITO2: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 215. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 227. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 227. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 227. Undefined symbol 'reset'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 227. reset: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 229. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 230. Undefined symbol 'CENTENAS'.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 231. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 232. = can not have such operands in this context.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 233. CENTENAS: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 233. Undefined symbol 'DIGITO3'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 233. DIGITO3: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 227. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 239. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 239. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 239. Undefined symbol 'reset'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 239. reset: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 241. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 242. Undefined symbol 'count'.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 243. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 244. = can not have such operands in this context.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 245. count: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 239. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 253. Undefined symbol 'count'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 253. count: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 255. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 256. Undefined symbol 'actualiza_display'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 258. actualiza_display: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 253. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 263. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 263. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 263. Undefined symbol 'reset'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 263. reset: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 265. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 266. Undefined symbol 'reg'.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 267. = can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 268. = can not have such operands in this context.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 269. reg: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 263. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 274. Undefined symbol 'AN_display7seg'.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 274. Undefined symbol 'reg'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 274. reg: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 277. Undefined symbol 'UNIDADES'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 277. UNIDADES: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 277. Undefined symbol 'DECENAS'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 277. DECENAS: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 277. Undefined symbol 'CENTENAS'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 277. CENTENAS: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 279. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 280. Undefined symbol 'datoBCD'.
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 281. = can not have such operands in this context.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 282. datoBCD: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 283. = can not have such operands in this context.
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 277. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 291. Undefined symbol 'datoBCD'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 291. datoBCD: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 294. Undefined symbol 'display7seg'.
+ERROR:HDLParsers:1209 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 295. display7seg: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" Line 291. No sensitivity list and no wait in the process
+--> 
+
+Total memory usage is 4532416 kilobytes
+
+Number of errors   :  154 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

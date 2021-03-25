@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\GIT\Universidad\Pracs_Hardware\Practica2_Picoblaze\P2A_HelloWorld\Project2A_HelloWorld\toplevel.ncd
+OUTFILE=D:\GIT\Universidad\Pracs_Hardware\Practica2_Picoblaze\P2A_HelloWorld\Project2A_HelloWorld\toplevel.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\GIT\Universidad\Pracs_Hardware\Practica2_Picoblaze\P2A_HelloWorld\Project2A_HelloWorld
+LICENSE=WebPack
+USER_INFO=__0_0_0

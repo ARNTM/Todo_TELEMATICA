@@ -1,0 +1,7 @@
+INFILE=D:\GIT\Universidad\Pracs_Hardware\Practica3\Lab1\implementation\system.ncd
+OUTFILE=D:\GIT\Universidad\Pracs_Hardware\Practica3\Lab1\implementation\system.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\GIT\Universidad\Pracs_Hardware\Practica3\Lab1\implementation
+LICENSE=WebPack
+USER_INFO=__0_0_0

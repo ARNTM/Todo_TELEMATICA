@@ -1,0 +1,50 @@
+  1   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  2   0              ;                 Ejemplo 4:
+  3   0              ;multiplica dos numeros de 8 bits 
+  4   0              ;
+  5   0              ; (C) Javier Garrigos. Ver. 1.0 - sep,2004
+  6   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  7   0              ;
+  8   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  9   0              ;declaracion de constantes y variables
+ 10   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;  
+ 11   0              :NAMEREG    S0           MULTIPLICAND ; preserved
+ 12   0              :NAMEREG    S1           MULTIPLIER   ; preserved
+ 13   0              :NAMEREG    S2           BIT_MASK     ; modified
+ 14   0              :NAMEREG    S3           RESULT_MSB   ; most-significant byte (MSB) of result,
+ 15   0              ; modified
+ 16   0              :NAMEREG    S4           RESULT_LSB   ; least-significant byte (LSB) of result,
+ 17   0              ; modified
+ 18   0              ;                
+ 19   0              :ADDRESS    00           ;el programa se cargara a partir de 00
+ 20   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 21   0              ;inicio del programa
+ 22   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 23   0 START        :INPUT      S0           00           ;cargamos el multiplicando
+ 24   1              :INPUT      S1           01           ;cargamos el multiplicador
+ 25   2              :CALL       MULT_8X8     ;hacemos la multiplicacion
+ 26   3              :JUMP       START        
+ 27   4              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 28   4              ;Rutina de multiplicacion
+ 29   4              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 30   4 MULT_8X8     :LOAD       BIT_MASK     01           ; start with least-significant bit (lsb)
+ 31   5              :LOAD       RESULT_MSB   00           ; clear product MSB
+ 32   6              :LOAD       RESULT_LSB   00           ; clear product LSB (not required)
+ 33   7              ; loop through all bits in multiplier
+ 34   7 MULT_LOOP    :LOAD       S4           MULTIPLIER   
+ 35   8              :AND        S4           BIT_MASK     ; check if bit is set
+ 36   9              :JUMP       Z            NO_ADD       ; if bit is not set, skip addition
+ 37   A              :ADD        RESULT_MSB   MULTIPLICAND ; addition only occurs in MSB
+ 38   B NO_ADD       ;SRA 		result_msb 		; shift MSB right, CARRY into bit 7,
+ 39   B              ; lsb into CARRY
+ 40   B              ;SRA 		result_lsb 		; shift LSB right,
+ 41   B              ; lsb from result_msb into bit 7
+ 42   B              :SL0        BIT_MASK     ; shift bit_mask left to examine
+ 43   C              ; next bit in multiplier
+ 44   C              :JUMP       NZ           MULT_LOOP    ; if all bit examined, then bit_mask = 0,
+ 45   D              ; loop if not 0
+ 46   D              :RETURN     ; multiplier result now available in
+ 47   E              ; result_msb and result_lsb
+ 48   E              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 49   E              ; FIN
+ 50   E              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

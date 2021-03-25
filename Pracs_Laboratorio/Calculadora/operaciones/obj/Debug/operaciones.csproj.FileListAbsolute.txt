@@ -1,0 +1,11 @@
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\operaciones\bin\Debug\operaciones.dll
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\operaciones\bin\Debug\operaciones.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\operaciones\obj\Debug\operaciones.csproj.CoreCompileInputs.cache
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\operaciones\obj\Debug\operaciones.dll
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\operaciones\obj\Debug\operaciones.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\Calculadora\operaciones\bin\Debug\operaciones.dll
+D:\GIT\Universidad\Pracs_Laboratorio\Calculadora\operaciones\bin\Debug\operaciones.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\Calculadora\operaciones\obj\Debug\operaciones.csprojAssemblyReference.cache
+D:\GIT\Universidad\Pracs_Laboratorio\Calculadora\operaciones\obj\Debug\operaciones.csproj.CoreCompileInputs.cache
+D:\GIT\Universidad\Pracs_Laboratorio\Calculadora\operaciones\obj\Debug\operaciones.dll
+D:\GIT\Universidad\Pracs_Laboratorio\Calculadora\operaciones\obj\Debug\operaciones.pdb

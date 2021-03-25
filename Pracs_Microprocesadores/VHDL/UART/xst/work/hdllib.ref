@@ -1,0 +1,6 @@
+AR uart_rx behavioral C:/Users/detcp/Desktop/UART/UART_RX.vhd sub00/vhpl03 1562585231
+AR uart behavioral C:/Users/detcp/Desktop/UART/UART.vhd sub00/vhpl01 1562585322
+AR uart_tx behavioral D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART_TX.vhd sub00/vhpl05 1562317816
+EN uart NULL C:/Users/detcp/Desktop/UART/UART.vhd sub00/vhpl00 1562585321
+EN uart_rx NULL C:/Users/detcp/Desktop/UART/UART_RX.vhd sub00/vhpl02 1562585230
+EN uart_tx NULL D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART_TX.vhd sub00/vhpl04 1562317815

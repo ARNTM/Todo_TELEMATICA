@@ -1,0 +1,604 @@
+m255
+o
+cModel Technology
+dC:\work\app\coolcore_new\coolblaze_source\picoblaze\demo_test
+Eaddsub8
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1029515090
+F../vhdl/arithmatic.vhd
+l0
+L103
+Vga^KedI5:W8j_Xm^S1RYh3
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work addsub8 ga^KedI5:W8j_Xm^S1RYh3
+l121
+L113
+V5WIT7AI8<`Q7=ke1P2;9j0
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Earithmetic_process
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1029515090
+F../vhdl/arithmatic.vhd
+l0
+L23
+VXRaCBaW9>MIElojjJLA290
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work addsub8 ga^KedI5:W8j_Xm^S1RYh3
+DE work arithmetic_process XRaCBaW9>MIElojjJLA290
+l54
+L34
+VKIh6OGfREBZ0m]9I?4W0U1
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Ecarry_flag_logic
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1029515090
+F../vhdl/carry_flag_logic.vhd
+l0
+L9
+V2jA<88=acDXEc7WFZdBEM3
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work carry_flag_logic 2jA<88=acDXEc7WFZdBEM3
+l29
+L22
+Vo4bS5=jbJh7]ZA4Z5nQ5?2
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Edemo
+DP ieee vital_primitives E9g6AWKAc2T]enMfl94If3
+DP simprim vpackage mA8;QYN>M^^h>5<VhjJBd3
+DP ieee vital_timing OBWK>;kUYmkG<OChK2lhV1
+DP simprim vcomponents co:ND0TI24I6<=dORok7n3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1040077170
+Fdemo_timesim.vhd
+l0
+L48
+VH93FC`]6UX>bF06fbRCZS2
+OX;C;5.5e_p1;15
+o-just e -87 -explicit -work work -O0
+Astructure
+DE work roc 0d5G:mZZlNfoIlGFf5ogW0
+DE simprim x_inv XmPo?9z3OAfVA4ch4]C7a3
+DE simprim x_or4 [CVTK_eZA`A9WDV_X`NPW3
+DE simprim x_or16 INM2mIXi1>iodS<X`QfSc1
+DE simprim x_or8 lQJ7g8K[l2J_P>e^SGNzC0
+DE simprim x_or7 ?jL=iVL9aN0fJo_I5hg:@2
+DE simprim x_or6 LnAKRga;gk9zW2nIOZH3Y3
+DE simprim x_and4 RgUgUa6[RJL2jAdY3;KD72
+DE simprim x_and7 c<9_Dk1_VNmDmT:OVGjSe0
+DE simprim x_and8 =f9mofE9khI@Y?OZC8QdC3
+DE simprim x_and6 W[403N[:fF:;:HgCf[iLh3
+DE simprim x_xor2 nAKdW@RO8m`MCLVLozOiO0
+DE simprim x_or3 BW0]c_m33gPaC3i;>QH^62
+DE simprim x_and5 TlZ8_2EFn6JA=5[jF<;ZQ3
+DE simprim x_and3 _W3<`lDAiO=jEi0IoJFM31
+DE simprim x_and2 CcJo^TM3kaMR7_J@832D41
+DE simprim x_or2 O?[S__SFPfYdfmD_`IPG>0
+DE simprim x_zero d]k>MPMgT5gL<;FKVWk^Q3
+DE simprim x_one 2ShaZS@94:J1bzXl[A6h92
+DE simprim x_ff kMo_d?k>Lk6KCa4DHn@4W1
+DE simprim x_buf l>JA:Y4WE<n0GEjCFz4823
+DE work demo H93FC`]6UX>bF06fbRCZS2
+l1223
+L56
+VhJC7bez@4WiYI7lAc9LG03
+OX;C;5.5e_p1;15
+M5 ieee std_logic_1164
+M4 simprim vcomponents
+M3 ieee vital_timing
+M2 simprim vpackage
+M1 ieee vital_primitives
+o-skip e -87 -explicit -work work -O0
+Abehavioral
+DE work demo_test Jf@>2XZK?Zo9Q`dA]7Ho]3
+DE work picoblaze XEG7z=`7@VWeZcEK<=81B1
+DE work demo 2H]N8z=L_23MTNZ]^1TW13
+l66
+L22
+VS=BC5Bdf[Dbh6K>?ld0NR0
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Cdemo_cfg
+DE work demo H93FC`]6UX>bF06fbRCZS2
+DA work testbench testbench_arch KDaGRl>@7TW0fm2DiGl8<2
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee vital_primitives E9g6AWKAc2T]enMfl94If3
+DP simprim vpackage mA8;QYN>M^^h>5<VhjJBd3
+DP ieee vital_timing OBWK>;kUYmkG<OChK2lhV1
+DP simprim vcomponents co:ND0TI24I6<=dORok7n3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work testbench E93L`J;aNZB<eFjk:L3gB0
+w1040077172
+Fdemo_tb.timesim_vhw
+l0
+L0
+V>5YA1]XYajHiVmiSTlg@I0
+OX;C;5.5e_p1;15
+31
+M7 ieee std_logic_1164
+M6 simprim vcomponents
+M5 ieee vital_timing
+M4 simprim vpackage
+M3 ieee vital_primitives
+M2 ieee std_logic_textio
+M1 std textio
+atestbench_arch
+etestbench
+o-skip e -93 -explicit -work work -O0
+Edemo_test
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1031949492
+F../c/demo_test.vhd
+l0
+L5
+VJf@>2XZK?Zo9Q`dA]7Ho]3
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Av1
+DE work demo_test Jf@>2XZK?Zo9Q`dA]7Ho]3
+l277
+L11
+VjFj;WAbL0QXQ5OVF8a4O60
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_unsigned
+M1 ieee std_logic_arith
+o-skip e -93 -explicit -O0
+Einterrupt_capture
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1029515090
+F../vhdl/interrupt_capture.vhd
+l0
+L13
+Vge^Ioj56G_BDP@BORAe_@2
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work interrupt_capture ge^Ioj56G_BDP@BORAe_@2
+l30
+L22
+VVB:R6UV<C;3NGaZhz@>`j3
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Einterrupt_logic
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1034379910
+F../vhdl/interrupt_logic.vhd
+l0
+L16
+VZ<8OGZJg5@imj:CZkzVjY3
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work interrupt_logic Z<8OGZJg5@imj:CZkzVjY3
+l37
+L30
+VG=4=HmXhAcE7hbWO7_7iN3
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Eio_strobe_logic
+DP ieee vital_timing OBWK>;kUYmkG<OChK2lhV1
+DP unisim vcomponents 1IeZGGFhZCZnH1BbZig;f2
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1029515090
+F../vhdl/IO_strobe_logic.vhd
+l0
+L11
+V1KYNWFNUen7]z`_5C2LA00
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work io_strobe_logic 1KYNWFNUen7]z`_5C2LA00
+l29
+L22
+VMRL4PciZ1^717V8XoS06l2
+OX;C;5.5e_p1;15
+31
+M5 ieee std_logic_1164
+M4 ieee std_logic_arith
+M3 ieee std_logic_unsigned
+M2 unisim vcomponents
+M1 ieee vital_timing
+o-skip e -93 -explicit -O0
+Elogical_bus_processing
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1029515090
+F../vhdl/logical_bus_processing.vhd
+l0
+L21
+VD@M;n<M2kJ200zfCIkaE72
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work logical_bus_processing D@M;n<M2kJ200zfCIkaE72
+l37
+L30
+VUC7X7dm;Q[A@UGdWKj?0T1
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Epicoblaze
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1040076321
+F../vhdl/picoblaze.vhd
+l0
+L32
+VXEG7z=`7@VWeZcEK<=81B1
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Abehavioral
+DP ieee vital_timing OBWK>;kUYmkG<OChK2lhV1
+DP unisim vcomponents 1IeZGGFhZCZnH1BbZig;f2
+DE work interrupt_logic Z<8OGZJg5@imj:CZkzVjY3
+DE work interrupt_capture ge^Ioj56G_BDP@BORAe_@2
+DE work stack_counter nJ?a>=oA:n2oAEQl6X=8W0
+DE work stack_ram i6=BDUm3=@]dTVEaUXzG30
+DE work register_bank M5Gjg8Izgna19EAo8lUfB1
+DE work program_counter ]KKFzg1lnCeA44IaIKlXF3
+DE work zero_flag_logic `QFM7i>D;K2;1efGJh@G<0
+DE work carry_flag_logic 2jA<88=acDXEc7WFZdBEM3
+DE work register_and_flag_enable BeAJK]8Ra_M[5lJ3^EEYe0
+DE work t_state_and_reset 4LSEaM15b`7::[E[;0dBG0
+DE work logical_bus_processing D@M;n<M2kJ200zfCIkaE72
+DE work shift_rotate Un56F_hW1QYm55]cz@<k:1
+DE work arithmetic_process XRaCBaW9>MIElojjJLA290
+DE work io_strobe_logic 1KYNWFNUen7]z`_5C2LA00
+DE work picoblaze XEG7z=`7@VWeZcEK<=81B1
+l422
+L45
+VF>NXIIN1kl2?jOA>nje5l2
+OX;C;5.5e_p1;15
+31
+M5 ieee std_logic_1164
+M4 ieee std_logic_arith
+M3 ieee std_logic_unsigned
+M2 unisim vcomponents
+M1 ieee vital_timing
+o-skip e -93 -explicit -O0
+Eprogram_counter
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1029515090
+F../vhdl/program_counter.vhd
+l0
+L11
+V]KKFzg1lnCeA44IaIKlXF3
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work program_counter ]KKFzg1lnCeA44IaIKlXF3
+l37
+L27
+VeJFUi9DeZZiZHUb8TgdV`0
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Eram_nx1
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1034379994
+F../vhdl/register_bank.vhd
+l0
+L61
+VnEB=1=W@d]??mOEbS[k9[0
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Abehavioral
+DE work ram_nx1 nEB=1=W@d]??mOEbS[k9[0
+l76
+L72
+V9F30gEdkmon7AUEZEh0460
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Eram_x1s
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1034380142
+F../vhdl/stack_ram.vhd
+l0
+L76
+VEP67UY[B?BhWIz:9YaS7c0
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Abehavioral
+DE work ram_x1s EP67UY[B?BhWIz:9YaS7c0
+l89
+L85
+VGC>gVDiHE@_c6IFnBY_5c1
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Eregister_and_flag_enable
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1034878782
+F../vhdl/register_and_flag_enable.vhd
+l0
+L17
+VBeAJK]8Ra_M[5lJ3^EEYe0
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work register_and_flag_enable BeAJK]8Ra_M[5lJ3^EEYe0
+l42
+L31
+VX44R;MCR[RO??LK`3cHZm0
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Eregister_bank
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1034379994
+F../vhdl/register_bank.vhd
+l0
+L11
+VM5Gjg8Izgna19EAo8lUfB1
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Abehavioral
+DE work ram_nx1 nEB=1=W@d]??mOEbS[k9[0
+DE work register_bank M5Gjg8Izgna19EAo8lUfB1
+l35
+L22
+V<l@i1ILhJ<GG@_98VOGdM0
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Eroc
+DP ieee vital_timing OBWK>;kUYmkG<OChK2lhV1
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1040077170
+Fdemo_timesim.vhd
+l0
+L19
+V0d5G:mZZlNfoIlGFf5ogW0
+OX;C;5.5e_p1;15
+o-just e -87 -explicit -work work -O0
+Aroc_v
+DE work roc 0d5G:mZZlNfoIlGFf5ogW0
+l28
+L26
+VOjb?P^Y2CZd5ORId6zETP2
+OX;C;5.5e_p1;15
+M2 ieee std_logic_1164
+M1 ieee vital_timing
+o-skip e -87 -explicit -work work -O0
+Eshift_rotate
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1029515090
+F../vhdl/shift_rotate.vhd
+l0
+L22
+VUn56F_hW1QYm55]cz@<k:1
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work shift_rotate Un56F_hW1QYm55]cz@<k:1
+l42
+L34
+VMEobT9T^EXa9d5V3UCeE31
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Estack_counter
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1034380086
+F../vhdl/stack_counter.vhd
+l0
+L13
+VnJ?a>=oA:n2oAEQl6X=8W0
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work stack_counter nJ?a>=oA:n2oAEQl6X=8W0
+l40
+L28
+VP?HY;5;H1CLHe3h^T4SQd0
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Estack_ram
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1034380142
+F../vhdl/stack_ram.vhd
+l0
+L12
+Vi6=BDUm3=@]dTVEaUXzG30
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work ram_x1s EP67UY[B?BhWIz:9YaS7c0
+DE work stack_ram i6=BDUm3=@]dTVEaUXzG30
+l38
+L21
+VP?NE7S2DEG<a]6h?oLM9f3
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Et_state_and_reset
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1029515090
+F../vhdl/T_state_and_Reset.vhd
+l0
+L13
+V4LSEaM15b`7::[E[;0dBG0
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work t_state_and_reset 4LSEaM15b`7::[E[;0dBG0
+l29
+L20
+V2X1OOZjE_F=]TJKOdh_<T2
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0
+Etestbench
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee vital_primitives E9g6AWKAc2T]enMfl94If3
+DP simprim vpackage mA8;QYN>M^^h>5<VhjJBd3
+DP ieee vital_timing OBWK>;kUYmkG<OChK2lhV1
+DP simprim vcomponents co:ND0TI24I6<=dORok7n3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1040077172
+Fdemo_tb.timesim_vhw
+l0
+L25
+VE93L`J;aNZB<eFjk:L3gB0
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -work work -O0
+Atestbench_arch
+DE work demo H93FC`]6UX>bF06fbRCZS2
+DE work testbench E93L`J;aNZB<eFjk:L3gB0
+l44
+L28
+VKDaGRl>@7TW0fm2DiGl8<2
+OX;C;5.5e_p1;15
+31
+M7 ieee std_logic_1164
+M6 simprim vcomponents
+M5 ieee vital_timing
+M4 simprim vpackage
+M3 ieee vital_primitives
+M2 ieee std_logic_textio
+M1 std textio
+o-skip e -93 -explicit -work work -O0
+Ezero_flag_logic
+DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
+DP ieee std_logic_arith XinSYO>L7_n;;dMn;72:52
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+w1029515090
+F../vhdl/zero_flag_logic.vhd
+l0
+L11
+V`QFM7i>D;K2;1efGJh@G<0
+OX;C;5.5e_p1;15
+31
+o-just e -93 -explicit -O0
+Alow_level_definition
+DE work zero_flag_logic `QFM7i>D;K2;1efGJh@G<0
+l31
+L21
+VCaIQ6^n5Mg]F^O]?=:gFE3
+OX;C;5.5e_p1;15
+31
+M3 ieee std_logic_1164
+M2 ieee std_logic_arith
+M1 ieee std_logic_unsigned
+o-skip e -93 -explicit -O0

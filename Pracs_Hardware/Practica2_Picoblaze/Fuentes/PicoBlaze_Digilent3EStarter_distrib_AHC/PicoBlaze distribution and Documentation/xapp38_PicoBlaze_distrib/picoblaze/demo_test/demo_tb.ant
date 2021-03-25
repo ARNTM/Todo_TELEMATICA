@@ -1,0 +1,105 @@
+-- C:\WORK\APP\COOLCORE_NEW\COOLBLAZE_SOURCE\PICOBLAZE\DEMO_TEST
+-- VHDL Annotation Test Bench created by
+-- HDL Bencher 5.1i
+-- Mon Dec 16 14:18:21 2002
+
+LIBRARY  IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+LIBRARY ieee;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY testbench IS
+END testbench;
+
+ARCHITECTURE testbench_arch OF testbench IS
+-- If you get a compiler error on the following line,
+-- from the menu do Options->Configuration select VHDL 87
+FILE RESULTS: TEXT OPEN WRITE_MODE IS "c:\work\app\coolcore_new\coolblaze_source\picoblaze\demo_test\demo_tb.ano";
+	COMPONENT demo
+		PORT (
+			output : out  std_logic_vector (7 DOWNTO 0);
+			reset : in  std_logic;
+			clk : in  std_logic
+		);
+	END COMPONENT;
+
+	SIGNAL output : std_logic_vector (7 DOWNTO 0);
+	SIGNAL reset : std_logic;
+	SIGNAL clk : std_logic;
+
+BEGIN
+	UUT : demo
+	PORT MAP (
+		output => output,
+		reset => reset,
+		clk => clk
+	);
+
+	PROCESS -- clock process for clk,
+		VARIABLE TX_TIME : INTEGER :=0;
+
+		PROCEDURE ANNOTATE_output(
+			TX_TIME : INTEGER
+		) IS
+			VARIABLE TX_STR : String(1 to 4096);
+			VARIABLE TX_LOC : LINE;
+		BEGIN
+			write(TX_LOC,string'("Annotate["));
+			write(TX_LOC, TX_TIME);
+			write(TX_LOC,string'(",output,"));
+			write(TX_LOC, output);
+			write(TX_LOC, string'("]"));
+			TX_STR(TX_LOC.all'range) := TX_LOC.all;
+			writeline(results, TX_LOC);
+			Deallocate(TX_LOC);
+		END;
+
+	BEGIN
+		CLOCK_LOOP : LOOP
+		clk <= transport '1';
+		WAIT FOR 1 ns;
+		TX_TIME := TX_TIME + 1;
+		clk <= transport '0';
+		WAIT FOR 6 ns;
+		TX_TIME := TX_TIME + 6;
+		clk <= transport '1';
+		WAIT FOR 4 ns;
+		TX_TIME := TX_TIME + 4;
+		ANNOTATE_output(TX_TIME);
+		WAIT FOR 1 ns;
+		TX_TIME := TX_TIME + 1;
+		END LOOP CLOCK_LOOP;
+	END PROCESS;
+
+	PROCESS   -- Process for clk
+		VARIABLE TX_OUT : LINE;
+
+		BEGIN
+		-- --------------------
+		reset <= transport '1';
+		-- --------------------
+		WAIT FOR 12 ns; -- Time=12 ns
+		reset <= transport '1';
+		-- --------------------
+		WAIT FOR 96 ns; -- Time=108 ns
+		reset <= transport '0';
+		-- --------------------
+		WAIT FOR 973 ns; -- Time=1081 ns
+		-- --------------------
+
+		write(TX_OUT, string'("Total[]"));
+		writeline(results, TX_OUT);
+		ASSERT (FALSE) REPORT
+			"Success! Simulation for annotation completed"
+			SEVERITY FAILURE;
+	END PROCESS;
+END testbench_arch;
+
+CONFIGURATION demo_cfg OF testbench IS
+	FOR testbench_arch
+	END FOR;
+END demo_cfg;

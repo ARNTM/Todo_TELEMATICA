@@ -1,0 +1,122 @@
+#:C49    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   D:\GIT\Universidad\Pracs_Hardware\Practica1_Modificacion
+#Date/Time:
+#:T   Thu Oct 15 17:51:17 2020
+#------------------------------
+	#Reading mult_sec_mod.ncd...
+	#Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "mult_sec_mod" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+	#Design creation date: 2020.10.15.15.50.56
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+unselect -all
+	#4
+unselect -all
+	#5
+unselect -all
+	#6
+setattr main disable_draw on
+	#7
+setattr layer pinwires view on
+	#8
+setattr main disable_draw off
+	#Hint: change the visibility of more than one layer at a time by clicking on the apply button, clicking two or more layer buttons, and then clicking on the apply button again.
+	#9
+setattr main disable_draw on
+	#10
+setattr layer pips view on
+	#11
+setattr main disable_draw off
+	#12
+setattr main disable_draw on
+	#13
+setattr layer pips view off
+	#14
+setattr main disable_draw off
+	#15
+setattr main disable_draw on
+	#16
+setattr layer pinwires view off
+	#17
+setattr main disable_draw off
+	#18
+setattr main disable_draw on
+	#19
+setattr layer sites view off
+	#20
+setattr main disable_draw off
+	#21
+setattr main disable_draw on
+	#22
+setattr layer components view off
+	#23
+setattr main disable_draw off
+	#24
+setattr main disable_draw on
+	#25
+setattr layer routes view on
+	#26
+setattr main disable_draw off
+	#27
+setattr main disable_draw on
+	#28
+setattr layer routes view off
+	#29
+setattr main disable_draw off
+	#30
+setattr main disable_draw on
+	#31
+setattr layer routes view on
+	#32
+setattr main disable_draw off
+	#33
+setattr main disable_draw on
+	#34
+setattr layer routes view off
+	#35
+setattr main disable_draw off
+	#36
+setattr main disable_draw on
+	#37
+setattr layer ratsnests view on
+	#38
+setattr main disable_draw off
+	#39
+setattr main disable_draw on
+	#40
+setattr layer routes view on
+	#41
+setattr main disable_draw off
+	#42
+setattr main disable_draw on
+	#43
+setattr layer switch_boxes view on
+	#44
+setattr main disable_draw off
+	#45
+setattr main disable_draw on
+	#46
+setattr layer components view on
+	#47
+setattr main disable_draw off
+	#48
+setattr main disable_draw on
+	#49
+setattr layer sites view on
+	#50
+setattr main disable_draw off
+	#51
+setattr main disable_draw on
+	#52
+setattr layer pips view on
+	#53
+setattr main disable_draw off

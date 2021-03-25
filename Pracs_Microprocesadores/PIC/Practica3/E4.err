@@ -1,0 +1,6 @@
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA3\E4.ASM 23 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[305] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA3\E4.ASM 25 : Using default destination of 1 (file).
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA3\E4.ASM 25 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA3\E4.ASM 43 : Found opcode in column 1. (RETFIE)
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA3\E4.ASM 67 : Found opcode in column 1. (RETURN)
+Warning[205] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA3\E4.ASM 69 : Found directive in column 1. (END)

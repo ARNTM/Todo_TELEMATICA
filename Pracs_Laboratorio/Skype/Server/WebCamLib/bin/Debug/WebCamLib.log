@@ -1,0 +1,27 @@
+﻿Build started 2/15/2012 11:05:45 PM.
+     1>Project "C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\WebCamLib.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\WebCamLib.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\WebCamLib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\\" /Fd"C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt WebCamLib.cpp /clr:nostdlib 
+         WebCamLib.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\\" /Fd"C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\vc100.pdb" /TP /analyze- /errorReport:prompt "C:\Users\jake\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\WebCamLib.dll" /INCREMENTAL /NOLOGO Strmiids.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\WebCamLib.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\WebCamLib.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE:NO /FIXED:NO /MACHINE:X86 /DLL "C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\WebCamLib.obj"
+         "C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         WebCamLib.vcxproj -> C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\WebCamLib.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\WebCamLib.dll;#2" /manifest "C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\WebCamLib.dll.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\WebCamLib.unsuccessfulbuild".
+         Touching "C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\bin\Debug\WebCamLib.lastbuildstate".
+     1>Done Building Project "C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamLib\WebCamLib.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.40

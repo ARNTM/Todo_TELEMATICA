@@ -1,0 +1,19 @@
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 23 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 26 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 27 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 28 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 29 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 32 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 35 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 36 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 39 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 40 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 41 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 42 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 43 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 66 : Found opcode in column 1. (RETFIE)
+Warning[207] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 83 : Found label after column 1. (es1_0)
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 90 : Found opcode in column 1. (RETFIE)
+Warning[207] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 101 : Found label after column 1. (es1_1)
+Warning[203] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 108 : Found opcode in column 1. (RETFIE)
+Warning[205] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA4\E1.ASM 111 : Found directive in column 1. (END)

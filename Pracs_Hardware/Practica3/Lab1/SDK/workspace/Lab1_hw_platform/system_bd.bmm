@@ -1,0 +1,31 @@
+// BMM LOC annotation file.
+//
+// Release 14.6 -  P.20131013, build 3.0.10 Apr 3, 2013
+// Copyright (c) 1995-2020 Xilinx, Inc.  All rights reserved.
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Processor 'microblaze_0', ID 100, memory map.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+ADDRESS_MAP microblaze_0 MICROBLAZE 100
+
+    ///////////////////////////////////////////////////////////////////////////////
+    //
+    // Processor 'microblaze_0' address space 'lmb_bram_combined' 0x00000000:0x00001FFF (8 KBytes).
+    //
+    ///////////////////////////////////////////////////////////////////////////////
+
+    ADDRESS_SPACE lmb_bram_combined RAMB16 [0x00000000:0x00001FFF]
+        BUS_BLOCK
+            lmb_bram/lmb_bram/ramb16_s9_s9_0 RAMB16 [31:24] [0:2047] PLACED = X1Y5;
+            lmb_bram/lmb_bram/ramb16_s9_s9_1 RAMB16 [23:16] [0:2047] PLACED = X1Y2;
+            lmb_bram/lmb_bram/ramb16_s9_s9_2 RAMB16 [15:8] [0:2047] PLACED = X1Y3;
+            lmb_bram/lmb_bram/ramb16_s9_s9_3 RAMB16 [7:0] [0:2047] PLACED = X1Y4;
+        END_BUS_BLOCK;
+    END_ADDRESS_SPACE;
+
+END_ADDRESS_MAP;
+

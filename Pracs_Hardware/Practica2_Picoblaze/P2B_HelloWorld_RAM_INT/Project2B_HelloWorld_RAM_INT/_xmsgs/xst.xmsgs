@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/toplevel</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/toplevel.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/toplevel_helloworld_RAM_Int.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/toplevel/behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/toplevel.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/toplevel_helloworld_RAM_Int.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/picoblaze</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/picoblaze.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/picoblaze.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/picoblaze/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/picoblaze.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/picoblaze.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/arithmetic_process</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/arithmatic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/arithmatic.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/arithmetic_process/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/arithmatic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/arithmatic.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/addsub8</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/arithmatic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/arithmatic.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/addsub8/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/arithmatic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/arithmatic.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/carry_flag_logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/carry_flag_logic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/carry_flag_logic.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/carry_flag_logic/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/carry_flag_logic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/carry_flag_logic.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/interrupt_capture</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/interrupt_capture.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/interrupt_capture.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/interrupt_capture/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/interrupt_capture.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/interrupt_capture.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/interrupt_logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/interrupt_logic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/interrupt_logic.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/interrupt_logic/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/interrupt_logic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/interrupt_logic.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IO_strobe_logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/IO_strobe_logic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/IO_strobe_logic.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IO_strobe_logic/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/IO_strobe_logic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/IO_strobe_logic.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/logical_bus_processing</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/logical_bus_processing.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/logical_bus_processing.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/logical_bus_processing/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/logical_bus_processing.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/logical_bus_processing.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/program_counter</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/program_counter.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/program_counter.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/program_counter/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/program_counter.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/program_counter.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/register_and_flag_enable</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_and_flag_enable.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/register_and_flag_enable.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/register_and_flag_enable/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_and_flag_enable.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/register_and_flag_enable.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/register_bank</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_bank.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/register_bank.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/register_bank/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_bank.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/register_bank.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ram_Nx1</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_bank.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/register_bank.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ram_Nx1/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_bank.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/register_bank.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/shift_rotate</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/shift_rotate.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/shift_rotate.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/shift_rotate/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/shift_rotate.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/shift_rotate.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/stack_counter</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_counter.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/stack_counter.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/stack_counter/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_counter.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/stack_counter.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/stack_ram</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_ram.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/stack_ram.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/stack_ram/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_ram.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/stack_ram.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ram_x1s</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_ram.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/stack_ram.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ram_x1s/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_ram.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/stack_ram.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/T_state_and_Reset</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/T_state_and_Reset.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/T_state_and_Reset.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/T_state_and_Reset/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/T_state_and_Reset.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/T_state_and_Reset.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/zero_flag_logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/zero_flag_logic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/zero_flag_logic.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/zero_flag_logic/low_level_definition</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/zero_flag_logic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/zero_flag_logic.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="new" >&quot;<arg fmt="%s" index="1">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/toplevel_helloworld_RAM_Int.vhd</arg>&quot; line <arg fmt="%d" index="2">131</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="info" file="Xst" num="1433" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">RAM</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="new" >&quot;<arg fmt="%s" index="1">D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/toplevel_helloworld_RAM_Int.vhd</arg>&quot; line <arg fmt="%d" index="2">135</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="info" file="Xst" num="1433" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">RAM</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">sel</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">flip_result</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="info" file="Xst" num="3044" delta="old" >The ROM &lt;<arg fmt="%s" index="1">Mrom_dout_rom0000</arg>&gt; will be implemented as a read-only BLOCK RAM, absorbing the register: &lt;<arg fmt="%s" index="2">dout</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3225" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mrom_dout_rom0000</arg>&gt; will be implemented as BLOCK RAM
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_RAM</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">rxbuff_out_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;rxbuff_out_1&gt; &lt;rxbuff_out_2&gt; &lt;rxbuff_out_3&gt; &lt;rxbuff_out_4&gt; &lt;rxbuff_out_5&gt; &lt;rxbuff_out_6&gt; </arg>
+</msg>
+
+</messages>
+

@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          C:\Xilinx\Practica3_Santos_Jose\CodigoFuente\Lab2_2018/drivers/lcd_ip_v1_00_a/data/lcd_ip_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Thu Dec 17 17:34:16 2020 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER lcd_ip
+
+  OPTION supported_peripherals = (lcd_ip);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

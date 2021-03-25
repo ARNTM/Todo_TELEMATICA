@@ -1,0 +1,111 @@
+# Reading C:/Modeltech_xe/win32xoem/../tcl/vsim/pref.tcl 
+# do demo_tb.tdo 
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vital_timing
+# -- Compiling entity roc
+# -- Loading package vcomponents
+# -- Loading package vital_primitives
+# -- Loading package vpackage
+# -- Compiling entity demo
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Compiling architecture roc_v of roc
+# -- Loading package std_logic_1164
+# -- Loading package vital_timing
+# -- Loading entity roc
+# -- Compiling architecture structure of demo
+# -- Loading package vcomponents
+# -- Loading package vital_primitives
+# -- Loading package vpackage
+# -- Loading entity demo
+# -- Loading entity x_buf
+# -- Loading entity x_ff
+# -- Loading entity x_one
+# -- Loading entity x_zero
+# -- Loading entity x_or2
+# -- Loading entity x_and2
+# -- Loading entity x_and3
+# -- Loading entity x_and5
+# -- Loading entity x_or3
+# -- Loading entity x_xor2
+# -- Loading entity x_and6
+# -- Loading entity x_and8
+# -- Loading entity x_and7
+# -- Loading entity x_and4
+# -- Loading entity x_or6
+# -- Loading entity x_or7
+# -- Loading entity x_or8
+# -- Loading entity x_or16
+# -- Loading entity x_or4
+# -- Loading entity x_inv
+# -- Loading entity roc
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vital_timing
+# -- Loading package vcomponents
+# -- Loading package vital_primitives
+# -- Loading package vpackage
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity testbench
+# Model Technology ModelSim XE vcom 5.5e_p1 Compiler 2001.11 Nov 16 2001
+# -- Loading package standard
+# -- Compiling architecture testbench_arch of testbench
+# -- Loading package std_logic_1164
+# -- Loading package vital_timing
+# -- Loading package vcomponents
+# -- Loading package vital_primitives
+# -- Loading package vpackage
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading entity testbench
+# -- Loading entity demo
+# -- Compiling configuration demo_cfg
+# -- Loading entity testbench
+# -- Loading architecture testbench_arch of testbench
+# vsim -lib work -t 1ps -sdfmax /UUT=demo_timesim.sdf testbench 
+# Warning: A ModelSim starter license was detected and will be used, even though you have installed ModelSim XE. You should obtain an XE license in order to access ModelSim XE's full capabilities.# Loading C:/Modeltech_xe/win32xoem/../std.standard
+# Loading C:/Modeltech_xe/win32xoem/../ieee.std_logic_1164(body)
+# Loading C:/Modeltech_xe/win32xoem/../std.textio(body)
+# Loading C:/Modeltech_xe/win32xoem/../ieee.vital_timing(body)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.vcomponents
+# Loading C:/Modeltech_xe/win32xoem/../ieee.vital_primitives(body)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.vpackage(body)
+# Loading C:/Modeltech_xe/win32xoem/../ieee.std_logic_textio(body)
+# Loading work.testbench(testbench_arch)
+# Loading demo_timesim.sdf
+# Loading work.demo(structure)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_buf(x_buf_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_ff(x_ff_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_one(x_one_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_zero(x_zero_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_or2(x_or2_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_and2(x_and2_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_and3(x_and3_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_and5(x_and5_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_or3(x_or3_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_xor2(x_xor2_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_and6(x_and6_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_and8(x_and8_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_and7(x_and7_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_and4(x_and4_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_or6(x_or6_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_or7(x_or7_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_or8(x_or8_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_or16(x_or16_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_or4(x_or4_v)
+# Loading C:/Modeltech_xe/win32xoem/../xilinx/vhdl/simprim.x_inv(x_inv_v)
+# Loading work.roc(roc_v)
+# WARNING: Design size of 4728 statements or 1 non-Xilinx leaf instances exceeds ModelSim XE-Starter recommended capacity.
+# Expect performance to be adversely affected.
+# .wave
+# .structure
+# .signals
+# ** Failure: Simulation successful (not a failure).  No problems detected. 
+#    Time: 1081 ns  Iteration: 0  Instance: /testbench
+# Break at demo_tb.timesim_vhw line 111
+# Simulation Breakpoint: Break at demo_tb.timesim_vhw line 111
+# MACRO ./demo_tb.tdo PAUSED at line 16

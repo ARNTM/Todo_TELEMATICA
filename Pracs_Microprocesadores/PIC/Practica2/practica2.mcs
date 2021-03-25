@@ -1,0 +1,331 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E1.o
+Folder=Intermediary
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E1.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File001]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E1.err
+Folder=Intermediary
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E1.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File002]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E2.o
+Folder=Intermediary
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E2.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File003]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E2.err
+Folder=Intermediary
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E2.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File004]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E3.o
+Folder=Intermediary
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E3.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File005]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E3.err
+Folder=Intermediary
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E3.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File006]
+Location=F:\Universidad\Microprocesadores\Practica2\E3.o
+Folder=Intermediary
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E3.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File007]
+Location=F:\Universidad\Microprocesadores\Practica2\E3.err
+Folder=Intermediary
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E3.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File008]
+Location=F:\Universidad\Microprocesadores\Practica2\E4.o
+Folder=Intermediary
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E4.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File009]
+Location=F:\Universidad\Microprocesadores\Practica2\E4.err
+Folder=Intermediary
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E4.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File010]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E1.hex
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E1.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File011]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E1.lst
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E1.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File012]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E1.cof
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\mplink.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E1.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=/o"$(BINDIR_)$(TARGETBASE).cof" /M"$(BINDIR_)$(TARGETBASE).map" /W
+TraceCmdString=
+DebugOptions=/z__MPLAB_DEBUG=1
+[File013]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E2.hex
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E2.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File014]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E2.lst
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E2.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File015]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E2.cof
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\mplink.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E2.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=/o"$(BINDIR_)$(TARGETBASE).cof" /M"$(BINDIR_)$(TARGETBASE).map" /W
+TraceCmdString=
+DebugOptions=/z__MPLAB_DEBUG=1
+[File016]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E3.hex
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E3.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File017]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E3.lst
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E3.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File018]
+Location=D:\Universidad\2º GIT\Microprocesadores\Practica2\E3.cof
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\mplink.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E3.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=/o"$(BINDIR_)$(TARGETBASE).cof" /M"$(BINDIR_)$(TARGETBASE).map" /W
+TraceCmdString=
+DebugOptions=/z__MPLAB_DEBUG=1
+[File019]
+Location=F:\Universidad\Microprocesadores\Practica2\E3.hex
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E3.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File020]
+Location=F:\Universidad\Microprocesadores\Practica2\E3.lst
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E3.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File021]
+Location=F:\Universidad\Microprocesadores\Practica2\E3.cof
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\mplink.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E3.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=/o"$(BINDIR_)$(TARGETBASE).cof" /M"$(BINDIR_)$(TARGETBASE).map" /W
+TraceCmdString=
+DebugOptions=/z__MPLAB_DEBUG=1
+[File022]
+Location=F:\Universidad\Microprocesadores\Practica2\E4.lst
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E4.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[File023]
+Location=F:\Universidad\Microprocesadores\Practica2\E4.cof
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\mplink.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E4.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=/o"$(BINDIR_)$(TARGETBASE).cof" /M"$(BINDIR_)$(TARGETBASE).map" /W
+TraceCmdString=
+DebugOptions=/z__MPLAB_DEBUG=1
+[File024]
+Location=F:\Universidad\Microprocesadores\Practica2\E4.hex
+Folder=Output
+DeviceName=PIC16F876A
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|E4.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-absolute-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=/d__DEBUG=1
+[TOOL_LOC_STAMPS]
+tool_loc{49D3CA3F-D9A3-4518-9943-226A347E8CC7}=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+tool_loc{96C98149-AA1B-4CF9-B967-FAE79CAB663C}=C:\Program Files (x86)\Microchip\MPASM Suite\mplink.exe

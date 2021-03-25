@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/GIT/Universidad/Pracs_Hardware/Practica1_Modificacion/testbench_mult_sec_mod_isim_beh.exe" -prj "D:/GIT/Universidad/Pracs_Hardware/Practica1_Modificacion/testbench_mult_sec_mod_beh.prj" "work.testbench_mult_sec_mod" 

@@ -1,0 +1,7 @@
+INFILE=C:\Lab3_DIAGARN\implementation\system.ncd
+OUTFILE=C:\Lab3_DIAGARN\implementation\system.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Lab3_DIAGARN\implementation
+LICENSE=ISE
+USER_INFO=210682935_1777487889_210717946_048

@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc binario2BCD.ucf -p xc3s50-tq144-4 Display7Seg.ngc Display7Seg.ngd  
+map -intstyle ise -p xc3s50-tq144-4 -cm area -ir off -pr off -c 100 -o Display7Seg_map.ncd Display7Seg.ngd Display7Seg.pcf 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc binario2BCD.ucf -p xc3s400-ft256-4 Display7Seg.ngc Display7Seg.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Display7Seg_map.ncd Display7Seg.ngd Display7Seg.pcf 
+par -w -intstyle ise -ol high -t 1 Display7Seg_map.ncd Display7Seg.ncd Display7Seg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Display7Seg.twx Display7Seg.ncd -o Display7Seg.twr Display7Seg.pcf -ucf binario2BCD.ucf 
+bitgen -intstyle ise -f Display7Seg.ut Display7Seg.ncd 

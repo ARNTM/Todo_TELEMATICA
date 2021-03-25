@@ -1,0 +1,80 @@
+  1   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  2   0              ;                 
+  3   0              ;Transmision RS-232 por software. 
+  4   0              ;115200bps, 8 data bits, no parity, 1 stop bit, no flow control,
+  5   0              ;parte1: transmite por el puerte serie el contenido de la memoria RAM (64 bytes, portid [0-63])
+  6   0              ;parte2: genera numeros pseudo-aleatorios, bucle contador+interrupcion para transmitir numero.
+  7   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  8   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  9   0              ;declaracion de constantes y variables
+ 10   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;                  
+ 11   0              :CONSTANT   RS232        FF           ; puerto comunicacion serie es el FF
+ 12   0              ; rx es el bit 0 del puerto FF(entrada)
+ 13   0              ; tx es el bit 7 del puerto FF(salida), esto es porque
+ 14   0              ;el hyperterminal envia primero el LSB, por eso vamos desplazando a la 
+ 15   0              ;izquierda al recibir, y al enviar tambien, con lo que enviamos de nuevo
+ 16   0              ;el LSB primero como corresponde para que lo entienda el hyperterminal
+ 17   0              :NAMEREG    S1           TXREG        ;buffer de transmision
+ 18   0              :NAMEREG    S2           RXREG        ;buffer de recepcion
+ 19   0              :NAMEREG    S3           CONTBIT      ;contador de los 8 bits de datos
+ 20   0              :NAMEREG    S4           CONT1        ;contador de retardo1
+ 21   0              :NAMEREG    S5           CONT2        ;contador de retardo2
+ 22   0              ;
+ 23   0              :ADDRESS    0000         ;el programa se cargara a partir de la dir 00
+ 24   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 25   0              ;Inicio del programa
+ 26   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 27   0              
+ 28   0              :JUMP       PRUEBA       
+ 29   1              :JUMP       Z            PRUEBA       
+ 30   2              :JUMP       NZ           PRUEBA       
+ 31   3              :JUMP       C            PRUEBA       
+ 32   4              :JUMP       NC           PRUEBA       
+ 33   5              :CALL       PRUEBA       
+ 34   6              :CALL       Z            PRUEBA       
+ 35   7              :CALL       NZ           PRUEBA       
+ 36   8              :CALL       C            PRUEBA       
+ 37   9              :CALL       NC           PRUEBA       
+ 38   A              :RETURN     
+ 39   B              :RETURN     Z            
+ 40   C              :RETURN     NZ           
+ 41   D              :RETURN     C            
+ 42   E              :RETURN     NC           
+ 43   F PRUEBA       
+ 44   F              :SR0        S15          
+ 45  10              :SR1        S9           
+ 46  11              :SRX        S9           
+ 47  12              :SRA        S9           
+ 48  13              :RR         S9           
+ 49  14              :SL0        S9           
+ 50  15              :SL1        S9           
+ 51  16              :SLX        S9           
+ 52  17              :SLA        S9           
+ 53  18              :RL         S9           
+ 54  19              
+ 55  19              :LOAD       S10          B7E0         
+ 56  1A              :AND        S10          B7E0         
+ 57  1B              :OR         S10          B7E0         
+ 58  1C              :XOR        S10          B7E0         
+ 59  1D              :LOAD       S10          S15          
+ 60  1E              :AND        S10          S15          
+ 61  1F              :OR         S10          S15          
+ 62  20              :XOR        S10          S15          
+ 63  21              
+ 64  21              :ADD        S14          B7E0         
+ 65  22              :ADDCY      S14          B7E0         
+ 66  23              :SUB        S14          B7E0         
+ 67  24              :SUBCY      S14          B7E0         
+ 68  25              :ADD        S14          S11          
+ 69  26              :ADDCY      S14          S11          
+ 70  27              :SUB        S14          S11          
+ 71  28              :SUBCY      S14          S11          
+ 72  29              
+ 73  29              :INPUT      S8           B597         
+ 74  2A              :INPUT      S8           S12          
+ 75  2B              :OUTPUT     S8           B597         
+ 76  2C              :OUTPUT     S8           S12          
+ 77  2D              
+ 78  2D              :ENABLE     INTERRUPT    
+ 79  2E              :DISABLE    INTERRUPT    
+ 80  2F              

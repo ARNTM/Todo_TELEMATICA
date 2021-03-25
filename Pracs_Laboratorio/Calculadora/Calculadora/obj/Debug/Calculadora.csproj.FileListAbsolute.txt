@@ -1,0 +1,13 @@
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\Calculadora\bin\Debug\Calculadora.exe.config
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\Calculadora\bin\Debug\Calculadora.exe
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\Calculadora\bin\Debug\Calculadora.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\Calculadora\obj\Debug\Calculadora.csprojAssemblyReference.cache
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\Calculadora\obj\Debug\Calculadora.Form1.resources
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\Calculadora\obj\Debug\Calculadora.exe
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\Calculadora\obj\Debug\Calculadora.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\Calculadora\obj\Debug\Calculadora.csproj.CopyComplete
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\Calculadora\bin\Debug\operaciones.dll
+D:\GIT\Universidad\Pracs_Laboratorio\Ejercicio3\Calculadora\bin\Debug\operaciones.pdb

@@ -1,0 +1,10 @@
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Cliente\bin\Debug\Cliente.exe.config
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Cliente\bin\Debug\Cliente.exe
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Cliente\bin\Debug\Cliente.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Cliente\obj\Debug\Cliente.Properties.Resources.resources
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Cliente\obj\Debug\Cliente.csproj.GenerateResource.cache
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Cliente\obj\Debug\Cliente.csproj.CoreCompileInputs.cache
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Cliente\obj\Debug\Cliente.exe
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Cliente\obj\Debug\Cliente.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Cliente\obj\Debug\Cliente.csprojAssemblyReference.cache
+D:\GIT\Universidad\Pracs_Laboratorio\ChatUDP\Cliente\obj\Debug\Cliente.Cliente.resources

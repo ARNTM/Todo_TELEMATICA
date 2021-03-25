@@ -1,0 +1,2621 @@
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 5.1i Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Scanning    demo.vhd
+Scanning    demo.vhd
+Writing demo.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 5.1i Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\logical_bus_processing.vhd
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\logical_bus_processing.vhd
+Writing logical_bus_processing.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 5.1i Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\interrupt_logic.vhd
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\interrupt_logic.vhd
+Writing interrupt_logic.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 5.1i Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\stack_counter.vhd
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\stack_counter.vhd
+Writing stack_counter.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 5.1i Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\program_counter.vhd
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\program_counter.vhd
+Writing program_counter.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 5.1i Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\zero_flag_logic.vhd
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\zero_flag_logic.vhd
+Writing zero_flag_logic.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 5.1i Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\carry_flag_logic.vhd
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\carry_flag_logic.vhd
+Writing carry_flag_logic.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 5.1i Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\register_and_flag_enable.vhd
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\register_and_flag_enable.vhd
+Writing register_and_flag_enable.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 5.1i Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\T_state_and_Reset.vhd
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\vhdl\T_state_and_Reset.vhd
+Writing T_state_and_Reset.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 5.1i Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\c\demo_test.vhd
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\c\demo_test.vhd
+Writing demo_test.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../c/demo_test.vhd in Library work.
+Entity <demo_test> (Architecture <v1>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+
+Analyzing Entity <demo_test> (Architecture <v1>).
+Entity <demo_test> analyzed. Unit <demo_test> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <demo_test>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../c/demo_test.vhd.
+    Found 256x16-bit ROM for internal node.
+    Found 16-bit register for signal <dout>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <demo_test> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                             : 1
+  256x16-bit ROM                   : 1
+# Registers                        : 1
+  16-bit register                  : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Library "C:/Xilinx/xbr/data/lib.xst" Consulted
+WARNING:Xst:1293 - FF/Latch  <dout_1> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_3> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_4> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_5> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_6> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_7> is constant in block <demo_test>.
+Library "C:/Xilinx/data/librtl.xst" Consulted
+
+Optimizing unit <demo_test> ...
+Register dout_2 equivalent to dout_13 has been removed
+Register dout_8 equivalent to dout_9 has been removed
+Register dout_9 equivalent to dout_10 has been removed
+Register dout_14 equivalent to dout_12 has been removed
+
+Completed process "Synthesize".
+
+
+
+Started process "Translate".
+
+Release 5.1.02i - ngdbuild F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd _ngo -i -p xbr demo_test.ngc demo_test.ngd 
+
+Reading NGO file
+"C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/demo_test.ngc"
+...
+Reading component libraries for design expansion...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "demo_test.ngd" ...
+
+Writing NGDBUILD log file "demo_test.bld"...
+
+NGDBUILD done.
+
+Completed process "Translate".
+
+
+
+Started process "Fit".
+
+Release 5.1.02i - CPLD Optimizer/Partitioner F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+Considering device XC2C256-TQ144.
+Re-checking device resources ...
+...
+Synthesizing and Optimizing...
+...............................................................................................................
+...o
+.......
+Fitting...
+....
+...o
+
+Design demo_test has been optimized and fit into device XC2C256-5-TQ144.
+
+Completed process "Fit".
+
+
+Started process "Generate Timing".
+
+Release 5.1.02i - Timing Report Generator F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+Path tracing .....
+The number of paths traced: 101.
+
+Generating performance summary ...
+Generating Pad-to-Pad delay section ...
+Generating Clock-to-Output-Pad delay section ...
+Generating Setup-To-Clock-At-Pad delay section ...
+Generating Register-To-Register delay section ...
+     Cycle time table for clock clk ...
+
+demo_test.tim has been created.
+
+Generating Stamp model files demo_test.mod, demo_test.data ...
+demo_test.mod has been created.
+demo_test.data has been created.
+
+Completed process "Generate Timing".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+deleting __projnav/demo_jhdparse_tcl.rsp
+deleting __projnav/logical_bus_processing_jhdparse_tcl.rsp
+deleting __projnav/interrupt_capture_jhdparse_tcl.rsp
+deleting __projnav/interrupt_logic_jhdparse_tcl.rsp
+deleting __projnav/arithmatic_jhdparse_tcl.rsp
+deleting __projnav/stack_counter_jhdparse_tcl.rsp
+deleting __projnav/IO_strobe_logic_jhdparse_tcl.rsp
+deleting __projnav/program_counter_jhdparse_tcl.rsp
+deleting __projnav/register_bank_jhdparse_tcl.rsp
+deleting __projnav/zero_flag_logic_jhdparse_tcl.rsp
+deleting __projnav/shift_rotate_jhdparse_tcl.rsp
+deleting __projnav/carry_flag_logic_jhdparse_tcl.rsp
+deleting __projnav/flip_jhdparse_tcl.rsp
+deleting __projnav/register_and_flag_enable_jhdparse_tcl.rsp
+deleting __projnav/stack_ram_jhdparse_tcl.rsp
+deleting __projnav/T_state_and_Reset_jhdparse_tcl.rsp
+deleting __projnav/picoblaze_jhdparse_tcl.rsp
+deleting __projnav/demo_test_jhdparse_tcl.rsp
+deleting demo_test.syr
+deleting demo_test.ngr
+deleting demo_test.prj
+deleting demo_test.sprj
+deleting demo_test.ana
+deleting demo_test.stx
+deleting demo_test.cmd_log
+deleting demo_test.ngc
+deleting __projnav/demo_test_edfTOngd_tcl.rsp
+deleting demo_test.ngd
+deleting demo_test.bld
+deleting demo_test_ngdbuild.nav
+deleting _ngo/netlist.lst
+deleting .untf
+deleting demo_test.cmd_log
+deleting __projnav/demo_test_vm6TOtim_tcl.rsp
+deleting demo_test.tim
+deleting demo_test.mod
+deleting demo_test.data
+deleting demo_test.cmd_log
+deleting __projnav\taengine.err
+deleting __projnav/demo_test_ngdTOvm6_tcl.rsp
+deleting demo_test.vm6
+deleting demo_test.cxt
+deleting demo_test.blx
+deleting demo_test.mfd
+deleting demo_test.rpt
+deleting demo_test.log
+deleting demo_test.pnx
+deleting demo_test.gyd
+deleting demo_test.xml
+deleting demo_test_build.xml
+deleting demo_test.ptf
+deleting demo_test.bl
+deleting errors.xml
+deleting tmperr.err
+deleting demo_test.cmd_log
+deleting demo_test_html
+deleting demo_test._hrpt
+deleting demo_test.cmd_log
+deleting __projnav/demo_test._sprj
+deleting demo_test.sprj
+deleting demo_test.sprj
+deleting __projnav/demo_test._prj
+deleting demo_test.prj
+deleting demo_test.prj
+deleting __projnav/demo_test.xst
+deleting ./xst
+deleting __projnav/demo_test.gfl
+deleting __projnav/demo_test_flowplus.gfl
+Finished cleaning up project
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/IO_strobe_logic.vhd in Library work.
+Entity <io_strobe_logic> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/arithmatic.vhd in Library work.
+Entity <arithmetic_process> (Architecture <low_level_definition>) compiled.
+Entity <addsub8> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/shift_rotate.vhd in Library work.
+Entity <shift_rotate> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/logical_bus_processing.vhd in Library work.
+Entity <logical_bus_processing> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/T_state_and_Reset.vhd in Library work.
+Entity <t_state_and_reset> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_and_flag_enable.vhd in Library work.
+Entity <register_and_flag_enable> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/carry_flag_logic.vhd in Library work.
+Entity <carry_flag_logic> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/zero_flag_logic.vhd in Library work.
+Entity <zero_flag_logic> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/program_counter.vhd in Library work.
+Entity <program_counter> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_bank.vhd in Library work.
+Entity <register_bank> (Architecture <behavioral>) compiled.
+Entity <ram_nx1> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_ram.vhd in Library work.
+Entity <stack_ram> (Architecture <low_level_definition>) compiled.
+Entity <ram_x1s> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_counter.vhd in Library work.
+Entity <stack_counter> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_capture.vhd in Library work.
+Entity <interrupt_capture> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_logic.vhd in Library work.
+Entity <interrupt_logic> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/picoblaze.vhd in Library work.
+Entity <picoblaze> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../c/demo_test.vhd in Library work.
+Entity <demo_test> (Architecture <v1>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/demo.vhd in Library work.
+Entity <demo> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+
+Analyzing Entity <demo> (Architecture <behavioral>).
+Entity <demo> analyzed. Unit <demo> generated.
+
+Analyzing Entity <picoblaze> (Architecture <behavioral>).
+Entity <picoblaze> analyzed. Unit <picoblaze> generated.
+
+Analyzing Entity <demo_test> (Architecture <v1>).
+Entity <demo_test> analyzed. Unit <demo_test> generated.
+
+Analyzing Entity <io_strobe_logic> (Architecture <low_level_definition>).
+Entity <io_strobe_logic> analyzed. Unit <io_strobe_logic> generated.
+
+Analyzing Entity <arithmetic_process> (Architecture <low_level_definition>).
+Entity <arithmetic_process> analyzed. Unit <arithmetic_process> generated.
+
+Analyzing Entity <shift_rotate> (Architecture <low_level_definition>).
+Entity <shift_rotate> analyzed. Unit <shift_rotate> generated.
+
+Analyzing Entity <logical_bus_processing> (Architecture <low_level_definition>).
+Entity <logical_bus_processing> analyzed. Unit <logical_bus_processing> generated.
+
+Analyzing Entity <t_state_and_reset> (Architecture <low_level_definition>).
+Entity <t_state_and_reset> analyzed. Unit <t_state_and_reset> generated.
+
+Analyzing Entity <register_and_flag_enable> (Architecture <low_level_definition>).
+Entity <register_and_flag_enable> analyzed. Unit <register_and_flag_enable> generated.
+
+Analyzing Entity <carry_flag_logic> (Architecture <low_level_definition>).
+Entity <carry_flag_logic> analyzed. Unit <carry_flag_logic> generated.
+
+Analyzing Entity <zero_flag_logic> (Architecture <low_level_definition>).
+Entity <zero_flag_logic> analyzed. Unit <zero_flag_logic> generated.
+
+Analyzing Entity <program_counter> (Architecture <low_level_definition>).
+Entity <program_counter> analyzed. Unit <program_counter> generated.
+
+Analyzing generic Entity <register_bank> (Architecture <behavioral>).
+	m = 3
+Entity <register_bank> analyzed. Unit <register_bank> generated.
+
+Analyzing generic Entity <stack_ram> (Architecture <low_level_definition>).
+	m = 2
+	n = 8
+Entity <stack_ram> analyzed. Unit <stack_ram> generated.
+
+Analyzing generic Entity <stack_counter> (Architecture <low_level_definition>).
+	n = 2
+Entity <stack_counter> analyzed. Unit <stack_counter> generated.
+
+Analyzing Entity <interrupt_capture> (Architecture <low_level_definition>).
+Entity <interrupt_capture> analyzed. Unit <interrupt_capture> generated.
+
+Analyzing Entity <interrupt_logic> (Architecture <low_level_definition>).
+Entity <interrupt_logic> analyzed. Unit <interrupt_logic> generated.
+
+Analyzing Entity <addsub8> (Architecture <low_level_definition>).
+Entity <addsub8> analyzed. Unit <addsub8> generated.
+
+Analyzing generic Entity <ram_nx1> (Architecture <behavioral>).
+	m = 3
+Entity <ram_nx1> analyzed. Unit <ram_nx1> generated.
+
+Analyzing generic Entity <ram_x1s> (Architecture <behavioral>).
+	m = 2
+Entity <ram_x1s> analyzed. Unit <ram_x1s> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ram_x1s>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_ram.vhd.
+    Found 1-bit 4-to-1 multiplexer for signal <o>.
+    Found 4-bit register for signal <rambit>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <ram_x1s> synthesized.
+
+
+Synthesizing Unit <ram_nx1>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_bank.vhd.
+    Found 1-bit 8-to-1 multiplexer for signal <spo>.
+    Found 1-bit 8-to-1 multiplexer for signal <dpo>.
+    Found 8-bit register for signal <rambit>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <ram_nx1> synthesized.
+
+
+Synthesizing Unit <addsub8>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/arithmatic.vhd.
+    Found 8-bit register for signal <y>.
+    Found 8-bit xor2 for signal <full_addsub>.
+    Found 2 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Xor(s).
+Unit <addsub8> synthesized.
+
+
+Synthesizing Unit <interrupt_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_logic.vhd.
+    Found 1-bit register for signal <interrupt_enable>.
+    Found 1-bit register for signal <shaddow_carry>.
+    Found 1-bit register for signal <shaddow_zero>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <interrupt_logic> synthesized.
+
+
+Synthesizing Unit <interrupt_capture>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_capture.vhd.
+INFO:Xst:1304 - Contents of register <clean_interrupt> in unit <interrupt_capture> never changes during circuit operation. The register is replaced by logic.
+    Found 1-bit register for signal <active_interrupt_pulse>.
+WARNING:Xst:647 - Input <interrupt> is never used.
+Unit <interrupt_capture> synthesized.
+
+
+Synthesizing Unit <stack_counter>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_counter.vhd.
+    Found 2-bit register for signal <count_value>.
+    Found 1-bit xor2 for signal <next_count<1>>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <stack_counter> synthesized.
+
+
+Synthesizing Unit <stack_ram>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_ram.vhd.
+    Found 8-bit register for signal <dout>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <stack_ram> synthesized.
+
+
+Synthesizing Unit <register_bank>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_bank.vhd.
+Unit <register_bank> synthesized.
+
+
+Synthesizing Unit <program_counter>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/program_counter.vhd.
+    Found 8-bit adder for signal <$n0004> created at line 57.
+    Found 8-bit register for signal <count_value>.
+    Found 16 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   1 Adder/Subtracter(s).
+Unit <program_counter> synthesized.
+
+
+Synthesizing Unit <zero_flag_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/zero_flag_logic.vhd.
+    Found 1-bit register for signal <zero_flag>.
+Unit <zero_flag_logic> synthesized.
+
+
+Synthesizing Unit <carry_flag_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/carry_flag_logic.vhd.
+    Found 1-bit register for signal <carry_flag>.
+Unit <carry_flag_logic> synthesized.
+
+
+Synthesizing Unit <register_and_flag_enable>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_and_flag_enable.vhd.
+    Found 1-bit register for signal <arith_or_logical_valid>.
+    Found 1-bit register for signal <register_write_valid>.
+    Found 1-bit register for signal <returni_or_shift_valid>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <register_and_flag_enable> synthesized.
+
+
+Synthesizing Unit <t_state_and_reset>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/T_state_and_Reset.vhd.
+    Found 1-bit register for signal <internal_t_state>.
+    Found 1-bit register for signal <reset_delay1>.
+    Found 1-bit register for signal <reset_delay2>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <t_state_and_reset> synthesized.
+
+
+Synthesizing Unit <logical_bus_processing>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/logical_bus_processing.vhd.
+WARNING:Xst:646 - Signal <sel> is assigned but never used.
+    Found 8-bit register for signal <y>.
+    Found 1-bit xor2 for signal <$n0005> created at line 44.
+    Found 1-bit xor2 for signal <$n0008> created at line 44.
+    Found 1-bit xor2 for signal <$n0011> created at line 44.
+    Found 1-bit xor2 for signal <$n0014> created at line 44.
+    Found 1-bit xor2 for signal <$n0017> created at line 44.
+    Found 1-bit xor2 for signal <$n0020> created at line 44.
+    Found 1-bit xor2 for signal <$n0023> created at line 44.
+    Found 1-bit xor2 for signal <$n0026> created at line 44.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Xor(s).
+Unit <logical_bus_processing> synthesized.
+
+
+Synthesizing Unit <shift_rotate>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/shift_rotate.vhd.
+    Found 8-bit register for signal <y>.
+    Found 1-bit register for signal <carry_out>.
+    Found 8 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <shift_rotate> synthesized.
+
+
+Synthesizing Unit <arithmetic_process>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/arithmatic.vhd.
+    Found 1-bit register for signal <carry_out>.
+    Found 1-bit xor2 for signal <modified_carry_out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <arithmetic_process> synthesized.
+
+
+Synthesizing Unit <io_strobe_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/IO_strobe_logic.vhd.
+    Found 1-bit register for signal <write_strobe>.
+    Found 1-bit register for signal <read_strobe>.
+Unit <io_strobe_logic> synthesized.
+
+
+Synthesizing Unit <demo_test>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../c/demo_test.vhd.
+    Found 256x16-bit ROM for internal node.
+    Found 16-bit register for signal <dout>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <demo_test> synthesized.
+
+
+Synthesizing Unit <picoblaze>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/picoblaze.vhd.
+    Found 8 1-bit 2-to-1 multiplexers.
+WARNING:Xst:647 - Input <in_port<7>> is never used.
+WARNING:Xst:647 - Input <in_port<6>> is never used.
+WARNING:Xst:647 - Input <in_port<5>> is never used.
+WARNING:Xst:647 - Input <in_port<4>> is never used.
+WARNING:Xst:647 - Input <in_port<3>> is never used.
+WARNING:Xst:647 - Input <in_port<2>> is never used.
+WARNING:Xst:647 - Input <in_port<1>> is never used.
+WARNING:Xst:647 - Input <in_port<0>> is never used.
+WARNING:Xst:647 - Input <interrupt> is never used.
+Unit <picoblaze> synthesized.
+
+
+Synthesizing Unit <demo>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/demo.vhd.
+WARNING:Xst:646 - Signal <in_port> is assigned but never used.
+WARNING:Xst:646 - Signal <interrupt_event> is assigned but never used.
+    Found 8-bit register for signal <output>.
+WARNING:Xst:646 - Signal <port_id<7>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<6>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<5>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<4>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<3>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<2>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<1>> is assigned but never used.
+WARNING:Xst:646 - Signal <read_strobe> is assigned but never used.
+Unit <demo> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                             : 1
+  256x16-bit ROM                   : 1
+# Registers                        : 149
+  1-bit register                   : 146
+  8-bit register                   : 2
+  16-bit register                  : 1
+# Multiplexers                     : 36
+  2-to-1 multiplexer               : 12
+  1-bit 4-to-1 multiplexer         : 8
+  1-bit 8-to-1 multiplexer         : 16
+# Adders/Subtractors               : 1
+  8-bit adder                      : 1
+# Xors                             : 18
+  1-bit xor2                       : 18
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Library "C:/Xilinx/xbr/data/lib.xst" Consulted
+WARNING:Xst:1293 - FF/Latch  <active_interrupt_pulse> is constant in block <interrupt_capture>.
+WARNING:Xst:1293 - FF/Latch  <dout_1> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_3> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_4> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_5> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_6> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_7> is constant in block <demo_test>.
+Library "C:/Xilinx/data/librtl.xst" Consulted
+WARNING:Xst:1291 - FF/Latch <interrupt_enable> is unconnected in block <interrupt_control>.
+WARNING:Xst:1291 - FF/Latch <read_strobe> is unconnected in block <io_strobes>.
+
+Optimizing unit <demo> ...
+
+Optimizing unit <io_strobe_logic> ...
+
+Optimizing unit <logical_bus_processing> ...
+
+Optimizing unit <t_state_and_reset> ...
+
+Optimizing unit <register_and_flag_enable> ...
+
+Optimizing unit <carry_flag_logic> ...
+
+Optimizing unit <zero_flag_logic> ...
+
+Optimizing unit <stack_counter> ...
+
+Optimizing unit <interrupt_capture> ...
+
+Optimizing unit <interrupt_logic> ...
+
+Optimizing unit <addsub8> ...
+
+Optimizing unit <ram_nx1> ...
+
+Optimizing unit <ram_x1s> ...
+
+Optimizing unit <demo_test> ...
+Register dout_2 equivalent to dout_13 has been removed
+Register dout_8 equivalent to dout_9 has been removed
+Register dout_9 equivalent to dout_10 has been removed
+Register dout_14 equivalent to dout_12 has been removed
+
+Optimizing unit <arithmetic_process> ...
+
+Optimizing unit <shift_rotate> ...
+
+Optimizing unit <program_counter> ...
+
+Optimizing unit <register_bank> ...
+
+Optimizing unit <stack_ram> ...
+
+Optimizing unit <picoblaze> ...
+WARNING:Xst:1291 - FF/Latch <interrupt_enable> is unconnected in block <interrupt_control>.
+WARNING:Xst:1291 - FF/Latch <read_strobe> is unconnected in block <io_strobes>.
+
+Completed process "Synthesize".
+
+
+
+Started process "Translate".
+
+Release 5.1.02i - ngdbuild F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd _ngo -i -p xbr demo.ngc demo.ngd 
+
+Reading NGO file
+"C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/demo.ngc" ...
+Reading component libraries for design expansion...
+INFO:NgdBuild:784 - input buffer 'reset_ibuf' driving design level port 'reset'
+   is being pushed into module 'processor/basic_control' to enable I/O register
+   usage.
+
+Checking timing specifications ...
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'instruction<7>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<7>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<6>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<6>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<5>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<5>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<4>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<4>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<3>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<3>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<1>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<1>' has no load
+WARNING:NgdBuild:452 - logical net 'processor/read_strobe' has no driver
+WARNING:NgdBuild:454 - logical net 'processor/read_strobe' has no load
+WARNING:NgdBuild:452 - logical net 'processor/interrupt_control/i_interrupt' has
+   no driver
+WARNING:NgdBuild:454 - logical net 'processor/interrupt_control/i_interrupt' has
+   no load
+WARNING:NgdBuild:452 - logical net 'processor/interrupt_enable' has no driver
+WARNING:NgdBuild:454 - logical net 'processor/interrupt_enable' has no load
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  18
+
+Writing NGD file "demo.ngd" ...
+
+Writing NGDBUILD log file "demo.bld"...
+
+NGDBUILD done.
+
+Completed process "Translate".
+
+
+
+Started process "Fit".
+
+Release 5.1.02i - CPLD Optimizer/Partitioner F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+Considering device XC2C256-TQ144.
+Re-checking device resources ...
+...
+Synthesizing and Optimizing...
+............................................................................................
+...o
+.......
+Fitting...
+...............
+...o
+
+Design demo has been optimized and fit into device XC2C256-5-TQ144.
+
+Completed process "Fit".
+
+
+Started process "Generate Timing".
+
+Release 5.1.02i - Timing Report Generator F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+Path tracing ........
+The number of paths traced: 709.
+
+Generating performance summary ...
+Generating Pad-to-Pad delay section ...
+Generating Clock-to-Output-Pad delay section ...
+Generating Setup-To-Clock-At-Pad delay section ...
+Generating Register-To-Register delay section ...
+     Cycle time table for clock clk ...
+
+demo.tim has been created.
+
+Generating Stamp model files demo.mod, demo.data ...
+demo.mod has been created.
+demo.data has been created.
+
+Completed process "Generate Timing".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/IO_strobe_logic.vhd in Library work.
+Architecture low_level_definition of Entity io_strobe_logic is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/arithmatic.vhd in Library work.
+Architecture low_level_definition of Entity arithmetic_process is up to date.
+Architecture low_level_definition of Entity addsub8 is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/shift_rotate.vhd in Library work.
+Architecture low_level_definition of Entity shift_rotate is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/logical_bus_processing.vhd in Library work.
+Architecture low_level_definition of Entity logical_bus_processing is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/T_state_and_Reset.vhd in Library work.
+Architecture low_level_definition of Entity t_state_and_reset is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_and_flag_enable.vhd in Library work.
+Architecture low_level_definition of Entity register_and_flag_enable is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/carry_flag_logic.vhd in Library work.
+Architecture low_level_definition of Entity carry_flag_logic is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/zero_flag_logic.vhd in Library work.
+Architecture low_level_definition of Entity zero_flag_logic is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/program_counter.vhd in Library work.
+Architecture low_level_definition of Entity program_counter is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_bank.vhd in Library work.
+Architecture behavioral of Entity register_bank is up to date.
+Architecture behavioral of Entity ram_nx1 is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_ram.vhd in Library work.
+Architecture low_level_definition of Entity stack_ram is up to date.
+Architecture behavioral of Entity ram_x1s is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_counter.vhd in Library work.
+Architecture low_level_definition of Entity stack_counter is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_capture.vhd in Library work.
+Architecture low_level_definition of Entity interrupt_capture is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_logic.vhd in Library work.
+Architecture low_level_definition of Entity interrupt_logic is up to date.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/picoblaze.vhd in Library work.
+Architecture behavioral of Entity picoblaze is up to date.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+
+Analyzing Entity <picoblaze> (Architecture <behavioral>).
+Entity <picoblaze> analyzed. Unit <picoblaze> generated.
+
+Analyzing Entity <io_strobe_logic> (Architecture <low_level_definition>).
+Entity <io_strobe_logic> analyzed. Unit <io_strobe_logic> generated.
+
+Analyzing Entity <arithmetic_process> (Architecture <low_level_definition>).
+Entity <arithmetic_process> analyzed. Unit <arithmetic_process> generated.
+
+Analyzing Entity <shift_rotate> (Architecture <low_level_definition>).
+Entity <shift_rotate> analyzed. Unit <shift_rotate> generated.
+
+Analyzing Entity <logical_bus_processing> (Architecture <low_level_definition>).
+Entity <logical_bus_processing> analyzed. Unit <logical_bus_processing> generated.
+
+Analyzing Entity <t_state_and_reset> (Architecture <low_level_definition>).
+Entity <t_state_and_reset> analyzed. Unit <t_state_and_reset> generated.
+
+Analyzing Entity <register_and_flag_enable> (Architecture <low_level_definition>).
+Entity <register_and_flag_enable> analyzed. Unit <register_and_flag_enable> generated.
+
+Analyzing Entity <carry_flag_logic> (Architecture <low_level_definition>).
+Entity <carry_flag_logic> analyzed. Unit <carry_flag_logic> generated.
+
+Analyzing Entity <zero_flag_logic> (Architecture <low_level_definition>).
+Entity <zero_flag_logic> analyzed. Unit <zero_flag_logic> generated.
+
+Analyzing Entity <program_counter> (Architecture <low_level_definition>).
+Entity <program_counter> analyzed. Unit <program_counter> generated.
+
+Analyzing generic Entity <register_bank> (Architecture <behavioral>).
+	m = 3
+Entity <register_bank> analyzed. Unit <register_bank> generated.
+
+Analyzing generic Entity <stack_ram> (Architecture <low_level_definition>).
+	m = 2
+	n = 8
+Entity <stack_ram> analyzed. Unit <stack_ram> generated.
+
+Analyzing generic Entity <stack_counter> (Architecture <low_level_definition>).
+	n = 2
+Entity <stack_counter> analyzed. Unit <stack_counter> generated.
+
+Analyzing Entity <interrupt_capture> (Architecture <low_level_definition>).
+Entity <interrupt_capture> analyzed. Unit <interrupt_capture> generated.
+
+Analyzing Entity <interrupt_logic> (Architecture <low_level_definition>).
+Entity <interrupt_logic> analyzed. Unit <interrupt_logic> generated.
+
+Analyzing Entity <addsub8> (Architecture <low_level_definition>).
+Entity <addsub8> analyzed. Unit <addsub8> generated.
+
+Analyzing generic Entity <ram_nx1> (Architecture <behavioral>).
+	m = 3
+Entity <ram_nx1> analyzed. Unit <ram_nx1> generated.
+
+Analyzing generic Entity <ram_x1s> (Architecture <behavioral>).
+	m = 2
+Entity <ram_x1s> analyzed. Unit <ram_x1s> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ram_x1s>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_ram.vhd.
+    Found 1-bit 4-to-1 multiplexer for signal <o>.
+    Found 4-bit register for signal <rambit>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <ram_x1s> synthesized.
+
+
+Synthesizing Unit <ram_nx1>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_bank.vhd.
+    Found 1-bit 8-to-1 multiplexer for signal <spo>.
+    Found 1-bit 8-to-1 multiplexer for signal <dpo>.
+    Found 8-bit register for signal <rambit>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <ram_nx1> synthesized.
+
+
+Synthesizing Unit <addsub8>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/arithmatic.vhd.
+    Found 8-bit register for signal <y>.
+    Found 8-bit xor2 for signal <full_addsub>.
+    Found 2 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Xor(s).
+Unit <addsub8> synthesized.
+
+
+Synthesizing Unit <interrupt_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_logic.vhd.
+    Found 1-bit register for signal <interrupt_enable>.
+    Found 1-bit register for signal <shaddow_carry>.
+    Found 1-bit register for signal <shaddow_zero>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <interrupt_logic> synthesized.
+
+
+Synthesizing Unit <interrupt_capture>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_capture.vhd.
+    Found 1-bit register for signal <active_interrupt_pulse>.
+    Found 1-bit register for signal <clean_interrupt>.
+Unit <interrupt_capture> synthesized.
+
+
+Synthesizing Unit <stack_counter>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_counter.vhd.
+    Found 2-bit register for signal <count_value>.
+    Found 1-bit xor2 for signal <next_count<1>>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <stack_counter> synthesized.
+
+
+Synthesizing Unit <stack_ram>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_ram.vhd.
+    Found 8-bit register for signal <dout>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <stack_ram> synthesized.
+
+
+Synthesizing Unit <register_bank>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_bank.vhd.
+Unit <register_bank> synthesized.
+
+
+Synthesizing Unit <program_counter>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/program_counter.vhd.
+    Found 8-bit adder for signal <$n0004> created at line 57.
+    Found 8-bit register for signal <count_value>.
+    Found 16 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   1 Adder/Subtracter(s).
+Unit <program_counter> synthesized.
+
+
+Synthesizing Unit <zero_flag_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/zero_flag_logic.vhd.
+    Found 1-bit register for signal <zero_flag>.
+Unit <zero_flag_logic> synthesized.
+
+
+Synthesizing Unit <carry_flag_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/carry_flag_logic.vhd.
+    Found 1-bit register for signal <carry_flag>.
+Unit <carry_flag_logic> synthesized.
+
+
+Synthesizing Unit <register_and_flag_enable>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_and_flag_enable.vhd.
+    Found 1-bit register for signal <arith_or_logical_valid>.
+    Found 1-bit register for signal <register_write_valid>.
+    Found 1-bit register for signal <returni_or_shift_valid>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <register_and_flag_enable> synthesized.
+
+
+Synthesizing Unit <t_state_and_reset>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/T_state_and_Reset.vhd.
+    Found 1-bit register for signal <internal_t_state>.
+    Found 1-bit register for signal <reset_delay1>.
+    Found 1-bit register for signal <reset_delay2>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <t_state_and_reset> synthesized.
+
+
+Synthesizing Unit <logical_bus_processing>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/logical_bus_processing.vhd.
+WARNING:Xst:646 - Signal <sel> is assigned but never used.
+    Found 8-bit register for signal <y>.
+    Found 1-bit xor2 for signal <$n0005> created at line 44.
+    Found 1-bit xor2 for signal <$n0008> created at line 44.
+    Found 1-bit xor2 for signal <$n0011> created at line 44.
+    Found 1-bit xor2 for signal <$n0014> created at line 44.
+    Found 1-bit xor2 for signal <$n0017> created at line 44.
+    Found 1-bit xor2 for signal <$n0020> created at line 44.
+    Found 1-bit xor2 for signal <$n0023> created at line 44.
+    Found 1-bit xor2 for signal <$n0026> created at line 44.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Xor(s).
+Unit <logical_bus_processing> synthesized.
+
+
+Synthesizing Unit <shift_rotate>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/shift_rotate.vhd.
+    Found 8-bit register for signal <y>.
+    Found 1-bit register for signal <carry_out>.
+    Found 8 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <shift_rotate> synthesized.
+
+
+Synthesizing Unit <arithmetic_process>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/arithmatic.vhd.
+    Found 1-bit register for signal <carry_out>.
+    Found 1-bit xor2 for signal <modified_carry_out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <arithmetic_process> synthesized.
+
+
+Synthesizing Unit <io_strobe_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/IO_strobe_logic.vhd.
+    Found 1-bit register for signal <write_strobe>.
+    Found 1-bit register for signal <read_strobe>.
+Unit <io_strobe_logic> synthesized.
+
+
+Synthesizing Unit <picoblaze>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/picoblaze.vhd.
+    Found 8 1-bit 2-to-1 multiplexers.
+Unit <picoblaze> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 148
+  1-bit register                   : 147
+  8-bit register                   : 1
+# Multiplexers                     : 36
+  2-to-1 multiplexer               : 12
+  1-bit 4-to-1 multiplexer         : 8
+  1-bit 8-to-1 multiplexer         : 16
+# Adders/Subtractors               : 1
+  8-bit adder                      : 1
+# Xors                             : 18
+  1-bit xor2                       : 18
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Library "C:/Xilinx/xbr/data/lib.xst" Consulted
+Library "C:/Xilinx/data/librtl.xst" Consulted
+
+Optimizing unit <picoblaze> ...
+
+Optimizing unit <io_strobe_logic> ...
+
+Optimizing unit <logical_bus_processing> ...
+
+Optimizing unit <t_state_and_reset> ...
+
+Optimizing unit <register_and_flag_enable> ...
+
+Optimizing unit <carry_flag_logic> ...
+
+Optimizing unit <zero_flag_logic> ...
+
+Optimizing unit <stack_counter> ...
+
+Optimizing unit <interrupt_capture> ...
+
+Optimizing unit <interrupt_logic> ...
+
+Optimizing unit <addsub8> ...
+
+Optimizing unit <ram_nx1> ...
+
+Optimizing unit <ram_x1s> ...
+
+Optimizing unit <arithmetic_process> ...
+
+Optimizing unit <shift_rotate> ...
+
+Optimizing unit <program_counter> ...
+
+Optimizing unit <register_bank> ...
+
+Optimizing unit <stack_ram> ...
+
+Completed process "Synthesize".
+
+
+
+Started process "Translate".
+
+Release 5.1.02i - ngdbuild F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd _ngo -i -p xbr picoblaze.ngc picoblaze.ngd 
+
+Reading NGO file
+"C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/picoblaze.ngc"
+...
+Reading component libraries for design expansion...
+INFO:NgdBuild:784 - input buffer 'reset_ibuf' driving design level port 'reset'
+   is being pushed into module 'basic_control' to enable I/O register usage.
+INFO:NgdBuild:782 - output buffer 'write_strobe_obuf' driving design level port
+   'write_strobe' is being pushed into module 'io_strobes' to enable I/O
+   register usage.
+INFO:NgdBuild:782 - output buffer 'read_strobe_obuf' driving design level port
+   'read_strobe' is being pushed into module 'io_strobes' to enable I/O register
+   usage.
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "picoblaze.ngd" ...
+
+Writing NGDBUILD log file "picoblaze.bld"...
+
+NGDBUILD done.
+
+Completed process "Translate".
+
+
+
+Started process "Fit".
+
+Release 5.1.02i - CPLD Optimizer/Partitioner F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+Considering device XC2C256-TQ144.
+Re-checking device resources ...
+...
+Synthesizing and Optimizing...
+............................................................................................
+...o
+.......
+Fitting...
+.................................
+...o
+
+Design picoblaze has been optimized and fit into device XC2C256-5-TQ144.
+
+Completed process "Fit".
+
+
+Started process "Generate Timing".
+
+Release 5.1.02i - Timing Report Generator F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+Path tracing ..................
+The number of paths traced: 2685.
+
+Generating performance summary ...
+Generating Pad-to-Pad delay section ...
+Generating Clock-to-Output-Pad delay section ...
+Generating Setup-To-Clock-At-Pad delay section ...
+Generating Register-To-Register delay section ...
+     Cycle time table for clock clk ...
+
+picoblaze.tim has been created.
+
+Generating Stamp model files picoblaze.mod, picoblaze.data ...
+picoblaze.mod has been created.
+picoblaze.data has been created.
+
+Completed process "Generate Timing".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+deleting demo.syr
+deleting demo.ngr
+deleting demo.prj
+deleting demo.sprj
+deleting demo.ana
+deleting demo.stx
+deleting demo.cmd_log
+deleting demo.ngc
+deleting __projnav/demo_edfTOngd_tcl.rsp
+deleting demo.ngd
+deleting demo.bld
+deleting demo_ngdbuild.nav
+deleting _ngo/netlist.lst
+deleting .untf
+deleting demo.cmd_log
+deleting __projnav/demo_vm6TOtim_tcl.rsp
+deleting demo.tim
+deleting demo.mod
+deleting demo.data
+deleting demo.cmd_log
+deleting __projnav\taengine.err
+deleting __projnav/demo_ngdTOvm6_tcl.rsp
+deleting demo.vm6
+deleting demo.cxt
+deleting demo.blx
+deleting demo.mfd
+deleting demo.rpt
+deleting demo.log
+deleting demo.pnx
+deleting demo.gyd
+deleting demo.xml
+deleting demo_build.xml
+deleting demo_test.ptf
+deleting demo.bl
+deleting errors.xml
+deleting tmperr.err
+deleting demo.cmd_log
+deleting demo_html
+deleting demo._hrpt
+deleting demo.cmd_log
+deleting picoblaze.syr
+deleting picoblaze.ngr
+deleting picoblaze.prj
+deleting picoblaze.sprj
+deleting picoblaze.ana
+deleting picoblaze.stx
+deleting picoblaze.cmd_log
+deleting picoblaze.ngc
+deleting __projnav/picoblaze_edfTOngd_tcl.rsp
+deleting picoblaze.ngd
+deleting picoblaze.bld
+deleting picoblaze_ngdbuild.nav
+deleting _ngo/netlist.lst
+deleting .untf
+deleting picoblaze.cmd_log
+deleting __projnav/picoblaze_vm6TOtim_tcl.rsp
+deleting picoblaze.tim
+deleting picoblaze.mod
+deleting picoblaze.data
+deleting picoblaze.cmd_log
+deleting __projnav\taengine.err
+deleting __projnav/picoblaze_ngdTOvm6_tcl.rsp
+deleting picoblaze.vm6
+deleting picoblaze.cxt
+deleting picoblaze.blx
+deleting picoblaze.mfd
+deleting picoblaze.rpt
+deleting picoblaze.log
+deleting picoblaze.pnx
+deleting picoblaze.gyd
+deleting picoblaze.xml
+deleting picoblaze_build.xml
+deleting demo_test.ptf
+deleting picoblaze.bl
+deleting errors.xml
+deleting tmperr.err
+deleting picoblaze.cmd_log
+deleting picoblaze_html
+deleting picoblaze._hrpt
+deleting picoblaze.cmd_log
+deleting __projnav/demo._sprj
+deleting demo.sprj
+deleting demo.sprj
+deleting __projnav/demo._prj
+deleting demo.prj
+deleting demo.prj
+deleting __projnav/demo.xst
+deleting ./xst
+deleting __projnav/picoblaze._sprj
+deleting picoblaze.sprj
+deleting picoblaze.sprj
+deleting __projnav/picoblaze._prj
+deleting picoblaze.prj
+deleting picoblaze.prj
+deleting __projnav/picoblaze.xst
+deleting ./xst
+deleting __projnav/demo_test.gfl
+deleting __projnav/demo_test_flowplus.gfl
+Finished cleaning up project
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/IO_strobe_logic.vhd in Library work.
+Entity <io_strobe_logic> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/arithmatic.vhd in Library work.
+Entity <arithmetic_process> (Architecture <low_level_definition>) compiled.
+Entity <addsub8> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/shift_rotate.vhd in Library work.
+Entity <shift_rotate> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/logical_bus_processing.vhd in Library work.
+Entity <logical_bus_processing> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/T_state_and_Reset.vhd in Library work.
+Entity <t_state_and_reset> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_and_flag_enable.vhd in Library work.
+Entity <register_and_flag_enable> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/carry_flag_logic.vhd in Library work.
+Entity <carry_flag_logic> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/zero_flag_logic.vhd in Library work.
+Entity <zero_flag_logic> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/program_counter.vhd in Library work.
+Entity <program_counter> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_bank.vhd in Library work.
+Entity <register_bank> (Architecture <behavioral>) compiled.
+Entity <ram_nx1> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_ram.vhd in Library work.
+Entity <stack_ram> (Architecture <low_level_definition>) compiled.
+Entity <ram_x1s> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_counter.vhd in Library work.
+Entity <stack_counter> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_capture.vhd in Library work.
+Entity <interrupt_capture> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_logic.vhd in Library work.
+Entity <interrupt_logic> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/picoblaze.vhd in Library work.
+Entity <picoblaze> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../c/demo_test.vhd in Library work.
+Entity <demo_test> (Architecture <v1>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/demo.vhd in Library work.
+Entity <demo> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+
+Analyzing Entity <demo> (Architecture <behavioral>).
+Entity <demo> analyzed. Unit <demo> generated.
+
+Analyzing Entity <picoblaze> (Architecture <behavioral>).
+Entity <picoblaze> analyzed. Unit <picoblaze> generated.
+
+Analyzing Entity <demo_test> (Architecture <v1>).
+Entity <demo_test> analyzed. Unit <demo_test> generated.
+
+Analyzing Entity <io_strobe_logic> (Architecture <low_level_definition>).
+Entity <io_strobe_logic> analyzed. Unit <io_strobe_logic> generated.
+
+Analyzing Entity <arithmetic_process> (Architecture <low_level_definition>).
+Entity <arithmetic_process> analyzed. Unit <arithmetic_process> generated.
+
+Analyzing Entity <shift_rotate> (Architecture <low_level_definition>).
+Entity <shift_rotate> analyzed. Unit <shift_rotate> generated.
+
+Analyzing Entity <logical_bus_processing> (Architecture <low_level_definition>).
+Entity <logical_bus_processing> analyzed. Unit <logical_bus_processing> generated.
+
+Analyzing Entity <t_state_and_reset> (Architecture <low_level_definition>).
+Entity <t_state_and_reset> analyzed. Unit <t_state_and_reset> generated.
+
+Analyzing Entity <register_and_flag_enable> (Architecture <low_level_definition>).
+Entity <register_and_flag_enable> analyzed. Unit <register_and_flag_enable> generated.
+
+Analyzing Entity <carry_flag_logic> (Architecture <low_level_definition>).
+Entity <carry_flag_logic> analyzed. Unit <carry_flag_logic> generated.
+
+Analyzing Entity <zero_flag_logic> (Architecture <low_level_definition>).
+Entity <zero_flag_logic> analyzed. Unit <zero_flag_logic> generated.
+
+Analyzing Entity <program_counter> (Architecture <low_level_definition>).
+Entity <program_counter> analyzed. Unit <program_counter> generated.
+
+Analyzing generic Entity <register_bank> (Architecture <behavioral>).
+	m = 3
+Entity <register_bank> analyzed. Unit <register_bank> generated.
+
+Analyzing generic Entity <stack_ram> (Architecture <low_level_definition>).
+	m = 2
+	n = 8
+Entity <stack_ram> analyzed. Unit <stack_ram> generated.
+
+Analyzing generic Entity <stack_counter> (Architecture <low_level_definition>).
+	n = 2
+Entity <stack_counter> analyzed. Unit <stack_counter> generated.
+
+Analyzing Entity <interrupt_capture> (Architecture <low_level_definition>).
+Entity <interrupt_capture> analyzed. Unit <interrupt_capture> generated.
+
+Analyzing Entity <interrupt_logic> (Architecture <low_level_definition>).
+Entity <interrupt_logic> analyzed. Unit <interrupt_logic> generated.
+
+Analyzing Entity <addsub8> (Architecture <low_level_definition>).
+Entity <addsub8> analyzed. Unit <addsub8> generated.
+
+Analyzing generic Entity <ram_nx1> (Architecture <behavioral>).
+	m = 3
+Entity <ram_nx1> analyzed. Unit <ram_nx1> generated.
+
+Analyzing generic Entity <ram_x1s> (Architecture <behavioral>).
+	m = 2
+Entity <ram_x1s> analyzed. Unit <ram_x1s> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ram_x1s>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_ram.vhd.
+    Found 1-bit 4-to-1 multiplexer for signal <o>.
+    Found 4-bit register for signal <rambit>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <ram_x1s> synthesized.
+
+
+Synthesizing Unit <ram_nx1>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_bank.vhd.
+    Found 1-bit 8-to-1 multiplexer for signal <spo>.
+    Found 1-bit 8-to-1 multiplexer for signal <dpo>.
+    Found 8-bit register for signal <rambit>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <ram_nx1> synthesized.
+
+
+Synthesizing Unit <addsub8>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/arithmatic.vhd.
+    Found 8-bit register for signal <y>.
+    Found 8-bit xor2 for signal <full_addsub>.
+    Found 2 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Xor(s).
+Unit <addsub8> synthesized.
+
+
+Synthesizing Unit <interrupt_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_logic.vhd.
+    Found 1-bit register for signal <interrupt_enable>.
+    Found 1-bit register for signal <shaddow_carry>.
+    Found 1-bit register for signal <shaddow_zero>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <interrupt_logic> synthesized.
+
+
+Synthesizing Unit <interrupt_capture>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_capture.vhd.
+INFO:Xst:1304 - Contents of register <clean_interrupt> in unit <interrupt_capture> never changes during circuit operation. The register is replaced by logic.
+    Found 1-bit register for signal <active_interrupt_pulse>.
+WARNING:Xst:647 - Input <interrupt> is never used.
+Unit <interrupt_capture> synthesized.
+
+
+Synthesizing Unit <stack_counter>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_counter.vhd.
+    Found 2-bit register for signal <count_value>.
+    Found 1-bit xor2 for signal <next_count<1>>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <stack_counter> synthesized.
+
+
+Synthesizing Unit <stack_ram>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_ram.vhd.
+    Found 8-bit register for signal <dout>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <stack_ram> synthesized.
+
+
+Synthesizing Unit <register_bank>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_bank.vhd.
+Unit <register_bank> synthesized.
+
+
+Synthesizing Unit <program_counter>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/program_counter.vhd.
+    Found 8-bit adder for signal <$n0004> created at line 57.
+    Found 8-bit register for signal <count_value>.
+    Found 16 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   1 Adder/Subtracter(s).
+Unit <program_counter> synthesized.
+
+
+Synthesizing Unit <zero_flag_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/zero_flag_logic.vhd.
+    Found 1-bit register for signal <zero_flag>.
+Unit <zero_flag_logic> synthesized.
+
+
+Synthesizing Unit <carry_flag_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/carry_flag_logic.vhd.
+    Found 1-bit register for signal <carry_flag>.
+Unit <carry_flag_logic> synthesized.
+
+
+Synthesizing Unit <register_and_flag_enable>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_and_flag_enable.vhd.
+    Found 1-bit register for signal <arith_or_logical_valid>.
+    Found 1-bit register for signal <register_write_valid>.
+    Found 1-bit register for signal <returni_or_shift_valid>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <register_and_flag_enable> synthesized.
+
+
+Synthesizing Unit <t_state_and_reset>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/T_state_and_Reset.vhd.
+    Found 1-bit register for signal <internal_t_state>.
+    Found 1-bit register for signal <reset_delay1>.
+    Found 1-bit register for signal <reset_delay2>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <t_state_and_reset> synthesized.
+
+
+Synthesizing Unit <logical_bus_processing>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/logical_bus_processing.vhd.
+WARNING:Xst:646 - Signal <sel> is assigned but never used.
+    Found 8-bit register for signal <y>.
+    Found 1-bit xor2 for signal <$n0005> created at line 44.
+    Found 1-bit xor2 for signal <$n0008> created at line 44.
+    Found 1-bit xor2 for signal <$n0011> created at line 44.
+    Found 1-bit xor2 for signal <$n0014> created at line 44.
+    Found 1-bit xor2 for signal <$n0017> created at line 44.
+    Found 1-bit xor2 for signal <$n0020> created at line 44.
+    Found 1-bit xor2 for signal <$n0023> created at line 44.
+    Found 1-bit xor2 for signal <$n0026> created at line 44.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Xor(s).
+Unit <logical_bus_processing> synthesized.
+
+
+Synthesizing Unit <shift_rotate>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/shift_rotate.vhd.
+    Found 8-bit register for signal <y>.
+    Found 1-bit register for signal <carry_out>.
+    Found 8 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <shift_rotate> synthesized.
+
+
+Synthesizing Unit <arithmetic_process>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/arithmatic.vhd.
+    Found 1-bit register for signal <carry_out>.
+    Found 1-bit xor2 for signal <modified_carry_out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <arithmetic_process> synthesized.
+
+
+Synthesizing Unit <io_strobe_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/IO_strobe_logic.vhd.
+    Found 1-bit register for signal <write_strobe>.
+    Found 1-bit register for signal <read_strobe>.
+Unit <io_strobe_logic> synthesized.
+
+
+Synthesizing Unit <demo_test>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../c/demo_test.vhd.
+    Found 256x16-bit ROM for internal node.
+    Found 16-bit register for signal <dout>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <demo_test> synthesized.
+
+
+Synthesizing Unit <picoblaze>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/picoblaze.vhd.
+    Found 8 1-bit 2-to-1 multiplexers.
+WARNING:Xst:647 - Input <in_port<7>> is never used.
+WARNING:Xst:647 - Input <in_port<6>> is never used.
+WARNING:Xst:647 - Input <in_port<5>> is never used.
+WARNING:Xst:647 - Input <in_port<4>> is never used.
+WARNING:Xst:647 - Input <in_port<3>> is never used.
+WARNING:Xst:647 - Input <in_port<2>> is never used.
+WARNING:Xst:647 - Input <in_port<1>> is never used.
+WARNING:Xst:647 - Input <in_port<0>> is never used.
+WARNING:Xst:647 - Input <interrupt> is never used.
+Unit <picoblaze> synthesized.
+
+
+Synthesizing Unit <demo>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/demo.vhd.
+WARNING:Xst:646 - Signal <in_port> is assigned but never used.
+WARNING:Xst:646 - Signal <interrupt_event> is assigned but never used.
+    Found 8-bit register for signal <output>.
+WARNING:Xst:646 - Signal <port_id<7>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<6>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<5>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<4>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<3>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<2>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<1>> is assigned but never used.
+WARNING:Xst:646 - Signal <read_strobe> is assigned but never used.
+Unit <demo> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                             : 1
+  256x16-bit ROM                   : 1
+# Registers                        : 149
+  1-bit register                   : 146
+  8-bit register                   : 2
+  16-bit register                  : 1
+# Multiplexers                     : 36
+  2-to-1 multiplexer               : 12
+  1-bit 4-to-1 multiplexer         : 8
+  1-bit 8-to-1 multiplexer         : 16
+# Adders/Subtractors               : 1
+  8-bit adder                      : 1
+# Xors                             : 18
+  1-bit xor2                       : 18
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Library "C:/Xilinx/xbr/data/lib.xst" Consulted
+WARNING:Xst:1293 - FF/Latch  <active_interrupt_pulse> is constant in block <interrupt_capture>.
+WARNING:Xst:1293 - FF/Latch  <dout_1> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_3> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_4> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_5> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_6> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_7> is constant in block <demo_test>.
+Library "C:/Xilinx/data/librtl.xst" Consulted
+WARNING:Xst:1291 - FF/Latch <interrupt_enable> is unconnected in block <interrupt_control>.
+WARNING:Xst:1291 - FF/Latch <read_strobe> is unconnected in block <io_strobes>.
+
+Optimizing unit <demo> ...
+
+Optimizing unit <io_strobe_logic> ...
+
+Optimizing unit <logical_bus_processing> ...
+
+Optimizing unit <t_state_and_reset> ...
+
+Optimizing unit <register_and_flag_enable> ...
+
+Optimizing unit <carry_flag_logic> ...
+
+Optimizing unit <zero_flag_logic> ...
+
+Optimizing unit <stack_counter> ...
+
+Optimizing unit <interrupt_capture> ...
+
+Optimizing unit <interrupt_logic> ...
+
+Optimizing unit <addsub8> ...
+
+Optimizing unit <ram_nx1> ...
+
+Optimizing unit <ram_x1s> ...
+
+Optimizing unit <demo_test> ...
+Register dout_2 equivalent to dout_13 has been removed
+Register dout_8 equivalent to dout_9 has been removed
+Register dout_9 equivalent to dout_10 has been removed
+Register dout_14 equivalent to dout_12 has been removed
+
+Optimizing unit <arithmetic_process> ...
+
+Optimizing unit <shift_rotate> ...
+
+Optimizing unit <program_counter> ...
+
+Optimizing unit <register_bank> ...
+
+Optimizing unit <stack_ram> ...
+
+Optimizing unit <picoblaze> ...
+WARNING:Xst:1291 - FF/Latch <interrupt_enable> is unconnected in block <interrupt_control>.
+WARNING:Xst:1291 - FF/Latch <read_strobe> is unconnected in block <io_strobes>.
+
+Completed process "Synthesize".
+
+
+
+Started process "Translate".
+
+Release 5.1.02i - ngdbuild F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd _ngo -i -p xbr demo.ngc demo.ngd 
+
+Reading NGO file
+"C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/demo.ngc" ...
+Reading component libraries for design expansion...
+INFO:NgdBuild:784 - input buffer 'reset_ibuf' driving design level port 'reset'
+   is being pushed into module 'processor/basic_control' to enable I/O register
+   usage.
+
+Checking timing specifications ...
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'instruction<7>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<7>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<6>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<6>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<5>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<5>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<4>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<4>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<3>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<3>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<1>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<1>' has no load
+WARNING:NgdBuild:452 - logical net 'processor/read_strobe' has no driver
+WARNING:NgdBuild:454 - logical net 'processor/read_strobe' has no load
+WARNING:NgdBuild:452 - logical net 'processor/interrupt_control/i_interrupt' has
+   no driver
+WARNING:NgdBuild:454 - logical net 'processor/interrupt_control/i_interrupt' has
+   no load
+WARNING:NgdBuild:452 - logical net 'processor/interrupt_enable' has no driver
+WARNING:NgdBuild:454 - logical net 'processor/interrupt_enable' has no load
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  18
+
+Writing NGD file "demo.ngd" ...
+
+Writing NGDBUILD log file "demo.bld"...
+
+NGDBUILD done.
+
+Completed process "Translate".
+
+
+
+Started process "Fit".
+
+Release 5.1.02i - CPLD Optimizer/Partitioner F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+Considering device XC2C256-TQ144.
+Re-checking device resources ...
+...
+Synthesizing and Optimizing...
+............................................................................................
+...o
+.......
+Fitting...
+...............
+...o
+
+Design demo has been optimized and fit into device XC2C256-5-TQ144.
+
+Completed process "Fit".
+
+
+Started process "Generate Timing".
+
+Release 5.1.02i - Timing Report Generator F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+Path tracing ........
+The number of paths traced: 709.
+
+Generating performance summary ...
+Generating Pad-to-Pad delay section ...
+Generating Clock-to-Output-Pad delay section ...
+Generating Setup-To-Clock-At-Pad delay section ...
+Generating Register-To-Register delay section ...
+     Cycle time table for clock clk ...
+
+demo.tim has been created.
+
+Generating Stamp model files demo.mod, demo.data ...
+demo.mod has been created.
+demo.data has been created.
+
+Completed process "Generate Timing".
+
+
+
+Started process "Generate Post-Fit Simulation Model".
+
+Release 5.1.02i - Timing Simulation Interface F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+Creating NGA for simulation.
+
+Release 5.1.02i - ngd2vhdl F.23
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+ngd2vhdl: Reading design demo.nga ...
+WARNING:NetListWriters:431 - Design does not contain hierarchical blocks with
+   KEEP_HIERARCHY property. Hierarchy will not be retained.
+ngd2vhdl:   Flattening design ...
+ngd2vhdl:   Flattening design completed.
+ngd2vhdl: Specializing design ...
+ngd2vhdl: Specializing design completed.
+ngd2vhdl: Processing design ...
+ngd2vhdl:   Preping physical only global signals ...
+ngd2vhdl:   Preping design's networks ...
+ngd2vhdl:   Preping design's macros ...
+
+WARNING:NetListWriters:306 - Signal bus instruction( 15 downto 0 ) on block demo
+   is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus
+   processor/data_registers/data_register_bit0/rambit( 7 downto 0 ) on block
+   demo is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus
+   processor/arithmetic_group/add_sub_module/carry_chain( 6 downto 2 ) on block
+   demo is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus
+   processor/data_registers/data_register_bit7/rambit( 7 downto 0 ) on block
+   demo is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus
+   processor/data_registers/data_register_bit6/rambit( 7 downto 0 ) on block
+   demo is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus
+   processor/data_registers/data_register_bit5/rambit( 7 downto 0 ) on block
+   demo is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus
+   processor/data_registers/data_register_bit4/rambit( 7 downto 0 ) on block
+   demo is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus
+   processor/data_registers/data_register_bit3/rambit( 7 downto 0 ) on block
+   demo is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus
+   processor/data_registers/data_register_bit1/rambit( 7 downto 0 ) on block
+   demo is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus
+   processor/data_registers/data_register_bit2/rambit( 7 downto 0 ) on block
+   demo is not reconstructed, because there are some missing bus signals.
+ngd2vhdl: Preping design completed.
+
+ngd2vhdl: Writing VHDL netlist demo_timesim.vhd ...
+ngd2vhdl: Setting external property filter file to C:/Xilinx/data/xdm2vhdl.prp.
+ngd2vhdl: Completed writing file demo_timesim.vhd.
+ngd2vhdl: Writing VHDL SDF file demo_timesim.sdf ...
+ngd2vhdl: Completed writing file demo_timesim.sdf.
+ngd2vhdl: Total memory usage is 29116 kilobytes
+
+Created demo_timesim.vhd
+
+Completed process "Generate Post-Fit Simulation Model".
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+deleting __projnav\hb_cmds
+deleting __projnav/demo_tb_createfdo.rsp
+deleting demo_tb.fdo
+deleting vsim.wlf
+deleting demo.syr
+deleting demo.ngr
+deleting demo.prj
+deleting demo.sprj
+deleting demo.ana
+deleting demo.stx
+deleting demo.cmd_log
+deleting demo.ngc
+deleting __projnav/demo_edfTOngd_tcl.rsp
+deleting demo.ngd
+deleting demo.bld
+deleting demo_ngdbuild.nav
+deleting _ngo/netlist.lst
+deleting .untf
+deleting demo.cmd_log
+deleting __projnav/demo_vm6TOtim_tcl.rsp
+deleting demo.tim
+deleting demo.mod
+deleting demo.data
+deleting demo.cmd_log
+deleting __projnav\taengine.err
+deleting __projnav/demo_ngdTOvm6_tcl.rsp
+deleting demo.vm6
+deleting demo.cxt
+deleting demo.blx
+deleting demo.mfd
+deleting demo.rpt
+deleting demo.log
+deleting demo.pnx
+deleting demo.gyd
+deleting demo.xml
+deleting demo_build.xml
+deleting demo_test.ptf
+deleting demo.bl
+deleting errors.xml
+deleting tmperr.err
+deleting demo.cmd_log
+deleting __projnav/demo_vm6TOnga_tcl.rsp
+deleting demo.nga
+deleting demo.cmd_log
+deleting demo_timesim.vhd
+deleting demo_timesim.vhd
+deleting ngaTOdemo.vhdsim_par
+deleting demo.vhdsim_par
+deleting __projnav/ngd2vhdl.log
+deleting demo.cmd_log
+deleting demo_tb.timesim_vhw
+deleting _remap.tmp
+deleting __projnav/ptb.rsp
+deleting demo_tb.tdo
+deleting vsim.wlf
+deleting __projnav/demo._sprj
+deleting demo.sprj
+deleting demo.sprj
+deleting __projnav/demo._prj
+deleting demo.prj
+deleting demo.prj
+deleting __projnav/demo.xst
+deleting ./xst
+deleting __projnav/demo_test.gfl
+deleting __projnav/demo_test_flowplus.gfl
+Finished cleaning up project
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+JHDPARSE - VHDL/Verilog Parser.
+ISE 5.1i Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\c\demo_test.vhd
+Scanning    c:\work\app\coolcore_new\coolblaze_source\picoblaze\c\demo_test.vhd
+Writing demo_test.jhd.
+
+JHDPARSE complete -    0 errors,    0 warnings.
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/IO_strobe_logic.vhd in Library work.
+Entity <io_strobe_logic> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/arithmatic.vhd in Library work.
+Entity <arithmetic_process> (Architecture <low_level_definition>) compiled.
+Entity <addsub8> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/shift_rotate.vhd in Library work.
+Entity <shift_rotate> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/logical_bus_processing.vhd in Library work.
+Entity <logical_bus_processing> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/T_state_and_Reset.vhd in Library work.
+Entity <t_state_and_reset> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_and_flag_enable.vhd in Library work.
+Entity <register_and_flag_enable> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/carry_flag_logic.vhd in Library work.
+Entity <carry_flag_logic> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/zero_flag_logic.vhd in Library work.
+Entity <zero_flag_logic> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/program_counter.vhd in Library work.
+Entity <program_counter> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_bank.vhd in Library work.
+Entity <register_bank> (Architecture <behavioral>) compiled.
+Entity <ram_nx1> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_ram.vhd in Library work.
+Entity <stack_ram> (Architecture <low_level_definition>) compiled.
+Entity <ram_x1s> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_counter.vhd in Library work.
+Entity <stack_counter> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_capture.vhd in Library work.
+Entity <interrupt_capture> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_logic.vhd in Library work.
+Entity <interrupt_logic> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/picoblaze.vhd in Library work.
+Entity <picoblaze> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../c/demo_test.vhd in Library work.
+Entity <demo_test> (Architecture <v1>) compiled.
+Compiling vhdl file C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/demo.vhd in Library work.
+Entity <demo> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+
+Analyzing Entity <demo> (Architecture <behavioral>).
+Entity <demo> analyzed. Unit <demo> generated.
+
+Analyzing Entity <picoblaze> (Architecture <behavioral>).
+Entity <picoblaze> analyzed. Unit <picoblaze> generated.
+
+Analyzing Entity <demo_test> (Architecture <v1>).
+Entity <demo_test> analyzed. Unit <demo_test> generated.
+
+Analyzing Entity <io_strobe_logic> (Architecture <low_level_definition>).
+Entity <io_strobe_logic> analyzed. Unit <io_strobe_logic> generated.
+
+Analyzing Entity <arithmetic_process> (Architecture <low_level_definition>).
+Entity <arithmetic_process> analyzed. Unit <arithmetic_process> generated.
+
+Analyzing Entity <shift_rotate> (Architecture <low_level_definition>).
+Entity <shift_rotate> analyzed. Unit <shift_rotate> generated.
+
+Analyzing Entity <logical_bus_processing> (Architecture <low_level_definition>).
+Entity <logical_bus_processing> analyzed. Unit <logical_bus_processing> generated.
+
+Analyzing Entity <t_state_and_reset> (Architecture <low_level_definition>).
+Entity <t_state_and_reset> analyzed. Unit <t_state_and_reset> generated.
+
+Analyzing Entity <register_and_flag_enable> (Architecture <low_level_definition>).
+Entity <register_and_flag_enable> analyzed. Unit <register_and_flag_enable> generated.
+
+Analyzing Entity <carry_flag_logic> (Architecture <low_level_definition>).
+Entity <carry_flag_logic> analyzed. Unit <carry_flag_logic> generated.
+
+Analyzing Entity <zero_flag_logic> (Architecture <low_level_definition>).
+Entity <zero_flag_logic> analyzed. Unit <zero_flag_logic> generated.
+
+Analyzing Entity <program_counter> (Architecture <low_level_definition>).
+Entity <program_counter> analyzed. Unit <program_counter> generated.
+
+Analyzing generic Entity <register_bank> (Architecture <behavioral>).
+	m = 3
+Entity <register_bank> analyzed. Unit <register_bank> generated.
+
+Analyzing generic Entity <stack_ram> (Architecture <low_level_definition>).
+	m = 2
+	n = 8
+Entity <stack_ram> analyzed. Unit <stack_ram> generated.
+
+Analyzing generic Entity <stack_counter> (Architecture <low_level_definition>).
+	n = 2
+Entity <stack_counter> analyzed. Unit <stack_counter> generated.
+
+Analyzing Entity <interrupt_capture> (Architecture <low_level_definition>).
+Entity <interrupt_capture> analyzed. Unit <interrupt_capture> generated.
+
+Analyzing Entity <interrupt_logic> (Architecture <low_level_definition>).
+Entity <interrupt_logic> analyzed. Unit <interrupt_logic> generated.
+
+Analyzing Entity <addsub8> (Architecture <low_level_definition>).
+Entity <addsub8> analyzed. Unit <addsub8> generated.
+
+Analyzing generic Entity <ram_nx1> (Architecture <behavioral>).
+	m = 3
+Entity <ram_nx1> analyzed. Unit <ram_nx1> generated.
+
+Analyzing generic Entity <ram_x1s> (Architecture <behavioral>).
+	m = 2
+Entity <ram_x1s> analyzed. Unit <ram_x1s> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ram_x1s>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_ram.vhd.
+    Found 1-bit 4-to-1 multiplexer for signal <o>.
+    Found 4-bit register for signal <rambit>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <ram_x1s> synthesized.
+
+
+Synthesizing Unit <ram_nx1>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_bank.vhd.
+    Found 1-bit 8-to-1 multiplexer for signal <spo>.
+    Found 1-bit 8-to-1 multiplexer for signal <dpo>.
+    Found 8-bit register for signal <rambit>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <ram_nx1> synthesized.
+
+
+Synthesizing Unit <addsub8>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/arithmatic.vhd.
+    Found 8-bit register for signal <y>.
+    Found 8-bit xor2 for signal <full_addsub>.
+    Found 2 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Xor(s).
+Unit <addsub8> synthesized.
+
+
+Synthesizing Unit <interrupt_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_logic.vhd.
+    Found 1-bit register for signal <interrupt_enable>.
+    Found 1-bit register for signal <shaddow_carry>.
+    Found 1-bit register for signal <shaddow_zero>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <interrupt_logic> synthesized.
+
+
+Synthesizing Unit <interrupt_capture>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/interrupt_capture.vhd.
+INFO:Xst:1304 - Contents of register <clean_interrupt> in unit <interrupt_capture> never changes during circuit operation. The register is replaced by logic.
+    Found 1-bit register for signal <active_interrupt_pulse>.
+WARNING:Xst:647 - Input <interrupt> is never used.
+Unit <interrupt_capture> synthesized.
+
+
+Synthesizing Unit <stack_counter>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_counter.vhd.
+    Found 2-bit register for signal <count_value>.
+    Found 1-bit xor2 for signal <next_count<1>>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <stack_counter> synthesized.
+
+
+Synthesizing Unit <stack_ram>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/stack_ram.vhd.
+    Found 8-bit register for signal <dout>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <stack_ram> synthesized.
+
+
+Synthesizing Unit <register_bank>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_bank.vhd.
+Unit <register_bank> synthesized.
+
+
+Synthesizing Unit <program_counter>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/program_counter.vhd.
+    Found 8-bit adder for signal <$n0004> created at line 57.
+    Found 8-bit register for signal <count_value>.
+    Found 16 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   1 Adder/Subtracter(s).
+Unit <program_counter> synthesized.
+
+
+Synthesizing Unit <zero_flag_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/zero_flag_logic.vhd.
+    Found 1-bit register for signal <zero_flag>.
+Unit <zero_flag_logic> synthesized.
+
+
+Synthesizing Unit <carry_flag_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/carry_flag_logic.vhd.
+    Found 1-bit register for signal <carry_flag>.
+Unit <carry_flag_logic> synthesized.
+
+
+Synthesizing Unit <register_and_flag_enable>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/register_and_flag_enable.vhd.
+    Found 1-bit register for signal <arith_or_logical_valid>.
+    Found 1-bit register for signal <register_write_valid>.
+    Found 1-bit register for signal <returni_or_shift_valid>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <register_and_flag_enable> synthesized.
+
+
+Synthesizing Unit <t_state_and_reset>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/T_state_and_Reset.vhd.
+    Found 1-bit register for signal <internal_t_state>.
+    Found 1-bit register for signal <reset_delay1>.
+    Found 1-bit register for signal <reset_delay2>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <t_state_and_reset> synthesized.
+
+
+Synthesizing Unit <logical_bus_processing>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/logical_bus_processing.vhd.
+WARNING:Xst:646 - Signal <sel> is assigned but never used.
+    Found 8-bit register for signal <y>.
+    Found 1-bit xor2 for signal <$n0005> created at line 44.
+    Found 1-bit xor2 for signal <$n0008> created at line 44.
+    Found 1-bit xor2 for signal <$n0011> created at line 44.
+    Found 1-bit xor2 for signal <$n0014> created at line 44.
+    Found 1-bit xor2 for signal <$n0017> created at line 44.
+    Found 1-bit xor2 for signal <$n0020> created at line 44.
+    Found 1-bit xor2 for signal <$n0023> created at line 44.
+    Found 1-bit xor2 for signal <$n0026> created at line 44.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Xor(s).
+Unit <logical_bus_processing> synthesized.
+
+
+Synthesizing Unit <shift_rotate>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/shift_rotate.vhd.
+    Found 8-bit register for signal <y>.
+    Found 1-bit register for signal <carry_out>.
+    Found 8 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <shift_rotate> synthesized.
+
+
+Synthesizing Unit <arithmetic_process>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/arithmatic.vhd.
+    Found 1-bit register for signal <carry_out>.
+    Found 1-bit xor2 for signal <modified_carry_out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <arithmetic_process> synthesized.
+
+
+Synthesizing Unit <io_strobe_logic>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/IO_strobe_logic.vhd.
+    Found 1-bit register for signal <write_strobe>.
+    Found 1-bit register for signal <read_strobe>.
+Unit <io_strobe_logic> synthesized.
+
+
+Synthesizing Unit <demo_test>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../c/demo_test.vhd.
+    Found 256x16-bit ROM for internal node.
+    Found 16-bit register for signal <dout>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <demo_test> synthesized.
+
+
+Synthesizing Unit <picoblaze>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/../vhdl/picoblaze.vhd.
+    Found 8 1-bit 2-to-1 multiplexers.
+WARNING:Xst:647 - Input <in_port<7>> is never used.
+WARNING:Xst:647 - Input <in_port<6>> is never used.
+WARNING:Xst:647 - Input <in_port<5>> is never used.
+WARNING:Xst:647 - Input <in_port<4>> is never used.
+WARNING:Xst:647 - Input <in_port<3>> is never used.
+WARNING:Xst:647 - Input <in_port<2>> is never used.
+WARNING:Xst:647 - Input <in_port<1>> is never used.
+WARNING:Xst:647 - Input <in_port<0>> is never used.
+WARNING:Xst:647 - Input <interrupt> is never used.
+Unit <picoblaze> synthesized.
+
+
+Synthesizing Unit <demo>.
+    Related source file is C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/demo.vhd.
+WARNING:Xst:646 - Signal <in_port> is assigned but never used.
+WARNING:Xst:646 - Signal <interrupt_event> is assigned but never used.
+    Found 8-bit register for signal <output>.
+WARNING:Xst:646 - Signal <port_id<7>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<6>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<5>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<4>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<3>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<2>> is assigned but never used.
+WARNING:Xst:646 - Signal <port_id<1>> is assigned but never used.
+WARNING:Xst:646 - Signal <read_strobe> is assigned but never used.
+Unit <demo> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                             : 1
+  256x16-bit ROM                   : 1
+# Registers                        : 149
+  1-bit register                   : 146
+  8-bit register                   : 2
+  16-bit register                  : 1
+# Multiplexers                     : 36
+  2-to-1 multiplexer               : 12
+  1-bit 4-to-1 multiplexer         : 8
+  1-bit 8-to-1 multiplexer         : 16
+# Adders/Subtractors               : 1
+  8-bit adder                      : 1
+# Xors                             : 18
+  1-bit xor2                       : 18
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Library "C:/Xilinx/xbr/data/lib.xst" Consulted
+WARNING:Xst:1293 - FF/Latch  <active_interrupt_pulse> is constant in block <interrupt_capture>.
+WARNING:Xst:1293 - FF/Latch  <dout_1> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_3> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_4> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_5> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_6> is constant in block <demo_test>.
+WARNING:Xst:1293 - FF/Latch  <dout_7> is constant in block <demo_test>.
+Library "C:/Xilinx/data/librtl.xst" Consulted
+WARNING:Xst:1291 - FF/Latch <interrupt_enable> is unconnected in block <interrupt_control>.
+WARNING:Xst:1291 - FF/Latch <read_strobe> is unconnected in block <io_strobes>.
+
+Optimizing unit <demo> ...
+
+Optimizing unit <io_strobe_logic> ...
+
+Optimizing unit <logical_bus_processing> ...
+
+Optimizing unit <t_state_and_reset> ...
+
+Optimizing unit <register_and_flag_enable> ...
+
+Optimizing unit <carry_flag_logic> ...
+
+Optimizing unit <zero_flag_logic> ...
+
+Optimizing unit <stack_counter> ...
+
+Optimizing unit <interrupt_capture> ...
+
+Optimizing unit <interrupt_logic> ...
+
+Optimizing unit <addsub8> ...
+
+Optimizing unit <ram_nx1> ...
+
+Optimizing unit <ram_x1s> ...
+
+Optimizing unit <demo_test> ...
+Register dout_2 equivalent to dout_13 has been removed
+Register dout_8 equivalent to dout_9 has been removed
+Register dout_9 equivalent to dout_10 has been removed
+Register dout_14 equivalent to dout_12 has been removed
+
+Optimizing unit <arithmetic_process> ...
+
+Optimizing unit <shift_rotate> ...
+
+Optimizing unit <program_counter> ...
+
+Optimizing unit <register_bank> ...
+
+Optimizing unit <stack_ram> ...
+
+Optimizing unit <picoblaze> ...
+WARNING:Xst:1291 - FF/Latch <interrupt_enable> is unconnected in block <interrupt_control>.
+WARNING:Xst:1291 - FF/Latch <read_strobe> is unconnected in block <io_strobes>.
+
+Completed process "Synthesize".
+
+
+
+Started process "Translate".
+
+Release 5.1.02i - ngdbuild F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd _ngo -i -p xbr demo.ngc demo.ngd 
+
+Reading NGO file
+"C:/work/app/coolcore_new/coolblaze_source/picoblaze/demo_test/demo.ngc" ...
+Reading component libraries for design expansion...
+INFO:NgdBuild:784 - input buffer 'reset_ibuf' driving design level port 'reset'
+   is being pushed into module 'processor/basic_control' to enable I/O register
+   usage.
+
+Checking timing specifications ...
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'instruction<7>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<7>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<6>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<6>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<5>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<5>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<4>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<4>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<3>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<3>' has no load
+WARNING:NgdBuild:452 - logical net 'instruction<1>' has no driver
+WARNING:NgdBuild:454 - logical net 'instruction<1>' has no load
+WARNING:NgdBuild:452 - logical net 'processor/read_strobe' has no driver
+WARNING:NgdBuild:454 - logical net 'processor/read_strobe' has no load
+WARNING:NgdBuild:452 - logical net 'processor/interrupt_control/i_interrupt' has
+   no driver
+WARNING:NgdBuild:454 - logical net 'processor/interrupt_control/i_interrupt' has
+   no load
+WARNING:NgdBuild:452 - logical net 'processor/interrupt_enable' has no driver
+WARNING:NgdBuild:454 - logical net 'processor/interrupt_enable' has no load
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  18
+
+Writing NGD file "demo.ngd" ...
+
+Writing NGDBUILD log file "demo.bld"...
+
+NGDBUILD done.
+
+Completed process "Translate".
+
+
+
+Started process "Fit".
+
+Release 5.1.02i - CPLD Optimizer/Partitioner F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+Considering device XC2C256-TQ144.
+Re-checking device resources ...
+...
+Synthesizing and Optimizing...
+............................................................................................
+...o
+.......
+Fitting...
+...............
+...o
+
+Design demo has been optimized and fit into device XC2C256-5-TQ144.
+
+Completed process "Fit".
+
+
+Started process "Generate Timing".
+
+Release 5.1.02i - Timing Report Generator F.25
+Copyright (c) 1995-2002 Xilinx, Inc.  All rights reserved.
+Path tracing ........
+The number of paths traced: 709.
+
+Generating performance summary ...
+Generating Pad-to-Pad delay section ...
+Generating Clock-to-Output-Pad delay section ...
+Generating Setup-To-Clock-At-Pad delay section ...
+Generating Register-To-Register delay section ...
+     Cycle time table for clock clk ...
+
+demo.tim has been created.
+
+Generating Stamp model files demo.mod, demo.data ...
+demo.mod has been created.
+demo.data has been created.
+
+Completed process "Generate Timing".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+deleting __projnav/demo_test_jhdparse_tcl.rsp
+deleting demo.syr
+deleting demo.ngr
+deleting demo.prj
+deleting demo.sprj
+deleting demo.ana
+deleting demo.stx
+deleting demo.cmd_log
+deleting demo.ngc
+deleting __projnav/demo_edfTOngd_tcl.rsp
+deleting demo.ngd
+deleting demo.bld
+deleting demo_ngdbuild.nav
+deleting _ngo/netlist.lst
+deleting .untf
+deleting demo.cmd_log
+deleting __projnav/demo_vm6TOtim_tcl.rsp
+deleting demo.tim
+deleting demo.mod
+deleting demo.data
+deleting demo.cmd_log
+deleting __projnav\taengine.err
+deleting __projnav/demo_ngdTOvm6_tcl.rsp
+deleting demo.vm6
+deleting demo.cxt
+deleting demo.blx
+deleting demo.mfd
+deleting demo.rpt
+deleting demo.log
+deleting demo.pnx
+deleting demo.gyd
+deleting demo.xml
+deleting demo_build.xml
+deleting demo_test.ptf
+deleting demo.bl
+deleting errors.xml
+deleting tmperr.err
+deleting demo.cmd_log
+deleting demo_html
+deleting demo._hrpt
+deleting demo.cmd_log
+deleting __projnav/demo._sprj
+deleting demo.sprj
+deleting demo.sprj
+deleting __projnav/demo._prj
+deleting demo.prj
+deleting demo.prj
+deleting __projnav/demo.xst
+deleting ./xst
+deleting __projnav/demo_test.gfl
+deleting __projnav/demo_test_flowplus.gfl
+Finished cleaning up project
+

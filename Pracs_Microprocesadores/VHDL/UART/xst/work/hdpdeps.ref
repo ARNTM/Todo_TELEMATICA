@@ -1,0 +1,19 @@
+V3 11
+FL C:/Users/detcp/Desktop/UART/UART.vhd 2019/07/08.12:28:29 P.20131013
+EN work/UART 1562585321 FL C:/Users/detcp/Desktop/UART/UART.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/UART/Behavioral 1562585322 \
+      FL C:/Users/detcp/Desktop/UART/UART.vhd EN work/UART 1562585321
+FL C:/Users/detcp/Desktop/UART/UART_RX.vhd 2019/07/08.12:27:03 P.20131013
+EN work/UART_RX 1562585230 FL C:/Users/detcp/Desktop/UART/UART_RX.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/UART_RX/Behavioral 1562585231 \
+      FL C:/Users/detcp/Desktop/UART/UART_RX.vhd EN work/UART_RX 1562585230
+FL D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.vhd 2019/07/08.10:27:27 P.20131013
+FL D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART_RX.vhd 2019/07/08.10:04:11 P.20131013
+FL D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART_TX.vhd 2019/07/05.11:09:52 P.20131013
+EN work/UART_TX 1562317815 \
+      FL D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART_TX.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/UART_TX/Behavioral 1562317816 \
+      FL D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART_TX.vhd EN work/UART_TX 1562317815

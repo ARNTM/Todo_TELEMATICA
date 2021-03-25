@@ -1,0 +1,55 @@
+  1   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  2   0              ;                 Ejemplo 2:
+  3   0              ;Comunicación RS-232 utilizando una UART externa al PicoBlaze
+  4   0              ;
+  5   0              ;
+  6   0              ; (C) Javier Garrigos. Ver. 1.0 - jun,20034
+  7   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  8   0              ;
+  9   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 10   0              ;declaracion de constantes y variables
+ 11   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;                  
+ 12   0              :CONSTANT   DATAREG      02           ; 0000 0010
+ 13   0              :CONSTANT   CONTROLREG   01           ; 0000 0001
+ 14   0              :CONSTANT   ENVIA        02           ;
+ 15   0              :CONSTANT   BORRA        01           ;
+ 16   0              :CONSTANT   GUION        81           ;guion
+ 17   0              :CONSTANT   PUNTO        82           ;punto
+ 18   0              :CONSTANT   LF           0A           ;
+ 19   0              :CONSTANT   RTN          0D           ;
+ 20   0              :NAMEREG    S4           CONT         ;
+ 21   0              ;
+ 22   0              :ADDRESS    00           ;el programa se cargara a partir de 00
+ 23   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 24   0              ;Inicio del programa
+ 25   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 26   0 START        ;enviamos un guión
+ 27   0              :LOAD       S0           GUION        
+ 28   1              :CALL       TRANSMITE    
+ 29   2              ;enviamos un punto
+ 30   2              :LOAD       S0           PUNTO        
+ 31   3              :CALL       TRANSMITE    
+ 32   4              :JUMP       START        
+ 33   5              
+ 34   5              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 35   5              ;Rutina de transmisión de caracteres
+ 36   5              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 37   5 TRANSMITE    ;esperamos a que el buffer de transmisión esté libre
+ 38   5              :INPUT      S1           CONTROLREG   
+ 39   6              :AND        S1           40           ; 40=>tx_buffer_empty=1
+ 40   7              :JUMP       Z            TRANSMITE    
+ 41   8              ;enviamos el caracter almacenado en s0
+ 42   8              :OUTPUT     S0           DATAREG      
+ 43   9              :LOAD       S0           ENVIA        
+ 44   A              :OUTPUT     S0           CONTROLREG   
+ 45   B              ;esperamos a que coja el dato (buffer de transmisión ocupado)
+ 46   B ESPERA       :INPUT      S1           CONTROLREG   
+ 47   C              :AND        S1           40           
+ 48   D              :JUMP       NZ           ESPERA       
+ 49   E              ;desactivamos la solicitud de envío
+ 50   E              :LOAD       S0           00           
+ 51   F              :OUTPUT     S0           CONTROLREG   
+ 52  10              :RETURN     
+ 53  11              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 54  11              ; FIN
+ 55  11              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -1,0 +1,23 @@
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 51 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 53 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 56 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 58 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 59 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 61 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 63 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 66 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 67 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 68 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 69 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 104 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 129 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 140 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 149 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 155 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 161 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 167 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 172 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 177 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 182 : Found opcode in column 1. (RETFIE)
+Warning[203] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 187 : Found opcode in column 1. (RETFIE)
+Warning[205] F:\UNIVERSIDAD\MICROPROCESADORES\PICARC\COCHE.ASM 190 : Found directive in column 1. (END)

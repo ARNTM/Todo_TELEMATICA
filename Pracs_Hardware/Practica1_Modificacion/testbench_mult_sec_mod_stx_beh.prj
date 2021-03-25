@@ -1,0 +1,2 @@
+vhdl isim_temp "mult_sec_mod.vhd"
+vhdl isim_temp "mult_sec_mod_tb.vhd"

@@ -1,0 +1,1565 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:\GIT\Universidad\Pracs_Hardware\Practica3\Lab2\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_mb_plb_wrapper_xst.prj"
+Verilog Include Directory          : {"D:\GIT\Universidad\Pracs_Hardware\Practica3\Lab2\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc3s500efg320-4
+Output File Name                   : "../implementation/system_mb_plb_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_mb_plb_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" in Library proc_common_v3_00_a.
+Entity <inferred_lut4> compiled.
+Entity <inferred_lut4> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" in Library proc_common_v3_00_a.
+Entity <muxf_struct> compiled.
+Entity <muxf_struct> (Architecture <imp>) compiled.
+Entity <muxf_struct_f> compiled.
+Entity <muxf_struct_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_bit> compiled.
+Entity <pf_counter_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" in Library proc_common_v3_00_a.
+Entity <cntr_incr_decr_addn_f> compiled.
+Entity <cntr_incr_decr_addn_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_f> compiled.
+Entity <dynshreg_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder_bit> compiled.
+Entity <pf_adder_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter> compiled.
+Entity <pf_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter> compiled.
+Entity <pf_occ_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <counter_bit> compiled.
+Entity <counter_bit> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu_f> compiled.
+Entity <srl_fifo_rbu_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" in Library proc_common_v3_00_a.
+Package <family> compiled.
+Package body <family> compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter_top> compiled.
+Entity <pf_occ_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_top> compiled.
+Entity <pf_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder> compiled.
+Entity <pf_adder> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" in Library proc_common_v3_00_a.
+Entity <Counter> compiled.
+Entity <Counter> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" in Library proc_common_v3_00_a.
+Package <coregen_comp_defs> compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/qual_priority.vhd" in Library plb_v46_v1_05_a.
+Entity <qual_priority> compiled.
+Entity <qual_priority> (Architecture <qual_priority>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" in Library proc_common_v3_00_a.
+Package <Common_Types> compiled.
+Package body <Common_Types> compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" in Library proc_common_v3_00_a.
+Package <conv_funs_pkg> compiled.
+Package body <conv_funs_pkg> compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <async_fifo_fg> compiled.
+Entity <async_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <sync_fifo_fg> compiled.
+Entity <sync_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" in Library proc_common_v3_00_a.
+Entity <addsub> compiled.
+Entity <addsub> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr> compiled.
+Entity <direct_path_cntr> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr_ai> compiled.
+Entity <direct_path_cntr_ai> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" in Library proc_common_v3_00_a.
+Entity <down_counter> compiled.
+Entity <down_counter> (Architecture <simulation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" in Library proc_common_v3_00_a.
+Entity <eval_timer> compiled.
+Entity <eval_timer> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" in Library proc_common_v3_00_a.
+Entity <IPIF_Steer> compiled.
+Entity <IPIF_Steer> (Architecture <IMP>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_steer128> compiled.
+Entity <ipif_steer128> (Architecture <IMP>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_mirror128> compiled.
+Entity <ipif_mirror128> (Architecture <IMP>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg> compiled.
+Entity <ld_arith_reg> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg2> compiled.
+Entity <ld_arith_reg2> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot> compiled.
+Entity <mux_onehot> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate> compiled.
+Entity <or_gate> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" in Library proc_common_v3_00_a.
+Entity <pf_dpram_select> compiled.
+Entity <pf_dpram_select> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" in Library proc_common_v3_00_a.
+Entity <pselect> compiled.
+Entity <pselect> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_mask> compiled.
+Entity <pselect_mask> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <srl16_fifo> compiled.
+Entity <srl16_fifo> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <SRL_FIFO> compiled.
+Entity <SRL_FIFO> (Architecture <IMP>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo2> compiled.
+Entity <srl_fifo2> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo3> compiled.
+Entity <srl_fifo3> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu> compiled.
+Entity <srl_fifo_rbu> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" in Library proc_common_v3_00_a.
+Entity <valid_be> compiled.
+Entity <valid_be> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_with_enable_f> compiled.
+Entity <or_with_enable_f> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_i_f> compiled.
+Entity <dynshreg_i_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot_f> compiled.
+Entity <mux_onehot_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_f> compiled.
+Entity <srl_fifo_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" in Library proc_common_v3_00_a.
+Entity <compare_vectors_f> compiled.
+Entity <compare_vectors_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy_f> compiled.
+Entity <or_muxcy_f> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" in Library proc_common_v3_00_a.
+Entity <soft_reset> compiled.
+Entity <soft_reset> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/qual_request.vhd" in Library plb_v46_v1_05_a.
+Entity <qual_request> compiled.
+Entity <qual_request> (Architecture <simulation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/or_bits.vhd" in Library plb_v46_v1_05_a.
+Entity <or_bits> compiled.
+Entity <or_bits> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/priority_encoder.vhd" in Library plb_v46_v1_05_a.
+Entity <priority_encoder> compiled.
+Entity <priority_encoder> (Architecture <simulation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/rr_select.vhd" in Library plb_v46_v1_05_a.
+Entity <rr_select> compiled.
+Entity <rr_select> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/pending_priority.vhd" in Library plb_v46_v1_05_a.
+Entity <pending_priority> compiled.
+Entity <pending_priority> (Architecture <simulation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/pend_request.vhd" in Library plb_v46_v1_05_a.
+Entity <pend_request> compiled.
+Entity <pend_request> (Architecture <simulation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_arb_encoder.vhd" in Library plb_v46_v1_05_a.
+Entity <plb_arb_encoder> compiled.
+Entity <plb_arb_encoder> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/arb_control_sm.vhd" in Library plb_v46_v1_05_a.
+Entity <arb_control_sm> compiled.
+Entity <arb_control_sm> (Architecture <simulation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/gen_qual_req.vhd" in Library plb_v46_v1_05_a.
+Entity <gen_qual_req> compiled.
+Entity <gen_qual_req> (Architecture <simulation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/muxed_signals.vhd" in Library plb_v46_v1_05_a.
+Entity <muxed_signals> compiled.
+Entity <muxed_signals> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/watchdog_timer.vhd" in Library plb_v46_v1_05_a.
+Entity <watchdog_timer> compiled.
+Entity <watchdog_timer> (Architecture <simulation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/dcr_regs.vhd" in Library plb_v46_v1_05_a.
+Entity <dcr_regs> compiled.
+Entity <dcr_regs> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_interrupt.vhd" in Library plb_v46_v1_05_a.
+Entity <plb_interrupt> compiled.
+Entity <plb_interrupt> (Architecture <plb_interrupt>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/or_gate.vhd" in Library plb_v46_v1_05_a.
+Entity <or_gate> compiled.
+Entity <or_gate> (Architecture <imp>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_p2p.vhd" in Library plb_v46_v1_05_a.
+Entity <plb_p2p> compiled.
+Entity <plb_p2p> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_addrpath.vhd" in Library plb_v46_v1_05_a.
+Entity <plb_addrpath> compiled.
+Entity <plb_addrpath> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_wr_datapath.vhd" in Library plb_v46_v1_05_a.
+Entity <plb_wr_datapath> compiled.
+Entity <plb_wr_datapath> (Architecture <simulation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_rd_datapath.vhd" in Library plb_v46_v1_05_a.
+Entity <plb_rd_datapath> compiled.
+Entity <plb_rd_datapath> (Architecture <simulation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_slave_ors.vhd" in Library plb_v46_v1_05_a.
+Entity <plb_slave_ors> compiled.
+Entity <plb_slave_ors> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_arbiter_logic.vhd" in Library plb_v46_v1_05_a.
+Entity <plb_arbiter_logic> compiled.
+Entity <plb_arbiter_logic> (Architecture <implementation>) compiled.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_v46.vhd" in Library plb_v46_v1_05_a.
+Entity <plb_v46> compiled.
+Entity <plb_v46> (Architecture <simulation>) compiled.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab2/hdl/system_mb_plb_wrapper.vhd" in Library work.
+Entity <system_mb_plb_wrapper> compiled.
+Entity <system_mb_plb_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <system_mb_plb_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <plb_v46> in library <plb_v46_v1_05_a> (architecture <simulation>) with generics.
+	C_ADDR_PIPELINING_TYPE = 1
+	C_ARB_TYPE = 0
+	C_BASEADDR = "1111111111"
+	C_DCR_AWIDTH = 10
+	C_DCR_DWIDTH = 32
+	C_DCR_INTFCE = 0
+	C_EXT_RESET_HIGH = 1
+	C_FAMILY = "spartan3e"
+	C_HIGHADDR = "0000000000"
+	C_IRQ_ACTIVE = '1'
+	C_P2P = 0
+	C_PLBV46_AWIDTH = 32
+	C_PLBV46_DWIDTH = 64
+	C_PLBV46_MID_WIDTH = 1
+	C_PLBV46_NUM_MASTERS = 2
+	C_PLBV46_NUM_SLAVES = 6
+
+Analyzing hierarchy for entity <plb_addrpath> in library <plb_v46_v1_05_a> (architecture <implementation>) with generics.
+	C_FAMILY = "spartan3e"
+	C_NUM_MASTERS = 2
+	C_PLB_AWIDTH = 32
+	C_PLB_DWIDTH = 64
+
+Analyzing hierarchy for entity <plb_wr_datapath> in library <plb_v46_v1_05_a> (architecture <simulation>) with generics.
+	C_FAMILY = "spartan3e"
+	C_NUM_MASTERS = 2
+	C_PLB_DWIDTH = 64
+
+Analyzing hierarchy for entity <plb_rd_datapath> in library <plb_v46_v1_05_a> (architecture <simulation>) with generics.
+	C_NUM_MASTERS = 2
+	C_PLB_DWIDTH = 64
+
+Analyzing hierarchy for entity <plb_slave_ors> in library <plb_v46_v1_05_a> (architecture <implementation>) with generics.
+	C_FAMILY = "spartan3e"
+	C_NUM_MASTERS = 2
+	C_NUM_SLAVES = 6
+	C_PLB_DWIDTH = 64
+
+Analyzing hierarchy for entity <plb_arbiter_logic> in library <plb_v46_v1_05_a> (architecture <implementation>) with generics.
+	C_ADDR_PIPELINING_TYPE = 1
+	C_ARB_TYPE = 0
+	C_BASEADDR = "1111111111"
+	C_DCR_AWIDTH = 10
+	C_DCR_DWIDTH = 32
+	C_DCR_INTFCE = 0
+	C_FAMILY = "spartan3e"
+	C_HIGHADDR = "0000000000"
+	C_IRQ_ACTIVE = '1'
+	C_MID_BITS = 1
+	C_NUM_MASTERS = 2
+	C_NUM_SLAVES = 6
+	C_OPTIMIZE_1M = true
+	C_PLB_AWIDTH = 32
+	C_PLB_DWIDTH = 64
+
+Analyzing hierarchy for entity <mux_onehot_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_DW = 32
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+
+Analyzing hierarchy for entity <mux_onehot_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_DW = 8
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+
+Analyzing hierarchy for entity <mux_onehot_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_DW = 4
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+
+Analyzing hierarchy for entity <mux_onehot_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_DW = 3
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+
+Analyzing hierarchy for entity <mux_onehot_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_DW = 16
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+
+Analyzing hierarchy for entity <mux_onehot_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_DW = 1
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+
+Analyzing hierarchy for entity <mux_onehot_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_DW = 2
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+
+Analyzing hierarchy for entity <mux_onehot_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_DW = 64
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+
+Analyzing hierarchy for entity <or_gate> in library <plb_v46_v1_05_a> (architecture <imp>) with generics.
+	C_BUS_WIDTH = 1
+	C_OR_WIDTH = 6
+	C_USE_LUT_OR = true
+
+Analyzing hierarchy for entity <or_gate> in library <plb_v46_v1_05_a> (architecture <imp>) with generics.
+	C_BUS_WIDTH = 2
+	C_OR_WIDTH = 6
+	C_USE_LUT_OR = true
+
+Analyzing hierarchy for entity <or_gate> in library <plb_v46_v1_05_a> (architecture <imp>) with generics.
+	C_BUS_WIDTH = 64
+	C_OR_WIDTH = 6
+	C_USE_LUT_OR = true
+
+Analyzing hierarchy for entity <or_gate> in library <plb_v46_v1_05_a> (architecture <imp>) with generics.
+	C_BUS_WIDTH = 4
+	C_OR_WIDTH = 6
+	C_USE_LUT_OR = true
+
+Analyzing hierarchy for entity <plb_arb_encoder> in library <plb_v46_v1_05_a> (architecture <implementation>) with generics.
+	C_ARB_TYPE = 0
+	C_FAMILY = "spartan3e"
+	C_NUM_MASTERS = 2
+	C_NUM_MSTRS_PAD = 4
+	C_OPTIMIZE_1M = true
+
+Analyzing hierarchy for entity <arb_control_sm> in library <plb_v46_v1_05_a> (architecture <simulation>) with generics.
+	C_ADDR_PIPELINING_TYPE = 1
+	C_ARB_TYPE = 0
+	C_NUM_MASTERS = 2
+	C_OPTIMIZE_1M = true
+
+Analyzing hierarchy for entity <gen_qual_req> in library <plb_v46_v1_05_a> (architecture <simulation>) with generics.
+	C_NUM_MASTERS = 2
+
+Analyzing hierarchy for entity <muxed_signals> in library <plb_v46_v1_05_a> (architecture <implementation>) with generics.
+	C_FAMILY = "spartan3e"
+	C_MID_BITS = 1
+	C_NUM_MASTERS = 2
+	C_NUM_MSTRS_PAD = 4
+
+Analyzing hierarchy for entity <watchdog_timer> in library <plb_v46_v1_05_a> (architecture <simulation>) with generics.
+	C_SIZE = 4
+
+Analyzing hierarchy for entity <plb_interrupt> in library <plb_v46_v1_05_a> (architecture <plb_interrupt>) with generics.
+	C_IRQ_ACTIVE = '1'
+
+Analyzing hierarchy for entity <priority_encoder> in library <plb_v46_v1_05_a> (architecture <simulation>) with generics.
+	C_NUM_MASTERS = 4
+
+Analyzing hierarchy for entity <pending_priority> in library <plb_v46_v1_05_a> (architecture <simulation>) with generics.
+	C_NUM_MASTERS = 2
+
+Analyzing hierarchy for entity <pend_request> in library <plb_v46_v1_05_a> (architecture <simulation>) with generics.
+	C_NUM_MASTERS = 2
+
+Analyzing hierarchy for entity <mux_onehot_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_DW = 2
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+
+Analyzing hierarchy for entity <mux_onehot_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_DW = 1
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+
+Analyzing hierarchy for entity <or_bits> in library <plb_v46_v1_05_a> (architecture <implementation>) with generics.
+	C_BUS_SIZE = 4
+	C_NUM_BITS = 2
+	C_START_BIT = 2
+
+Analyzing hierarchy for entity <or_bits> in library <plb_v46_v1_05_a> (architecture <implementation>) with generics.
+	C_BUS_SIZE = 4
+	C_NUM_BITS = 1
+	C_START_BIT = 1
+
+Analyzing hierarchy for entity <or_bits> in library <plb_v46_v1_05_a> (architecture <implementation>) with generics.
+	C_BUS_SIZE = 4
+	C_NUM_BITS = 1
+	C_START_BIT = 3
+
+Analyzing hierarchy for entity <down_counter> in library <proc_common_v3_00_a> (architecture <simulation>) with generics.
+	C_CNT_WIDTH = 4
+
+Analyzing hierarchy for entity <qual_request> in library <plb_v46_v1_05_a> (architecture <simulation>).
+
+Analyzing hierarchy for entity <qual_priority> in library <plb_v46_v1_05_a> (architecture <qual_priority>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <system_mb_plb_wrapper> in library <work> (Architecture <STRUCTURE>).
+    Set property "syn_maxfan = 10000" for signal <PLB_Rst> in unit <plb_v46>.
+    Set property "syn_maxfan = 10000" for signal <SPLB_Rst> in unit <plb_v46>.
+    Set property "syn_maxfan = 10000" for signal <MPLB_Rst> in unit <plb_v46>.
+    Set property "syn_maxfan = 10000" for signal <PLB_Clk> in unit <plb_v46>.
+Entity <system_mb_plb_wrapper> analyzed. Unit <system_mb_plb_wrapper> generated.
+
+Analyzing generic Entity <plb_v46> in library <plb_v46_v1_05_a> (Architecture <simulation>).
+	C_ADDR_PIPELINING_TYPE = 1
+	C_ARB_TYPE = 0
+	C_BASEADDR = "1111111111"
+	C_DCR_AWIDTH = 10
+	C_DCR_DWIDTH = 32
+	C_DCR_INTFCE = 0
+	C_EXT_RESET_HIGH = 1
+	C_FAMILY = "spartan3e"
+	C_HIGHADDR = "0000000000"
+	C_IRQ_ACTIVE = '1'
+	C_P2P = 0
+	C_PLBV46_AWIDTH = 32
+	C_PLBV46_DWIDTH = 64
+	C_PLBV46_MID_WIDTH = 1
+	C_PLBV46_NUM_MASTERS = 2
+	C_PLBV46_NUM_SLAVES = 6
+    Set property "syn_maxfan = 10000" for signal <PLB_Rst> in unit <plb_v46>.
+    Set property "syn_maxfan = 10000" for signal <SPLB_Rst> in unit <plb_v46>.
+    Set property "syn_maxfan = 10000" for signal <MPLB_Rst> in unit <plb_v46>.
+    Set property "syn_maxfan = 10000" for signal <PLB_Clk> in unit <plb_v46>.
+    Set user-defined property "INIT =  1" for instance <I_PLB_RST> in unit <plb_v46>.
+    Set user-defined property "INIT =  1" for instance <GEN_SPLB_RST[0].I_SPLB_RST> in unit <plb_v46>.
+    Set user-defined property "INIT =  1" for instance <GEN_SPLB_RST[1].I_SPLB_RST> in unit <plb_v46>.
+    Set user-defined property "INIT =  1" for instance <GEN_SPLB_RST[2].I_SPLB_RST> in unit <plb_v46>.
+    Set user-defined property "INIT =  1" for instance <GEN_SPLB_RST[3].I_SPLB_RST> in unit <plb_v46>.
+    Set user-defined property "INIT =  1" for instance <GEN_SPLB_RST[4].I_SPLB_RST> in unit <plb_v46>.
+    Set user-defined property "INIT =  1" for instance <GEN_SPLB_RST[5].I_SPLB_RST> in unit <plb_v46>.
+    Set user-defined property "INIT =  1" for instance <GEN_MPLB_RST[0].I_MPLB_RST> in unit <plb_v46>.
+    Set user-defined property "INIT =  1" for instance <GEN_MPLB_RST[1].I_MPLB_RST> in unit <plb_v46>.
+Entity <plb_v46> analyzed. Unit <plb_v46> generated.
+
+Analyzing generic Entity <plb_addrpath> in library <plb_v46_v1_05_a> (Architecture <implementation>).
+	C_FAMILY = "spartan3e"
+	C_NUM_MASTERS = 2
+	C_PLB_AWIDTH = 32
+	C_PLB_DWIDTH = 64
+Entity <plb_addrpath> analyzed. Unit <plb_addrpath> generated.
+
+Analyzing generic Entity <mux_onehot_f.1> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_DW = 32
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+Entity <mux_onehot_f.1> analyzed. Unit <mux_onehot_f.1> generated.
+
+Analyzing generic Entity <mux_onehot_f.2> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_DW = 8
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+Entity <mux_onehot_f.2> analyzed. Unit <mux_onehot_f.2> generated.
+
+Analyzing generic Entity <mux_onehot_f.3> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_DW = 4
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+Entity <mux_onehot_f.3> analyzed. Unit <mux_onehot_f.3> generated.
+
+Analyzing generic Entity <mux_onehot_f.4> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_DW = 3
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+Entity <mux_onehot_f.4> analyzed. Unit <mux_onehot_f.4> generated.
+
+Analyzing generic Entity <mux_onehot_f.5> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_DW = 16
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+Entity <mux_onehot_f.5> analyzed. Unit <mux_onehot_f.5> generated.
+
+Analyzing generic Entity <mux_onehot_f.6> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_DW = 1
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+Entity <mux_onehot_f.6> analyzed. Unit <mux_onehot_f.6> generated.
+
+Analyzing generic Entity <mux_onehot_f.7> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_DW = 2
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+Entity <mux_onehot_f.7> analyzed. Unit <mux_onehot_f.7> generated.
+
+Analyzing generic Entity <plb_wr_datapath> in library <plb_v46_v1_05_a> (Architecture <simulation>).
+	C_FAMILY = "spartan3e"
+	C_NUM_MASTERS = 2
+	C_PLB_DWIDTH = 64
+Entity <plb_wr_datapath> analyzed. Unit <plb_wr_datapath> generated.
+
+Analyzing generic Entity <mux_onehot_f.8> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_DW = 64
+	C_FAMILY = "spartan3e"
+	C_NB = 2
+Entity <mux_onehot_f.8> analyzed. Unit <mux_onehot_f.8> generated.
+
+Analyzing generic Entity <plb_rd_datapath> in library <plb_v46_v1_05_a> (Architecture <simulation>).
+	C_NUM_MASTERS = 2
+	C_PLB_DWIDTH = 64
+Entity <plb_rd_datapath> analyzed. Unit <plb_rd_datapath> generated.
+
+Analyzing generic Entity <plb_slave_ors> in library <plb_v46_v1_05_a> (Architecture <implementation>).
+	C_FAMILY = "spartan3e"
+	C_NUM_MASTERS = 2
+	C_NUM_SLAVES = 6
+	C_PLB_DWIDTH = 64
+Entity <plb_slave_ors> analyzed. Unit <plb_slave_ors> generated.
+
+Analyzing generic Entity <or_gate.1> in library <plb_v46_v1_05_a> (Architecture <imp>).
+	C_BUS_WIDTH = 1
+	C_OR_WIDTH = 6
+	C_USE_LUT_OR = true
+Entity <or_gate.1> analyzed. Unit <or_gate.1> generated.
+
+Analyzing generic Entity <or_gate.2> in library <plb_v46_v1_05_a> (Architecture <imp>).
+	C_BUS_WIDTH = 2
+	C_OR_WIDTH = 6
+	C_USE_LUT_OR = true
+Entity <or_gate.2> analyzed. Unit <or_gate.2> generated.
+
+Analyzing generic Entity <or_gate.3> in library <plb_v46_v1_05_a> (Architecture <imp>).
+	C_BUS_WIDTH = 64
+	C_OR_WIDTH = 6
+	C_USE_LUT_OR = true
+Entity <or_gate.3> analyzed. Unit <or_gate.3> generated.
+
+Analyzing generic Entity <or_gate.4> in library <plb_v46_v1_05_a> (Architecture <imp>).
+	C_BUS_WIDTH = 4
+	C_OR_WIDTH = 6
+	C_USE_LUT_OR = true
+Entity <or_gate.4> analyzed. Unit <or_gate.4> generated.
+
+Analyzing generic Entity <plb_arbiter_logic> in library <plb_v46_v1_05_a> (Architecture <implementation>).
+	C_ADDR_PIPELINING_TYPE = 1
+	C_ARB_TYPE = 0
+	C_BASEADDR = "1111111111"
+	C_DCR_AWIDTH = 10
+	C_DCR_DWIDTH = 32
+	C_DCR_INTFCE = 0
+	C_FAMILY = "spartan3e"
+	C_HIGHADDR = "0000000000"
+	C_IRQ_ACTIVE = '1'
+	C_MID_BITS = 1
+	C_NUM_MASTERS = 2
+	C_NUM_SLAVES = 6
+	C_OPTIMIZE_1M = true
+	C_PLB_AWIDTH = 32
+	C_PLB_DWIDTH = 64
+Entity <plb_arbiter_logic> analyzed. Unit <plb_arbiter_logic> generated.
+
+Analyzing generic Entity <plb_arb_encoder> in library <plb_v46_v1_05_a> (Architecture <implementation>).
+	C_ARB_TYPE = 0
+	C_FAMILY = "spartan3e"
+	C_NUM_MASTERS = 2
+	C_NUM_MSTRS_PAD = 4
+	C_OPTIMIZE_1M = true
+Entity <plb_arb_encoder> analyzed. Unit <plb_arb_encoder> generated.
+
+Analyzing generic Entity <priority_encoder> in library <plb_v46_v1_05_a> (Architecture <simulation>).
+	C_NUM_MASTERS = 4
+Entity <priority_encoder> analyzed. Unit <priority_encoder> generated.
+
+Analyzing Entity <qual_request> in library <plb_v46_v1_05_a> (Architecture <simulation>).
+INFO:Xst:1561 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/qual_request.vhd" line 194: Mux is complete : default of case is discarded
+Entity <qual_request> analyzed. Unit <qual_request> generated.
+
+Analyzing generic Entity <pending_priority> in library <plb_v46_v1_05_a> (Architecture <simulation>).
+	C_NUM_MASTERS = 2
+Entity <pending_priority> analyzed. Unit <pending_priority> generated.
+
+Analyzing Entity <qual_priority> in library <plb_v46_v1_05_a> (Architecture <qual_priority>).
+INFO:Xst:1561 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/qual_priority.vhd" line 192: Mux is complete : default of case is discarded
+Entity <qual_priority> analyzed. Unit <qual_priority> generated.
+
+Analyzing generic Entity <pend_request> in library <plb_v46_v1_05_a> (Architecture <simulation>).
+	C_NUM_MASTERS = 2
+Entity <pend_request> analyzed. Unit <pend_request> generated.
+
+Analyzing generic Entity <arb_control_sm> in library <plb_v46_v1_05_a> (Architecture <simulation>).
+	C_ADDR_PIPELINING_TYPE = 1
+	C_ARB_TYPE = 0
+	C_NUM_MASTERS = 2
+	C_OPTIMIZE_1M = true
+Entity <arb_control_sm> analyzed. Unit <arb_control_sm> generated.
+
+Analyzing generic Entity <gen_qual_req> in library <plb_v46_v1_05_a> (Architecture <simulation>).
+	C_NUM_MASTERS = 2
+Entity <gen_qual_req> analyzed. Unit <gen_qual_req> generated.
+
+Analyzing generic Entity <muxed_signals> in library <plb_v46_v1_05_a> (Architecture <implementation>).
+	C_FAMILY = "spartan3e"
+	C_MID_BITS = 1
+	C_NUM_MASTERS = 2
+	C_NUM_MSTRS_PAD = 4
+Entity <muxed_signals> analyzed. Unit <muxed_signals> generated.
+
+Analyzing generic Entity <or_bits.1> in library <plb_v46_v1_05_a> (Architecture <implementation>).
+	C_BUS_SIZE = 4
+	C_NUM_BITS = 2
+	C_START_BIT = 2
+Entity <or_bits.1> analyzed. Unit <or_bits.1> generated.
+
+Analyzing generic Entity <or_bits.2> in library <plb_v46_v1_05_a> (Architecture <implementation>).
+	C_BUS_SIZE = 4
+	C_NUM_BITS = 1
+	C_START_BIT = 1
+Entity <or_bits.2> analyzed. Unit <or_bits.2> generated.
+
+Analyzing generic Entity <or_bits.3> in library <plb_v46_v1_05_a> (Architecture <implementation>).
+	C_BUS_SIZE = 4
+	C_NUM_BITS = 1
+	C_START_BIT = 3
+Entity <or_bits.3> analyzed. Unit <or_bits.3> generated.
+
+Analyzing generic Entity <watchdog_timer> in library <plb_v46_v1_05_a> (Architecture <simulation>).
+	C_SIZE = 4
+Entity <watchdog_timer> analyzed. Unit <watchdog_timer> generated.
+
+Analyzing generic Entity <down_counter> in library <proc_common_v3_00_a> (Architecture <simulation>).
+	C_CNT_WIDTH = 4
+Entity <down_counter> analyzed. Unit <down_counter> generated.
+
+Analyzing generic Entity <plb_interrupt> in library <plb_v46_v1_05_a> (Architecture <plb_interrupt>).
+	C_IRQ_ACTIVE = '1'
+    Set user-defined property "INIT =  0" for instance <RISING_EDGE_GEN.INTERRUPT_REFF_I> in unit <plb_interrupt>.
+Entity <plb_interrupt> analyzed. Unit <plb_interrupt> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <plb_rd_datapath>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_rd_datapath.vhd".
+Unit <plb_rd_datapath> synthesized.
+
+
+Synthesizing Unit <mux_onehot_f_1>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd".
+WARNING:Xst:646 - Signal <cyout9<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout9<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout8<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout8<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout7<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout7<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout6<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout6<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout5<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout5<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout4<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout4<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout30<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout30<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout3<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout3<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout29<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout29<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout28<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout28<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout27<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout27<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout26<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout26<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout25<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout25<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout24<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout24<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout23<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout23<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout22<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout22<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout21<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout21<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout20<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout20<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout2<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout2<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout19<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout19<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout18<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout18<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout17<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout17<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout16<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout16<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout15<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout15<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout14<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout14<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout13<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout13<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout12<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout12<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout11<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout11<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout10<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout10<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout1<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout0<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout0<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <mux_onehot_f_1> synthesized.
+
+
+Synthesizing Unit <mux_onehot_f_2>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd".
+WARNING:Xst:646 - Signal <cyout6<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout6<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout5<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout5<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout4<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout4<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout3<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout3<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout2<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout2<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout1<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout0<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout0<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <mux_onehot_f_2> synthesized.
+
+
+Synthesizing Unit <mux_onehot_f_3>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd".
+WARNING:Xst:646 - Signal <cyout2<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout2<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout1<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout0<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout0<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <mux_onehot_f_3> synthesized.
+
+
+Synthesizing Unit <mux_onehot_f_4>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd".
+WARNING:Xst:646 - Signal <cyout1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout1<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout0<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout0<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <mux_onehot_f_4> synthesized.
+
+
+Synthesizing Unit <mux_onehot_f_5>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd".
+WARNING:Xst:646 - Signal <cyout9<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout9<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout8<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout8<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout7<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout7<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout6<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout6<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout5<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout5<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout4<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout4<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout3<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout3<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout2<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout2<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout14<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout14<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout13<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout13<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout12<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout12<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout11<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout11<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout10<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout10<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout1<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout0<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout0<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <mux_onehot_f_5> synthesized.
+
+
+Synthesizing Unit <mux_onehot_f_6>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd".
+WARNING:Xst:646 - Signal <cyout<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <mux_onehot_f_6> synthesized.
+
+
+Synthesizing Unit <mux_onehot_f_7>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd".
+WARNING:Xst:646 - Signal <cyout0<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout0<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <mux_onehot_f_7> synthesized.
+
+
+Synthesizing Unit <mux_onehot_f_8>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd".
+WARNING:Xst:646 - Signal <cyout9<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout9<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout8<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout8<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout7<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout7<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout62<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout62<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout61<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout61<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout60<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout60<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout6<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout6<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout59<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout59<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout58<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout58<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout57<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout57<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout56<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout56<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout55<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout55<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout54<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout54<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout53<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout53<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout52<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout52<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout51<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout51<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout50<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout50<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout5<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout5<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout49<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout49<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout48<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout48<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout47<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout47<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout46<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout46<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout45<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout45<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout44<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout44<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout43<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout43<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout42<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout42<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout41<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout41<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout40<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout40<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout4<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout4<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout39<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout39<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout38<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout38<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout37<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout37<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout36<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout36<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout35<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout35<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout34<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout34<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout33<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout33<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout32<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout32<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout31<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout31<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout30<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout30<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout3<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout3<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout29<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout29<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout28<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout28<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout27<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout27<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout26<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout26<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout25<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout25<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout24<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout24<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout23<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout23<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout22<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout22<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout21<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout21<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout20<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout20<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout2<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout2<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout19<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout19<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout18<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout18<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout17<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout17<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout16<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout16<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout15<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout15<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout14<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout14<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout13<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout13<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout12<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout12<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout11<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout11<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout10<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout10<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout1<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout0<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout0<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cyout<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cyout<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <mux_onehot_f_8> synthesized.
+
+
+Synthesizing Unit <or_gate_1>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/or_gate.vhd".
+WARNING:Xst:1780 - Signal <test> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <or_gate_1> synthesized.
+
+
+Synthesizing Unit <or_gate_2>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/or_gate.vhd".
+WARNING:Xst:1780 - Signal <test> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <or_gate_2> synthesized.
+
+
+Synthesizing Unit <or_gate_3>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/or_gate.vhd".
+WARNING:Xst:1780 - Signal <test> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <or_gate_3> synthesized.
+
+
+Synthesizing Unit <or_gate_4>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/or_gate.vhd".
+WARNING:Xst:1780 - Signal <test> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <or_gate_4> synthesized.
+
+
+Synthesizing Unit <arb_control_sm>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/arb_control_sm.vhd".
+WARNING:Xst:646 - Signal <in_buslock> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <hold_rr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State lost_buslock is never reached in FSM <arbctrl_sm_cs>.
+    Found finite state machine <FSM_0> for signal <arbctrl_sm_cs>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 41                                             |
+    | Inputs             | 12                                             |
+    | Outputs            | 8                                              |
+    | Clock              | Clk                       (rising_edge)        |
+    | Reset              | ArbReset                  (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 2-bit register for signal <ArbSecRdInProgPriorReg>.
+    Found 1-bit register for signal <ArbPriRdBurstReg>.
+    Found 2-bit register for signal <ArbPriRdMasterRegReg>.
+    Found 2-bit register for signal <ArbDisMReqReg>.
+    Found 2-bit register for signal <ArbPriWrMasterReg>.
+    Found 2-bit register for signal <ArbSecWrInProgPriorReg>.
+    Found 2-bit register for signal <arbPriRdMasterReg_i>.
+    Found 1-bit register for signal <arbRdDBusBusyReg_i>.
+    Found 1-bit register for signal <arbSecRdBurstReg>.
+    Found 1-bit register for signal <arbSecRdInProgReg_i>.
+    Found 2-bit register for signal <arbSecRdMasterReg_i>.
+    Found 1-bit register for signal <arbSecWrInProgReg_i>.
+    Found 2-bit register for signal <arbSecWrMasterReg_i>.
+    Found 1-bit register for signal <arbWrDBusBusyReg_i>.
+    Found 1-bit register for signal <exec_trns>.
+    Found 1-bit register for signal <pavalid_i>.
+    Found 1-bit register for signal <plb_buslock_reg>.
+    Found 1-bit register for signal <PrevTrnsReArb>.
+    Found 1-bit register for signal <savalid_reg>.
+    Found 1-bit register for signal <sm_buslock_reg>.
+    Found 1-bit register for signal <WrBurst_Mux_Idle_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  29 D-type flip-flop(s).
+Unit <arb_control_sm> synthesized.
+
+
+Synthesizing Unit <gen_qual_req>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/gen_qual_req.vhd".
+Unit <gen_qual_req> synthesized.
+
+
+Synthesizing Unit <qual_request>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/qual_request.vhd".
+Unit <qual_request> synthesized.
+
+
+Synthesizing Unit <qual_priority>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/qual_priority.vhd".
+Unit <qual_priority> synthesized.
+
+
+Synthesizing Unit <or_bits_1>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/or_bits.vhd".
+WARNING:Xst:647 - Input <In_Bus<0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <or_bits_1> synthesized.
+
+
+Synthesizing Unit <or_bits_2>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/or_bits.vhd".
+WARNING:Xst:647 - Input <In_Bus<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <In_Bus<2:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <or_bits_2> synthesized.
+
+
+Synthesizing Unit <or_bits_3>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/or_bits.vhd".
+WARNING:Xst:647 - Input <In_Bus<0:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <or_bits_3> synthesized.
+
+
+Synthesizing Unit <down_counter>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd".
+    Found 4-bit down counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <down_counter> synthesized.
+
+
+Synthesizing Unit <plb_addrpath>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_addrpath.vhd".
+    Found 2-bit register for signal <PLB_MSize>.
+    Found 32-bit register for signal <PLB_UABus>.
+    Found 4-bit register for signal <PLB_size>.
+    Found 8-bit register for signal <PLB_BE>.
+    Found 1-bit register for signal <PLB_lockErr>.
+    Found 16-bit register for signal <PLB_TAttribute>.
+    Found 32-bit register for signal <PLB_ABus>.
+    Found 3-bit register for signal <PLB_type>.
+    Summary:
+	inferred  98 D-type flip-flop(s).
+Unit <plb_addrpath> synthesized.
+
+
+Synthesizing Unit <plb_wr_datapath>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_wr_datapath.vhd".
+WARNING:Xst:1780 - Signal <wr_dack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <plb_wr_datapath> synthesized.
+
+
+Synthesizing Unit <plb_slave_ors>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_slave_ors.vhd".
+WARNING:Xst:647 - Input <WdtMTimeout_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <plb_slave_ors> synthesized.
+
+
+Synthesizing Unit <muxed_signals>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/muxed_signals.vhd".
+WARNING:Xst:647 - Input <PLB_SAValid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ArbPriRdMasterRegReg> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <temp_or0<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <temp_or<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <plb_masterid_i<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <wrburst_rst>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <muxed_signals> synthesized.
+
+
+Synthesizing Unit <watchdog_timer>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/watchdog_timer.vhd".
+    Found 1-bit register for signal <wdtMTimeout_n_i>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <watchdog_timer> synthesized.
+
+
+Synthesizing Unit <plb_interrupt>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_interrupt.vhd".
+    Found 1-bit register for signal <wdtmtimeout_d1>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <plb_interrupt> synthesized.
+
+
+Synthesizing Unit <priority_encoder>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/priority_encoder.vhd".
+WARNING:Xst:653 - Signal <zero> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <temp_sel> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <one> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <priority_encoder> synthesized.
+
+
+Synthesizing Unit <pending_priority>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/pending_priority.vhd".
+Unit <pending_priority> synthesized.
+
+
+Synthesizing Unit <pend_request>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/pend_request.vhd".
+WARNING:Xst:1780 - Signal <m_request_n> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <pend_request> synthesized.
+
+
+Synthesizing Unit <plb_arb_encoder>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_arb_encoder.vhd".
+WARNING:Xst:647 - Input <M_busLock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <prioencdrOutput_rr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <prioencdrOutput<2:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 2-bit register for signal <arbAddrSelReg_i>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <plb_arb_encoder> synthesized.
+
+
+Synthesizing Unit <plb_arbiter_logic>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_arbiter_logic.vhd".
+WARNING:Xst:647 - Input <DCR_Write> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_UABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_size> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <M_lockErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_BE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DCR_Read> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DCR_ABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_ABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_type> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <wdtMTimeout_n_p1_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sm_buslock> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rdPrimReg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <arbSecWrMasterReg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <arbSecRdMasterReg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <arbDisMReqRegIn> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <arbAValid> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <PLB_masterID<0>>.
+    Found 1-bit register for signal <PLB_RNW>.
+    Found 1-bit register for signal <arbreset_i>.
+    Found 1-bit register for signal <plb_rdprimreg_i>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <plb_arbiter_logic> synthesized.
+
+
+Synthesizing Unit <plb_v46>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_v46.vhd".
+WARNING:Xst:647 - Input <M_abort> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <srl_time_out> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <por_FF_out> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <plb_v46> synthesized.
+
+
+Synthesizing Unit <system_mb_plb_wrapper>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab2/hdl/system_mb_plb_wrapper.vhd".
+Unit <system_mb_plb_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 4-bit down counter                                    : 1
+# Registers                                            : 37
+ 1-bit register                                        : 21
+ 16-bit register                                       : 1
+ 2-bit register                                        : 10
+ 3-bit register                                        : 1
+ 32-bit register                                       : 2
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs/FSM> on signal <arbctrl_sm_cs[1:3]> with gray encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ idle         | 000
+ mastersel    | 001
+ buslock      | 011
+ lost_buslock | unreached
+ rel_disables | 111
+ set_disables | 101
+ rd_state     | 010
+ wr_state     | 110
+ rearb        | 100
+--------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 1
+ 4-bit down counter                                    : 1
+# Registers                                            : 146
+ Flip-Flops                                            : 146
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_mb_plb_wrapper> ...
+
+Optimizing unit <arb_control_sm> ...
+WARNING:Xst:1710 - FF/Latch <exec_trns> (without init value) has a constant value of 1 in block <arb_control_sm>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <plb_addrpath> ...
+
+Optimizing unit <muxed_signals> ...
+
+Optimizing unit <priority_encoder> ...
+
+Optimizing unit <pending_priority> ...
+
+Optimizing unit <pend_request> ...
+
+Optimizing unit <plb_arbiter_logic> ...
+
+Optimizing unit <plb_v46> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <system_mb_plb_wrapper> is equivalent to the following 8 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[5].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[4].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
+FlipFlop mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0 has been replicated 3 time(s)
+FlipFlop mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1 has been replicated 3 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 159
+ Flip-Flops                                            : 159
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/system_mb_plb_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 1388
+
+Cell Usage :
+# BELS                             : 596
+#      GND                         : 1
+#      INV                         : 4
+#      LUT2                        : 38
+#      LUT2_D                      : 6
+#      LUT2_L                      : 2
+#      LUT3                        : 121
+#      LUT3_L                      : 1
+#      LUT4                        : 347
+#      LUT4_D                      : 4
+#      LUT4_L                      : 12
+#      MUXCY                       : 52
+#      MUXF5                       : 7
+#      VCC                         : 1
+# FlipFlops/Latches                : 159
+#      FD                          : 1
+#      FDR                         : 110
+#      FDRE                        : 27
+#      FDRS                        : 8
+#      FDS                         : 9
+#      FDSE                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      312  out of   4656     6%  
+ Number of Slice Flip Flops:            159  out of   9312     1%  
+ Number of 4 input LUTs:                535  out of   9312     5%  
+ Number of IOs:                        1388
+ Number of bonded IOBs:                   0  out of    232     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                 | Load  |
+-----------------------------------+-------------------------------------------------------+-------+
+PLB_Clk                            | NONE(mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/arbreset_i)| 159   |
+-----------------------------------+-------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.586ns (Maximum Frequency: 151.837MHz)
+   Minimum input arrival time before clock: 7.242ns
+   Maximum output required time after clock: 4.723ns
+   Maximum combinational path delay: 5.028ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PLB_Clk'
+  Clock period: 6.586ns (frequency: 151.837MHz)
+  Total number of paths / destination ports: 1061 / 330
+-------------------------------------------------------------------------
+Delay:               6.586ns (Levels of Logic = 4)
+  Source:            mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2 (FF)
+  Destination:       mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/ArbPriWrMasterReg_0 (FF)
+  Source Clock:      PLB_Clk rising
+  Destination Clock: PLB_Clk rising
+
+  Data Path: mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2 to mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/ArbPriWrMasterReg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.591   0.455  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2 (mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2)
+     LUT4:I2->O           21   0.704   1.163  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/RNW_MUX/lutout_0_or00001 (mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/plb_rnw_i)
+     LUT4:I2->O            1   0.704   0.455  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/priWrEn7 (mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/priWrEn7)
+     LUT4_L:I2->LO         1   0.704   0.104  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/priWrEn79_SW0 (N216)
+     LUT4:I3->O            2   0.704   0.447  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/priWrEn79 (mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/priWrEn)
+     FDRE:CE                   0.555          mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/ArbPriWrMasterReg_1
+    ----------------------------------------
+    Total                      6.586ns (3.962ns logic, 2.624ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PLB_Clk'
+  Total number of paths / destination ports: 1201 / 184
+-------------------------------------------------------------------------
+Offset:              7.242ns (Levels of Logic = 5)
+  Source:            Sl_addrAck<2> (PAD)
+  Destination:       mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbPriRdMasterReg_i_0 (FF)
+  Destination Clock: PLB_Clk rising
+
+  Data Path: Sl_addrAck<2> to mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbPriRdMasterReg_i_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O            1   0.704   0.424  mb_plb/GEN_SHARED.I_PLB_SLAVE_ORS/ADDRACK_OR/Y_0_or0000_SW0 (N207)
+     LUT4:I3->O           13   0.704   1.158  mb_plb/GEN_SHARED.I_PLB_SLAVE_ORS/ADDRACK_OR/Y_0_or0000 (PLB_SaddrAck)
+     LUT4_D:I0->O          1   0.704   0.424  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/priRdBurstEn11 (mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/N23)
+     LUT4:I3->O            1   0.704   0.455  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/priRdBurstEn12 (mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/priRdBurstEn12)
+     LUT4:I2->O            3   0.704   0.531  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/priRdBurstEn66 (mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/priRdBurstEn)
+     FDRE:CE                   0.555          mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/ArbPriRdBurstReg
+    ----------------------------------------
+    Total                      7.242ns (4.250ns logic, 2.992ns route)
+                                       (58.7% logic, 41.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PLB_Clk'
+  Total number of paths / destination ports: 356 / 217
+-------------------------------------------------------------------------
+Offset:              4.723ns (Levels of Logic = 5)
+  Source:            mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecRdInProgReg_i (FF)
+  Destination:       PLB_rdPendPri<0> (PAD)
+  Source Clock:      PLB_Clk rising
+
+  Data Path: mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecRdInProgReg_i to PLB_rdPendPri<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             19   0.591   1.120  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecRdInProgReg_i (mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbSecRdInProgReg_i)
+     LUT3:I2->O            1   0.704   0.000  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/I_PEND_PRIOR/I_SECRD_LVL/Lvl3_n1 (mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/I_PEND_PRIOR/secrd_lvl3_n)
+     MUXCY:S->O            1   0.464   0.000  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/I_PEND_PRIOR/I_LVL3_RD_MUX1 (mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/I_PEND_PRIOR/lvl3_rd_mux<0>)
+     MUXCY:CI->O           1   0.059   0.000  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/I_PEND_PRIOR/LVL3_MASTERS_RD_MUXES[1].I_MASTER_MUX (mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/I_PEND_PRIOR/lvl3_rd_mux<1>)
+     MUXCY:CI->O           2   0.459   0.622  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/I_PEND_PRIOR/LVL3_MASTERS_RD_MUXES[2].I_MASTER_MUX (mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/I_PEND_PRIOR/lvl3_rd_mux<2>)
+     LUT2:I0->O            0   0.704   0.000  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/I_PEND_PRIOR/PLB_rdPendPri_0_or00001 (PLB_rdPendPri<0>)
+    ----------------------------------------
+    Total                      4.723ns (2.981ns logic, 1.742ns route)
+                                       (63.1% logic, 36.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1852 / 364
+-------------------------------------------------------------------------
+Delay:               5.028ns (Levels of Logic = 4)
+  Source:            Sl_addrAck<2> (PAD)
+  Destination:       PLB_wrPrim<0> (PAD)
+
+  Data Path: Sl_addrAck<2> to PLB_wrPrim<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O            1   0.704   0.424  mb_plb/GEN_SHARED.I_PLB_SLAVE_ORS/ADDRACK_OR/Y_0_or0000_SW0 (N207)
+     LUT4:I3->O           13   0.704   1.158  mb_plb/GEN_SHARED.I_PLB_SLAVE_ORS/ADDRACK_OR/Y_0_or0000 (PLB_SaddrAck)
+     LUT3:I0->O            1   0.704   0.455  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/wrPrim_SW0 (N176)
+     LUT4:I2->O            0   0.704   0.000  mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/wrPrim (PLB_wrPrim<5>)
+    ----------------------------------------
+    Total                      5.028ns (2.991ns logic, 2.037ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.62 secs
+ 
+--> 
+
+Total memory usage is 4954440 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  304 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

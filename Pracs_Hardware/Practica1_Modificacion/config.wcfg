@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/GIT/Universidad/Pracs_Hardware/Practica1_Modificacion/testbench_mult_sec_mod_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="testbench_mult_sec_mod" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/testbench_mult_sec_mod/inbus_q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inbus_q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inbus_q[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_mult_sec_mod/inbus_m" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inbus_m[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inbus_m[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_mult_sec_mod/uut/q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_mult_sec_mod/uut/m" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_mult_sec_mod/uut/pp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pp[32:0]</obj_property>
+      <obj_property name="ObjectShortName">pp[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_mult_sec_mod/uut/ca" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ca[32:0]</obj_property>
+      <obj_property name="ObjectShortName">ca[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_mult_sec_mod/outbus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outbus[63:0]</obj_property>
+      <obj_property name="ObjectShortName">outbus[63:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_mult_sec_mod/i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_mult_sec_mod/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_mult_sec_mod/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_mult_sec_mod/periodo" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">periodo</obj_property>
+      <obj_property name="ObjectShortName">periodo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_mult_sec_mod/uut/weq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">weq</obj_property>
+      <obj_property name="ObjectShortName">weq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_mult_sec_mod/uut/wem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wem</obj_property>
+      <obj_property name="ObjectShortName">wem</obj_property>
+   </wvobject>
+</wave_config>

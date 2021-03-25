@@ -1,0 +1,160 @@
+V3 77
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/arithmatic.vhd 2002/08/16.08:24:50 P.20131013
+EN work/arithmetic_process 1603988300 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/arithmatic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/arithmetic_process/low_level_definition 1603988301 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/arithmatic.vhd \
+      EN work/arithmetic_process 1603988300 CP addsub8
+EN work/addsub8 1603988302 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/arithmatic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/addsub8/low_level_definition 1603988303 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/arithmatic.vhd \
+      EN work/addsub8 1603988302
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/carry_flag_logic.vhd 2002/08/16.08:24:50 P.20131013
+EN work/carry_flag_logic 1603988312 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/carry_flag_logic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/carry_flag_logic/low_level_definition 1603988313 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/carry_flag_logic.vhd \
+      EN work/carry_flag_logic 1603988312
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/interrupt_capture.vhd 2002/08/16.08:24:50 P.20131013
+EN work/interrupt_capture 1603988328 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/interrupt_capture.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/interrupt_capture/low_level_definition 1603988329 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/interrupt_capture.vhd \
+      EN work/interrupt_capture 1603988328
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/interrupt_logic.vhd 2002/10/11.15:45:10 P.20131013
+EN work/interrupt_logic 1603988330 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/interrupt_logic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/interrupt_logic/low_level_definition 1603988331 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/interrupt_logic.vhd \
+      EN work/interrupt_logic 1603988330
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/IO_strobe_logic.vhd 2002/08/16.08:24:50 P.20131013
+EN work/IO_strobe_logic 1603988298 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/IO_strobe_logic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/IO_strobe_logic/low_level_definition 1603988299 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/IO_strobe_logic.vhd \
+      EN work/IO_strobe_logic 1603988298
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/logical_bus_processing.vhd 2002/08/16.08:24:50 P.20131013
+EN work/logical_bus_processing 1603988306 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/logical_bus_processing.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/logical_bus_processing/low_level_definition 1603988307 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/logical_bus_processing.vhd \
+      EN work/logical_bus_processing 1603988306
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/picoblaze.vhd 2002/12/16.13:05:22 P.20131013
+EN work/picoblaze 1603988332 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/picoblaze.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/picoblaze/Behavioral 1603988333 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/picoblaze.vhd \
+      EN work/picoblaze 1603988332 CP IO_strobe_logic CP arithmetic_process \
+      CP shift_rotate CP logical_bus_processing CP T_state_and_Reset \
+      CP register_and_flag_enable CP carry_flag_logic CP zero_flag_logic \
+      CP program_counter CP register_bank CP stack_ram CP stack_counter \
+      CP interrupt_capture CP interrupt_logic
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/programa_helloworld.vhd 2020/10/22.17:35:13 P.20131013
+EN work/programa_helloworld 1603988334 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/programa_helloworld.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/programa_helloworld/v1 1603988335 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/programa_helloworld.vhd \
+      EN work/programa_helloworld 1603988334
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/program_counter.vhd 2002/08/16.08:24:50 P.20131013
+EN work/program_counter 1603988316 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/program_counter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/program_counter/low_level_definition 1603988317 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/program_counter.vhd \
+      EN work/program_counter 1603988316
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_and_flag_enable.vhd 2002/10/17.10:19:42 P.20131013
+EN work/register_and_flag_enable 1603988310 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_and_flag_enable.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/register_and_flag_enable/low_level_definition 1603988311 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_and_flag_enable.vhd \
+      EN work/register_and_flag_enable 1603988310
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_bank.vhd 2002/10/11.15:46:34 P.20131013
+EN work/register_bank 1603988318 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_bank.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/register_bank/Behavioral 1603988319 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_bank.vhd \
+      EN work/register_bank 1603988318 CP ram_Nx1
+EN work/ram_Nx1 1603988320 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_bank.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ram_Nx1/Behavioral 1603988321 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/register_bank.vhd \
+      EN work/ram_Nx1 1603988320
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/shift_rotate.vhd 2002/08/16.08:24:50 P.20131013
+EN work/shift_rotate 1603988304 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/shift_rotate.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/shift_rotate/low_level_definition 1603988305 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/shift_rotate.vhd \
+      EN work/shift_rotate 1603988304
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_counter.vhd 2002/10/11.15:48:06 P.20131013
+EN work/stack_counter 1603988326 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_counter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/stack_counter/low_level_definition 1603988327 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_counter.vhd \
+      EN work/stack_counter 1603988326
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_ram.vhd 2002/10/11.15:49:02 P.20131013
+EN work/stack_ram 1603988322 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_ram.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/stack_ram/low_level_definition 1603988323 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_ram.vhd \
+      EN work/stack_ram 1603988322 CP ram_x1s
+EN work/ram_x1s 1603988324 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_ram.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ram_x1s/Behavioral 1603988325 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/stack_ram.vhd \
+      EN work/ram_x1s 1603988324
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/toplevel.vhd 2013/10/24.12:49:16 P.20131013
+EN work/toplevel 1603988336 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/toplevel.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/toplevel/behavioral 1603988337 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/toplevel.vhd \
+      EN work/toplevel 1603988336 CP picoblaze CP programa_helloworld
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/T_state_and_Reset.vhd 2002/08/16.08:24:50 P.20131013
+EN work/T_state_and_Reset 1603988308 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/T_state_and_Reset.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/T_state_and_Reset/low_level_definition 1603988309 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/T_state_and_Reset.vhd \
+      EN work/T_state_and_Reset 1603988308
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/zero_flag_logic.vhd 2002/08/16.08:24:50 P.20131013
+EN work/zero_flag_logic 1603988314 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/zero_flag_logic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/zero_flag_logic/low_level_definition 1603988315 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/zero_flag_logic.vhd \
+      EN work/zero_flag_logic 1603988314

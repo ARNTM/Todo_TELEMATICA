@@ -1,0 +1,134 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml mult_sec_mod.twx mult_sec_mod.ncd -o mult_sec_mod.twr
+mult_sec_mod.pcf
+
+Design file:              mult_sec_mod.ncd
+Physical constraint file: mult_sec_mod.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+I           |    6.470(R)|    0.214(R)|clk_BUFGP         |   0.000|
+inbus_M<0>  |    0.598(R)|    0.739(R)|clk_BUFGP         |   0.000|
+inbus_M<1>  |    0.657(R)|    0.692(R)|clk_BUFGP         |   0.000|
+inbus_M<2>  |    0.562(R)|    0.762(R)|clk_BUFGP         |   0.000|
+inbus_M<3>  |    0.283(R)|    0.986(R)|clk_BUFGP         |   0.000|
+inbus_M<4>  |    0.653(R)|    0.694(R)|clk_BUFGP         |   0.000|
+inbus_M<5>  |    0.912(R)|    0.488(R)|clk_BUFGP         |   0.000|
+inbus_M<6>  |    0.386(R)|    0.910(R)|clk_BUFGP         |   0.000|
+inbus_M<7>  |    0.981(R)|    0.434(R)|clk_BUFGP         |   0.000|
+inbus_M<8>  |    1.185(R)|    0.269(R)|clk_BUFGP         |   0.000|
+inbus_M<9>  |    1.050(R)|    0.377(R)|clk_BUFGP         |   0.000|
+inbus_M<10> |    0.926(R)|    0.475(R)|clk_BUFGP         |   0.000|
+inbus_M<11> |    0.804(R)|    0.573(R)|clk_BUFGP         |   0.000|
+inbus_M<12> |    1.478(R)|    0.036(R)|clk_BUFGP         |   0.000|
+inbus_M<13> |    0.619(R)|    0.723(R)|clk_BUFGP         |   0.000|
+inbus_M<14> |    0.242(R)|    1.024(R)|clk_BUFGP         |   0.000|
+inbus_M<15> |    0.210(R)|    1.050(R)|clk_BUFGP         |   0.000|
+inbus_M<16> |    1.088(R)|    0.347(R)|clk_BUFGP         |   0.000|
+inbus_M<17> |    0.227(R)|    1.036(R)|clk_BUFGP         |   0.000|
+inbus_M<18> |    0.280(R)|    0.991(R)|clk_BUFGP         |   0.000|
+inbus_M<19> |    0.231(R)|    1.030(R)|clk_BUFGP         |   0.000|
+inbus_M<20> |    0.305(R)|    0.971(R)|clk_BUFGP         |   0.000|
+inbus_M<21> |    0.042(R)|    1.181(R)|clk_BUFGP         |   0.000|
+inbus_M<22> |    0.336(R)|    0.944(R)|clk_BUFGP         |   0.000|
+inbus_M<23> |    0.557(R)|    0.767(R)|clk_BUFGP         |   0.000|
+inbus_M<24> |    0.614(R)|    0.723(R)|clk_BUFGP         |   0.000|
+inbus_M<25> |    0.581(R)|    0.750(R)|clk_BUFGP         |   0.000|
+inbus_M<26> |    0.902(R)|    0.490(R)|clk_BUFGP         |   0.000|
+inbus_M<27> |    0.558(R)|    0.765(R)|clk_BUFGP         |   0.000|
+inbus_M<28> |    0.337(R)|    0.942(R)|clk_BUFGP         |   0.000|
+inbus_M<29> |    0.361(R)|    0.923(R)|clk_BUFGP         |   0.000|
+inbus_M<30> |    1.228(R)|    0.228(R)|clk_BUFGP         |   0.000|
+inbus_M<31> |    1.211(R)|    0.241(R)|clk_BUFGP         |   0.000|
+inbus_Q<0>  |    1.488(R)|    0.022(R)|clk_BUFGP         |   0.000|
+inbus_Q<1>  |    1.287(R)|    0.183(R)|clk_BUFGP         |   0.000|
+inbus_Q<2>  |    2.234(R)|   -0.581(R)|clk_BUFGP         |   0.000|
+inbus_Q<3>  |    1.666(R)|   -0.126(R)|clk_BUFGP         |   0.000|
+inbus_Q<4>  |    1.909(R)|   -0.320(R)|clk_BUFGP         |   0.000|
+inbus_Q<5>  |    1.874(R)|   -0.293(R)|clk_BUFGP         |   0.000|
+inbus_Q<6>  |    1.897(R)|   -0.311(R)|clk_BUFGP         |   0.000|
+inbus_Q<7>  |    1.592(R)|   -0.067(R)|clk_BUFGP         |   0.000|
+inbus_Q<8>  |    1.294(R)|    0.171(R)|clk_BUFGP         |   0.000|
+inbus_Q<9>  |    1.864(R)|   -0.284(R)|clk_BUFGP         |   0.000|
+inbus_Q<10> |    1.940(R)|   -0.340(R)|clk_BUFGP         |   0.000|
+inbus_Q<11> |    1.605(R)|   -0.072(R)|clk_BUFGP         |   0.000|
+inbus_Q<12> |    1.708(R)|   -0.154(R)|clk_BUFGP         |   0.000|
+inbus_Q<13> |    1.571(R)|   -0.044(R)|clk_BUFGP         |   0.000|
+inbus_Q<14> |    1.742(R)|   -0.180(R)|clk_BUFGP         |   0.000|
+inbus_Q<15> |    1.665(R)|   -0.118(R)|clk_BUFGP         |   0.000|
+inbus_Q<16> |    1.323(R)|    0.155(R)|clk_BUFGP         |   0.000|
+inbus_Q<17> |    1.349(R)|    0.135(R)|clk_BUFGP         |   0.000|
+inbus_Q<18> |    1.454(R)|    0.051(R)|clk_BUFGP         |   0.000|
+inbus_Q<19> |    1.681(R)|   -0.131(R)|clk_BUFGP         |   0.000|
+inbus_Q<20> |    1.552(R)|   -0.027(R)|clk_BUFGP         |   0.000|
+inbus_Q<21> |    1.398(R)|    0.096(R)|clk_BUFGP         |   0.000|
+inbus_Q<22> |    1.340(R)|    0.142(R)|clk_BUFGP         |   0.000|
+inbus_Q<23> |    1.008(R)|    0.408(R)|clk_BUFGP         |   0.000|
+inbus_Q<24> |    1.088(R)|    0.343(R)|clk_BUFGP         |   0.000|
+inbus_Q<25> |    1.207(R)|    0.248(R)|clk_BUFGP         |   0.000|
+inbus_Q<26> |    1.231(R)|    0.229(R)|clk_BUFGP         |   0.000|
+inbus_Q<27> |    0.907(R)|    0.488(R)|clk_BUFGP         |   0.000|
+inbus_Q<28> |    0.921(R)|    0.478(R)|clk_BUFGP         |   0.000|
+inbus_Q<29> |    1.627(R)|   -0.087(R)|clk_BUFGP         |   0.000|
+inbus_Q<30> |    1.229(R)|    0.232(R)|clk_BUFGP         |   0.000|
+inbus_Q<31> |    1.231(R)|    0.231(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.146|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu Oct 15 17:51:13 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4509 MB
+
+
+

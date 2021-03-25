@@ -1,0 +1,7 @@
+D:\GIT\Universidad\Pracs_Laboratorio\SimuladorMovimiento\bin\Debug\SimuladorMovimiento.exe.config
+D:\GIT\Universidad\Pracs_Laboratorio\SimuladorMovimiento\bin\Debug\SimuladorMovimiento.exe
+D:\GIT\Universidad\Pracs_Laboratorio\SimuladorMovimiento\bin\Debug\SimuladorMovimiento.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\SimuladorMovimiento\obj\Debug\SimuladorMovimiento.csprojAssemblyReference.cache
+D:\GIT\Universidad\Pracs_Laboratorio\SimuladorMovimiento\obj\Debug\SimuladorMovimiento.csproj.CoreCompileInputs.cache
+D:\GIT\Universidad\Pracs_Laboratorio\SimuladorMovimiento\obj\Debug\SimuladorMovimiento.exe
+D:\GIT\Universidad\Pracs_Laboratorio\SimuladorMovimiento\obj\Debug\SimuladorMovimiento.pdb

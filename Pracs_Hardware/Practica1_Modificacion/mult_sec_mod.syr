@@ -1,0 +1,420 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: mult_sec_mod.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mult_sec_mod.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mult_sec_mod"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : mult_sec_mod
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica1_Modificacion/mult_sec_mod.vhd" in Library work.
+Entity <mult_sec_mod> compiled.
+Entity <mult_sec_mod> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <mult_sec_mod> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <mult_sec_mod> in library <work> (Architecture <behavioral>).
+Entity <mult_sec_mod> analyzed. Unit <mult_sec_mod> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mult_sec_mod>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica1_Modificacion/mult_sec_mod.vhd".
+    Found 64-bit register for signal <outbus>.
+    Found 33-bit register for signal <CA>.
+    Found 33-bit 4-to-1 multiplexer for signal <CA$mux0000>.
+    Found 5-bit down counter for signal <cnt>.
+    Found 32-bit register for signal <M>.
+    Found 33-bit adder for signal <pp>.
+    Found 32-bit register for signal <Q>.
+    Found 32-bit 4-to-1 multiplexer for signal <Q$mux0000>.
+    Found 1-bit register for signal <state<0>>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred 162 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  65 Multiplexer(s).
+Unit <mult_sec_mod> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 33-bit adder                                          : 1
+# Counters                                             : 1
+ 5-bit down counter                                    : 1
+# Registers                                            : 5
+ 1-bit register                                        : 1
+ 32-bit register                                       : 2
+ 33-bit register                                       : 1
+ 64-bit register                                       : 1
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 33-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 33-bit adder                                          : 1
+# Counters                                             : 1
+ 5-bit down counter                                    : 1
+# Registers                                            : 162
+ Flip-Flops                                            : 162
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 33-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <CA_32> (without init value) has a constant value of 0 in block <mult_sec_mod>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <mult_sec_mod> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mult_sec_mod, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 166
+ Flip-Flops                                            : 166
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : mult_sec_mod.ngr
+Top Level Output File Name         : mult_sec_mod
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 131
+
+Cell Usage :
+# BELS                             : 182
+#      GND                         : 1
+#      LUT2                        : 36
+#      LUT3                        : 5
+#      LUT4                        : 70
+#      LUT4_D                      : 4
+#      MUXCY                       : 32
+#      MUXF5                       : 2
+#      XORCY                       : 32
+# FlipFlops/Latches                : 166
+#      FDC                         : 1
+#      FDCE                        : 165
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 130
+#      IBUF                        : 66
+#      OBUF                        : 64
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      116  out of   4656     2%  
+ Number of Slice Flip Flops:            166  out of   9312     1%  
+ Number of 4 input LUTs:                115  out of   9312     1%  
+ Number of IOs:                         131
+ Number of bonded IOBs:                 131  out of    232    56%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 166   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 166   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.466ns (Maximum Frequency: 154.655MHz)
+   Minimum input arrival time before clock: 5.395ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.466ns (frequency: 154.655MHz)
+  Total number of paths / destination ports: 2775 / 299
+-------------------------------------------------------------------------
+Delay:               6.466ns (Levels of Logic = 34)
+  Source:            CA_0 (FF)
+  Destination:       CA_30 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: CA_0 to CA_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.591   0.666  CA_0 (CA_0)
+     LUT2:I1->O            1   0.704   0.000  Madd_pp_lut<0> (Madd_pp_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Madd_pp_cy<0> (Madd_pp_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<1> (Madd_pp_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<2> (Madd_pp_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<3> (Madd_pp_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<4> (Madd_pp_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<5> (Madd_pp_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<6> (Madd_pp_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<7> (Madd_pp_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<8> (Madd_pp_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<9> (Madd_pp_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<10> (Madd_pp_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<11> (Madd_pp_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<12> (Madd_pp_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<13> (Madd_pp_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<14> (Madd_pp_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<15> (Madd_pp_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<16> (Madd_pp_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<17> (Madd_pp_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<18> (Madd_pp_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<19> (Madd_pp_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<20> (Madd_pp_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<21> (Madd_pp_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<22> (Madd_pp_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<23> (Madd_pp_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<24> (Madd_pp_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<25> (Madd_pp_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<26> (Madd_pp_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<27> (Madd_pp_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<28> (Madd_pp_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<29> (Madd_pp_cy<29>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_pp_cy<30> (Madd_pp_cy<30>)
+     XORCY:CI->O           1   0.804   0.455  Madd_pp_xor<31> (pp<31>)
+     LUT4:I2->O            1   0.704   0.000  Mmux_CA_mux0000441 (CA_mux0000<2>)
+     FDCE:D                    0.308          CA_30
+    ----------------------------------------
+    Total                      6.466ns (5.345ns logic, 1.121ns route)
+                                       (82.7% logic, 17.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 234 / 202
+-------------------------------------------------------------------------
+Offset:              5.395ns (Levels of Logic = 3)
+  Source:            I (PAD)
+  Destination:       CA_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: I to CA_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            42   1.218   1.440  I_IBUF (I_IBUF)
+     LUT4_D:I0->O         15   0.704   1.021  Mmux_Q_mux0000262_1 (Mmux_Q_mux0000262)
+     LUT4:I3->O            1   0.704   0.000  Mmux_CA_mux0000481 (CA_mux0000<31>)
+     FDCE:D                    0.308          CA_1
+    ----------------------------------------
+    Total                      5.395ns (2.934ns logic, 2.461ns route)
+                                       (54.4% logic, 45.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            outbus_63 (FF)
+  Destination:       outbus<63> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: outbus_63 to outbus<63>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.591   0.420  outbus_63 (outbus_63)
+     OBUF:I->O                 3.272          outbus_63_OBUF (outbus<63>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.85 secs
+ 
+--> 
+
+Total memory usage is 4514036 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

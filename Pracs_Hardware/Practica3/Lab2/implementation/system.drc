@@ -1,0 +1,39 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Dec 10 18:39:03 2020
+
+drc -z system.ncd system.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_de
+   layed_col1<0> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_de
+   layed_col0<1> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_de
+   layed_col1<1> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_de
+   layed_col0<0> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:1060 - Issue with pin connections and/or configuration
+   on
+   block:<DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_f
+   ifos[0].gen_fifos.mpmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_
+   normal.gen_normal.gen_brams[0].bram/gen_ramb16_s36_s18.bram.B>:<RAMB16_RAMB16
+   B>.  The block is configured to use input parity pins. There are dangling
+   output parity pins.
+WARNING:PhysDesignRules:1060 - Issue with pin connections and/or configuration
+   on
+   block:<DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_f
+   ifos[0].gen_fifos.mpmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_
+   normal.gen_normal.gen_brams[1].bram/gen_ramb16_s36_s18.bram.B>:<RAMB16_RAMB16
+   B>.  The block is configured to use input parity pins. There are dangling
+   output parity pins.
+DRC detected 0 errors and 6 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

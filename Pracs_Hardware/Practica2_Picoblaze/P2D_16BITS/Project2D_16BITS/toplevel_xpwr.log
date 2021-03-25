@@ -1,0 +1,15 @@
+Loading device for application Rf_Device from file '3s500e.nph' in environment
+C:\Xilinx\14.7\ISE_DS\ISE\.
+   "toplevel" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+
+INFO:Power:1693 - 
+   --------------------------------------------------------------
+                         The power estimate will be calculated using PRODUCTION
+   data.
+   --------------------------------------------------------------
+
+Design load 20% completeERROR:Power:1488 - The loaded design, "toplevel.ncd", appears to be a post-map
+   NCD file without any routing information and thus will lead to inaccurate or
+   incorrect power and thermal analysis results.  Please reload this design with
+   a post-place and route (post-par) NCD file in order to perform an accurate
+   power analysis.

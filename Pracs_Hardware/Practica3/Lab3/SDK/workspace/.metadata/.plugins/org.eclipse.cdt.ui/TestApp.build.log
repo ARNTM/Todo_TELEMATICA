@@ -1,0 +1,38 @@
+19:26:50 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../TestApp_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"lab3.d" -MT"lab3.d" -o "lab3.o" "../lab3.c"
+../lab3.c:260:1: warning: return type defaults to 'int' [-Wreturn-type]
+../lab3.c: In function 'main':
+../lab3.c:284:2: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../lab3.c:284:2: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+'Finished building: ../lab3.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TestApp_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TestApp.elf"  ./lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6962	    292	    842	   8096	   1fa0	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck TestApp.elf -hw ../../Lab3_DIAGARN_hw_platform/system.xml -pe microblaze_0  |tee "TestApp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_DIAGARN_hw_platform/system.xml -pe
+microblaze_0 TestApp.elf 
+
+ELF file	: TestApp.elf
+elfcheck passed.
+'Finished building: TestApp.elf.elfcheck'
+' '
+
+19:26:52 Build Finished (took 1s.674ms)
+

@@ -1,0 +1,1 @@
+ -p spartan3e -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X D:/GIT/Universidad/Pracs_Hardware/Practica3/Lab1/

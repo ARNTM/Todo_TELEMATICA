@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/p3.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/p3.syr" 

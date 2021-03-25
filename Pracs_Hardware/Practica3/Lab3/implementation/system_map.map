@@ -1,0 +1,313 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'system'
+
+Design Information
+------------------
+Command Line   : map -o system_map.ncd -pr b -ol high -timing -detail system.ngd
+system.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Thu Dec 17 19:14:48 2020
+
+Mapping design into LUTs...
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<1>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<0>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<11>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<10>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<12>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<13>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<14>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<15>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<16>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<17>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<18>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<19>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<20>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<2>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<21>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<22>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<23>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<24>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<25>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<26>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<27>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<28>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<29>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<30>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<3>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<31>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<4>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<5>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<6>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<7>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<8>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=3000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/flop1<9>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=200 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_
+   read_controller/gen_dqs[1]..u_dqs_delay_col0/delay1" has been discarded,
+   because the net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=200 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_
+   read_controller/gen_dqs[1]..u_dqs_delay_col1/delay1" has been discarded,
+   because the net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=200 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_
+   read_controller/gen_dqs[0]..u_dqs_delay_col0/delay1" has been discarded,
+   because the net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=200 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_
+   read_controller/gen_dqs[0]..u_dqs_delay_col1/delay1" has been discarded,
+   because the net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=2000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_
+   read_controller/.rst_dqs_div_delayed/delay3" has been discarded, because the
+   net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=2000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_
+   read_controller/.rst_dqs_div_delayed/delay4" has been discarded, because the
+   net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=2000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_
+   read_controller/.rst_dqs_div_delayed/delay1" has been discarded, because the
+   net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=2000 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/data_
+   read_controller/.rst_dqs_div_delayed/delay2" has been discarded, because the
+   net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=400 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/tap<7>" has been discarded, because the net was optimized out
+   of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=400 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/tap<15>" has been discarded, because the net was optimized
+   out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=400 pS" on net
+   "DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/
+   cal_top/tap_dly/tap<23>" has been discarded, because the net was optimized
+   out of the design.
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 7 secs 
+Total CPU  time at the beginning of Placer: 7 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:48cb1c3f) REAL time: 8 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:48cb1c3f) REAL time: 8 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:36914073) REAL time: 8 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:83182a80) REAL time: 10 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:83182a80) REAL time: 10 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:83182a80) REAL time: 10 secs 
+
+Phase 7.8  Global Placement
+.............................
+..........................................................
+....
+...................................................
+................
+................
+................
+.............
+Phase 7.8  Global Placement (Checksum:caf15ca9) REAL time: 25 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:caf15ca9) REAL time: 25 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:6817ffbd) REAL time: 35 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:6817ffbd) REAL time: 35 secs 
+
+Total REAL time to Placer completion: 35 secs 
+Total CPU  time to Placer completion: 35 secs 
+Running post-placement packing...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_de
+   layed_col0<0> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_de
+   layed_col0<1> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_de
+   layed_col1<0> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_de
+   layed_col1<1> is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:1060 - Issue with pin connections and/or configuration
+   on
+   block:<DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_f
+   ifos[0].gen_fifos.mpmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_
+   normal.gen_normal.gen_brams[0].bram/gen_ramb16_s36_s18.bram.B>:<RAMB16_RAMB16
+   B>.  The block is configured to use input parity pins. There are dangling
+   output parity pins.
+WARNING:PhysDesignRules:1060 - Issue with pin connections and/or configuration
+   on
+   block:<DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_f
+   ifos[0].gen_fifos.mpmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_
+   normal.gen_normal.gen_brams[1].bram/gen_ramb16_s36_s18.bram.B>:<RAMB16_RAMB16
+   B>.  The block is configured to use input parity pins. There are dangling
+   output parity pins.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   49
+Logic Utilization:
+  Number of Slice Flip Flops:         2,762 out of   9,312   29%
+  Number of 4 input LUTs:             3,113 out of   9,312   33%
+Logic Distribution:
+  Number of occupied Slices:          2,696 out of   4,656   57%
+    Number of Slices containing only related logic:   2,696 out of   2,696 100%
+    Number of Slices containing unrelated logic:          0 out of   2,696   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       3,236 out of   9,312   34%
+    Number used as logic:             2,641
+    Number used as a route-thru:        123
+    Number used for Dual Port RAMs:     320
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:     152
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 70 out of     232   30%
+    IOB Flip Flops:                      38
+    IOB Master Pads:                      1
+    IOB Slave Pads:                       1
+  Number of ODDR2s used:                 22
+    Number of DDR_ALIGNMENT = NONE       22
+    Number of DDR_ALIGNMENT = C0          0
+    Number of DDR_ALIGNMENT = C1          0
+  Number of RAMB16s:                      9 out of      20   45%
+  Number of BUFGMUXs:                     5 out of      24   20%
+  Number of DCMs:                         2 out of       4   50%
+  Number of BSCANs:                       1 out of       1  100%
+  Number of MULT18X18SIOs:                3 out of      20   15%
+
+Average Fanout of Non-Clock Nets:                3.20
+
+Peak Memory Usage:  438 MB
+Total REAL time to MAP completion:  37 secs 
+Total CPU time to MAP completion:   37 secs 
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.

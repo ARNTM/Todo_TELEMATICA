@@ -1,0 +1,176 @@
+V3 85
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/arithmatic.vhd 2021/01/08.17:22:10 P.20131013
+EN work/arithmetic_process 1611568442 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/arithmatic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/arithmetic_process/low_level_definition 1611568443 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/arithmatic.vhd \
+      EN work/arithmetic_process 1611568442 CP addsub8
+EN work/addsub8 1611568444 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/arithmatic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/addsub8/low_level_definition 1611568445 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/arithmatic.vhd \
+      EN work/addsub8 1611568444
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/carry_flag_logic.vhd 2002/08/16.08:24:50 P.20131013
+EN work/carry_flag_logic 1611568458 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/carry_flag_logic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/carry_flag_logic/low_level_definition 1611568459 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/carry_flag_logic.vhd \
+      EN work/carry_flag_logic 1611568458
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/flip.vhd 2021/01/07.19:20:48 P.20131013
+EN work/flip 1611568448 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/flip.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/flip/low_level_definition 1611568449 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/flip.vhd \
+      EN work/flip 1611568448
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/interrupt_capture.vhd 2002/08/16.08:24:50 P.20131013
+EN work/interrupt_capture 1611568474 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/interrupt_capture.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/interrupt_capture/low_level_definition 1611568475 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/interrupt_capture.vhd \
+      EN work/interrupt_capture 1611568474
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/interrupt_logic.vhd 2002/10/11.15:45:10 P.20131013
+EN work/interrupt_logic 1611568476 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/interrupt_logic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/interrupt_logic/low_level_definition 1611568477 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/interrupt_logic.vhd \
+      EN work/interrupt_logic 1611568476
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/IO_strobe_logic.vhd 2002/08/16.08:24:50 P.20131013
+EN work/IO_strobe_logic 1611568440 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/IO_strobe_logic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/IO_strobe_logic/low_level_definition 1611568441 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/IO_strobe_logic.vhd \
+      EN work/IO_strobe_logic 1611568440
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/logical_bus_processing.vhd 2020/11/26.19:11:22 P.20131013
+EN work/logical_bus_processing 1611568452 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/logical_bus_processing.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/logical_bus_processing/low_level_definition 1611568453 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/logical_bus_processing.vhd \
+      EN work/logical_bus_processing 1611568452
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/picoblaze.vhd 2020/12/24.10:35:00 P.20131013
+EN work/picoblaze 1611568478 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/picoblaze.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/picoblaze/Behavioral 1611568479 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/picoblaze.vhd \
+      EN work/picoblaze 1611568478 CP IO_strobe_logic CP arithmetic_process \
+      CP shift_rotate CP flip CP swap CP logical_bus_processing CP T_state_and_Reset \
+      CP register_and_flag_enable CP carry_flag_logic CP zero_flag_logic \
+      CP program_counter CP register_bank CP stack_ram CP stack_counter \
+      CP interrupt_capture CP interrupt_logic
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/programa_helloworld_int_FLIP.vhd 2021/01/07.20:34:10 P.20131013
+EN work/programa_helloworld_int_FLIP 1611568480 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/programa_helloworld_int_FLIP.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/programa_helloworld_int_FLIP/v1 1611568481 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/programa_helloworld_int_FLIP.vhd \
+      EN work/programa_helloworld_int_FLIP 1611568480
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/program_counter.vhd 2020/11/26.19:12:47 P.20131013
+EN work/program_counter 1611568462 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/program_counter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/program_counter/low_level_definition 1611568463 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/program_counter.vhd \
+      EN work/program_counter 1611568462
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/register_and_flag_enable.vhd 2020/12/24.10:33:12 P.20131013
+EN work/register_and_flag_enable 1611568456 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/register_and_flag_enable.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/register_and_flag_enable/low_level_definition 1611568457 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/register_and_flag_enable.vhd \
+      EN work/register_and_flag_enable 1611568456
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/register_bank.vhd 2020/12/03.18:36:42 P.20131013
+EN work/register_bank 1611568464 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/register_bank.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/register_bank/Behavioral 1611568465 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/register_bank.vhd \
+      EN work/register_bank 1611568464 CP ram_Nx1
+EN work/ram_Nx1 1611568466 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/register_bank.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ram_Nx1/Behavioral 1611568467 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/register_bank.vhd \
+      EN work/ram_Nx1 1611568466
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/shift_rotate.vhd 2020/11/26.19:10:50 P.20131013
+EN work/shift_rotate 1611568446 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/shift_rotate.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/shift_rotate/low_level_definition 1611568447 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/shift_rotate.vhd \
+      EN work/shift_rotate 1611568446
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/stack_counter.vhd 2020/12/03.18:41:13 P.20131013
+EN work/stack_counter 1611568472 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/stack_counter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/stack_counter/low_level_definition 1611568473 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/stack_counter.vhd \
+      EN work/stack_counter 1611568472
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/stack_ram.vhd 2020/12/03.18:39:23 P.20131013
+EN work/stack_ram 1611568468 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/stack_ram.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/stack_ram/low_level_definition 1611568469 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/stack_ram.vhd \
+      EN work/stack_ram 1611568468 CP ram_x1s
+EN work/ram_x1s 1611568470 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/stack_ram.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ram_x1s/Behavioral 1611568471 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/stack_ram.vhd \
+      EN work/ram_x1s 1611568470
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/swap.vhd 2020/12/24.13:41:43 P.20131013
+EN work/swap 1611568450 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/swap.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/swap/low_level_definition 1611568451 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/swap.vhd \
+      EN work/swap 1611568450
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/toplevel_helloworld_RAM_Int.vhd 2020/12/24.13:43:00 P.20131013
+EN work/toplevel 1611568482 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/toplevel_helloworld_RAM_Int.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/toplevel/behavioral 1611568483 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/toplevel_helloworld_RAM_Int.vhd \
+      EN work/toplevel 1611568482 CP picoblaze CP programa_helloworld_int_FLIP
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/T_state_and_Reset.vhd 2002/08/16.08:24:50 P.20131013
+EN work/T_state_and_Reset 1611568454 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/T_state_and_Reset.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/T_state_and_Reset/low_level_definition 1611568455 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/T_state_and_Reset.vhd \
+      EN work/T_state_and_Reset 1611568454
+FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/zero_flag_logic.vhd 2020/11/26.19:15:56 P.20131013
+EN work/zero_flag_logic 1611568460 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/zero_flag_logic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/zero_flag_logic/low_level_definition 1611568461 \
+      FL D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/zero_flag_logic.vhd \
+      EN work/zero_flag_logic 1611568460

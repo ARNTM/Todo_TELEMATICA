@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ADE	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	13;"	q	line:13
+ATR	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	15;"	q	line:15
+CONTROL	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	19;"	q	line:19
+DER	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	16;"	q	line:16
+ESTADO	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	22;"	q	line:22
+ISR	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	89;"	l	line:89
+IZQ	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	14;"	q	line:14
+N	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	20;"	q	line:20
+N_AUX	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	21;"	q	line:21
+RETFIE	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	101;"	l	line:101
+RETFIE	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	122;"	l	line:122
+RETFIE	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	133;"	l	line:133
+RETFIE	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	141;"	l	line:141
+RETFIE	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	147;"	l	line:147
+RETFIE	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	152;"	l	line:152
+RETFIE	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	157;"	l	line:157
+RETFIE	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	162;"	l	line:162
+RETFIE	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	167;"	l	line:167
+RETFIE	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	172;"	l	line:172
+STOP	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	17;"	q	line:17
+TOKEN	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	12;"	q	line:12
+VEL	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	18;"	q	line:18
+adelante	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	154;"	l	line:154
+atras	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	164;"	l	line:164
+gira_derecha	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	169;"	l	line:169
+gira_izquierda	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	159;"	l	line:159
+inicio	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	32;"	l	line:32
+isr_mover	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	103;"	l	line:103
+isr_velocidad	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	124;"	l	line:124
+main	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	85;"	l	line:85
+segundo_paso	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	134;"	l	line:134
+t_off	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	149;"	l	line:149
+t_on	D:\Universidad\2º GIT\Microprocesadores\PICaRC\Coche.asm	144;"	l	line:144

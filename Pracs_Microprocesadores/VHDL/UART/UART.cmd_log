@@ -1,0 +1,102 @@
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 UART.ngc UART.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -t 1 UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART.twx UART.ncd -o UART.twr UART.pcf 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 UART.ngc UART.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -t 1 UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART.twx UART.ncd -o UART.twr UART.pcf 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_Spartan3.ucf -p xc3s400-ft256-4 UART.ngc UART.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -t 1 UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART.twx UART.ncd -o UART.twr UART.pcf -ucf UART_Spartan3.ucf 
+bitgen -intstyle ise -f UART.ut UART.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_Spartan3.ucf -p xc3s400-ft256-4 UART.ngc UART.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -t 1 UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART.twx UART.ncd -o UART.twr UART.pcf -ucf UART_Spartan3.ucf 
+bitgen -intstyle ise -f UART.ut UART.ncd 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_Spartan3.ucf -p xc3s400-ft256-4 UART.ngc UART.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -t 1 UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART.twx UART.ncd -o UART.twr UART.pcf -ucf UART_Spartan3.ucf 
+bitgen -intstyle ise -f UART.ut UART.ncd 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_Spartan3.ucf -p xc3s400-ft256-4 UART.ngc UART.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -t 1 UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART.twx UART.ncd -o UART.twr UART.pcf -ucf UART_Spartan3.ucf 
+bitgen -intstyle ise -f UART.ut UART.ncd 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_Spartan3.ucf -p xc3s400-ft256-4 UART.ngc UART.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -t 1 UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART.twx UART.ncd -o UART.twr UART.pcf -ucf UART_Spartan3.ucf 
+bitgen -intstyle ise -f UART.ut UART.ncd 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_Spartan3.ucf -p xc3s400-ft256-4 UART.ngc UART.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -t 1 UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART.twx UART.ncd -o UART.twr UART.pcf -ucf UART_Spartan3.ucf 
+bitgen -intstyle ise -f UART.ut UART.ncd 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_Spartan3.ucf -p xc3s400-ft256-4 UART.ngc UART.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -t 1 UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART.twx UART.ncd -o UART.twr UART.pcf -ucf UART_Spartan3.ucf 
+bitgen -intstyle ise -f UART.ut UART.ncd 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_Spartan3.ucf -p xc3s400-ft256-4 UART.ngc UART.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -t 1 UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART.twx UART.ncd -o UART.twr UART.pcf -ucf UART_Spartan3.ucf 
+bitgen -intstyle ise -f UART.ut UART.ncd 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+xst -intstyle ise -ifn "C:/Users/detcp/Desktop/UART/UART.xst" -ofn "C:/Users/detcp/Desktop/UART/UART.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_Spartan3.ucf -p xc3s400-ft256-4 UART.ngc UART.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o UART_map.ncd UART.ngd UART.pcf 
+par -w -intstyle ise -ol high -t 1 UART_map.ncd UART.ncd UART.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART.twx UART.ncd -o UART.twr UART.pcf -ucf UART_Spartan3.ucf 
+bitgen -intstyle ise -f UART.ut UART.ncd 

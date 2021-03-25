@@ -1,0 +1,49 @@
+  1   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  2   0              ;                 Ejemplo 1:
+  3   0              ;Suma dos numeros de 4 bits y convierte el resultado a BCD
+  4   0              ;para excitar dos displays de 7 segmentos
+  5   0              ;
+  6   0              ; (C) Javier Garrigos. Ver. 1.0 - dec,2003
+  7   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;            
+  8   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  9   0              ;declaracion de constantes y variables
+ 10   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;                  
+ 11   0              :CONSTANT   RD_SWT       FF           ;CS OE WE A4A3A2A1A0 = 1111 1111
+ 12   0              :CONSTANT   WINI_7SEG    42           ;CS OE WE A4A3A2A1A0 = 0100 0010
+ 13   0              :CONSTANT   WEND_7SEG    62           ;CS OE WE A4A3A2A1A0 = 0110 0010            
+ 14   0              :NAMEREG    S4           CONT         
+ 15   0              :ADDRESS    00           ;el programa se cargara a partir de 00            
+ 16   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 17   0              ;inicio del programa
+ 18   0              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 19   0 START        :LOAD       CONT         00           ;ponemos a 0 el contador
+ 20   1              :INPUT      S0           RD_SWT       ;leemos los interruptores
+ 21   2              :LOAD       S1           S0           ;copiamos a s1 los interruptores
+ 22   3              :SR0        S1           ;y desplazamos para dejar los 4 + signific
+ 23   4              :SR0        S1           
+ 24   5              :SR0        S1           
+ 25   6              :SR0        S1           
+ 26   7              :AND        S0           0F           ;en s0 dejamos los 4 bits - significativos
+ 27   8              :ADD        S0           S1           ;hacemos la multiplicacion        		
+ 28   9              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 29   9              ;rutina de conversion de binario a decimal
+ 30   9              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 31   9 BUCLE        :ADD        CONT         01           ;sumamos 1 al contador y
+ 32   A              :SUB        S0           0A           ;restamos 10 a s0
+ 33   B              :JUMP       NC           BUCLE        ;mientras el resto sea positivo
+ 34   C              :SUB        CONT         01           ;con resto negativo decrementamos el cont
+ 35   D              :ADD        S0           0A           ;y s0
+ 36   E              :SL0        CONT         ;desplazamos a izqda y
+ 37   F              :SL0        CONT         
+ 38  10              :SL0        CONT         
+ 39  11              :SL0        CONT         
+ 40  12              :OR         S0           CONT         ;juntamos con la parte menos significat        		
+ 41  13              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 42  13              ;escritura del resultado en el puerto de salida
+ 43  13              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 44  13              :OUTPUT     S0           WINI_7SEG    ;inicio de operacion de escrittura
+ 45  14              :OUTPUT     S0           WEND_7SEG    ;fin de operacion de escritura
+ 46  15              :JUMP       START        ;volvemos al inicio        		
+ 47  16              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 48  16              ; FIN
+ 49  16              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

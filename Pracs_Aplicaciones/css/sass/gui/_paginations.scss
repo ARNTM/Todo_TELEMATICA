@@ -1,0 +1,86 @@
+/* Pagination */
+.pagination {
+	> li {
+
+		a {
+			color: $color-primary;
+			box-shadow: none !important;
+			&:hover,
+			&:focus {
+				color: lighten($color-primary, 5%);
+			}
+		}
+
+		&.active {
+
+			a,
+			span {
+				&,
+				&:hover,
+				&:focus {
+					background-color: $color-primary;
+					border-color: $color-primary;
+				}
+			}
+
+			a {
+				background-color: $color-primary;
+			}
+
+		}
+
+	}
+}
+
+/* Pager */
+.pager {
+	padding-left: 0;
+	margin: 20px 0;
+	list-style: none;
+	text-align: center;
+	li {
+		display: inline;
+		> {
+			a, span {
+				display: inline-block;
+				padding: 5px 14px;
+				background-color: #fff;
+				border: 1px solid #ddd;
+				border-radius: 15px;
+			}
+			a {
+				&:hover, &:focus {
+					text-decoration: none;
+					background-color: #eeeeee;
+				}
+			}
+		}
+	}
+	.next > {
+		a, span {
+			float: right;
+		}
+	}
+	.previous > {
+		a, span {
+			float: left;
+		}
+	}
+	.disabled > {
+		a {
+			color: #777777;
+			background-color: #fff;
+			cursor: not-allowed;
+			&:hover, &:focus {
+				color: #777777;
+				background-color: #fff;
+				cursor: not-allowed;
+			}
+		}
+		span {
+			color: #777777;
+			background-color: #fff;
+			cursor: not-allowed;
+		}
+	}
+}

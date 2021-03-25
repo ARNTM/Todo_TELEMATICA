@@ -1,0 +1,73 @@
+# ==== Clock inputs (CLK) ====
+NET "clk" LOC = "C9" | IOSTANDARD = LVCMOS33 ;
+# Define clock period for 50 MHz oscillator (40%/60% duty-cycle)
+NET "clk" PERIOD = 20.0ns HIGH 40%;
+
+# ==== Slide Switches (SW) ====
+#NET "SW<0>" LOC = "L13" | IOSTANDARD = LVTTL | PULLUP ;
+#NET "SW<1>" LOC = "L14" | IOSTANDARD = LVTTL | PULLUP ;
+#NET "SW<2>" LOC = "H18" | IOSTANDARD = LVTTL | PULLUP ;
+#NET "SW<3>" LOC = "N17" | IOSTANDARD = LVTTL | PULLUP ;
+
+# ==== Discrete LEDs (LED) ====
+# These are shared connections with the FX2 connector
+NET "LED" LOC = "F12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+#NET "LED<0>" LOC = "F12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+#NET "LED<1>" LOC = "E12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+#NET "LED<2>" LOC = "E11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+#NET "LED<3>" LOC = "F11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+#NET "LED<4>" LOC = "C11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+#NET "LED<5>" LOC = "D11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+#NET "LED<6>" LOC = "E9" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+#NET "LED<7>" LOC = "F9" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+
+## ==== RS-232 Serial Ports (RS232) ====
+NET "rx" LOC = "R7" | IOSTANDARD = LVTTL ;
+NET "tx" LOC = "M14" | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = SLOW ;
+#NET "RS232_DCE_RXD" LOC = "R7" | IOSTANDARD = LVTTL ;
+#NET "RS232_DCE_TXD" LOC = "M14" | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = SLOW ;
+#NET "RS232_DTE_RXD" LOC = "U8" | IOSTANDARD = LVTTL ;
+#NET "RS232_DTE_TXD" LOC = "M13" | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = SLOW ;
+#
+## ==== Rotary Pushbutton Switch (ROT) ====
+#NET "ROT_A" LOC = "K18" | IOSTANDARD = LVTTL | PULLUP ;
+#NET "ROT_B" LOC = "G18" | IOSTANDARD = LVTTL | PULLUP ;
+#NET "ROT_CENTER" LOC = "V16" | IOSTANDARD = LVTTL | PULLDOWN ;
+#
+## ==== Pushbuttons (BTN) ====
+#NET "BTN_EAST" LOC = "H13" | IOSTANDARD = LVTTL | PULLDOWN ;
+#NET "BTN_NORTH" LOC = "V4" | IOSTANDARD = LVTTL | PULLDOWN ;
+NET "reset" LOC = "K17" | IOSTANDARD = LVTTL | PULLDOWN ;
+#NET "BTN_SOUTH" LOC = "K17" | IOSTANDARD = LVTTL | PULLDOWN ;
+#NET "BTN_WEST" LOC = "D18" | IOSTANDARD = LVTTL | PULLDOWN ;
+#
+
+
+#NET "in_port<7>" LOC = "";
+#NET "in_port<6>" LOC = "";
+#NET "in_port<5>" LOC = "";
+#NET "in_port<4>" LOC = "";
+#NET "in_port<3>" LOC = "";
+#NET "in_port<2>" LOC = "";
+#NET "in_port<1>" LOC = "";
+#NET "in_port<0>" LOC = "";
+#NET "out_port<7>" LOC = "";
+#NET "out_port<6>" LOC = "";
+#NET "out_port<5>" LOC = "";
+#NET "out_port<4>" LOC = "";
+#NET "out_port<3>" LOC = "";
+#NET "out_port<2>" LOC = "";
+#NET "out_port<1>" LOC = "";
+#NET "out_port<0>" LOC = "";
+#NET "port_id<7>" LOC = "";
+#NET "port_id<6>" LOC = "";
+#NET "port_id<5>" LOC = "";
+#NET "port_id<4>" LOC = "";
+#NET "port_id<3>" LOC = "";
+#NET "port_id<2>" LOC = "";
+#NET "port_id<1>" LOC = "";
+#NET "port_id<0>" LOC = "";
+#NET "a5" LOC = "";
+#NET "read_strobe" LOC = "";
+#NET "write_strobe" LOC = "";
+#NET "interrupt" LOC = "";

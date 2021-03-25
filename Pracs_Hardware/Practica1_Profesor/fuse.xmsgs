@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="1314" delta="unknown" >"D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec_mod_tb.vhd" Line 54: Formal port/generic &lt;<arg fmt="%s" index="1">inbus</arg>&gt; is not declared in &lt;<arg fmt="%s" index="2">mult_sec</arg>&gt;
+</msg>
+
+<msg type="error" file="HDLCompiler" num="432" delta="unknown" >"D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec_mod_tb.vhd" Line 53: Formal &lt;<arg fmt="%s" index="1">inbus_q</arg>&gt; has no actual or default value.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec_mod_tb.vhd" Line 76: &lt;<arg fmt="%s" index="1">inbus</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec_mod_tb.vhd" Line 27: Unit &lt;<arg fmt="%s" index="1">behavior</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+

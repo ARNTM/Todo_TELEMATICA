@@ -1,0 +1,91 @@
+*************************************************************************
+Readme File for PicoBlaze Microcontroller 
+
+Created: 12/01/02 SL
+
+*************************************************************************
+*************************************************************************
+DISCLAIMER
+*************************************************************************
+
+THIS DESIGN IS PROVIDED TO YOU “AS IS”. XILINX MAKES AND YOU RECEIVE NO WARRANTIES OR 
+CONDITIONS, EXPRESS, IMPLIED,  STATUTORY OR OTHERWISE, AND XILINX SPECIFICALLY DISCLAIMS ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT, OR FITNESS FOR A PARTICULAR 
+PURPOSE. This design has not been verified on hardware (as opposed to simulations), and it should be used only as an 
+example design, not as a fully functional core. XILINX does not warrant the performance, functionality, or operation of this 
+Design will meet your requirements, or that the operation of the Design will be uninterrupted or error free, or that defects in 
+the Design will be corrected. Furthermore, XILINX does not warrant or make any representations regarding use or the 
+results of the use of the Design in terms of correctness, accuracy, reliability or otherwise. 
+
+*************************************************************************
+File Contents
+*************************************************************************
+This zip file contains the following files:
+
+-- C and assembly source files in PicoBlaze\C:
+	asm.cpp		- C source file for PicoBlaze assembler
+	demo_test.asm	- An assembly file for demo
+	demo_test.vhd	- Program memory module for demo 
+
+-- VHDL Source Files in PicoBlaze\VHDL:
+	PicoBlaze.vhd 		- top level file for PicoBlaze
+	arithmatic.vhd		
+	carry_flag_logic.vhd	
+	flip.vhd
+	interrupt_capture.vhd
+	interrupt_logic.vhd
+	IO_strobe_logic.vhd
+	logical_bus_processing.vhd
+	program_counter.vhd
+	register_and_flag_enable.vhd
+	register_bank.vhd
+	shift_rotate.vhd
+	stack_counter.vhd
+	stack_ram.vhd
+	T_state_and_Reset.vhd
+	zero_flag_logic.vhd
+
+-- PicoBlaze project files in PicoBlaze\demo_test:
+	demo.vhd		- top level file integrate PicoBlaze and memory
+	demo_tb.tbw		- HDL Bencher file for functional and post-route simulation 	
+
+
+*************************************************************************
+Technical Support
+*************************************************************************
+Technical support for this design and any other PicoRunner CPLD issues can be obtained as follows:
+
+North American Support
+(Mon,Tues,Wed,Fri 6:30am-5pm  
+  Thr 6:30am - 4:00pm Pacific Standard Time)
+Hotline: 1-800-255-7778 
+or (408) 879-5199 
+Fax: (408) 879-4442 
+Email: hotline@xilinx.com 
+ 
+United Kingdom Support
+(Mon,Tues,Wed,Thr 9:00am-12:00pm, 1:00-5:30pm
+  Fri 9:00am-12:00pm, 1:00-3:30pm)    
+Hotline: +44 1932 820821
+Fax: +44 1932 828522 
+Email : ukhelp@xilinx.com 
+ 
+France Support
+(Mon,Tues,Wed,Thr,Fri 9:30am-12:30pm, 2:00-5:30pm)
+Hotline: +33 1 3463 0100 
+Fax: +33 1 3463 0959
+Email : frhelp@xilinx.com 
+ 
+Germany Support
+(Mon,Tues,Wed,Thr 8:00am-12:00pm, 1:00-5:00pm, 
+   Fri  8:00am-12:00pm, 1:00pm-3:00pm)
+Hotline: +49 89 991 54930 
+Fax: +49 89 904 4748 
+Email : dlhelp@xilinx.com 
+ 
+Japan Support
+(Mon,Tues,Thu,Fri  9:00am -5:00pm ()
+ Wed    9:00am -4:00pm)
+Hotline: (81)3-3297-9163
+Fax:: (81)3-3297-0067
+Email: jhotline@xilinx.com

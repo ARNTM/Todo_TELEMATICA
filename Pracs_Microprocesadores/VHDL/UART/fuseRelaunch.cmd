@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/detcp/Desktop/UART/tb_uart_rx_isim_beh.exe" -prj "C:/Users/detcp/Desktop/UART/tb_uart_rx_beh.prj" "work.tb_uart_rx" 

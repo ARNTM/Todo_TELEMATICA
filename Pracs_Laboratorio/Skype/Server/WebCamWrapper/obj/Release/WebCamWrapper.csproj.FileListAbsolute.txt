@@ -1,0 +1,50 @@
+C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamWrapper\bin\Release\Touchless.Vision.dll
+C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamWrapper\bin\Release\Touchless.Vision.pdb
+C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamWrapper\bin\Release\System.ComponentModel.Composition.dll
+C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamWrapper\bin\Release\WebCamLib.dll
+C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamWrapper\bin\Release\WebCamLib.pdb
+C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamWrapper\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamWrapper\obj\Release\Camera\Configuration\CameraFrameSourceConfigurationElement.baml
+C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamWrapper\obj\Release\Camera\Configuration\CameraFrameSourceConfigurationElement.g.cs
+C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamWrapper\obj\Release\Touchless.Vision_MarkupCompile.cache
+C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamWrapper\obj\Release\Touchless.Vision.g.resources
+C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamWrapper\obj\Release\Touchless.Vision.dll
+C:\Users\jake\Desktop\Tumble Tracker Versions\Web Cam Demo Projects\Web Cam Blog\source release\WebCamWrapper\obj\Release\Touchless.Vision.pdb
+C:\Users\Eva Maria\Desktop\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\Touchless.Vision.dll
+C:\Users\Eva Maria\Desktop\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\Touchless.Vision.pdb
+C:\Users\Eva Maria\Desktop\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\System.ComponentModel.Composition.dll
+C:\Users\Eva Maria\Desktop\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\WebCamLib.dll
+C:\Users\Eva Maria\Desktop\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\WebCamLib.pdb
+C:\Users\Eva Maria\Desktop\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Camera\Configuration\CameraFrameSourceConfigurationElement.baml
+C:\Users\Eva Maria\Desktop\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Camera\Configuration\CameraFrameSourceConfigurationElement.g.cs
+C:\Users\Eva Maria\Desktop\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision_MarkupCompile.cache
+C:\Users\Eva Maria\Desktop\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision.g.resources
+C:\Users\Eva Maria\Desktop\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision.dll
+C:\Users\Eva Maria\Desktop\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision.pdb
+C:\Users\Antonio Javier\Desktop\VideoStreaming\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\Touchless.Vision.dll
+C:\Users\Antonio Javier\Desktop\VideoStreaming\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\Touchless.Vision.pdb
+C:\Users\Antonio Javier\Desktop\VideoStreaming\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\System.ComponentModel.Composition.dll
+C:\Users\Antonio Javier\Desktop\VideoStreaming\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\WebCamLib.dll
+C:\Users\Antonio Javier\Desktop\VideoStreaming\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\WebCamLib.pdb
+C:\Users\Antonio Javier\Desktop\VideoStreaming\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\WebCamWrapper.csprojResolveAssemblyReference.cache
+C:\Users\Antonio Javier\Desktop\VideoStreaming\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Camera\Configuration\CameraFrameSourceConfigurationElement.baml
+C:\Users\Antonio Javier\Desktop\VideoStreaming\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Camera\Configuration\CameraFrameSourceConfigurationElement.g.cs
+C:\Users\Antonio Javier\Desktop\VideoStreaming\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision_MarkupCompile.cache
+C:\Users\Antonio Javier\Desktop\VideoStreaming\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision.g.resources
+C:\Users\Antonio Javier\Desktop\VideoStreaming\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision.dll
+C:\Users\Antonio Javier\Desktop\VideoStreaming\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision.pdb
+\\psf\Host\Users\Shared\Files From c.localized\Docencia_05_14\Docencia\Laboratorio_contenidos_digitales\VideoStreamming\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\WebCamWrapper.csprojResolveAssemblyReference.cache
+\\psf\Host\Users\Shared\Files From c.localized\Docencia_05_14\Docencia\Laboratorio_contenidos_digitales\VideoStreamming\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision.dll
+\\psf\Host\Users\Shared\Files From c.localized\Docencia_05_14\Docencia\Laboratorio_contenidos_digitales\VideoStreamming\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision.pdb
+\\psf\Home\Desktop\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\Touchless.Vision.dll
+\\psf\Home\Desktop\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\Touchless.Vision.pdb
+\\psf\Home\Desktop\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\System.ComponentModel.Composition.dll
+\\psf\Home\Desktop\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\WebCamLib.dll
+\\psf\Home\Desktop\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\bin\Release\WebCamLib.pdb
+\\psf\Home\Desktop\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\WebCamWrapper.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Camera\Configuration\CameraFrameSourceConfigurationElement.baml
+\\psf\Home\Desktop\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Camera\Configuration\CameraFrameSourceConfigurationElement.g.cs
+\\psf\Home\Desktop\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision_MarkupCompile.cache
+\\psf\Home\Desktop\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision.g.resources
+\\psf\Home\Desktop\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision.dll
+\\psf\Home\Desktop\VideoStreaming_con_botones\VideoStreaming\User-Server\Servidor\WebCamWrapper\obj\Release\Touchless.Vision.pdb

@@ -1,0 +1,14 @@
+// File: D:\GIT\Universidad\Pracs_Hardware\Practica3\Lab1\implementation\system.bmm
+
+ADDRESS_MAP microblaze_0 MICROBLAZE 100
+	ADDRESS_SPACE lmb_bram_combined COMBINED [0x00000000:0x00001fff]
+		ADDRESS_RANGE RAMB16
+		BUS_BLOCK
+			lmb_bram/lmb_bram/ramb16_s9_s9_0 [31:24] ;
+			lmb_bram/lmb_bram/ramb16_s9_s9_1 [23:16] ;
+			lmb_bram/lmb_bram/ramb16_s9_s9_2 [15:8] ;
+			lmb_bram/lmb_bram/ramb16_s9_s9_3 [7:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

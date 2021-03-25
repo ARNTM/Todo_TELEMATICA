@@ -1,0 +1,14 @@
+set -tmpdir C:\Lab3_DIAGARN\synthesis\xst_temp_dir\
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc3s500efg320-4
+-top system_dlmb_cntlr_wrapper
+-ifmt MIXED
+-ifn system_dlmb_cntlr_wrapper_xst.prj
+-ofn ../implementation/system_dlmb_cntlr_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}
+-vlgincdir {"C:\Lab3_DIAGARN\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

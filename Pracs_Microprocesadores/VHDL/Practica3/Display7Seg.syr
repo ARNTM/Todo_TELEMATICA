@@ -1,0 +1,434 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: Display7Seg.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Display7Seg.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Display7Seg"
+Output Format                      : NGC
+Target Device                      : xc3s400-4-ft256
+
+---- Source Options
+Top Module Name                    : Display7Seg
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd" in Library work.
+Architecture behavioral of Entity display7seg is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Display7Seg> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Display7Seg> in library <work> (Architecture <behavioral>).
+Entity <Display7Seg> analyzed. Unit <Display7Seg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Display7Seg>.
+    Related source file is "D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd".
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | start                                          |
+    | Power Up State     | start                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16x8-bit ROM for signal <display7seg>.
+    Found 8-bit register for signal <BINARIO>.
+    Found 4-bit register for signal <CENTENAS>.
+    Found 15-bit up counter for signal <count>.
+    Found 4-bit register for signal <DECENAS>.
+    Found 4-bit register for signal <DIGITO1>.
+    Found 4-bit adder for signal <DIGITO1$addsub0000> created at line 147.
+    Found 4-bit comparator less for signal <DIGITO1$cmp_lt0000> created at line 146.
+    Found 4-bit register for signal <DIGITO2>.
+    Found 4-bit adder for signal <DIGITO2$addsub0000> created at line 163.
+    Found 4-bit comparator less for signal <DIGITO2$cmp_lt0000> created at line 162.
+    Found 4-bit register for signal <DIGITO3>.
+    Found 4-bit adder for signal <DIGITO3$addsub0000> created at line 179.
+    Found 4-bit comparator less for signal <DIGITO3$cmp_lt0000> created at line 178.
+    Found 4-bit up counter for signal <iteracion>.
+    Found 4-bit register for signal <reg>.
+    Found 4-bit register for signal <UNIDADES>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <Display7Seg> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 3
+# Counters                                             : 2
+ 15-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 8
+ 4-bit register                                        : 7
+ 8-bit register                                        : 1
+# Comparators                                          : 3
+ 4-bit comparator less                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <current_state/FSM> on signal <current_state[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ start | 0001
+ paso1 | 0010
+ paso2 | 0100
+ fin   | 1000
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 3
+# Counters                                             : 2
+ 15-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 36
+ Flip-Flops                                            : 36
+# Comparators                                          : 3
+ 4-bit comparator less                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Display7Seg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Display7Seg, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Display7Seg.ngr
+Top Level Output File Name         : Display7Seg
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 126
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 14
+#      LUT2                        : 19
+#      LUT3                        : 21
+#      LUT3_L                      : 3
+#      LUT4                        : 32
+#      LUT4_D                      : 1
+#      MUXCY                       : 14
+#      MUXF5                       : 3
+#      VCC                         : 1
+#      XORCY                       : 15
+# FlipFlops/Latches                : 59
+#      FDC                         : 18
+#      FDCE                        : 13
+#      FDE                         : 8
+#      FDP                         : 1
+#      FDPE                        : 3
+#      FDRE                        : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 9
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400ft256-4 
+
+ Number of Slices:                       50  out of   3584     1%  
+ Number of Slice Flip Flops:             59  out of   7168     0%  
+ Number of 4 input LUTs:                 92  out of   7168     1%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    173    12%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 59    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 35    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.577ns (Maximum Frequency: 152.045MHz)
+   Minimum input arrival time before clock: 2.571ns
+   Maximum output required time after clock: 12.692ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.577ns (frequency: 152.045MHz)
+  Total number of paths / destination ports: 656 / 115
+-------------------------------------------------------------------------
+Delay:               6.577ns (Levels of Logic = 3)
+  Source:            count_14 (FF)
+  Destination:       count_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: count_14 to count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.720   1.216  count_14 (count_14)
+     LUT3:I0->O            1   0.551   1.140  count_cmp_eq00002 (count_cmp_eq00002)
+     LUT4:I0->O           19   0.551   1.645  count_cmp_eq000051 (actualiza_display)
+     LUT2:I1->O            1   0.551   0.000  Mcount_count_eqn_01 (Mcount_count_eqn_0)
+     FDC:D                     0.203          count_0
+    ----------------------------------------
+    Total                      6.577ns (2.576ns logic, 4.001ns route)
+                                       (39.2% logic, 60.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.571ns (Levels of Logic = 2)
+  Source:            dato<0> (PAD)
+  Destination:       BINARIO_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: dato<0> to BINARIO_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   0.996  dato_0_IBUF (dato_0_IBUF)
+     LUT2:I1->O            1   0.551   0.000  BINARIO_mux0000<0>1 (BINARIO_mux0000<0>)
+     FDE:D                     0.203          BINARIO_0
+    ----------------------------------------
+    Total                      2.571ns (1.575ns logic, 0.996ns route)
+                                       (61.3% logic, 38.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 256 / 11
+-------------------------------------------------------------------------
+Offset:              12.692ns (Levels of Logic = 4)
+  Source:            reg_0 (FF)
+  Destination:       display7seg<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: reg_0 to display7seg<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   0.720   1.473  reg_0 (reg_0)
+     LUT4:I0->O            1   0.551   0.996  datoBCD<3>_SW1 (N1)
+     LUT4:I1->O            7   0.551   1.405  datoBCD<3> (datoBCD<3>)
+     LUT4:I0->O            1   0.551   0.801  Mrom_display7seg51 (display7seg_5_OBUF)
+     OBUF:I->O                 5.644          display7seg_5_OBUF (display7seg<5>)
+    ----------------------------------------
+    Total                     12.692ns (8.017ns logic, 4.675ns route)
+                                       (63.2% logic, 36.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.09 secs
+ 
+--> 
+
+Total memory usage is 4550436 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

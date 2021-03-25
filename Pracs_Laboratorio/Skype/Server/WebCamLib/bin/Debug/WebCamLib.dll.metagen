@@ -1,0 +1,53 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly WebCamLib, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class WebCamLib.CameraInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String name 'get set' : 
+    Int32 index 'get set' : 
+  Methods:
+    get_index(): PrivateScope, Public, HideBySig, SpecialName
+    set_index(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+Class WebCamLib.CameraMethods: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Int32 ActiveCameraIndex 'get ' : 
+    Int32 Count 'get set' : 
+  Events:
+    CaptureCallbackDelegate OnImageCapture: SpecialName
+  Methods:
+    add_OnImageCapture(CaptureCallbackDelegate): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnImageCapture(CaptureCallbackDelegate): PrivateScope, Public, HideBySig, SpecialName
+    GetCameraInfo(Int32): PrivateScope, Public, HideBySig
+    StartCamera(Int32, Int32& IsExplicitlyDereferenced, Int32& IsExplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Cleanup(): PrivateScope, Public, HideBySig
+    StopCamera(): PrivateScope, Public, HideBySig
+    DisplayCameraPropertiesDialog(Int32): PrivateScope, Public, HideBySig
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    set_Count(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ActiveCameraIndex(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class WebCamLib.CameraMethods+CaptureCallbackDelegate: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Byte[](HasFieldMarshal)): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, Byte[](HasFieldMarshal), AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask

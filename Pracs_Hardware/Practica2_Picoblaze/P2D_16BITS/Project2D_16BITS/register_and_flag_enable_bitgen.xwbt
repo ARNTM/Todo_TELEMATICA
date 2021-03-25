@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\GIT\Universidad\Pracs_Hardware\Practica2_Picoblaze\P2D_16BITS\Project2D_16BITS\register_and_flag_enable.ncd
+OUTFILE=D:\GIT\Universidad\Pracs_Hardware\Practica2_Picoblaze\P2D_16BITS\Project2D_16BITS\register_and_flag_enable.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\GIT\Universidad\Pracs_Hardware\Practica2_Picoblaze\P2D_16BITS\Project2D_16BITS
+LICENSE=WebPack
+USER_INFO=__0_0_0

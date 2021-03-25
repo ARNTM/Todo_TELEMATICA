@@ -1,0 +1,15 @@
+/* Colorpicker */
+html.dark {
+	.colorpicker {
+		background-color: $dark-color-3;
+
+		&:before {
+			border-bottom-color: $dark-color-1;
+		}
+
+		&:after {
+			border-bottom-color: $dark-color-3;
+		}
+
+	}
+}

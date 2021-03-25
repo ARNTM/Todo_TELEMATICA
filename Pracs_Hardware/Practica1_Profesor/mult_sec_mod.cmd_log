@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec_mod.xst" -ofn "D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec_mod.syr" 
+xst -intstyle ise -ifn "D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec_mod.xst" -ofn "D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec_mod.syr" 
+xst -intstyle ise -ifn "D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec_mod.xst" -ofn "D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec_mod.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 mult_sec_mod.ngc mult_sec_mod.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o mult_sec_mod_map.ncd mult_sec_mod.ngd mult_sec_mod.pcf 
+par -w -intstyle ise -ol high -t 1 mult_sec_mod_map.ncd mult_sec_mod.ncd mult_sec_mod.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mult_sec_mod.twx mult_sec_mod.ncd -o mult_sec_mod.twr mult_sec_mod.pcf 
+xst -intstyle ise -ifn "D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec_mod.xst" -ofn "D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec_mod.syr" 

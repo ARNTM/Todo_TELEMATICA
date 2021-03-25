@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/swap.xst" -ofn "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/swap.syr" 
+xst -intstyle ise -ifn "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/swap.xst" -ofn "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2D_16BITS/Project2D_16BITS/swap.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 swap.ngc swap.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o swap_map.ncd swap.ngd swap.pcf 
+par -w -intstyle ise -ol high -t 1 swap_map.ncd swap.ncd swap.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml swap.twx swap.ncd -o swap.twr swap.pcf 
+bitgen -intstyle ise -f swap.ut swap.ncd 

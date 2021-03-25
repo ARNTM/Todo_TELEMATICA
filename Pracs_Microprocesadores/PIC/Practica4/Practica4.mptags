@@ -1,0 +1,15 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ISR	D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm	56;"	l	line:56
+N	D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm	5;"	q	line:5
+convertir_AN0	D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm	86;"	l	line:86
+convertir_AN2	D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm	70;"	l	line:70
+inicio	D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm	15;"	l	line:15
+main	D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm	53;"	l	line:53
+retfie	D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm	62;"	l	line:62

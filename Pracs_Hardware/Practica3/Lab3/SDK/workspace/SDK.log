@@ -1,0 +1,6 @@
+19:21:02.367 INFO  - Processing command line option -hwspec C:\Lab3_DIAGARN\SDK\SDK_Export\hw\system.xml. 
+19:26:50.099 INFO  - Successfully generated C:\Lab3_DIAGARN\SDK\workspace\TestApp\src\lscript.ld. 
+19:26:50.100 INFO  - Applying linker script to all configurations of project TestApp. 
+19:26:50.100 INFO  - Setting rebuild state to true for all configurations of project TestApp. 
+19:27:56.176 INFO  - FPGA configured successfully with bitstream "C:/Lab3_DIAGARN/SDK/workspace/Lab3_DIAGARN_hw_platform/download.bit" 
+19:28:10.179 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

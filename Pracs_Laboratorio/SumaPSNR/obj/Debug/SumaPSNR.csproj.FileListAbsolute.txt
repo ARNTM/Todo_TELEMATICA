@@ -1,0 +1,10 @@
+D:\GIT\Universidad\Pracs_Laboratorio\SumaPSNR\bin\Debug\SumaPSNR.exe.config
+D:\GIT\Universidad\Pracs_Laboratorio\SumaPSNR\bin\Debug\SumaPSNR.exe
+D:\GIT\Universidad\Pracs_Laboratorio\SumaPSNR\bin\Debug\SumaPSNR.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\SumaPSNR\obj\Debug\SumaPSNR.csprojAssemblyReference.cache
+D:\GIT\Universidad\Pracs_Laboratorio\SumaPSNR\obj\Debug\SumaPSNR.Form1.resources
+D:\GIT\Universidad\Pracs_Laboratorio\SumaPSNR\obj\Debug\SumaPSNR.Properties.Resources.resources
+D:\GIT\Universidad\Pracs_Laboratorio\SumaPSNR\obj\Debug\SumaPSNR.csproj.GenerateResource.cache
+D:\GIT\Universidad\Pracs_Laboratorio\SumaPSNR\obj\Debug\SumaPSNR.csproj.CoreCompileInputs.cache
+D:\GIT\Universidad\Pracs_Laboratorio\SumaPSNR\obj\Debug\SumaPSNR.exe
+D:\GIT\Universidad\Pracs_Laboratorio\SumaPSNR\obj\Debug\SumaPSNR.pdb

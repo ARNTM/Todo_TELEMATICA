@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jun 13 10:02:22 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "dato<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "dato<1>" LOCATE = SITE "G12" LEVEL 1;
+COMP "dato<2>" LOCATE = SITE "H14" LEVEL 1;
+COMP "dato<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "dato<4>" LOCATE = SITE "J14" LEVEL 1;
+COMP "dato<5>" LOCATE = SITE "J13" LEVEL 1;
+COMP "dato<6>" LOCATE = SITE "K14" LEVEL 1;
+COMP "dato<7>" LOCATE = SITE "K13" LEVEL 1;
+COMP "display7seg<0>" LOCATE = SITE "P16" LEVEL 1;
+COMP "display7seg<1>" LOCATE = SITE "N16" LEVEL 1;
+COMP "display7seg<2>" LOCATE = SITE "F13" LEVEL 1;
+COMP "display7seg<3>" LOCATE = SITE "R16" LEVEL 1;
+COMP "display7seg<4>" LOCATE = SITE "P15" LEVEL 1;
+COMP "display7seg<5>" LOCATE = SITE "N15" LEVEL 1;
+COMP "display7seg<6>" LOCATE = SITE "G13" LEVEL 1;
+COMP "display7seg<7>" LOCATE = SITE "E14" LEVEL 1;
+COMP "reset" LOCATE = SITE "L14" LEVEL 1;
+COMP "AN_display7seg<0>" LOCATE = SITE "D14" LEVEL 1;
+COMP "AN_display7seg<1>" LOCATE = SITE "G14" LEVEL 1;
+COMP "AN_display7seg<2>" LOCATE = SITE "F14" LEVEL 1;
+COMP "AN_display7seg<3>" LOCATE = SITE "E13" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

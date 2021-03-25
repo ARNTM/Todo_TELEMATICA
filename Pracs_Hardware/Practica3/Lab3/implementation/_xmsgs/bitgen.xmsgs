@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_delayed_col0&lt;0&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_delayed_col0&lt;1&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_delayed_col1&lt;0&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/data_path/dqs_delayed_col1&lt;1&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1060" delta="old" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[0].gen_fifos.mpmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_normal.gen_brams[0].bram/gen_ramb16_s36_s18.bram.B</arg>&gt;:&lt;<arg fmt="%s" index="2">RAMB16_RAMB16B</arg>&gt;.  The block is configured to use input parity pins. There are dangling output parity pins.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1060" delta="old" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[0].gen_fifos.mpmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_normal.gen_brams[1].bram/gen_ramb16_s36_s18.bram.B</arg>&gt;:&lt;<arg fmt="%s" index="2">RAMB16_RAMB16B</arg>&gt;.  The block is configured to use input parity pins. There are dangling output parity pins.
+</msg>
+
+</messages>
+

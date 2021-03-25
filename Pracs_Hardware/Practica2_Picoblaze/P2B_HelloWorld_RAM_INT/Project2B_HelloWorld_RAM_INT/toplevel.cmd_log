@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/toplevel.xst" -ofn "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PicoBlaze_s3estarter.ucf -p xc3s500e-fg320-4 toplevel.ngc toplevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o toplevel_map.ncd toplevel.ngd toplevel.pcf 
+par -w -intstyle ise -ol high -t 1 toplevel_map.ncd toplevel.ncd toplevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml toplevel.twx toplevel.ncd -o toplevel.twr toplevel.pcf -ucf PicoBlaze_s3estarter.ucf 
+xst -intstyle ise -ifn "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/toplevel.xst" -ofn "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2A_HelloWorld/Project2A_HelloWorld/toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PicoBlaze_s3estarter.ucf -p xc3s500e-fg320-4 toplevel.ngc toplevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o toplevel_map.ncd toplevel.ngd toplevel.pcf 
+par -w -intstyle ise -ol high -t 1 toplevel_map.ncd toplevel.ncd toplevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml toplevel.twx toplevel.ncd -o toplevel.twr toplevel.pcf -ucf PicoBlaze_s3estarter.ucf 
+bitgen -intstyle ise -f toplevel.ut toplevel.ncd 
+xst -intstyle ise -ifn "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/toplevel.xst" -ofn "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2B_HelloWorld_RAM_INT/Project2B_HelloWorld_RAM_INT/toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PicoBlaze_s3estarter.ucf -p xc3s500e-fg320-4 toplevel.ngc toplevel.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o toplevel_map.ncd toplevel.ngd toplevel.pcf 
+par -w -intstyle ise -ol high -t 1 toplevel_map.ncd toplevel.ncd toplevel.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml toplevel.twx toplevel.ncd -o toplevel.twr toplevel.pcf -ucf PicoBlaze_s3estarter.ucf 
+bitgen -intstyle ise -f toplevel.ut toplevel.ncd 

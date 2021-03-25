@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec.xst" -ofn "D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec.syr" 
+xst -intstyle ise -ifn "D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec.xst" -ofn "D:/GIT/Universidad/Pracs_Hardware/Practica1_Profesor/mult_sec.syr" 

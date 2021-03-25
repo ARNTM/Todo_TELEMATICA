@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+CENT	D:\Universidad\2º GIT\Microprocesadores\Practica1\cronometro.asm	6;"	q	line:6
+CONT1	D:\Universidad\2º GIT\Microprocesadores\Practica1\ciclo_125u.asm	5;"	q	line:5
+CONT1	D:\Universidad\2º GIT\Microprocesadores\Practica1\cronometro.asm	7;"	q	line:7
+CONT2	D:\Universidad\2º GIT\Microprocesadores\Practica1\cronometro.asm	8;"	q	line:8
+CONTCENT	D:\Universidad\2º GIT\Microprocesadores\Practica1\cronometro.asm	9;"	q	line:9
+LIST	D:\Universidad\2º GIT\Microprocesadores\Practica1\cronometro.asm	1;"	l	line:1
+RETURN	D:\Universidad\2º GIT\Microprocesadores\Practica1\ciclo_125u.asm	28;"	l	line:28
+SEG	D:\Universidad\2º GIT\Microprocesadores\Practica1\cronometro.asm	5;"	q	line:5
+bucle	D:\Universidad\2º GIT\Microprocesadores\Practica1\ciclo_125u.asm	24;"	l	line:24
+bucle_retardo	D:\Universidad\2º GIT\Microprocesadores\Practica1\ciclo_125u.asm	21;"	l	line:21
+bucle_retardo	D:\Universidad\2º GIT\Microprocesadores\Practica1\cronometro.asm	31;"	l	line:31
+ciclo	D:\Universidad\2º GIT\Microprocesadores\Practica1\ciclo_125u.asm	4;"	q	line:4
+ciclo1	D:\Universidad\2º GIT\Microprocesadores\Practica1\cronometro.asm	37;"	l	line:37
+ciclo2	D:\Universidad\2º GIT\Microprocesadores\Practica1\cronometro.asm	34;"	l	line:34
+goto	D:\Universidad\2º GIT\Microprocesadores\Practica1\ciclo_125u.asm	17;"	l	line:17
+goto	D:\Universidad\2º GIT\Microprocesadores\Practica1\ciclo_125u.asm	26;"	l	line:26
+inicio	D:\Universidad\2º GIT\Microprocesadores\Practica1\ciclo_125u.asm	11;"	l	line:11
+inicio	D:\Universidad\2º GIT\Microprocesadores\Practica1\cronometro.asm	16;"	l	line:16
+main	D:\Universidad\2º GIT\Microprocesadores\Practica1\cronometro.asm	23;"	l	line:23
+principio	D:\Universidad\2º GIT\Microprocesadores\Practica1\cronometro.asm	20;"	l	line:20
+retardo	D:\Universidad\2º GIT\Microprocesadores\Practica1\ciclo_125u.asm	14;"	l	line:14

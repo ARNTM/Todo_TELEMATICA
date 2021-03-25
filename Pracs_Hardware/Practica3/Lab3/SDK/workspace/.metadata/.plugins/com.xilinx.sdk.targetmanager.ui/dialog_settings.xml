@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="system_bd.bmm" key="Lab3_DIAGARN_hw_platform-bmmFile"/>
+	<item value="system.bit" key="Lab3_DIAGARN_hw_platform-bitFile"/>
+	<item value="C:\Lab3_DIAGARN\SDK\workspace\TestApp\Debug\TestApp.elf" key="Lab3_DIAGARN_hw_platform-microblaze_0-initElf"/>
+</section>

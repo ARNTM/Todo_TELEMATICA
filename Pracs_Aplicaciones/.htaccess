@@ -1,0 +1,13 @@
+#RewriteEngine
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+
+#Error
+RewriteEngine On
+ErrorDocument 404 /404.php

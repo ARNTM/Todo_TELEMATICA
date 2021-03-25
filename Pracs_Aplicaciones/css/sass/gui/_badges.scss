@@ -1,0 +1,16 @@
+/* Badges */
+.badge-default {
+	background: $color-default;
+	color: $color-default-inverse;
+}
+
+.badge-sm {
+	font-size: 50%;
+}
+
+@each $state in $states {
+	.badge-#{nth($state,1)} {
+		background: #{nth($state,2)};
+		color: #{nth($state,3)};
+	}
+}

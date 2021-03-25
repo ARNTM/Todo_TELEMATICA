@@ -1,0 +1,49 @@
+MPLINK 4.40, Linker
+Linker Map File - Created Sat Apr 27 16:41:36 2019
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000002
+                   .org_2       code   0x000004    program   0x000002
+                   .org_3       code   0x000005    program   0x000068
+        .config_2007_E1.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000000      
+                            0x000004    0x000038      
+                            0x002007    0x002007      
+            55 out of 8454 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                      ISR   0x00001d    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+            convertir_AN0   0x000030    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+            convertir_AN2   0x000027    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+                    es1_0   0x00002b    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+                    es1_1   0x000034    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+                   inicio   0x000005    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+                     main   0x00001c    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   inicio   0x000005    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+                     main   0x00001c    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+                      ISR   0x00001d    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+            convertir_AN2   0x000027    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+                    es1_0   0x00002b    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+            convertir_AN0   0x000030    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+                    es1_1   0x000034    program     static D:\Universidad\2º GIT\Microprocesadores\Practica4\E1.asm
+
+

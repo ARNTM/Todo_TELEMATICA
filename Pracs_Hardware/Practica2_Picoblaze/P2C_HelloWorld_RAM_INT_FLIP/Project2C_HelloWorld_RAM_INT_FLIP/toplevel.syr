@@ -1,0 +1,845 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: toplevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "toplevel.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "toplevel"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : toplevel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/IO_strobe_logic.vhd" in Library work.
+Architecture low_level_definition of Entity io_strobe_logic is up to date.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/arithmatic.vhd" in Library work.
+Entity <arithmetic_process> compiled.
+Entity <arithmetic_process> (Architecture <low_level_definition>) compiled.
+Entity <addsub8> compiled.
+Entity <addsub8> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/shift_rotate.vhd" in Library work.
+Entity <shift_rotate> compiled.
+Entity <shift_rotate> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/flip.vhd" in Library work.
+Entity <flip> compiled.
+Entity <flip> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/logical_bus_processing.vhd" in Library work.
+Entity <logical_bus_processing> compiled.
+Entity <logical_bus_processing> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/T_state_and_Reset.vhd" in Library work.
+Architecture low_level_definition of Entity t_state_and_reset is up to date.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/register_and_flag_enable.vhd" in Library work.
+Architecture low_level_definition of Entity register_and_flag_enable is up to date.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/carry_flag_logic.vhd" in Library work.
+Architecture low_level_definition of Entity carry_flag_logic is up to date.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/zero_flag_logic.vhd" in Library work.
+Entity <zero_flag_logic> compiled.
+Entity <zero_flag_logic> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/program_counter.vhd" in Library work.
+Entity <program_counter> compiled.
+Entity <program_counter> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/register_bank.vhd" in Library work.
+Entity <register_bank> compiled.
+Entity <register_bank> (Architecture <behavioral>) compiled.
+Entity <ram_nx1> compiled.
+Entity <ram_nx1> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/stack_ram.vhd" in Library work.
+Architecture low_level_definition of Entity stack_ram is up to date.
+Architecture behavioral of Entity ram_x1s is up to date.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/stack_counter.vhd" in Library work.
+Architecture low_level_definition of Entity stack_counter is up to date.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/interrupt_capture.vhd" in Library work.
+Architecture low_level_definition of Entity interrupt_capture is up to date.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/interrupt_logic.vhd" in Library work.
+Architecture low_level_definition of Entity interrupt_logic is up to date.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/picoblaze.vhd" in Library work.
+Entity <picoblaze> compiled.
+Entity <picoblaze> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd" in Library work.
+Architecture v1 of Entity programa_helloworld_int_flip is up to date.
+Compiling vhdl file "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd" in Library work.
+Architecture behavioral of Entity toplevel is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <toplevel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <picoblaze> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <programa_helloworld_int_FLIP> in library <work> (architecture <v1>).
+
+Analyzing hierarchy for entity <IO_strobe_logic> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <arithmetic_process> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <shift_rotate> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <flip> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <logical_bus_processing> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <T_state_and_Reset> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <register_and_flag_enable> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <carry_flag_logic> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <zero_flag_logic> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <program_counter> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <register_bank> in library <work> (architecture <behavioral>) with generics.
+	M = 3
+
+Analyzing hierarchy for entity <stack_ram> in library <work> (architecture <low_level_definition>) with generics.
+	M = 2
+	N = 8
+
+Analyzing hierarchy for entity <stack_counter> in library <work> (architecture <low_level_definition>) with generics.
+	N = 2
+
+Analyzing hierarchy for entity <interrupt_capture> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <interrupt_logic> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <addsub8> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <ram_Nx1> in library <work> (architecture <behavioral>) with generics.
+	M = 3
+
+Analyzing hierarchy for entity <ram_x1s> in library <work> (architecture <behavioral>) with generics.
+	M = 2
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <toplevel> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd" line 131: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <RAM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:790 - "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd" line 135: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <RAM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <toplevel> analyzed. Unit <toplevel> generated.
+
+Analyzing Entity <picoblaze> in library <work> (Architecture <behavioral>).
+Entity <picoblaze> analyzed. Unit <picoblaze> generated.
+
+Analyzing Entity <IO_strobe_logic> in library <work> (Architecture <low_level_definition>).
+Entity <IO_strobe_logic> analyzed. Unit <IO_strobe_logic> generated.
+
+Analyzing Entity <arithmetic_process> in library <work> (Architecture <low_level_definition>).
+Entity <arithmetic_process> analyzed. Unit <arithmetic_process> generated.
+
+Analyzing Entity <addsub8> in library <work> (Architecture <low_level_definition>).
+Entity <addsub8> analyzed. Unit <addsub8> generated.
+
+Analyzing Entity <shift_rotate> in library <work> (Architecture <low_level_definition>).
+Entity <shift_rotate> analyzed. Unit <shift_rotate> generated.
+
+Analyzing Entity <flip> in library <work> (Architecture <low_level_definition>).
+Entity <flip> analyzed. Unit <flip> generated.
+
+Analyzing Entity <logical_bus_processing> in library <work> (Architecture <low_level_definition>).
+Entity <logical_bus_processing> analyzed. Unit <logical_bus_processing> generated.
+
+Analyzing Entity <T_state_and_Reset> in library <work> (Architecture <low_level_definition>).
+Entity <T_state_and_Reset> analyzed. Unit <T_state_and_Reset> generated.
+
+Analyzing Entity <register_and_flag_enable> in library <work> (Architecture <low_level_definition>).
+Entity <register_and_flag_enable> analyzed. Unit <register_and_flag_enable> generated.
+
+Analyzing Entity <carry_flag_logic> in library <work> (Architecture <low_level_definition>).
+Entity <carry_flag_logic> analyzed. Unit <carry_flag_logic> generated.
+
+Analyzing Entity <zero_flag_logic> in library <work> (Architecture <low_level_definition>).
+Entity <zero_flag_logic> analyzed. Unit <zero_flag_logic> generated.
+
+Analyzing Entity <program_counter> in library <work> (Architecture <low_level_definition>).
+Entity <program_counter> analyzed. Unit <program_counter> generated.
+
+Analyzing generic Entity <register_bank> in library <work> (Architecture <behavioral>).
+	M = 3
+Entity <register_bank> analyzed. Unit <register_bank> generated.
+
+Analyzing generic Entity <ram_Nx1> in library <work> (Architecture <behavioral>).
+	M = 3
+Entity <ram_Nx1> analyzed. Unit <ram_Nx1> generated.
+
+Analyzing generic Entity <stack_ram> in library <work> (Architecture <low_level_definition>).
+	M = 2
+	N = 8
+Entity <stack_ram> analyzed. Unit <stack_ram> generated.
+
+Analyzing generic Entity <ram_x1s> in library <work> (Architecture <behavioral>).
+	M = 2
+Entity <ram_x1s> analyzed. Unit <ram_x1s> generated.
+
+Analyzing generic Entity <stack_counter> in library <work> (Architecture <low_level_definition>).
+	N = 2
+Entity <stack_counter> analyzed. Unit <stack_counter> generated.
+
+Analyzing Entity <interrupt_capture> in library <work> (Architecture <low_level_definition>).
+Entity <interrupt_capture> analyzed. Unit <interrupt_capture> generated.
+
+Analyzing Entity <interrupt_logic> in library <work> (Architecture <low_level_definition>).
+Entity <interrupt_logic> analyzed. Unit <interrupt_logic> generated.
+
+Analyzing Entity <programa_helloworld_int_FLIP> in library <work> (Architecture <v1>).
+Entity <programa_helloworld_int_FLIP> analyzed. Unit <programa_helloworld_int_FLIP> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <programa_helloworld_int_FLIP>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd".
+    Found 256x16-bit ROM for signal <dout$rom0000> created at line 282.
+    Found 16-bit register for signal <dout>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <programa_helloworld_int_FLIP> synthesized.
+
+
+Synthesizing Unit <IO_strobe_logic>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/IO_strobe_logic.vhd".
+    Found 1-bit register for signal <read_strobe>.
+    Found 1-bit register for signal <write_strobe>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <IO_strobe_logic> synthesized.
+
+
+Synthesizing Unit <shift_rotate>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/shift_rotate.vhd".
+    Found 1-bit register for signal <carry_out>.
+    Found 8-bit register for signal <Y>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <shift_rotate> synthesized.
+
+
+Synthesizing Unit <flip>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/flip.vhd".
+    Found 8-bit register for signal <Y>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <flip> synthesized.
+
+
+Synthesizing Unit <logical_bus_processing>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/logical_bus_processing.vhd".
+WARNING:Xst:646 - Signal <sel> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit register for signal <Y>.
+    Found 1-bit xor2 for signal <combinatorial_logical_processing_0$xor0000> created at line 44.
+    Found 1-bit xor2 for signal <combinatorial_logical_processing_1$xor0000> created at line 44.
+    Found 1-bit xor2 for signal <combinatorial_logical_processing_2$xor0000> created at line 44.
+    Found 1-bit xor2 for signal <combinatorial_logical_processing_3$xor0000> created at line 44.
+    Found 1-bit xor2 for signal <combinatorial_logical_processing_4$xor0000> created at line 44.
+    Found 1-bit xor2 for signal <combinatorial_logical_processing_5$xor0000> created at line 44.
+    Found 1-bit xor2 for signal <combinatorial_logical_processing_6$xor0000> created at line 44.
+    Found 1-bit xor2 for signal <combinatorial_logical_processing_7$xor0000> created at line 44.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <logical_bus_processing> synthesized.
+
+
+Synthesizing Unit <T_state_and_Reset>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/T_state_and_Reset.vhd".
+    Found 1-bit register for signal <internal_T_state>.
+    Found 1-bit register for signal <reset_delay1>.
+    Found 1-bit register for signal <reset_delay2>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <T_state_and_Reset> synthesized.
+
+
+Synthesizing Unit <register_and_flag_enable>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/register_and_flag_enable.vhd".
+    Found 1-bit register for signal <arith_or_logical_valid>.
+    Found 1-bit register for signal <register_write_valid>.
+    Found 1-bit register for signal <returni_or_shift_valid>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <register_and_flag_enable> synthesized.
+
+
+Synthesizing Unit <carry_flag_logic>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/carry_flag_logic.vhd".
+    Found 1-bit register for signal <carry_flag>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <carry_flag_logic> synthesized.
+
+
+Synthesizing Unit <zero_flag_logic>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/zero_flag_logic.vhd".
+    Found 1-bit register for signal <zero_flag>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <zero_flag_logic> synthesized.
+
+
+Synthesizing Unit <program_counter>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/program_counter.vhd".
+    Found 8-bit register for signal <count_value>.
+    Found 8-bit adder for signal <count_value$share0000> created at line 57.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <program_counter> synthesized.
+
+
+Synthesizing Unit <stack_counter>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/stack_counter.vhd".
+    Found 2-bit register for signal <count_value>.
+    Found 1-bit xor2 for signal <next_count<1>>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <stack_counter> synthesized.
+
+
+Synthesizing Unit <interrupt_capture>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/interrupt_capture.vhd".
+    Found 1-bit register for signal <active_interrupt_pulse>.
+    Found 1-bit register for signal <clean_interrupt>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <interrupt_capture> synthesized.
+
+
+Synthesizing Unit <interrupt_logic>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/interrupt_logic.vhd".
+    Found 1-bit register for signal <shaddow_carry>.
+    Found 1-bit register for signal <shaddow_zero>.
+    Found 1-bit register for signal <interrupt_enable>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <interrupt_logic> synthesized.
+
+
+Synthesizing Unit <addsub8>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/arithmatic.vhd".
+    Found 8-bit register for signal <Y>.
+    Found 8-bit xor2 for signal <full_addsub>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <addsub8> synthesized.
+
+
+Synthesizing Unit <ram_Nx1>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/register_bank.vhd".
+    Found 1-bit 8-to-1 multiplexer for signal <spo>.
+    Found 1-bit 8-to-1 multiplexer for signal <dpo>.
+    Found 8-bit register for signal <rambit>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <ram_Nx1> synthesized.
+
+
+Synthesizing Unit <ram_x1s>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/stack_ram.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <o>.
+    Found 4-bit register for signal <rambit>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ram_x1s> synthesized.
+
+
+Synthesizing Unit <arithmetic_process>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/arithmatic.vhd".
+    Found 1-bit register for signal <carry_out>.
+    Found 1-bit xor2 for signal <modified_carry_out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <arithmetic_process> synthesized.
+
+
+Synthesizing Unit <register_bank>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/register_bank.vhd".
+Unit <register_bank> synthesized.
+
+
+Synthesizing Unit <stack_ram>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/stack_ram.vhd".
+    Found 8-bit register for signal <Dout>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <stack_ram> synthesized.
+
+
+Synthesizing Unit <picoblaze>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/picoblaze.vhd".
+Unit <picoblaze> synthesized.
+
+
+Synthesizing Unit <toplevel>.
+    Related source file is "D:/GIT/Universidad/Pracs_Hardware/Practica2_Picoblaze/P2C_HelloWorld_RAM_INT_FLIP/Project2C_HelloWorld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd".
+    Found 64x8-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Found 1-bit register for signal <tx>.
+    Found 8-bit comparator less for signal <inport$cmp_lt0000> created at line 138.
+    Found 8-bit register for signal <rxbuff_out>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <toplevel> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 64x8-bit single-port RAM                              : 1
+# ROMs                                                 : 1
+ 256x16-bit ROM                                        : 1
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 159
+ 1-bit register                                        : 156
+ 16-bit register                                       : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 1
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 24
+ 1-bit 4-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 16
+# Xors                                                 : 18
+ 1-bit xor2                                            : 18
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <programa_helloworld_int_FLIP>.
+INFO:Xst:3044 - The ROM <Mrom_dout_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <dout>.
+INFO:Xst:3225 - The RAM <Mrom_dout_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 16-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <programa_helloworld_int_FLIP> synthesized (advanced).
+
+Synthesizing (advanced) Unit <toplevel>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <_and0000>      | high     |
+    |     addrA          | connected to signal <port_id>       |          |
+    |     diA            | connected to signal <out_port>      |          |
+    |     doA            | connected to signal <RAM_out>       |          |
+    -----------------------------------------------------------------------
+Unit <toplevel> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 256x16-bit single-port block RAM                      : 1
+ 64x8-bit single-port distributed RAM                  : 1
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 172
+ Flip-Flops                                            : 172
+# Comparators                                          : 1
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 24
+ 1-bit 4-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 16
+# Xors                                                 : 18
+ 1-bit xor2                                            : 18
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <rxbuff_out_0> in Unit <toplevel> is equivalent to the following 6 FFs/Latches, which will be removed : <rxbuff_out_1> <rxbuff_out_2> <rxbuff_out_3> <rxbuff_out_4> <rxbuff_out_5> <rxbuff_out_6> 
+
+Optimizing unit <toplevel> ...
+
+Optimizing unit <shift_rotate> ...
+
+Optimizing unit <flip> ...
+
+Optimizing unit <logical_bus_processing> ...
+
+Optimizing unit <register_and_flag_enable> ...
+
+Optimizing unit <program_counter> ...
+
+Optimizing unit <stack_counter> ...
+
+Optimizing unit <addsub8> ...
+
+Optimizing unit <ram_x1s> ...
+
+Optimizing unit <register_bank> ...
+
+Optimizing unit <stack_ram> ...
+
+Optimizing unit <picoblaze> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block toplevel, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 166
+ Flip-Flops                                            : 166
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : toplevel.ngr
+Top Level Output File Name         : toplevel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 31
+
+Cell Usage :
+# BELS                             : 370
+#      GND                         : 1
+#      INV                         : 3
+#      LUT2                        : 7
+#      LUT2_D                      : 1
+#      LUT3                        : 146
+#      LUT3_D                      : 9
+#      LUT3_L                      : 12
+#      LUT4                        : 104
+#      LUT4_D                      : 9
+#      LUT4_L                      : 6
+#      MUXF5                       : 56
+#      MUXF6                       : 15
+#      VCC                         : 1
+# FlipFlops/Latches                : 166
+#      FD                          : 43
+#      FDCE                        : 2
+#      FDE                         : 98
+#      FDPE                        : 3
+#      FDR                         : 6
+#      FDRE                        : 3
+#      FDS                         : 3
+#      FDSE                        : 8
+# RAMS                             : 17
+#      RAM32X1S                    : 16
+#      RAMB16_S18                  : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 30
+#      IBUF                        : 2
+#      OBUF                        : 28
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      190  out of   4656     4%  
+ Number of Slice Flip Flops:            166  out of   9312     1%  
+ Number of 4 input LUTs:                329  out of   9312     3%  
+    Number used as logic:               297
+    Number used as RAMs:                 32
+ Number of IOs:                          31
+ Number of bonded IOBs:                  31  out of    232    13%  
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 183   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------------------------------+--------------------------------------------+-------+
+Control Signal                                                              | Buffer(FF name)                            | Load  |
+----------------------------------------------------------------------------+--------------------------------------------+-------+
+reset                                                                       | IBUF                                       | 3     |
+processor/basic_control/reset_delay2(processor/basic_control/reset_delay2:Q)| NONE(processor/stack_control/count_value_0)| 2     |
+----------------------------------------------------------------------------+--------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 15.842ns (Maximum Frequency: 63.124MHz)
+   Minimum input arrival time before clock: 3.097ns
+   Maximum output required time after clock: 15.309ns
+   Maximum combinational path delay: 5.159ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 15.842ns (frequency: 63.124MHz)
+  Total number of paths / destination ports: 36444 / 415
+-------------------------------------------------------------------------
+Delay:               15.842ns (Levels of Logic = 10)
+  Source:            program/Mrom_dout_rom0000 (RAM)
+  Destination:       processor/zero_logic/zero_flag (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: program/Mrom_dout_rom0000 to processor/zero_logic/zero_flag
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S18:CLK->DO5   34   2.800   1.298  program/Mrom_dout_rom0000 (instruction<5>)
+     LUT3:I2->O            1   0.704   0.000  processor/data_registers/bus_width_loop[4].data_register_bit/Mmux_dpo_6 (processor/data_registers/bus_width_loop[4].data_register_bit/Mmux_dpo_6)
+     MUXF5:I0->O           1   0.321   0.000  processor/data_registers/bus_width_loop[4].data_register_bit/Mmux_dpo_4_f5 (processor/data_registers/bus_width_loop[4].data_register_bit/Mmux_dpo_4_f5)
+     MUXF6:I0->O           2   0.521   0.482  processor/data_registers/bus_width_loop[4].data_register_bit/Mmux_dpo_2_f6 (processor/sY_register<4>)
+     LUT3:I2->O           13   0.704   1.158  processor/second_operand<4>1_1 (processor/second_operand<4>1)
+     LUT4:I0->O            3   0.704   0.566  inport<0>114 (inport<0>114)
+     LUT3:I2->O           10   0.704   0.886  inport<0>12 (rxbuff_out_and0000)
+     LUT4:I3->O            2   0.704   0.451  inport<3> (in_port_3_OBUF)
+     LUT4:I3->O            9   0.704   0.995  processor/ALU_result_3_or000038 (processor/ALU_result<3>)
+     LUT4:I0->O            1   0.704   0.424  processor/zero_logic/next_zero_flag33 (processor/zero_logic/next_zero_flag33)
+     LUT4:I3->O            1   0.704   0.000  processor/zero_logic/next_zero_flag49 (processor/zero_logic/next_zero_flag)
+     FDRE:D                    0.308          processor/zero_logic/zero_flag
+    ----------------------------------------
+    Total                     15.842ns (9.582ns logic, 6.260ns route)
+                                       (60.5% logic, 39.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.097ns (Levels of Logic = 2)
+  Source:            rx (PAD)
+  Destination:       processor/get_interrupt/clean_interrupt (FF)
+  Destination Clock: clk rising
+
+  Data Path: rx to processor/get_interrupt/clean_interrupt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.447  rx_IBUF (rx_IBUF)
+     INV:I->O              1   0.704   0.420  picoint1_INV_0 (picoint)
+     FDR:D                     0.308          processor/get_interrupt/clean_interrupt
+    ----------------------------------------
+    Total                      3.097ns (2.230ns logic, 0.867ns route)
+                                       (72.0% logic, 28.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 3138 / 27
+-------------------------------------------------------------------------
+Offset:              15.309ns (Levels of Logic = 8)
+  Source:            program/Mrom_dout_rom0000 (RAM)
+  Destination:       in_port<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: program/Mrom_dout_rom0000 to in_port<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S18:CLK->DO5   34   2.800   1.298  program/Mrom_dout_rom0000 (instruction<5>)
+     LUT3:I2->O            1   0.704   0.000  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_6 (processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_6)
+     MUXF5:I0->O           1   0.321   0.000  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_4_f5 (processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_4_f5)
+     MUXF6:I0->O           4   0.521   0.622  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_2_f6 (processor/sY_register<1>)
+     LUT3:I2->O           22   0.704   1.164  processor/second_operand<1>1 (port_id_1_OBUF)
+     RAM32X1S:A1->O        1   1.025   0.455  Mram_RAM1 (N4)
+     LUT4_D:I2->O          1   0.704   0.595  inport<0>13 (inport<0>13)
+     LUT3:I0->O            1   0.704   0.420  inport<0>15 (in_port_0_OBUF)
+     OBUF:I->O                 3.272          in_port_0_OBUF (in_port<0>)
+    ----------------------------------------
+    Total                     15.309ns (10.755ns logic, 4.554ns route)
+                                       (70.3% logic, 29.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.159ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       LED (PAD)
+
+  Data Path: reset to LED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.218   0.669  reset_IBUF (LED_OBUF)
+     OBUF:I->O                 3.272          LED_OBUF (LED)
+    ----------------------------------------
+    Total                      5.159ns (4.490ns logic, 0.669ns route)
+                                       (87.0% logic, 13.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.74 secs
+ 
+--> 
+
+Total memory usage is 4531404 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

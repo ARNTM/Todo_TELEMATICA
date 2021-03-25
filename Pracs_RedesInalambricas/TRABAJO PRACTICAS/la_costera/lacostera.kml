@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<GroundOverlay><name>lacostera.bmp</name><color>88ffffff</color><Icon>
+<href>lacostera.bmp</href>
+<viewBoundScale>0.75</viewBoundScale></Icon><LatLonBox>
+<north> 37.87883</north>
+<south> 37.80684</south>
+<east>-1.31954</east>
+<west>-1.456348</west>
+</LatLonBox></GroundOverlay></kml>

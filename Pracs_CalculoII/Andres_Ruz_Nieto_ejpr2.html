@@ -1,0 +1,573 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <TITLE>Andres_Ruz_Nieto_ejpr2</TITLE>
+  <META NAME="generator" CONTENT="wxMaxima">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    displayAlign: "left",
+    context: "MathJax",
+    TeX: {TagSide: "left"}
+  })
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML">
+</script>
+  <link rel="stylesheet" type="text/css" href="Andres_Ruz_Nieto_ejpr2_htmlimg/Andres_Ruz_Nieto_ejpr2.css"/>
+ </HEAD>
+ <BODY>
+
+<!-- ***************************************************** -->
+<!--          Created with wxMaxima version 17.10.1         -->
+<!-- ***************************************************** -->
+<noscript><div class="error message">    Please enable JavaScript in order to get a 2d display of the equations embedded in this web page.</div></noscript>\(      \DeclareMathOperator{\abs}{abs}
+      \newcommand{\ensuremath}[1]{\mbox{$#1$}}
+\)
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_comment">/·</span><span class="code_comment"> </span><span class="code_comment">EJERCICIO</span><span class="code_comment"> </span><span class="code_comment">1</span><span class="code_comment"> </span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">f</span>(<span class="code_variable">x</span>)<span class="code_operator">:</span><span class="code_operator">=</span><span class="code_operator">'</span><span class="code_function">diff</span>(<span class="code_variable">y</span>,<span class="code_variable">x</span>,<span class="code_number">2</span>)<span class="code_operator">−</span><span class="code_variable">a</span>·<span class="code_operator">'</span><span class="code_function">diff</span>(<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_operator">+</span><span class="code_variable">y</span><span class="code_operator">=</span><span class="code_function">sin</span>(<span class="code_variable">x</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">−</span><span class="code_number">3</span><span class="code_endofline">;</span> <span class="code_variable">sol1</span><span class="code_operator">:</span><span class="code_function">ode2</span>(<span class="code_function">f</span>(<span class="code_variable">x</span>),<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_endofline">;</span> <span class="code_variable">solic1</span><span class="code_operator">:</span><span class="code_function">ic2</span>(<span class="code_variable">sol1</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_function">diff</span>(<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span> <span class="code_function">define</span>(<span class="code_function">solc1</span>(<span class="code_variable">x</span>),<span class="code_function">rhs</span>(<span class="code_variable">solic1</span>))<span class="code_endofline">;</span> <span class="code_function">plot2d</span>(<span class="code_function">solc1</span>(<span class="code_variable">x</span>),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">−</span><span class="code_number">2</span><span class="code_endofline">;</span> <span class="code_variable">sol2</span><span class="code_operator">:</span><span class="code_function">ode2</span>(<span class="code_function">f</span>(<span class="code_variable">x</span>),<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_endofline">;</span> <span class="code_variable">solic2</span><span class="code_operator">:</span><span class="code_function">ic2</span>(<span class="code_variable">sol2</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_function">diff</span>(<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span> <span class="code_function">define</span>(<span class="code_function">solc2</span>(<span class="code_variable">x</span>),<span class="code_function">rhs</span>(<span class="code_variable">solic2</span>))<span class="code_endofline">;</span> <span class="code_function">plot2d</span>(<span class="code_function">solc2</span>(<span class="code_variable">x</span>),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">−</span><span class="code_number">1</span><span class="code_endofline">;</span> <span class="code_variable">sol3</span><span class="code_operator">:</span><span class="code_function">ode2</span>(<span class="code_function">f</span>(<span class="code_variable">x</span>),<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_endofline">;</span> <span class="code_variable">solic3</span><span class="code_operator">:</span><span class="code_function">ic2</span>(<span class="code_variable">sol3</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_function">diff</span>(<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span> <span class="code_function">define</span>(<span class="code_function">solc3</span>(<span class="code_variable">x</span>),<span class="code_function">rhs</span>(<span class="code_variable">solic3</span>))<span class="code_endofline">;</span> <span class="code_function">plot2d</span>(<span class="code_function">solc3</span>(<span class="code_variable">x</span>),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">1</span><span class="code_endofline">;</span> <span class="code_variable">sol4</span><span class="code_operator">:</span><span class="code_function">ode2</span>(<span class="code_function">f</span>(<span class="code_variable">x</span>),<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_endofline">;</span> <span class="code_variable">solic4</span><span class="code_operator">:</span><span class="code_function">ic2</span>(<span class="code_variable">sol4</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_function">diff</span>(<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span> <span class="code_function">define</span>(<span class="code_function">solc4</span>(<span class="code_variable">x</span>),<span class="code_function">rhs</span>(<span class="code_variable">solic4</span>))<span class="code_endofline">;</span> <span class="code_function">plot2d</span>(<span class="code_function">solc4</span>(<span class="code_variable">x</span>),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">2</span><span class="code_endofline">;</span> <span class="code_variable">sol5</span><span class="code_operator">:</span><span class="code_function">ode2</span>(<span class="code_function">f</span>(<span class="code_variable">x</span>),<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_endofline">;</span> <span class="code_variable">solic5</span><span class="code_operator">:</span><span class="code_function">ic2</span>(<span class="code_variable">sol5</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_function">diff</span>(<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span> <span class="code_function">define</span>(<span class="code_function">solc5</span>(<span class="code_variable">x</span>),<span class="code_function">rhs</span>(<span class="code_variable">solic5</span>))<span class="code_endofline">;</span> <span class="code_function">plot2d</span>(<span class="code_function">solc5</span>(<span class="code_variable">x</span>),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">3</span><span class="code_endofline">;</span> <span class="code_variable">sol6</span><span class="code_operator">:</span><span class="code_function">ode2</span>(<span class="code_function">f</span>(<span class="code_variable">x</span>),<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_endofline">;</span> <span class="code_variable">solic6</span><span class="code_operator">:</span><span class="code_function">ic2</span>(<span class="code_variable">sol6</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_function">diff</span>(<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span> <span class="code_function">define</span>(<span class="code_function">solc6</span>(<span class="code_variable">x</span>),<span class="code_function">rhs</span>(<span class="code_variable">solic6</span>))<span class="code_endofline">;</span> <span class="code_function">plot2d</span>(<span class="code_function">solc6</span>(<span class="code_variable">x</span>),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">−</span><span class="code_number">3</span><span class="code_endofline">;</span> <span class="code_variable">sol7</span><span class="code_operator">:</span><span class="code_function">ode2</span>(<span class="code_function">f</span>(<span class="code_variable">x</span>),<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_endofline">;</span> <span class="code_variable">solic7</span><span class="code_operator">:</span><span class="code_function">bc2</span>(<span class="code_variable">sol7</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">1</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span> <span class="code_function">define</span>(<span class="code_function">solc7</span>(<span class="code_variable">x</span>),<span class="code_function">rhs</span>(<span class="code_variable">solic7</span>))<span class="code_endofline">;</span> <span class="code_function">plot2d</span>(<span class="code_function">solc7</span>(<span class="code_variable">x</span>),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">−</span><span class="code_number">2</span><span class="code_endofline">;</span> <span class="code_variable">sol8</span><span class="code_operator">:</span><span class="code_function">ode2</span>(<span class="code_function">f</span>(<span class="code_variable">x</span>),<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_endofline">;</span> <span class="code_variable">solic8</span><span class="code_operator">:</span><span class="code_function">bc2</span>(<span class="code_variable">sol8</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">1</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span> <span class="code_function">define</span>(<span class="code_function">solc8</span>(<span class="code_variable">x</span>),<span class="code_function">rhs</span>(<span class="code_variable">solic8</span>))<span class="code_endofline">;</span> <span class="code_function">plot2d</span>(<span class="code_function">solc8</span>(<span class="code_variable">x</span>),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">−</span><span class="code_number">1</span><span class="code_endofline">;</span> <span class="code_variable">sol9</span><span class="code_operator">:</span><span class="code_function">ode2</span>(<span class="code_function">f</span>(<span class="code_variable">x</span>),<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_endofline">;</span> <span class="code_variable">solic9</span><span class="code_operator">:</span><span class="code_function">bc2</span>(<span class="code_variable">sol9</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">1</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span> <span class="code_function">define</span>(<span class="code_function">solc9</span>(<span class="code_variable">x</span>),<span class="code_function">rhs</span>(<span class="code_variable">solic7</span>))<span class="code_endofline">;</span> <span class="code_function">plot2d</span>(<span class="code_function">solc9</span>(<span class="code_variable">x</span>),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">1</span><span class="code_endofline">;</span> <span class="code_variable">sol10</span><span class="code_operator">:</span><span class="code_function">ode2</span>(<span class="code_function">f</span>(<span class="code_variable">x</span>),<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_endofline">;</span> <span class="code_variable">solic10</span><span class="code_operator">:</span><span class="code_function">bc2</span>(<span class="code_variable">sol10</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">1</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span> <span class="code_function">define</span>(<span class="code_function">solc10</span>(<span class="code_variable">x</span>),<span class="code_function">rhs</span>(<span class="code_variable">solic10</span>))<span class="code_endofline">;</span> <span class="code_function">plot2d</span>(<span class="code_function">solc10</span>(<span class="code_variable">x</span>),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">2</span><span class="code_endofline">;</span> <span class="code_variable">sol11</span><span class="code_operator">:</span><span class="code_function">ode2</span>(<span class="code_function">f</span>(<span class="code_variable">x</span>),<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_endofline">;</span> <span class="code_variable">solic11</span><span class="code_operator">:</span><span class="code_function">bc2</span>(<span class="code_variable">sol11</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">1</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span> <span class="code_function">define</span>(<span class="code_function">solc11</span>(<span class="code_variable">x</span>),<span class="code_function">rhs</span>(<span class="code_variable">solic11</span>))<span class="code_endofline">;</span> <span class="code_function">plot2d</span>(<span class="code_function">solc11</span>(<span class="code_variable">x</span>),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">3</span><span class="code_endofline">;</span> <span class="code_variable">sol12</span><span class="code_operator">:</span><span class="code_function">ode2</span>(<span class="code_function">f</span>(<span class="code_variable">x</span>),<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_endofline">;</span> <span class="code_variable">solic12</span><span class="code_operator">:</span><span class="code_function">bc2</span>(<span class="code_variable">sol12</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">x</span><span class="code_operator">=</span><span class="code_number">1</span>,<span class="code_variable">y</span><span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span> <span class="code_function">define</span>(<span class="code_function">solc12</span>(<span class="code_variable">x</span>),<span class="code_function">rhs</span>(<span class="code_variable">solic12</span>))<span class="code_endofline">;</span> <span class="code_function">plot2d</span>(<span class="code_function">solc12</span>(<span class="code_variable">x</span>),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_comment">/·</span><span class="code_comment"> </span><span class="code_comment">EJERCICIO</span><span class="code_comment"> </span><span class="code_comment">2</span><span class="code_comment"> </span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">ec1</span><span class="code_operator">:</span><span class="code_function">diff</span>(<span class="code_function">x</span>(<span class="code_variable">t</span>),<span class="code_variable">t</span>)<span class="code_operator">=</span><span class="code_function">y</span>(<span class="code_variable">t</span>)<span class="code_operator">+</span><span class="code_function">cos</span>(<span class="code_variable">t</span><span class="code_operator">+</span><span class="code_number">1</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">ec2</span><span class="code_operator">:</span><span class="code_function">diff</span>(<span class="code_function">y</span>(<span class="code_variable">t</span>),<span class="code_variable">t</span>)<span class="code_operator">=</span><span class="code_operator">−</span><span class="code_function">x</span>(<span class="code_variable">t</span>)<span class="code_operator">+</span><span class="code_variable">c</span>·<span class="code_function">y</span>(<span class="code_variable">t</span>)<span class="code_operator">−</span><span class="code_function">sin</span>(<span class="code_variable">t</span>·<span class="code_number">2</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">ecdiff</span><span class="code_operator">:</span><span class="code_function">desolve</span>([<span class="code_variable">ec1</span>,<span class="code_variable">ec2</span>],[<span class="code_function">x</span>(<span class="code_variable">t</span>),<span class="code_function">y</span>(<span class="code_variable">t</span>)])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">c</span><span class="code_operator">:</span><span class="code_number">1</span><span class="code_endofline">;</span> <span class="code_variable">solej21</span><span class="code_operator">:</span><span class="code_function">desolve</span>([<span class="code_variable">ec1</span>,<span class="code_variable">ec2</span>],[<span class="code_function">x</span>(<span class="code_variable">t</span>),<span class="code_function">y</span>(<span class="code_variable">t</span>)])<span class="code_endofline">;</span><BR>
+<span class="code_variable">evaluate1</span><span class="code_operator">:</span><span class="code_function">ev</span>(<span class="code_function">rhs</span>(<span class="code_variable">solej21</span>[<span class="code_number">1</span>]),<span class="code_variable">t</span><span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span><BR>
+<span class="code_variable">evaluate2</span><span class="code_operator">:</span><span class="code_function">ev</span>(<span class="code_function">rhs</span>(<span class="code_variable">solej21</span>[<span class="code_number">2</span>]),<span class="code_variable">t</span><span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span><BR>
+<span class="code_variable">solvecdiff</span><span class="code_operator">:</span><span class="code_function">solve</span>([<span class="code_variable">evaluate1</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">evaluate2</span><span class="code_operator">=</span><span class="code_number">0</span>],[<span class="code_function">x</span>(<span class="code_number">0</span>),<span class="code_function">y</span>(<span class="code_number">0</span>)])<span class="code_endofline">;</span><BR>
+<span class="code_function">define</span>(<span class="code_function">sol21</span>(<span class="code_variable">t</span>),<span class="code_function">ev</span>([<span class="code_function">rhs</span>(<span class="code_variable">solej21</span>[<span class="code_number">1</span>]),<span class="code_function">rhs</span>(<span class="code_variable">solej21</span>[<span class="code_number">2</span>])],<span class="code_variable">solvecdiff</span>[<span class="code_number">1</span>][<span class="code_number">1</span>],<span class="code_variable">solvecdiff</span>[<span class="code_number">1</span>][<span class="code_number">2</span>]))<span class="code_endofline">;</span><BR>
+<span class="code_function">plot2d</span>(<span class="code_function">sol21</span>(<span class="code_variable">t</span>),[<span class="code_variable">t</span>,<span class="code_number">−</span><span class="code_number">4</span>,<span class="code_number">4</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">c</span><span class="code_operator">:</span><span class="code_number">2</span><span class="code_endofline">;</span><span class="code_variable">solej22</span><span class="code_operator">:</span><span class="code_function">desolve</span>([<span class="code_variable">ec1</span>,<span class="code_variable">ec2</span>],[<span class="code_function">x</span>(<span class="code_variable">t</span>),<span class="code_function">y</span>(<span class="code_variable">t</span>)])<span class="code_endofline">;</span><BR>
+<span class="code_variable">evaluate3</span><span class="code_operator">:</span><span class="code_function">ev</span>(<span class="code_function">rhs</span>(<span class="code_variable">solej22</span>[<span class="code_number">1</span>]),<span class="code_variable">t</span><span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span><BR>
+<span class="code_variable">evaluate4</span><span class="code_operator">:</span><span class="code_function">ev</span>(<span class="code_function">rhs</span>(<span class="code_variable">solej22</span>[<span class="code_number">2</span>]),<span class="code_variable">t</span><span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span><BR>
+<span class="code_variable">solvecdiff2</span><span class="code_operator">:</span><span class="code_function">solve</span>([<span class="code_variable">evaluate3</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">evaluate4</span><span class="code_operator">=</span><span class="code_number">0</span>],[<span class="code_function">x</span>(<span class="code_number">0</span>),<span class="code_function">y</span>(<span class="code_number">0</span>)])<span class="code_endofline">;</span><BR>
+<span class="code_function">define</span>(<span class="code_function">sol21</span>(<span class="code_variable">t</span>),<span class="code_function">ev</span>([<span class="code_function">rhs</span>(<span class="code_variable">solej22</span>[<span class="code_number">1</span>]),<span class="code_function">rhs</span>(<span class="code_variable">solej22</span>[<span class="code_number">2</span>])],<span class="code_variable">solvecdiff2</span>[<span class="code_number">1</span>][<span class="code_number">1</span>],<span class="code_variable">solvecdiff2</span>[<span class="code_number">1</span>][<span class="code_number">2</span>]))<span class="code_endofline">;</span><BR>
+<span class="code_function">plot2d</span>(<span class="code_function">sol21</span>(<span class="code_variable">t</span>),[<span class="code_variable">t</span>,<span class="code_number">−</span><span class="code_number">4</span>,<span class="code_number">4</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">c</span><span class="code_operator">:</span><span class="code_number">3</span><span class="code_endofline">;</span><span class="code_variable">solej23</span><span class="code_operator">:</span><span class="code_function">desolve</span>([<span class="code_variable">ec1</span>,<span class="code_variable">ec2</span>],[<span class="code_function">x</span>(<span class="code_variable">t</span>),<span class="code_function">y</span>(<span class="code_variable">t</span>)])<span class="code_endofline">;</span><BR>
+<span class="code_variable">evaluate5</span><span class="code_operator">:</span><span class="code_function">ev</span>(<span class="code_function">rhs</span>(<span class="code_variable">solej23</span>[<span class="code_number">1</span>]),<span class="code_variable">t</span><span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span><BR>
+<span class="code_variable">evaluate6</span><span class="code_operator">:</span><span class="code_function">ev</span>(<span class="code_function">rhs</span>(<span class="code_variable">solej23</span>[<span class="code_number">2</span>]),<span class="code_variable">t</span><span class="code_operator">=</span><span class="code_number">0</span>)<span class="code_endofline">;</span><BR>
+<span class="code_variable">solvecdiff3</span><span class="code_operator">:</span><span class="code_function">solve</span>([<span class="code_variable">evaluate5</span><span class="code_operator">=</span><span class="code_number">0</span>,<span class="code_variable">evaluate6</span><span class="code_operator">=</span><span class="code_number">0</span>],[<span class="code_function">x</span>(<span class="code_number">0</span>),<span class="code_function">y</span>(<span class="code_number">0</span>)])<span class="code_endofline">;</span><BR>
+<span class="code_function">define</span>(<span class="code_function">sol21</span>(<span class="code_variable">t</span>),<span class="code_function">ev</span>([<span class="code_function">rhs</span>(<span class="code_variable">solej23</span>[<span class="code_number">1</span>]),<span class="code_function">rhs</span>(<span class="code_variable">solej23</span>[<span class="code_number">2</span>])],<span class="code_variable">solvecdiff3</span>[<span class="code_number">1</span>][<span class="code_number">1</span>],<span class="code_variable">solvecdiff3</span>[<span class="code_number">1</span>][<span class="code_number">2</span>]))<span class="code_endofline">;</span><BR>
+<span class="code_function">plot2d</span>(<span class="code_function">sol21</span>(<span class="code_variable">t</span>),[<span class="code_variable">t</span>,<span class="code_number">−</span><span class="code_number">4</span>,<span class="code_number">4</span>])<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">load</span>(<span class="code_variable">draw</span>)<span class="code_endofline">;</span> <span class="code_function">load</span>(<span class="code_variable">drawdf</span>)<span class="code_endofline">;</span><span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+\[\mbox{}\\\mbox{0 errors, 0 warnings}\]
+\[\tag{%o6} C:\backslash maxima-5.41.0a\backslash share\backslash maxima\backslash 5.41.0a\_ dirty\backslash share\backslash draw\backslash draw.lisp\]
+\[\tag{%o7} C:\backslash maxima-5.41.0a\backslash share\backslash maxima\backslash 5.41.0a\_ dirty\backslash share\backslash diffequations\backslash drawdf.mac\]
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_comment">/·</span><span class="code_comment"> </span><span class="code_comment">EJERCICIO</span><span class="code_comment">&nbsp;</span><span class="code_comment">3</span><span class="code_comment"> </span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">ec31</span><span class="code_operator">:</span><span class="code_operator">'</span><span class="code_function">diff</span>(<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_operator">=</span><span class="code_function">sin</span>(<span class="code_number">2</span>·<span class="code_variable">x</span><span class="code_operator">+</span><span class="code_variable">y</span><span class="code_operator">+</span><span class="code_function">cos</span>(<span class="code_variable">x</span>))<span class="code_endofline">;</span><BR>
+<span class="code_variable">ec32</span><span class="code_operator">:</span><span class="code_operator">'</span><span class="code_function">diff</span>(<span class="code_variable">y</span>,<span class="code_variable">x</span>)<span class="code_operator">=</span>if (<span class="code_variable">y</span>·<span class="code_function">sin</span>(<span class="code_number">1</span><span class="code_operator">+</span><span class="code_variable">x</span>·<span class="code_variable">y</span>)) &lt; <span class="code_number">0</span> then <span class="code_number">0</span> else <span class="code_function">sqrt</span>(<span class="code_variable">y</span>·<span class="code_function">sin</span>(<span class="code_number">1</span><span class="code_operator">+</span><span class="code_variable">x</span>·<span class="code_variable">y</span>))<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+\[\tag{ec31}\frac{d}{d x} y=\sin{\left( y+\cos{(x)}+2 x\right) }\]
+\[\tag{ec32}\frac{d}{d x} y=\left( \operatorname{if} y\, \sin{\left( x y+1\right) }\mbox{&lt;  }0 \operatorname{then} 0 \operatorname{else} \sqrt{y\, \sin{\left( x y+1\right) }}\right) \]
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_comment">/·</span><span class="code_comment"> </span><span class="code_comment">Y</span><span class="code_comment">(</span><span class="code_comment">X</span><span class="code_comment">) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="code_comment">?</span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">drawdf</span>(<span class="code_function">sin</span>(<span class="code_number">2</span>·<span class="code_variable">x</span><span class="code_operator">+</span><span class="code_variable">y</span><span class="code_operator">+</span><span class="code_function">cos</span>(<span class="code_variable">x</span>)),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">6</span>,<span class="code_number">6</span>],[<span class="code_variable">y</span>,<span class="code_number">−</span><span class="code_number">6</span>,<span class="code_number">6</span>],<span class="code_variable">color</span><span class="code_operator">=</span><span class="code_variable">blue</span>,<span class="code_variable">line_width</span><span class="code_operator">=</span><span class="code_number">2</span>,<span class="code_function">solns_at</span>([<span class="code_number">0</span>,<span class="code_number">−</span><span class="code_number">6</span>],[<span class="code_number">0</span>,<span class="code_number">−</span><span class="code_number">5</span>],[<span class="code_number">0</span>,<span class="code_number">−</span><span class="code_number">4</span>],[<span class="code_number">0</span>,<span class="code_number">−</span><span class="code_number">3</span>],[<span class="code_number">0</span>,<span class="code_number">−</span><span class="code_number">2</span>],[<span class="code_number">0</span>,<span class="code_number">−</span><span class="code_number">1</span>],[<span class="code_number">0</span>,<span class="code_number">0</span>],[<span class="code_number">0</span>,<span class="code_number">1</span>],[<span class="code_number">0</span>,<span class="code_number">2</span>],[<span class="code_number">0</span>,<span class="code_number">3</span>],[<span class="code_number">0</span>,<span class="code_number">4</span>],[<span class="code_number">0</span>,<span class="code_number">5</span>],[<span class="code_number">0</span>,<span class="code_number">6</span>]))<span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">drawdf</span>(if (<span class="code_variable">y</span>·<span class="code_function">sin</span>(<span class="code_number">1</span><span class="code_operator">+</span><span class="code_variable">x</span>·<span class="code_variable">y</span>)) &lt; <span class="code_number">0</span> then <span class="code_number">0</span> else <span class="code_function">sqrt</span>(<span class="code_variable">y</span>·<span class="code_function">sin</span>(<span class="code_number">1</span><span class="code_operator">+</span><span class="code_variable">x</span>·<span class="code_variable">y</span>)),[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">6</span>,<span class="code_number">6</span>],[<span class="code_variable">y</span>,<span class="code_number">−</span><span class="code_number">6</span>,<span class="code_number">6</span>],<span class="code_variable">color</span><span class="code_operator">=</span><span class="code_variable">blue</span>,<span class="code_variable">line_width</span><span class="code_operator">=</span><span class="code_number">2</span>,<span class="code_function">solns_at</span>([<span class="code_number">0</span>,<span class="code_number">−</span><span class="code_number">6</span>],[<span class="code_number">0</span>,<span class="code_number">−</span><span class="code_number">5</span>],[<span class="code_number">0</span>,<span class="code_number">−</span><span class="code_number">4</span>],[<span class="code_number">0</span>,<span class="code_number">−</span><span class="code_number">3</span>],[<span class="code_number">0</span>,<span class="code_number">−</span><span class="code_number">2</span>],[<span class="code_number">0</span>,<span class="code_number">−</span><span class="code_number">1</span>],[<span class="code_number">0</span>,<span class="code_number">0</span>],[<span class="code_number">0</span>,<span class="code_number">1</span>],[<span class="code_number">0</span>,<span class="code_number">2</span>],[<span class="code_number">0</span>,<span class="code_number">3</span>],[<span class="code_number">0</span>,<span class="code_number">4</span>],[<span class="code_number">0</span>,<span class="code_number">5</span>],[<span class="code_number">0</span>,<span class="code_number">6</span>]))<span class="code_endofline">;</span><span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_comment">/·</span><span class="code_comment"> </span><span class="code_comment">EJERCICIO</span><span class="code_comment">&nbsp;</span><span class="code_comment">4</span><span class="code_comment"> </span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">ec41</span><span class="code_operator">:</span><span class="code_operator">'</span><span class="code_function">diff</span>(<span class="code_function">x</span>(<span class="code_variable">t</span>),<span class="code_variable">t</span>)<span class="code_operator">=</span><span class="code_function">x</span>(<span class="code_variable">t</span>)<span class="code_operator">−</span><span class="code_number">0</span><span class="code_number">.</span><span class="code_number">2</span>·<span class="code_function">x</span>(<span class="code_variable">t</span>)·<span class="code_function">y</span>(<span class="code_variable">t</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">ec42</span><span class="code_operator">:</span><span class="code_operator">'</span><span class="code_function">diff</span>(<span class="code_function">y</span>(<span class="code_variable">t</span>),<span class="code_variable">t</span>)<span class="code_operator">=</span><span class="code_number">−</span><span class="code_number">0</span><span class="code_number">.</span><span class="code_number">5</span>·<span class="code_function">y</span>(<span class="code_variable">t</span>)<span class="code_operator">+</span><span class="code_number">0</span><span class="code_number">.</span><span class="code_number">2</span>·<span class="code_function">x</span>(<span class="code_variable">t</span>)·<span class="code_function">y</span>(<span class="code_variable">t</span>)<span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">drawdf</span>([<span class="code_variable">x</span><span class="code_operator">−</span><span class="code_number">0</span><span class="code_number">.</span><span class="code_number">2</span>·<span class="code_variable">x</span>·<span class="code_variable">y</span>,<span class="code_number">0</span><span class="code_number">.</span><span class="code_number">5</span>·<span class="code_variable">y</span><span class="code_operator">+</span><span class="code_number">0</span><span class="code_number">.</span><span class="code_number">2</span>·<span class="code_variable">x</span>·<span class="code_variable">y</span>],[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">1</span>,<span class="code_number">20</span>],[<span class="code_variable">y</span>,<span class="code_number">−</span><span class="code_number">1</span>,<span class="code_number">30</span>],<span class="code_variable">field_color</span><span class="code_operator">=</span><span class="code_variable">grey</span>,<span class="code_variable">color</span><span class="code_operator">=</span><span class="code_variable">blue</span>,<span class="code_function">soln_at</span>(<span class="code_number">5</span>,<span class="code_number">0</span><span class="code_number">.</span><span class="code_number">2</span>),<span class="code_variable">color</span><span class="code_operator">=</span><span class="code_variable">red</span>,<span class="code_function">soln_at</span>(<span class="code_number">5</span>,<span class="code_number">5</span>),<span class="code_variable">color</span><span class="code_operator">=</span><span class="code_variable">brown</span>,<span class="code_function">soln_at</span>(<span class="code_number">0</span><span class="code_number">.</span><span class="code_number">2</span>,<span class="code_number">5</span>),<span class="code_variable">color</span><span class="code_operator">=</span><span class="code_variable">green</span>,<span class="code_function">soln_at</span>(<span class="code_number">0</span>,<span class="code_number">0</span><span class="code_number">.</span><span class="code_number">1</span>),<span class="code_variable">color</span><span class="code_operator">=</span><span class="code_variable">orange</span>,<span class="code_function">soln_at</span>(<span class="code_number">0</span><span class="code_number">.</span><span class="code_number">1</span>,<span class="code_number">0</span>),<span class="code_variable">color</span><span class="code_operator">=</span><span class="code_variable">purple</span>,<span class="code_function">soln_at</span>(<span class="code_number">2</span><span class="code_number">.</span><span class="code_number">5</span>,<span class="code_number">5</span>))<span class="code_endofline">;</span><span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_comment">/·</span><span class="code_comment"> </span><span class="code_comment">EJERCICIO</span><span class="code_comment">&nbsp;</span><span class="code_comment">5</span><span class="code_comment"> </span><span class="code_comment">·/</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_function">f</span>(<span class="code_variable">t</span>)<span class="code_operator">:</span><span class="code_operator">=</span><span class="code_operator">'</span><span class="code_function">diff</span>(<span class="code_variable">x</span>,<span class="code_variable">t</span>,<span class="code_number">2</span>)<span class="code_operator">−</span><span class="code_variable">a</span>·(<span class="code_number">1</span><span class="code_operator">−</span><span class="code_function">x</span>(<span class="code_variable">t</span>)<span class="code_operator">^</span><span class="code_number">2</span>)·<span class="code_operator">'</span><span class="code_function">diff</span>(<span class="code_variable">x</span>,<span class="code_variable">t</span>)<span class="code_operator">+</span><span class="code_function">x</span>(<span class="code_variable">t</span>)<span class="code_operator">=</span><span class="code_number">0</span><span class="code_endofline">;</span>  </SPAN></TD>
+</TR></TABLE>
+\[\tag{%o1} \operatorname{f}(t):=\frac{{{d}^{2}}}{d {{t}^{2}}} x-a\, \left( 1-{{\operatorname{x}(t)}^{2}}\right) \, \left( \frac{d}{d t} x\right) +\operatorname{x}(t)=0\]
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">−</span><span class="code_number">1</span><span class="code_endofline">;</span> <span class="code_function">drawdf</span>([<span class="code_variable">y</span>,<span class="code_variable">a</span>·(<span class="code_number">1</span><span class="code_operator">−</span><span class="code_variable">x</span><span class="code_operator">^</span><span class="code_number">2</span>)·<span class="code_variable">y</span>·<span class="code_variable">x</span>],[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>],[<span class="code_variable">y</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>],<span class="code_function">soln_at</span>(<span class="code_number">1</span>,<span class="code_number">1</span>))<span class="code_endofline">;</span><span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+\[\tag{a}-1\]
+\[\tag{%o9} 0\]
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">−</span><span class="code_number">0</span><span class="code_number">.</span><span class="code_number">5</span><span class="code_endofline">;</span> <span class="code_function">drawdf</span>([<span class="code_variable">y</span>,<span class="code_variable">a</span>·(<span class="code_number">1</span><span class="code_operator">−</span><span class="code_variable">x</span><span class="code_operator">^</span><span class="code_number">2</span>)·<span class="code_variable">y</span>·<span class="code_variable">x</span>],[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">5</span>,<span class="code_number">5</span>],[<span class="code_variable">y</span>,<span class="code_number">0</span>,<span class="code_number">6</span>],<span class="code_function">soln_at</span>(<span class="code_number">1</span>,<span class="code_number">1</span>))<span class="code_endofline">;</span><span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+\[\tag{a}-0.5\]
+\[\tag{%o13} 0\]
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">0</span><span class="code_endofline">;</span> <span class="code_function">drawdf</span>([<span class="code_variable">y</span>,<span class="code_variable">a</span>·(<span class="code_number">1</span><span class="code_operator">−</span><span class="code_variable">x</span><span class="code_operator">^</span><span class="code_number">2</span>)·<span class="code_variable">y</span>·<span class="code_variable">x</span>],[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>],[<span class="code_variable">y</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>],<span class="code_function">soln_at</span>(<span class="code_number">1</span>,<span class="code_number">1</span>))<span class="code_endofline">;</span><span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">0</span><span class="code_number">.</span><span class="code_number">1</span><span class="code_endofline">;</span> <span class="code_function">drawdf</span>([<span class="code_variable">y</span>,<span class="code_variable">a</span>·(<span class="code_number">1</span><span class="code_operator">−</span><span class="code_variable">x</span><span class="code_operator">^</span><span class="code_number">2</span>)·<span class="code_variable">y</span>·<span class="code_variable">x</span>],[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>],[<span class="code_variable">y</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>],<span class="code_function">soln_at</span>(<span class="code_number">1</span>,<span class="code_number">1</span>))<span class="code_endofline">;</span><span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">0</span><span class="code_number">.</span><span class="code_number">5</span><span class="code_endofline">;</span> <span class="code_function">drawdf</span>([<span class="code_variable">y</span>,<span class="code_variable">a</span>·(<span class="code_number">1</span><span class="code_operator">−</span><span class="code_variable">x</span><span class="code_operator">^</span><span class="code_number">2</span>)·<span class="code_variable">y</span>·<span class="code_variable">x</span>],[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>],[<span class="code_variable">y</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>],<span class="code_function">soln_at</span>(<span class="code_number">1</span>,<span class="code_number">1</span>))<span class="code_endofline">;</span><span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+\[\tag{a}0.5\]
+\[\tag{%o242} 0\]
+
+
+<!-- Code cell -->
+
+
+<TABLE><TR><TD>
+  <SPAN CLASS="prompt">
+ -->	
+  </SPAN></TD>
+  <TD><SPAN CLASS="input">
+<span class="code_variable">a</span><span class="code_operator">:</span><span class="code_number">1</span><span class="code_endofline">;</span> <span class="code_function">drawdf</span>([<span class="code_variable">y</span>,<span class="code_variable">a</span>·(<span class="code_number">1</span><span class="code_operator">−</span><span class="code_variable">x</span><span class="code_operator">^</span><span class="code_number">2</span>)·<span class="code_variable">y</span>·<span class="code_variable">x</span>],[<span class="code_variable">x</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>],[<span class="code_variable">y</span>,<span class="code_number">−</span><span class="code_number">3</span>,<span class="code_number">3</span>],<span class="code_variable">duration</span><span class="code_operator">=</span><span class="code_number">50</span>,<span class="code_function">soln_at</span>(<span class="code_number">1</span>,<span class="code_number">1</span>))<span class="code_endofline">;</span><span class="code_endofline">$</span>  </SPAN></TD>
+</TR></TABLE>
+\[\tag{a}1\]
+\[\tag{%o17} 0\]
+
+ <HR>
+ <SMALL> Created with <A HREF="https://andrejv.github.io/wxmaxima/">wxMaxima</A>.</SMALL>
+ </BODY>
+</HTML>

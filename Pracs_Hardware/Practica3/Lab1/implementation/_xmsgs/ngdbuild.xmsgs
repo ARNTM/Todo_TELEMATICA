@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">clock_generator_0/DCM1_INST/Using_Virtex.DCM_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_DCM1_CLK0 = PERIOD &quot;clock_generator_0_clock_generator_0_SIG_DCM1_CLK0&quot; TS_sys_clk_pin HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">clock_generator_0/DCM1_INST/Using_Virtex.DCM_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLK2X</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_DCM1_CLK2X = PERIOD &quot;clock_generator_0_clock_generator_0_SIG_DCM1_CLK2X&quot; TS_sys_clk_pin * 2 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clock_generator_0_clock_generator_0_SIG_DCM1_CLK2X</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clock_generator_0_clock_generator_0_SIG_DCM1_CLK2X</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">clock_generator_0/DCM0_INST/Using_Virtex.DCM_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PERIOD &quot;clock_generator_0_clock_generator_0_SIG_DCM0_CLK0&quot; TS_clock_generator_0_clock_generator_0_SIG_DCM1_CLK2X HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clock_generator_0_clock_generator_0_SIG_DCM1_CLK2X</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clock_generator_0_clock_generator_0_SIG_DCM1_CLK2X</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">clock_generator_0/DCM0_INST/Using_Virtex.DCM_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLK90</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_DCM0_CLK90 = PERIOD &quot;clock_generator_0_clock_generator_0_SIG_DCM0_CLK90&quot; TS_clock_generator_0_clock_generator_0_SIG_DCM1_CLK2X PHASE 2.5 ns HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dqs[0].dqs_iob\/dqs_en_reg IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dqs[0].dqs_iob/dqs_en_reg</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dqs[*].dqs_iob*&quot;    IOB = TRUE;&gt; [system.ucf(345)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dqs[1].dqs_iob\/dqs_en_reg IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dqs[1].dqs_iob/dqs_en_reg</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dqs[*].dqs_iob*&quot;    IOB = TRUE;&gt; [system.ucf(345)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/dqs_div\/dqs_rst_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/dqs_div/dqs_rst_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/dqs_div/dqs_rst_iob&quot;                       IOB = TRUE;&gt; [system.ucf(353)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_cke[0].cke_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_cke[0].cke_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_cke[*].cke_iob&quot;   IOB = TRUE;&gt; [system.ucf(349)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_ba[1].ba_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_ba[1].ba_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_ba[*].ba_iob&quot;     IOB = TRUE;&gt; [system.ucf(348)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_ba[0].ba_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_ba[0].ba_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_ba[*].ba_iob&quot;     IOB = TRUE;&gt; [system.ucf(348)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[12].addr_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[12].addr_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].addr_iob&quot; IOB = TRUE;&gt; [system.ucf(347)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[11].addr_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[11].addr_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].addr_iob&quot; IOB = TRUE;&gt; [system.ucf(347)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[10].addr_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[10].addr_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].addr_iob&quot; IOB = TRUE;&gt; [system.ucf(347)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[9].addr_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[9].addr_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].addr_iob&quot; IOB = TRUE;&gt; [system.ucf(347)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[8].addr_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[8].addr_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].addr_iob&quot; IOB = TRUE;&gt; [system.ucf(347)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[7].addr_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[7].addr_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].addr_iob&quot; IOB = TRUE;&gt; [system.ucf(347)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[6].addr_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[6].addr_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].addr_iob&quot; IOB = TRUE;&gt; [system.ucf(347)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[5].addr_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[5].addr_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].addr_iob&quot; IOB = TRUE;&gt; [system.ucf(347)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[4].addr_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[4].addr_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].addr_iob&quot; IOB = TRUE;&gt; [system.ucf(347)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[3].addr_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[3].addr_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].addr_iob&quot; IOB = TRUE;&gt; [system.ucf(347)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[2].addr_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[2].addr_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].addr_iob&quot; IOB = TRUE;&gt; [system.ucf(347)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[1].addr_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[1].addr_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].addr_iob&quot; IOB = TRUE;&gt; [system.ucf(347)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/gen_addr[0].addr_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[0].addr_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/gen_addr[*].addr_iob&quot; IOB = TRUE;&gt; [system.ucf(347)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/cas_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/cas_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/cas_iob&quot;              IOB = TRUE;&gt; [system.ucf(351)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/ras_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/ras_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/ras_iob&quot;              IOB = TRUE;&gt; [system.ucf(350)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/controller_iobs\/we_iob IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/controller_iobs/we_iob</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/controller_iobs/we_iob&quot;               IOB = TRUE;&gt; [system.ucf(352)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[0].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[0].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[1].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[1].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[2].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[2].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[3].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[3].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[4].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[4].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[5].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[5].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[6].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[6].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[7].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[7].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[8].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[8].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[9].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[9].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[10].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[10].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[11].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[11].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[12].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[12].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[13].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[13].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[14].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[14].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="new" >The constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/DDR_SDRAM/DDR_SDRAM\/mpmc_core_0\/gen_s3_ddr_phy.mpmc_phy_if_0\/iobs\/datapath_iobs\/gen_dq[15].dq_iob\/DQ_T IOB = FORCE&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[15].dq_iob/DQ_T</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*/mpmc_core_0/gen_s3_ddr*.mpmc_phy_if_0/iobs/datapath_iobs/gen_dq[*].dq_iob*&quot;      IOB = TRUE;&gt; [system.ucf(346)]</arg>.
+</msg>
+
+<msg type="info" file="NgdBuild" num="1222" delta="new" >Setting <arg fmt="%s" index="1">CLKIN_PERIOD</arg> attribute associated with <arg fmt="%s" index="2">DCM</arg> instance <arg fmt="%s" index="3">clock_generator_0/DCM0_INST/Using_Virtex.DCM_INST</arg> to <arg fmt="%s" index="4">10.000000</arg> ns based on the period specification (<arg fmt="%s" index="5">&lt;TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_DCM1_CLK2X = PERIOD &quot;clock_generator_0_clock_generator_0_SIG_DCM1_CLK2X&quot; TS_sys_clk_pin * 2 HIGH 50%&gt;</arg>).
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[30].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[29].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[28].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[27].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[26].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[25].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[24].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[23].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[22].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[21].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[20].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[19].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[18].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[17].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[16].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[15].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[14].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[13].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[12].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[11].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[10].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[9].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[8].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[7].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[6].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[5].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[4].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[3].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[2].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[1].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/gen_tap2[0].u</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">DDR_SDRAM/DDR_SDRAM/mpmc_core_0/gen_s3_ddr_phy.mpmc_phy_if_0/infrastructure/cal_top/tap_dly/u31</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N22</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N23</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N24</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N25</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N26</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N27</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N28</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N29</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N30</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N31</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N32</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N33</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N34</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N35</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N36</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N37</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N38</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N39</arg>&apos; has no driver
+</msg>
+
+</messages>
+

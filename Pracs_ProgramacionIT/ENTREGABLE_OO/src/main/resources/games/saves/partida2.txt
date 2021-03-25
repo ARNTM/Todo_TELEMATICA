@@ -1,0 +1,8 @@
+{"mode":0,"lifes":2,"GIT_type":"RidingHood","position":{"GIT_type":"Position","x":0,"y":0},"value":1}
+{"mode":0,"lifes":10,"GIT_type":"Blossom","position":{"GIT_type":"Position","x":2,"y":2},"value":10}
+{"mode":0,"lifes":1,"GIT_type":"Fly","position":{"GIT_type":"Position","x":4,"y":1},"value":1}
+{"mode":0,"lifes":1,"GIT_type":"Stone","position":{"GIT_type":"Position","x":2,"y":3},"value":0}
+{"mode":0,"lifes":1,"GIT_type":"Blossom","position":{"GIT_type":"Position","x":2,"y":3},"value":5}
+{"mode":0,"lifes":1,"GIT_type":"Blossom","position":{"GIT_type":"Position","x":3,"y":2},"value":5}
+{"mode":0,"lifes":17,"GIT_type":"Blossom","position":{"GIT_type":"Position","x":1,"y":5},"value":4}
+{"mode":0,"lifes":16,"GIT_type":"Blossom","position":{"GIT_type":"Position","x":1,"y":1},"value":4}

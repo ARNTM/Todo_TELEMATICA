@@ -1,0 +1,1 @@
+ -p xc3s500efg320-4 -pe microblaze_0 bootloops/microblaze_0.elf

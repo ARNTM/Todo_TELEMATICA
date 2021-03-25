@@ -1,0 +1,13 @@
+// Animation Performance
+@mixin performance() {
+	perspective: 1000px;
+}
+
+// Clearfix
+@mixin clearfix {
+	&::after {
+		clear: both;
+		content: "";
+		display: block;
+	}
+}

@@ -1,0 +1,24 @@
+1- scp /usr/bin/logname ser36@labit201.upct.es:~/pr3    (passw: lsnei) es como el cp pero para transferir archivos
+2- ?????
+3- cifrado ya que usa SSH?
+4- openssl des -d -in ~/pr3/TheDesignOfRijndael.pdf.des -out ~/pr3/TheDesignOfRijndael.pdf     passw: lceldlcL
+	> pesan lo mismo
+5- openssl aes-128-cbc -in ~/pr3/TheDesignOfRijndael.pdf -out ~/pr3/TheDesignOfRijndael.pdf.aes128 // openssl enc -aes128 -in ~/pr3/TheDesignOfRijndael.pdf -out ~/pr3/TheDesignOfRijndael.pdf.aes128	passw: lceldlcL
+	> tmb pesa 21.8 MB
+6- openssl enc -aes128 -base64 ~/pr3/TheDesignOfRijndael.pdf -out ~/pr3/TheDesignOfRijndael.pdf.aes128.2 passw: lceldlcL
+	> pesa 38 MB
+7- unos 80 segun aparece en el help
+8- openssl genrsa -out RSApriv.pem
+9- e = 65537
+10- openssl genrsa -in RSApriv.pem -out RSApub.pem -pubout -outform PEM
+11- openssl pkeyutl -encrypt -in rfc4251.txt -pubin -inkey SER_pubRSA.pem -out rfc4251.txt.rsa (hay que recortar bastante el archivo de entrada ya que si no, es demasiado largo para la key que tenemos)
+12- el archivo tiene k ser 117octetos para poder ser codificado con la clave proporcionada(272octetos)
+13- scp ~/pr3/rfc4251.txt.rsa ser36@labit201.upct.es:~/pr3 (passw: lsnei) // no se como comprobar k no se puede descrifrar
+14- ?????
+15- openssl enc -des3 -in ser_Rijndael.pdf -out vm_Rijndael.pdf.des3  (passw: contra)
+	> openssl rautl -encrypt -pubin -inkey SER_pubRSA.pem -in clave_des3.txt -out clave_des3.txt.rsa
+	> scp ~/pr3/vm_Rijndael.pdf.des3 ser36@labit201.upct.es:~/pr3 (passw: lsnei)
+	> scp ~/pr3/clave_des3.txt.rsa ser36@labit201.upct.es:~/pr3 (passw: lsnei)
+16- ?????
+17- si, usando algoritmos de cifrado SIMETRICOS
+18- 

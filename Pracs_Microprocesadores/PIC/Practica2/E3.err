@@ -1,0 +1,3 @@
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA2\E3.ASM 15 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA2\E3.ASM 17 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[205] D:\UNIVERSIDAD\2º GIT\MICROPROCESADORES\PRACTICA2\E3.ASM 35 : Found directive in column 1. (END)

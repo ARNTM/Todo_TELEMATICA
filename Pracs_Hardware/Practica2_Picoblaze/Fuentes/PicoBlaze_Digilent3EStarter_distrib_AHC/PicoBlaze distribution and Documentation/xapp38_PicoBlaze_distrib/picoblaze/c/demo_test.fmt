@@ -1,0 +1,6 @@
+  1   0              :CONSTANT   SHIFTER_PORT 01           ;declare port 
+  2   0              :NAMEREG    S7           SHIFTER_REG  ;declare register
+  3   0              :LOAD       SHIFTER_REG  01           ;init shifter reg
+  4   1 LOOP1        :OUTPUT     SHIFTER_REG  SHIFTER_PORT 
+  5   2              :RL         SHIFTER_REG  ;rotate left
+  6   3              :JUMP       LOOP1        ;goto loop1

@@ -1,0 +1,8 @@
+V3 3
+FL D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd 2019/06/13.09:58:21 P.20131013
+EN work/Display7Seg 1560412929 \
+      FL D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Display7Seg/Behavioral 1560412930 \
+      FL D:/GIT/Pracs_Microprocesadores/VHDL/Practica3/Display7Seg.vhd \
+      EN work/Display7Seg 1560412929

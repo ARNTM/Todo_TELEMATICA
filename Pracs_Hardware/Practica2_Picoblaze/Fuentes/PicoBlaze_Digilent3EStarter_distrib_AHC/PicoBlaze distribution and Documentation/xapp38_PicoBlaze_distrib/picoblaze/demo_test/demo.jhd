@@ -1,0 +1,3 @@
+MODULE demo
+   SUBMODULE demo_test
+   SUBMODULE picoblaze

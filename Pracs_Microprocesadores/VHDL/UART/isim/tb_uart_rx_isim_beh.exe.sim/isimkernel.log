@@ -1,0 +1,10 @@
+Command line:
+   tb_uart_rx_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49766
+
+Mon Jul 08 12:27:59 2019
+
+
+ Elaboration Time: 0.265201 sec

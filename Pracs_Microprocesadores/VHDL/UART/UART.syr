@@ -1,0 +1,465 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: UART.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "UART.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "UART"
+Output Format                      : NGC
+Target Device                      : xc3s400-4-ft256
+
+---- Source Options
+Top Module Name                    : UART
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/detcp/Desktop/UART/UART.vhd" in Library work.
+Entity <uart> compiled.
+Entity <uart> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <UART> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <UART> in library <work> (Architecture <behavioral>).
+Entity <UART> analyzed. Unit <UART> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <UART>.
+    Related source file is "C:/Users/detcp/Desktop/UART/UART.vhd".
+    Found finite state machine <FSM_0> for signal <actual_btn>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | cero                                           |
+    | Power Up State     | cero                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <actual_rx>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <actual_tx>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <TX_READY>.
+    Found 8-bit register for signal <RX_DATA>.
+    Found 1-bit register for signal <RX_NEWDATA>.
+    Found 1-bit register for signal <BTN>.
+    Found 16-bit register for signal <contador_baudios>.
+    Found 16-bit adder for signal <contador_baudios$addsub0000> created at line 327.
+    Found 16-bit register for signal <contador_baudiosrx>.
+    Found 16-bit adder for signal <contador_baudiosrx$addsub0000> created at line 431.
+    Found 10-bit register for signal <registro>.
+    Found 9-bit register for signal <registrorx>.
+    Found 4-bit register for signal <RX_NBIT>.
+    Found 4-bit adder for signal <RX_NBIT$addsub0000> created at line 363.
+    Found 4-bit register for signal <TX_NBIT>.
+    Found 4-bit adder for signal <TX_NBIT$addsub0000> created at line 284.
+    Summary:
+	inferred   3 Finite State Machine(s).
+	inferred  70 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+Unit <UART> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 16-bit adder                                          : 2
+ 4-bit adder                                           : 2
+# Registers                                            : 10
+ 1-bit register                                        : 3
+ 10-bit register                                       : 1
+ 16-bit register                                       : 2
+ 4-bit register                                        : 2
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <actual_tx/FSM> on signal <actual_tx[1:2]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 00
+ tx_inicio | 01
+ tx_datos  | 10
+-----------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <actual_rx/FSM> on signal <actual_rx[1:2]> with gray encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 00
+ rx_inicio | 01
+ rx_datos  | 11
+ rx_fin    | 10
+-----------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <actual_btn/FSM> on signal <actual_btn[1:3]> with one-hot encoding.
+--------------------
+ State  | Encoding
+--------------------
+ cero   | 001
+ flanco | 010
+ uno    | 100
+--------------------
+WARNING:Xst:1710 - FF/Latch <registro_9> (without init value) has a constant value of 1 in block <UART>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# Adders/Subtractors                                   : 4
+ 16-bit adder                                          : 2
+ 4-bit adder                                           : 2
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <registro_9> (without init value) has a constant value of 1 in block <UART>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <UART> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block UART, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 75
+ Flip-Flops                                            : 75
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : UART.ngr
+Top Level Output File Name         : UART
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 33
+
+Cell Usage :
+# BELS                             : 183
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 30
+#      LUT2                        : 5
+#      LUT2_L                      : 3
+#      LUT3                        : 17
+#      LUT4                        : 57
+#      LUT4_D                      : 2
+#      LUT4_L                      : 2
+#      MUXCY                       : 30
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 75
+#      FDC                         : 7
+#      FDCE                        : 40
+#      FDE                         : 8
+#      FDP                         : 2
+#      FDPE                        : 18
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 32
+#      IBUF                        : 11
+#      OBUF                        : 21
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400ft256-4 
+
+ Number of Slices:                       65  out of   3584     1%  
+ Number of Slice Flip Flops:             75  out of   7168     1%  
+ Number of 4 input LUTs:                119  out of   7168     1%  
+ Number of IOs:                          33
+ Number of bonded IOBs:                  33  out of    173    19%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 75    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 67    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.796ns (Maximum Frequency: 128.271MHz)
+   Minimum input arrival time before clock: 2.791ns
+   Maximum output required time after clock: 7.241ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.796ns (frequency: 128.271MHz)
+  Total number of paths / destination ports: 1526 / 124
+-------------------------------------------------------------------------
+Delay:               7.796ns (Levels of Logic = 3)
+  Source:            contador_baudiosrx_3 (FF)
+  Destination:       registrorx_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: contador_baudiosrx_3 to registrorx_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.720   1.216  contador_baudiosrx_3 (contador_baudiosrx_3)
+     LUT4:I0->O            1   0.551   0.996  ACTUALIZACION_RX_cmp_eq000022 (ACTUALIZACION_RX_cmp_eq000022)
+     LUT4:I1->O           18   0.551   1.485  ACTUALIZACION_RX_cmp_eq000071 (ACTUALIZACION_RX)
+     LUT3:I2->O            9   0.551   1.124  registrorx_not00011 (registrorx_not0001)
+     FDPE:CE                   0.602          registrorx_0
+    ----------------------------------------
+    Total                      7.796ns (2.975ns logic, 4.821ns route)
+                                       (38.2% logic, 61.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              2.791ns (Levels of Logic = 2)
+  Source:            RX_IN (PAD)
+  Destination:       registrorx_8 (FF)
+  Destination Clock: clk rising
+
+  Data Path: RX_IN to registrorx_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.821   1.216  RX_IN_IBUF (RX_IN_IBUF)
+     LUT3:I0->O            1   0.551   0.000  registrorx_mux0000<0>1 (registrorx_mux0000<0>)
+     FDPE:D                    0.203          registrorx_8
+    ----------------------------------------
+    Total                      2.791ns (1.575ns logic, 1.216ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              7.241ns (Levels of Logic = 1)
+  Source:            registro_0 (FF)
+  Destination:       TX_OUT (PAD)
+  Source Clock:      clk rising
+
+  Data Path: registro_0 to TX_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             2   0.720   0.877  registro_0 (registro_0)
+     OBUF:I->O                 5.644          TX_OUT_OBUF (TX_OUT)
+    ----------------------------------------
+    Total                      7.241ns (6.364ns logic, 0.877ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.45 secs
+ 
+--> 
+
+Total memory usage is 260752 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,741 @@
+// This file has been automatically generated.  Do not modify.
+// Command Line Options: -family spartan3e -enable_ecc 0 -tRAS 42000 -part_data_width 16 -cas_latency 2 -cas_wr_latency 5 -memory_burst_length 4 -tRC 60000 -tRCD 15000 -nDQSS 1 -tWR 15000 -tRP 15000 -tRRD 12000 -tRFC 72000 -nAL 0 -nCCD 0 -tWTR 0 -tRTP 7500 -nZQCS 64 -c 10000 -reg 0 -m DDR -d 16 -f_txt C:/Lab3_DIAGARN/__xps/DDR_SDRAM_ctrl_path_table.txt -f_err C:/Lab3_DIAGARN/__xps/DDR_SDRAM_ctrl_path_generation_errors.txt -f_ver C:/Lab3_DIAGARN/__xps/DDR_SDRAM_ctrl_path_params.v -static_phy 0 -wr_mem_pipeline 1
+//
+// Timing Parameters:
+// Memory Clock Period (ps): 10000 
+// CAS Latency : 2 
+// +------------------------------+--------+-----+-------+-------+---------+
+// |                              |        |  Clocks     |   Nanoseconds   |
+// |Parameter                     | Symbol | MIN |  MAX  |  MIN  |   MAX   |
+// +------------------------------+--------+-----+-------+-------+---------+
+// |ACTIVATE to internal READ or  | tRCD   |   2 |   -   |  15.0 |    -    |
+// |WRITE delay time*             |        |     |       |       |         |
+// +------------------------------+--------+-----+-------+-------+---------+
+// |PRECHARGE command period      | tRP    |   2 |   -   |  15.0 |    -    |
+// +------------------------------+--------+-----+-------+-------+---------+
+// |ACTIVATE-to-ACTIVATE or       | tRC    |   6 |   -   |  60.0 |    -    |
+// |REFRESH command period        |        |     |       |       |         |
+// +------------------------------+--------+-----+-------+-------+---------+
+// |ACTIVATE-to-PRECHARGE         | tRAS   |   5 |   -   |  42.0 |    -    |
+// |command period                |        |     |       |       |         |
+// +------------------------------+--------+-----+-------+-------+---------+
+// |ACTIVATE-to-ACTIVATE minimum  | tRRD   |   2 |   -   |  12.0 |    -    |
+// |command period                |        |     |       |       |         |
+// +------------------------------+--------+-----+-------+-------+---------+
+// |Write recovery time           | tWR    |   2 |   -   |  15.0 |    -    |
+// +------------------------------+--------+-----+-------+-------+---------+
+// |Delay from start of internal  | tWTR   |     |   -   |   0.0 |    -    |
+// |WRITE transaction to internal |        |     |       |       |         |
+// |READ command                  |        |     |       |       |         |
+// +------------------------------+--------+-----+-------+-------+---------+
+// |READ-to-PRECHARGE time        | tRTP   |   1 |   -   |   7.5 |    -    |
+// +------------------------------+--------+-----+-------+-------+---------+
+// |CAS#-to-CAS# command delay    | tCCD   |   0 |   -   |       |    -    |
+// +------------------------------+--------+-----+-------+-------+---------+
+// |ZQCS command: short calib time| nZQCS  |  64 |   -   |       |    -    |
+// +------------------------------+--------+-----+-------+-------+---------+
+// * tRCD must be an odd number of clock cycles when using Virtex-6 DDR3 (DFI)
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 0: WORD WRITE
+//
+// Control Signals                       0        0
+                                         0        0
+// (32 Signals)                          0123456789
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  0000100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  1111111111  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  0111111011  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  1101111111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  1101111011  // Delayed by 1
+/*     5 UNUSED                      */  0000000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  0000000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  0000000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  0110000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  0000000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  0000000000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  0000000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  0100000000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  0010000000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  0000000100  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  1000000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  0100000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  0000000000  // Delayed by 1
+/*    18 UNUSED                      */  0000000000  // Delayed by 0
+/*    19 UNUSED                      */  0000000000  // Delayed by 0
+/*    20 UNUSED                      */  0000000000  // Delayed by 0
+/*    21 UNUSED                      */  0000000000  // Delayed by 0
+/*    22 UNUSED                      */  0000000000  // Delayed by 0
+/*    23 UNUSED                      */  0000000000  // Delayed by 0
+/*    24 UNUSED                      */  0000000000  // Delayed by 0
+/*    25 UNUSED                      */  0000000000  // Delayed by 0
+/*    26 UNUSED                      */  0000000000  // Delayed by 0
+/*    27 UNUSED                      */  0000000000  // Delayed by 0
+/*    28 UNUSED                      */  0000000000  // Delayed by 0
+/*    29 UNUSED                      */  0000000000  // Delayed by 0
+/*    30 UNUSED                      */  0000000000  // Delayed by 0
+/*    31 UNUSED                      */  0000000000  // Delayed by 0
+/*    32 UNUSED                      */  0000000000  // Delayed by 0
+/*    33 UNUSED                      */  0000000000  // Delayed by 0
+/*    34 UNUSED                      */  0000000000  // Delayed by 0
+/*    35 UNUSED                      */  0000000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 1: WORD READ
+//
+// Control Signals                       0     0
+                                         0     1
+// (32 Signals)                          abcdef0
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  0100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  0000000  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  0111101  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  1101111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  1111101  // Delayed by 1
+/*     5 UNUSED                      */  0000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  0000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  0000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  0000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  0000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  0100000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  0000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  0100000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  0010000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  0000010  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  1000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  0000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  0000000  // Delayed by 1
+/*    18 UNUSED                      */  0000000  // Delayed by 0
+/*    19 UNUSED                      */  0000000  // Delayed by 0
+/*    20 UNUSED                      */  0000000  // Delayed by 0
+/*    21 UNUSED                      */  0000000  // Delayed by 0
+/*    22 UNUSED                      */  0000000  // Delayed by 0
+/*    23 UNUSED                      */  0000000  // Delayed by 0
+/*    24 UNUSED                      */  0000000  // Delayed by 0
+/*    25 UNUSED                      */  0000000  // Delayed by 0
+/*    26 UNUSED                      */  0000000  // Delayed by 0
+/*    27 UNUSED                      */  0000000  // Delayed by 0
+/*    28 UNUSED                      */  0000000  // Delayed by 0
+/*    29 UNUSED                      */  0000000  // Delayed by 0
+/*    30 UNUSED                      */  0000000  // Delayed by 0
+/*    31 UNUSED                      */  0000000  // Delayed by 0
+/*    32 UNUSED                      */  0000000  // Delayed by 0
+/*    33 UNUSED                      */  0000000  // Delayed by 0
+/*    34 UNUSED                      */  0000000  // Delayed by 0
+/*    35 UNUSED                      */  0000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 2: DOUBLE WORD WRITE
+//
+// Control Signals                       0        0
+                                         1        1
+// (32 Signals)                          123456789a
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  0000100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  1111111111  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  0111111011  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  1101111111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  1101111011  // Delayed by 1
+/*     5 UNUSED                      */  0000000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  0000000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  0000000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  0110000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  0000000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  0000000000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  0000000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  0100000000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  0010100000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  0000000100  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  1000000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  0000000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  0000000000  // Delayed by 1
+/*    18 UNUSED                      */  0000000000  // Delayed by 0
+/*    19 UNUSED                      */  0000000000  // Delayed by 0
+/*    20 UNUSED                      */  0000000000  // Delayed by 0
+/*    21 UNUSED                      */  0000000000  // Delayed by 0
+/*    22 UNUSED                      */  0000000000  // Delayed by 0
+/*    23 UNUSED                      */  0000000000  // Delayed by 0
+/*    24 UNUSED                      */  0000000000  // Delayed by 0
+/*    25 UNUSED                      */  0000000000  // Delayed by 0
+/*    26 UNUSED                      */  0000000000  // Delayed by 0
+/*    27 UNUSED                      */  0000000000  // Delayed by 0
+/*    28 UNUSED                      */  0000000000  // Delayed by 0
+/*    29 UNUSED                      */  0000000000  // Delayed by 0
+/*    30 UNUSED                      */  0000000000  // Delayed by 0
+/*    31 UNUSED                      */  0000000000  // Delayed by 0
+/*    32 UNUSED                      */  0000000000  // Delayed by 0
+/*    33 UNUSED                      */  0000000000  // Delayed by 0
+/*    34 UNUSED                      */  0000000000  // Delayed by 0
+/*    35 UNUSED                      */  0000000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 3: DOUBLE WORD READ
+//
+// Control Signals                       0     0
+                                         1    22
+// (32 Signals)                          bcdef01
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  0100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  0000000  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  0111101  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  1101111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  1111101  // Delayed by 1
+/*     5 UNUSED                      */  0000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  0000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  0000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  0000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  0000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  0110000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  0000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  0100000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  0010000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  0000010  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  1000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  0000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  0000000  // Delayed by 1
+/*    18 UNUSED                      */  0000000  // Delayed by 0
+/*    19 UNUSED                      */  0000000  // Delayed by 0
+/*    20 UNUSED                      */  0000000  // Delayed by 0
+/*    21 UNUSED                      */  0000000  // Delayed by 0
+/*    22 UNUSED                      */  0000000  // Delayed by 0
+/*    23 UNUSED                      */  0000000  // Delayed by 0
+/*    24 UNUSED                      */  0000000  // Delayed by 0
+/*    25 UNUSED                      */  0000000  // Delayed by 0
+/*    26 UNUSED                      */  0000000  // Delayed by 0
+/*    27 UNUSED                      */  0000000  // Delayed by 0
+/*    28 UNUSED                      */  0000000  // Delayed by 0
+/*    29 UNUSED                      */  0000000  // Delayed by 0
+/*    30 UNUSED                      */  0000000  // Delayed by 0
+/*    31 UNUSED                      */  0000000  // Delayed by 0
+/*    32 UNUSED                      */  0000000  // Delayed by 0
+/*    33 UNUSED                      */  0000000  // Delayed by 0
+/*    34 UNUSED                      */  0000000  // Delayed by 0
+/*    35 UNUSED                      */  0000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 4: CACHELINE 4 WRITE
+//
+// Control Signals                       0          0
+                                         2          2
+// (32 Signals)                          23456789abcd
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  000000100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  111111111111  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  011111111011  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  110101111111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  110101111011  // Delayed by 1
+/*     5 UNUSED                      */  000000000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  000000000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  000000000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  011110000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  000000000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  000000000000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  000000000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  010000000000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  001010100000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  000000000100  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  100000000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  000000000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  000000000000  // Delayed by 1
+/*    18 UNUSED                      */  000000000000  // Delayed by 0
+/*    19 UNUSED                      */  000000000000  // Delayed by 0
+/*    20 UNUSED                      */  000000000000  // Delayed by 0
+/*    21 UNUSED                      */  000000000000  // Delayed by 0
+/*    22 UNUSED                      */  000000000000  // Delayed by 0
+/*    23 UNUSED                      */  000000000000  // Delayed by 0
+/*    24 UNUSED                      */  000000000000  // Delayed by 0
+/*    25 UNUSED                      */  000000000000  // Delayed by 0
+/*    26 UNUSED                      */  000000000000  // Delayed by 0
+/*    27 UNUSED                      */  000000000000  // Delayed by 0
+/*    28 UNUSED                      */  000000000000  // Delayed by 0
+/*    29 UNUSED                      */  000000000000  // Delayed by 0
+/*    30 UNUSED                      */  000000000000  // Delayed by 0
+/*    31 UNUSED                      */  000000000000  // Delayed by 0
+/*    32 UNUSED                      */  000000000000  // Delayed by 0
+/*    33 UNUSED                      */  000000000000  // Delayed by 0
+/*    34 UNUSED                      */  000000000000  // Delayed by 0
+/*    35 UNUSED                      */  000000000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 5: CACHELINE 4 READ
+//
+// Control Signals                       0      0
+                                         2 3    3
+// (32 Signals)                          ef012345
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  00100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  00000000  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  01111101  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  11010111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  11111101  // Delayed by 1
+/*     5 UNUSED                      */  00000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  00000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  00000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  00000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  00000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  01111000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  00000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  01000000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  00101000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  00000010  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  10000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  00000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  00000000  // Delayed by 1
+/*    18 UNUSED                      */  00000000  // Delayed by 0
+/*    19 UNUSED                      */  00000000  // Delayed by 0
+/*    20 UNUSED                      */  00000000  // Delayed by 0
+/*    21 UNUSED                      */  00000000  // Delayed by 0
+/*    22 UNUSED                      */  00000000  // Delayed by 0
+/*    23 UNUSED                      */  00000000  // Delayed by 0
+/*    24 UNUSED                      */  00000000  // Delayed by 0
+/*    25 UNUSED                      */  00000000  // Delayed by 0
+/*    26 UNUSED                      */  00000000  // Delayed by 0
+/*    27 UNUSED                      */  00000000  // Delayed by 0
+/*    28 UNUSED                      */  00000000  // Delayed by 0
+/*    29 UNUSED                      */  00000000  // Delayed by 0
+/*    30 UNUSED                      */  00000000  // Delayed by 0
+/*    31 UNUSED                      */  00000000  // Delayed by 0
+/*    32 UNUSED                      */  00000000  // Delayed by 0
+/*    33 UNUSED                      */  00000000  // Delayed by 0
+/*    34 UNUSED                      */  00000000  // Delayed by 0
+/*    35 UNUSED                      */  00000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 6: CACHELINE 8 WRITE
+//
+// Control Signals                       0              0
+                                         3         4    4
+// (32 Signals)                          6789abcdef012345
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  0000000000100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  1111111111111111  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  0111111111111011  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  1101010101111111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  1101010101111011  // Delayed by 1
+/*     5 UNUSED                      */  0000000000000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  0000000000000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  0000000000000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  0111111110000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  0000000000000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  0000000000000000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  0000000000000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  0100000000000000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  0010101010100000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  0000000000000100  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  1000000000000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  0000000000000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  0000000000000000  // Delayed by 1
+/*    18 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    19 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    20 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    21 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    22 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    23 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    24 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    25 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    26 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    27 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    28 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    29 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    30 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    31 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    32 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    33 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    34 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    35 UNUSED                      */  0000000000000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 7: CACHELINE 8 READ
+//
+// Control Signals                       0          0
+                                         4         55
+// (32 Signals)                          6789abcdef01
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  000000100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  000000000000  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  011111111101  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  110101010111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  111111111101  // Delayed by 1
+/*     5 UNUSED                      */  000000000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  000000000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  000000000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  000000000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  000000000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  011111111000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  000000000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  010000000000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  001010101000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  000000000010  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  100000000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  000000000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  000000000000  // Delayed by 1
+/*    18 UNUSED                      */  000000000000  // Delayed by 0
+/*    19 UNUSED                      */  000000000000  // Delayed by 0
+/*    20 UNUSED                      */  000000000000  // Delayed by 0
+/*    21 UNUSED                      */  000000000000  // Delayed by 0
+/*    22 UNUSED                      */  000000000000  // Delayed by 0
+/*    23 UNUSED                      */  000000000000  // Delayed by 0
+/*    24 UNUSED                      */  000000000000  // Delayed by 0
+/*    25 UNUSED                      */  000000000000  // Delayed by 0
+/*    26 UNUSED                      */  000000000000  // Delayed by 0
+/*    27 UNUSED                      */  000000000000  // Delayed by 0
+/*    28 UNUSED                      */  000000000000  // Delayed by 0
+/*    29 UNUSED                      */  000000000000  // Delayed by 0
+/*    30 UNUSED                      */  000000000000  // Delayed by 0
+/*    31 UNUSED                      */  000000000000  // Delayed by 0
+/*    32 UNUSED                      */  000000000000  // Delayed by 0
+/*    33 UNUSED                      */  000000000000  // Delayed by 0
+/*    34 UNUSED                      */  000000000000  // Delayed by 0
+/*    35 UNUSED                      */  000000000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 8: BURST 16 WRITE
+//
+// Control Signals                       0                      0
+                                         5             6        6
+// (32 Signals)                          23456789abcdef0123456789
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  000000000000000000100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  111111111111111111111111  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  011111111111111111111011  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  110101010101010101111111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  110101010101010101111011  // Delayed by 1
+/*     5 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  000000000000000000000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  000000000000000000000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  011111111111111110000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  000000000000000000000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  000000000000000000000000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  000000000000000000000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  010000000000000000000000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  001010101010101010100000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  000000000000000000000100  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  100000000000000000000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  000000000000000000000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  000000000000000000000000  // Delayed by 1
+/*    18 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    19 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    20 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    21 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    22 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    23 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    24 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    25 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    26 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    27 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    28 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    29 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    30 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    31 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    32 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    33 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    34 UNUSED                      */  000000000000000000000000  // Delayed by 0
+/*    35 UNUSED                      */  000000000000000000000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 9: BURST 16 READ
+//
+// Control Signals                       0                  0
+                                         6     7            7
+// (32 Signals)                          abcdef0123456789abcd
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  00000000000000100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  00000000000000000000  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  01111111111111111101  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  11010101010101010111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  11111111111111111101  // Delayed by 1
+/*     5 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  00000000000000000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  00000000000000000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  00000000000000000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  00000000000000000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  01111111111111111000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  00000000000000000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  01000000000000000000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  00101010101010101000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  00000000000000000010  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  10000000000000000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  00000000000000000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  00000000000000000000  // Delayed by 1
+/*    18 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    19 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    20 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    21 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    22 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    23 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    24 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    25 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    26 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    27 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    28 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    29 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    30 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    31 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    32 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    33 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    34 UNUSED                      */  00000000000000000000  // Delayed by 0
+/*    35 UNUSED                      */  00000000000000000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 10: BURST 32 WRITE
+//
+// Control Signals                       0              0
+                                         7 8            8
+// (32 Signals)                          ef0123456789abcd
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  0000000000100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  1111111111111111  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  0111111111111011  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  1101010101111111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  1101010101111011  // Delayed by 1
+/*     5 UNUSED                      */  0000000000000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  0000000000000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  0000000000000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  0111111110000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  0000000000000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  0000000000000000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  0000000000000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  0100000000000000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  0010101010100000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  0000000000000100  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  1000000000000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  0000000000000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  0001000000000000  // Delayed by 1
+/*    18 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    19 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    20 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    21 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    22 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    23 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    24 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    25 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    26 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    27 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    28 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    29 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    30 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    31 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    32 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    33 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    34 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    35 UNUSED                      */  0000000000000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 11: BURST 32 READ
+//
+// Control Signals                       0          0
+                                         8 9        9
+// (32 Signals)                          ef0123456789
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  000000100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  000000000000  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  011111111101  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  110101010111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  111111111101  // Delayed by 1
+/*     5 UNUSED                      */  000000000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  000000000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  000000000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  000000000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  000000000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  011111111000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  000000000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  010000000000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  001010101000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  000000000010  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  100000000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  000000000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  000100000000  // Delayed by 1
+/*    18 UNUSED                      */  000000000000  // Delayed by 0
+/*    19 UNUSED                      */  000000000000  // Delayed by 0
+/*    20 UNUSED                      */  000000000000  // Delayed by 0
+/*    21 UNUSED                      */  000000000000  // Delayed by 0
+/*    22 UNUSED                      */  000000000000  // Delayed by 0
+/*    23 UNUSED                      */  000000000000  // Delayed by 0
+/*    24 UNUSED                      */  000000000000  // Delayed by 0
+/*    25 UNUSED                      */  000000000000  // Delayed by 0
+/*    26 UNUSED                      */  000000000000  // Delayed by 0
+/*    27 UNUSED                      */  000000000000  // Delayed by 0
+/*    28 UNUSED                      */  000000000000  // Delayed by 0
+/*    29 UNUSED                      */  000000000000  // Delayed by 0
+/*    30 UNUSED                      */  000000000000  // Delayed by 0
+/*    31 UNUSED                      */  000000000000  // Delayed by 0
+/*    32 UNUSED                      */  000000000000  // Delayed by 0
+/*    33 UNUSED                      */  000000000000  // Delayed by 0
+/*    34 UNUSED                      */  000000000000  // Delayed by 0
+/*    35 UNUSED                      */  000000000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 12: BURST 64 WRITE
+//
+// Control Signals                       0              0
+                                         9     a        a
+// (32 Signals)                          abcdef0123456789
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  0000000000100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  1111111111111111  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  0111111111111011  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  1101010101111111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  1101010101111011  // Delayed by 1
+/*     5 UNUSED                      */  0000000000000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  0000000000000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  0000000000000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  0111111110000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  0000000000000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  0000000000000000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  0000000000000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  0100000000000000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  0010101010100000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  0000000000000100  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  1000000000000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  0000000000000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  0001000000000000  // Delayed by 1
+/*    18 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    19 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    20 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    21 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    22 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    23 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    24 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    25 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    26 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    27 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    28 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    29 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    30 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    31 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    32 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    33 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    34 UNUSED                      */  0000000000000000  // Delayed by 0
+/*    35 UNUSED                      */  0000000000000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 13: BURST 64 READ
+//
+// Control Signals                       0          0
+                                         a     b    b
+// (32 Signals)                          abcdef012345
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  000000100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  000000000000  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  011111111101  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  110101010111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  111111111101  // Delayed by 1
+/*     5 UNUSED                      */  000000000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  000000000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  000000000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  000000000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  000000000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  011111111000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  000000000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  010000000000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  001010101000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  000000000010  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  100000000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  000000000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  000100000000  // Delayed by 1
+/*    18 UNUSED                      */  000000000000  // Delayed by 0
+/*    19 UNUSED                      */  000000000000  // Delayed by 0
+/*    20 UNUSED                      */  000000000000  // Delayed by 0
+/*    21 UNUSED                      */  000000000000  // Delayed by 0
+/*    22 UNUSED                      */  000000000000  // Delayed by 0
+/*    23 UNUSED                      */  000000000000  // Delayed by 0
+/*    24 UNUSED                      */  000000000000  // Delayed by 0
+/*    25 UNUSED                      */  000000000000  // Delayed by 0
+/*    26 UNUSED                      */  000000000000  // Delayed by 0
+/*    27 UNUSED                      */  000000000000  // Delayed by 0
+/*    28 UNUSED                      */  000000000000  // Delayed by 0
+/*    29 UNUSED                      */  000000000000  // Delayed by 0
+/*    30 UNUSED                      */  000000000000  // Delayed by 0
+/*    31 UNUSED                      */  000000000000  // Delayed by 0
+/*    32 UNUSED                      */  000000000000  // Delayed by 0
+/*    33 UNUSED                      */  000000000000  // Delayed by 0
+/*    34 UNUSED                      */  000000000000  // Delayed by 0
+/*    35 UNUSED                      */  000000000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 14: REFRESH
+//
+// Control Signals                       0        0
+                                         b        b
+// (32 Signals)                          6789abcdef
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  0000100000  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  0000000000  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  0101111111  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  1101111111  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  0111111111  // Delayed by 1
+/*     5 UNUSED                      */  0000000000  // Delayed by 0
+/*     6 CTRL_RMW                    */  0000000000  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  0000000000  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  0000000000  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  0000000000  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  0000000000  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  0000000000  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  0000000000  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  0000000000  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  1000000000  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  0000000000  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  0000000000  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  0000000000  // Delayed by 1
+/*    18 UNUSED                      */  0000000000  // Delayed by 0
+/*    19 UNUSED                      */  0000000000  // Delayed by 0
+/*    20 UNUSED                      */  0000000000  // Delayed by 0
+/*    21 UNUSED                      */  0000000000  // Delayed by 0
+/*    22 UNUSED                      */  0000000000  // Delayed by 0
+/*    23 UNUSED                      */  0000000000  // Delayed by 0
+/*    24 UNUSED                      */  0000000000  // Delayed by 0
+/*    25 UNUSED                      */  0000000000  // Delayed by 0
+/*    26 UNUSED                      */  0000000000  // Delayed by 0
+/*    27 UNUSED                      */  0000000000  // Delayed by 0
+/*    28 UNUSED                      */  0000000000  // Delayed by 0
+/*    29 UNUSED                      */  0000000000  // Delayed by 0
+/*    30 UNUSED                      */  0000000000  // Delayed by 0
+/*    31 UNUSED                      */  0000000000  // Delayed by 0
+/*    32 UNUSED                      */  0000000000  // Delayed by 0
+/*    33 UNUSED                      */  0000000000  // Delayed by 0
+/*    34 UNUSED                      */  0000000000  // Delayed by 0
+/*    35 UNUSED                      */  0000000000  // Delayed by 0
+//--------------------------------------------------------------------------
+//
+// FSM PATTERN 15: NOP
+//
+// Control Signals                       00
+                                         cc
+// (32 Signals)                          01
+// ---------------                       --------------------------------  ------------------------------
+/*     0 CTRL_COMPLETE               */  00  // Delayed by 1
+/*     1 CTRL_IS_WRITE               */  00  // Delayed by 1
+/*     2 CTRL_PHYIF_RAS_N            */  11  // Delayed by 1
+/*     3 CTRL_PHYIF_CAS_N            */  11  // Delayed by 1
+/*     4 CTRL_PHYIF_WE_N             */  11  // Delayed by 1
+/*     5 UNUSED                      */  00  // Delayed by 0
+/*     6 CTRL_RMW                    */  00  // Delayed by 4
+/*     7 CTRL_SKIP_0                 */  00  // Delayed by 1
+/*     8 CTRL_PHYIF_DQS_O            */  00  // Delayed by 0
+/*     9 CTRL_SKIP_1                 */  00  // Delayed by 1
+/*    10 CTRL_DP_RDFIFO_PUSH         */  00  // Delayed by 1
+/*    11 CTRL_SKIP_2                 */  00  // Delayed by 1
+/*    12 CTRL_AP_COL_CNT_LOAD        */  00  // Delayed by 1
+/*    13 CTRL_AP_COL_CNT_ENABLE      */  00  // Delayed by 1
+/*    14 CTRL_AP_PRECHARGE_ADDR10    */  00  // Delayed by 1
+/*    15 CTRL_AP_ROW_COL_SEL         */  00  // Delayed by 1
+/*    16 CTRL_PHYIF_FORCE_DM         */  00  // Delayed by 0
+/*    17 CTRL_REPEAT4                */  00  // Delayed by 1
+/*    18 UNUSED                      */  00  // Delayed by 0
+/*    19 UNUSED                      */  00  // Delayed by 0
+/*    20 UNUSED                      */  00  // Delayed by 0
+/*    21 UNUSED                      */  00  // Delayed by 0
+/*    22 UNUSED                      */  00  // Delayed by 0
+/*    23 UNUSED                      */  00  // Delayed by 0
+/*    24 UNUSED                      */  00  // Delayed by 0
+/*    25 UNUSED                      */  00  // Delayed by 0
+/*    26 UNUSED                      */  00  // Delayed by 0
+/*    27 UNUSED                      */  00  // Delayed by 0
+/*    28 UNUSED                      */  00  // Delayed by 0
+/*    29 UNUSED                      */  00  // Delayed by 0
+/*    30 UNUSED                      */  00  // Delayed by 0
+/*    31 UNUSED                      */  00  // Delayed by 0
+/*    32 UNUSED                      */  00  // Delayed by 0
+/*    33 UNUSED                      */  00  // Delayed by 0
+/*    34 UNUSED                      */  00  // Delayed by 0
+/*    35 UNUSED                      */  00  // Delayed by 0

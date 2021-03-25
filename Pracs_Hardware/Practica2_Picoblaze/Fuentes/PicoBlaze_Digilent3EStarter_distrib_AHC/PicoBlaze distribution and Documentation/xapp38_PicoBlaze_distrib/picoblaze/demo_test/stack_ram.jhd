@@ -1,0 +1,3 @@
+MODULE stack_ram
+   SUBMODULE ram_x1s
+MODULE ram_x1s

@@ -1,0 +1,80 @@
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\WebcamUDPMulticast.exe.config
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\WebcamUDPMulticast.exe
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\WebcamUDPMulticast.pdb
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\Touchless.Vision.dll
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\WebCamLib.dll
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\Touchless.Vision.pdb
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\WebCamLib.pdb
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csprojAssemblyReference.cache
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.Form1.resources
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.Properties.Resources.resources
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csproj.GenerateResource.cache
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csproj.CoreCompileInputs.cache
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csproj.CopyComplete
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.exe
+C:\Users\RubénM\source\repos\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.pdb
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\WebcamUDPMulticast.exe.config
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\WebcamUDPMulticast.exe
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\WebcamUDPMulticast.pdb
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\Touchless.Vision.dll
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\WebCamLib.dll
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\Touchless.Vision.pdb
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\bin\Debug\WebCamLib.pdb
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csprojAssemblyReference.cache
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.Form1.resources
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.Properties.Resources.resources
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csproj.GenerateResource.cache
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csproj.CoreCompileInputs.cache
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csproj.CopyComplete
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.exe
+C:\Users\RubénM\Dropbox\Documentos\FPU\Docencia\Laboratorio de Contenidos Digitales\Práctica_5_mia\WebcamUDPMulticast\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csprojAssemblyReference.cache
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.Form1.resources
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.Properties.Resources.resources
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csproj.GenerateResource.cache
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csproj.CoreCompileInputs.cache
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.exe
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\WebcamUDPMulticast.exe.config
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\WebcamUDPMulticast.exe
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\WebcamUDPMulticast.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\System.ComponentModel.Composition.dll
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\Touchless.Vision.dll
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\WebCamLib.dll
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\Touchless.Vision.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\WebCamLib.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csproj.CopyComplete
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\Microsoft.DirectX.DirectSound.dll
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\Microsoft.DirectX.dll
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\Microsoft.DirectX.DirectSound.xml
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\Microsoft.DirectX.xml
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\SharpDX.DirectSound.dll
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\SharpDX.dll
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\SharpDX.pdb
+D:\GIT\Universidad\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\SharpDX.DirectSound.xml
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\WebcamUDPMulticast.exe.config
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\WebcamUDPMulticast.exe
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\WebcamUDPMulticast.pdb
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\Microsoft.DirectX.DirectSound.dll
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\SharpDX.DirectSound.dll
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\SharpDX.dll
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\Touchless.Vision.dll
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\WebCamLib.dll
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\Microsoft.DirectX.dll
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\Microsoft.DirectX.DirectSound.xml
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\SharpDX.pdb
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\SharpDX.DirectSound.xml
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\Touchless.Vision.pdb
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\WebCamLib.pdb
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\bin\Debug\Microsoft.DirectX.xml
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csprojAssemblyReference.cache
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.Form1.resources
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.Properties.Resources.resources
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csproj.GenerateResource.cache
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csproj.CoreCompileInputs.cache
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.csproj.CopyComplete
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.exe
+C:\Users\diego\Documents\GitHub\Pracs_Laboratorio\SkypeNuestro\Server\WebcamUDPMulticast\obj\Debug\WebcamUDPMulticast.pdb

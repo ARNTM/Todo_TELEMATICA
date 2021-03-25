@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART_TX.xst" -ofn "D:/GIT/Pracs_Microprocesadores/VHDL/UART/UART_TX.syr" 

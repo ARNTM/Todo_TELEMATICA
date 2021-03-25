@@ -1,0 +1,15 @@
+MODULE picoblaze
+   SUBMODULE arithmetic_process
+   SUBMODULE carry_flag_logic
+   SUBMODULE interrupt_capture
+   SUBMODULE interrupt_logic
+   SUBMODULE io_strobe_logic
+   SUBMODULE logical_bus_processing
+   SUBMODULE program_counter
+   SUBMODULE register_and_flag_enable
+   SUBMODULE register_bank
+   SUBMODULE shift_rotate
+   SUBMODULE stack_counter
+   SUBMODULE stack_ram
+   SUBMODULE t_state_and_reset
+   SUBMODULE zero_flag_logic

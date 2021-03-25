@@ -1,0 +1,28 @@
+#Anadir al proyecto con Add Source (menu Project) 
+
+NET clk LOC = T9;
+NET reset LOC = L14;
+
+NET dato(7) LOC = K13;
+NET dato(6) LOC = K14;
+NET dato(5) LOC = J13;
+NET dato(4) LOC = J14;
+NET dato(3) LOC = H13;
+NET dato(2) LOC = H14;
+NET dato(1) LOC = G12;
+NET dato(0) LOC = F12;
+
+NET display7seg(7) LOC = E14;
+NET display7seg(6) LOC = G13;
+NET display7seg(5) LOC = N15;
+NET display7seg(4) LOC = P15;
+NET display7seg(3) LOC = R16;
+NET display7seg(2) LOC = F13;
+NET display7seg(1) LOC = N16;
+NET display7seg(0) LOC = P16;
+
+NET AN_display7seg(3) LOC = E13;
+NET AN_display7seg(2) LOC = F14;
+NET AN_display7seg(1) LOC = G14;
+NET AN_display7seg(0) LOC = D14;
+

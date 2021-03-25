@@ -1,0 +1,35 @@
+NET CLK		LOC = T9;
+
+NET reset 		LOC = L14; 	#BTN3
+
+NET btn_in		LOC = M13;		#BTN0
+
+NET TX_DATA(7) LOC = K13;		#switches
+NET TX_DATA(6) LOC = K14;
+NET TX_DATA(5) LOC = J13;
+NET TX_DATA(4) LOC = J14;
+NET TX_DATA(3) LOC = H13;
+NET TX_DATA(2) LOC = H14;
+NET TX_DATA(1) LOC = G12;
+NET TX_DATA(0) LOC = F12;
+
+
+NET RX_DATA(7) LOC = P11;		#LEDs
+NET RX_DATA(6) LOC = P12;
+NET RX_DATA(5) LOC = N12;
+NET RX_DATA(4) LOC = P13;
+NET RX_DATA(3) LOC = N14;
+NET RX_DATA(2) LOC = L12;
+NET RX_DATA(1) LOC = P14;
+NET RX_DATA(0) LOC = K12;
+
+#conector J2
+NET RX_in 		LOC = T13;
+NET TX_out 	LOC = R13;
+
+
+## conector expansion Ad ################################
+
+NET TX_ready		LOC = D5;
+NET RX_newdata		LOC = C5;
+
