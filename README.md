@@ -43,7 +43,7 @@ _A continuación encontrarás un índice con las prácticas que hemos hecho._
 | 3º GIT| SISTEMAS Y SERVICIOS DISTRIBUIDOS | ✔️ |
 | 3º GIT| INSTRUMENTACIÓN TELEMÁTICA Y LABORATORIO DE REDES | ✔️ |
 | 3º GIT| PROGRAMACIÓN PARA INGENIERÍA TELEMÁTICA | ✔️ |
-| 3º GIT| INGLÉS TÉCNICO | ❌ |
+| 3º GIT| INGLÉS TÉCNICO | ❌ -> "No hay" |
 | 3º GIT| TRANSMISIÓN DE DATOS | ✔️ |
 | 3º GIT| INGENIERÍA DE PROTOCOLOS | ✔️ |
 | 3º GIT| REDES INALÁMBRICAS | ✔️ |
@@ -51,7 +51,7 @@ _A continuación encontrarás un índice con las prácticas que hemos hecho._
 | 3º GIT| PLANIFICACIÓN Y GESTIÓN DE REDES | ✔️ |
 | | | |
 | 4º GIT| SEGURIDAD EN REDES | ✔️ |
-| 4º GIT| PROYECTOS DE INGENIERÍA TELEMÁTICA | ❗ |
+| 4º GIT| PROYECTOS DE INGENIERÍA TELEMÁTICA | ✔️ |
 | 4º GIT| APLICACIONES EN INTERNET | ✔️ |
 | 4º GIT| LABORATORIO DE CONTENIDOS DIGITALES | ✔️ |
 | 4º GIT| ARQUITECTURAS HARDWARE DE COMUNICACIONES | ✔️ |
