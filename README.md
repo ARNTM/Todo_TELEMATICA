@@ -28,7 +28,7 @@ _A continuación encontrarás un índice con las prácticas que hemos hecho._
 | 1º GIST/GIT | ESTADÍSTICA | ✔️ |
 | 1º GIST/GIT | SISTEMAS Y CIRCUITOS | ❌ |
 | 1º GIST/GIT | GESTIÓN DE EMPRESAS | ❌ |
-| 1º GIST/GIT | FUNDAMENTOS DE TELEMÁTICA | ❌ |
+| 1º GIST/GIT | FUNDAMENTOS DE TELEMÁTICA | ✔️ |
 | | | |
 | 2º GIST/GIT| SISTEMAS LINEALES | ✔️ |
 | 2º GIST/GIT| COMPONENTES Y DISPOSITIVOS ELECTRÓNICOS | ✔️ |
