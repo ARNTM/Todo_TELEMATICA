@@ -4,7 +4,7 @@ _A continuación podrás ver todas las prácticas resueltas que se realizaron a 
 
 
 
-Si detectáis algún error o quereis aportar alguna práctica que no esté disponible o esté incompleta, os agradeceríamos que lo avisarais haciendo [click aquí.](https://github.com/aruznieto/Pracs_UPCT-17-21/issues/new)
+Si detectáis algún error o quereis aportar alguna práctica que no esté disponible o esté incompleta, os agradeceríamos que lo avisarais haciendo [click aquí.](https://github.com/aruznieto/Pracs_UPCT/issues/new)
 
 ## Indice 🚀
 
