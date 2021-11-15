@@ -17,7 +17,7 @@ _A continuación encontrarás un índice con las prácticas que hemos hecho._
 + ❗: Incompleto
 
 
-| Curso | Asignatura | Disponibles |
+| Curso | Asignatura | Disponible |
 |:-----------:|:------:|:-----------:|
 | 1º GIST/GIT | FÍSICA | ✔️ |
 | 1º GIST/GIT | ÁLGEBRA LINEAL Y MÉTODOS NUMERICOS | ❌ |
