@@ -1,0 +1,10 @@
+Empresa;Ventas;Benef
+ElCorteIngles;75104,0;23795,00
+Iberdrola;775218,0;58778,00
+Repsolcomercial;700963,0;1531,00
+Seat;674063,0;-12756,0
+Tabacalera;631003,0;14729,00
+FASARenault;527744,0;9059,00
+Repsolpetroleo;489155,0;12541,00
+Pryca;448465,0;13495,00
+Iberia;445853,0;-34824,0
