@@ -4,7 +4,7 @@ _A continuación podrás ver todas las prácticas resueltas que se realizaron a 
 
 
 
-Si detectáis algún error o quereis aportar alguna práctica que no esté disponible o esté incompleta, os agradeceríamos que lo avisarais haciendo [click aquí.](https://github.com/aruznieto/Pracs_UPCT/issues/new)
+Si detectáis algún error o quereis aportar alguna práctica que no esté disponible o esté incompleta, os agradeceríamos que lo avisarais haciendo [click aquí.](https://github.com/ARNTM/Todo_TELEMATICA/issues/new)
 
 ## Indice 🚀
 
@@ -17,7 +17,7 @@ _A continuación encontrarás un índice con las prácticas que hemos hecho._
 
 | Curso | Asignatura | Disponible |
 |:-----------:|:------:|:-----------:|
-| 1º GIST/GIT | FÍSICA | ✔️ |
+| 1º GIST/GIT | [FÍSICA](https://github.com/ARNTM/Todo_TELEMATICA/tree/main/Pracs_Fisica) | ✔️ |
 | 1º GIST/GIT | ÁLGEBRA LINEAL Y MÉTODOS NUMERICOS | ❌ |
 | 1º GIST/GIT | CALCULO I | ❌|
 | 1º GIST/GIT | FUNDAMENTOS DE PROGRAMACIÓN | ❌ |
