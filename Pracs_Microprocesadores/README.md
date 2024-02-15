@@ -10,7 +10,7 @@ Si detectáis algún error, os agradeceríamos que lo avisarais haciendo [click 
 
 _A continuación encontrarás un índice con las prácticas que hemos hecho._
 
-* [PIC](https://github.com/aruznieto/Pracs_Microprocesadores/tree/master/PIC)
+* [PIC](https://github.com/aruznieto/Todo_TELEMATICA/tree/main/Pracs_Microprocesadores/PIC)
     * Práctica 1: Bucle de retardo
     * Práctica 2: Puertos E/S
     * Práctica 3: Interrupciones
@@ -20,7 +20,7 @@ _A continuación encontrarás un índice con las prácticas que hemos hecho._
     * Proyecto (2019 - 2020): Sistema básico de control de acceso + Detección e identificación de la pulsación de una tecla en teclado matricial
     * Documentos
     
-* [VHDL](https://github.com/aruznieto/Pracs_Microprocesadores/tree/master/VHDL)
+* [VHDL](https://github.com/aruznieto/Todo_TELEMATICA/tree/main/Pracs_Microprocesadores/VHDL)
     * Práctica 1: Diseño de una ALU
     * Práctica 2: Diseño de una ALU (ampliado)
     * Práctica 3: Representación de números en display 7 segmentos
