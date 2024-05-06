@@ -1,7 +1,7 @@
 # Prácticas realizadas en la promoción 2017-2020 . UPCT
 
 > [!IMPORTANT]
-> Colabora con nosotros. Te agradeceríamos que subieras todos tus apuntes o prácticas que has ido resolviendo a lo largo de la carrera o del máster.
+> [Colabora con nosotros.](https://github.com/ARNTM/Todo_TELEMATICA/wiki/Colabora) Te agradeceríamos que subieras todos tus apuntes o prácticas que has ido resolviendo a lo largo de la carrera o del máster.
 
 _A continuación podrás ver todas las prácticas resueltas que se realizaron a lo largo de los 4 años de la carrera_
 
